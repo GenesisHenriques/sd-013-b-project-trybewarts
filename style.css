@@ -96,10 +96,31 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 30px;
 }
 
 #family-div,
 #family-div span,
 #family-div label {
+    padding: 5px;
+}
+
+#checkbox-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+}
+
+.checks-and-radios-content {
+    display: flex;
+    margin: 0 30px;
+}
+
+#checkbox-content label {
+    padding: 10px;
+}
+
+#checkbox-content span {
+    display: inline-block;
     padding: 5px;
 }
