@@ -5,6 +5,10 @@ header {
   justify-content: space-between;
 }
 
+#trybewarts-header-title {
+  color: white;
+}
+
 .trybewarts-login {
   display: flex;
 }
