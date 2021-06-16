@@ -38,3 +38,59 @@ button {
 #senha {
   margin-left: 10px;
 }
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+.first-line-form {
+  display: flex;
+  align-items: center;
+}
+
+.second-line-form {
+  display: flex;
+  align-items: center;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#input-name , #input-lastname , #input-email {
+  flex: 1;
+  padding: 12px 20px;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 3px solid rgb(196, 196, 196);
+}
+
+input:focus {
+  border: 3px solid rgb(163, 161, 161);
+}
+
+select {
+  flex: 1;
+  padding: 10px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(226, 225, 225);
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.family-select {
+  display: flex;
+  flex-direction: column;
+}
