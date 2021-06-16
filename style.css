@@ -5,16 +5,12 @@
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
-<<<<<<< HEAD
-  justify-content: space-between;
+  justify-content:space-between;
+  align-items: center;  
 }
 
 .trybewarts-login {
   display: flex;
-}
-=======
-  justify-content:space-between;
-  align-items: center;  
 }
 
 .trybewarts-header-logo {  
@@ -26,4 +22,4 @@
   font-size: 50px;
 }
 
->>>>>>> 5b2430df14bfe6f369b85ef3e31bc5629f724b82
+
