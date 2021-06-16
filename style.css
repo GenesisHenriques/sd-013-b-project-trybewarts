@@ -69,7 +69,12 @@
   justify-content: space-between;
 }
 
-#evaluation-form label {
+.radio-element label {
+  margin-right: 20px;
+  width: 50px;
+}
+
+#evaluation-form .name label , #evaluation-form .info label {
   margin-bottom: 5px;
 }
 
@@ -96,11 +101,22 @@
 }
 
 #radio-buttons {
-  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  width: 50%;
 }
+
+.radio-element {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  width: 100px;
+}
+
+#radio-buttons p {
+  margin-bottom: 20px;
+}
+
 #agreement {
   margin-bottom: 15px;
 }
@@ -115,4 +131,3 @@ footer {
   padding: 20px;
   font-size: 1.1em;
 }
-
