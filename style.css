@@ -21,6 +21,14 @@
   justify-content: flex-start;
 }
 
+#trybewarts-header-title {
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 main {
   display: flex;
   justify-content: center;
