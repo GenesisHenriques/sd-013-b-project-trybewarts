@@ -16,6 +16,11 @@ button {
   border-radius: 5px;
   background-color: rgb(78, 43, 131);
   color: white;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 input {
