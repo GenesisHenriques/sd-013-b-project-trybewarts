@@ -9,6 +9,23 @@
   flex-wrap: wrap;
 }
 
+#trybewarts-header-title {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  align-items: center;
+}
+
 .trybewarts-login {
   align-items: center;
   display: flex;
