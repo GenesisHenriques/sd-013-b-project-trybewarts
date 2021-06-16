@@ -25,7 +25,10 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+<<<<<<< HEAD
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+=======
+>>>>>>> b1258970a8b58ddde26a1bf56309639405371c88
 }
