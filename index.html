@@ -41,17 +41,26 @@
           </select>
         </p>
       </div>
+
       <div class="familia">
         <p id="label-family">Qual sua família?</p>
         <div>
-          <input type="radio" name="family" value="Frontend">Família Frontend
+          <input type="radio" name="family" id="frontend" value="Frontend">
+          <label for="frontend">Família Frontend</label>
         </div>
         <div>
-          <input type="radio" name="family" value="Backend">Família Backend
+          <input type="radio" name="family" id="backend" value="Backend">
+          <label for="backend">Família Backend</label>
         </div>
         <div>
-          <input type="radio" name="family" value="FullStack">Família FullStack
+          <input type="radio" name="family" id="fullStack" value="FullStack">
+          <label for="fullStack">Família FullStack</label>
         </div>
+      </div>
+
+      <div class="agreement">
+        <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" name="" id="agreement" required>
       </div>
     </form>
     <div class="trybewarts-forms-logo">
