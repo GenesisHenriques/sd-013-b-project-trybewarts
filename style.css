@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+.header {
+    background-color: rgb(50, 167, 145);
+    display: flex;
+    justify-content: center;
+}
+=======
 main {
   display: flex;
 }
@@ -7,3 +14,4 @@ main {
   width: 675px;
   flex-direction: column;
 }
+>>>>>>> ca3f696aafc77cb296701034b8be25b29e99f8ac
