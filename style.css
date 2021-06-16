@@ -8,7 +8,7 @@ body {
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
-  padding: 0px 100px;
+  padding: 0 100px;
 }
 
 .form {
@@ -47,13 +47,6 @@ body {
   padding: 5px;
   width: 400px;
   margin: 50px;
-}
-
-input {
-  padding: 3px;
-  border-radius: 3px;
-  border: 0px;
-  margin: 5px;
 }
 
 #label-infos {
