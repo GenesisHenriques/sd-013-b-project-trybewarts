@@ -9,3 +9,15 @@ function loginConfirmation() {
 }
 
 buttonLogin.addEventListener('click', loginConfirmation);
+
+const buttonSubmit = document.getElementById('submit-btn');
+
+const checkedBox = document.getElementById('agreement');
+
+function submitInfo() {
+  if (checkedBox.checked === true) {
+    buttonSubmit.disabled = false;
+  } else buttonSubmit.disabled = true;
+}
+
+checkedBox.addEventListener('click', submitInfo);
