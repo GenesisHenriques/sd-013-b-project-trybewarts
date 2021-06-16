@@ -5,8 +5,13 @@
 }
 
 .trydewarts-login {
+  display: flex;
+  max-width: 200px;
+  margin: 0 auto;
+  border: 1px solid black;
+  justify-content: space-between;
 }
-
+ 
 .trybewarts-header-logo {
 }
 
