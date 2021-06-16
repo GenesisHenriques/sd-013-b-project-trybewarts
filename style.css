@@ -33,3 +33,8 @@
   display: flex;
   justify-content: flex-end;
 }
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
