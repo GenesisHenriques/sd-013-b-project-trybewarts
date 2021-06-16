@@ -4,7 +4,7 @@ const bttn = document.querySelector('#bttn');
 
 bttn.addEventListener('click', validEmail);
 function validEmail (event) {
-  if (login.value === "tryber@teste.com" && password.value === "123456") {
+  if (login.value === "tryber@teste.com" || password.value === "123456") {
     alert('Olá, Tryber!');
   }
   else {
