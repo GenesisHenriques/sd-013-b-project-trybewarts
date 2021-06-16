@@ -42,7 +42,7 @@
 
 #main-page {
   display: flex;
-  height: 87vh;
+  height: 80vh;
 }
 
 #evaluation-form {
@@ -113,7 +113,7 @@
   width: 100px;
 }
 
-#radio-buttons p {
+#radio-buttons #label-family {
   margin-bottom: 20px;
 }
 
@@ -130,4 +130,5 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 1.1em;
+  height: 7vh;
 }
