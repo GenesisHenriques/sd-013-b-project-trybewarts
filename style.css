@@ -22,7 +22,7 @@ html , body {
   height: 100px;
 }
 
-header .trybewarts-login{
+header .trybewarts-login {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -52,12 +52,6 @@ form button {
 
 main {
   display: flex;
-}
-}
-
-.header img {
-  width: 70px;
-  height: 70px;
 }
 
 #trybewarts-forms-logo {
