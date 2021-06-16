@@ -7,10 +7,9 @@ function verifyLogin() {
   const passwordCorrect = '123456';
   console.log(loginInput.value);
   console.log(passwordInput.value);
-  if (loginInput.value != loginCorrect && passwordInput != passwordCorrect) {
+  if (loginInput.value !== loginCorrect && passwordInput !== passwordCorrect) {
     alert('Login ou senha inválidos.');
-  }
-  else {
+  } else {
     alert('Olá, Tryber!');
   }
 }
