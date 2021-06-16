@@ -4,7 +4,9 @@ const loginButton = document.getElementById('login-button');
 
 const checkAgreement = document.getElementById('agreement');
 
-document.getElementById('submit-btn').disabled = true;
+const submitBTN = document.getElementById('submit-btn');
+
+submitBTN.disabled = true;
 
 function submitLogin() {
   if (login.value === 'tryber@teste.com' && password.value === '123456') {
@@ -15,10 +17,15 @@ function submitLogin() {
 }
 
 function enableBtn() {
-  if (checkAgreement.disabled === false) {
-    document.getElementById('submit-btn').disabled = false;
+  if (checkAgreement.checked === true) {
+    // console.log('enable');
+    submitBTN.disabled = false;
+  } else {
+    // console.log('disbale');
+    submitBTN.disabled = true;
   }
 }
 
 loginButton.addEventListener('click', submitLogin);
-checkAgreement.addEventListener('change', enableBtn);
+checkAgreement.addEventListener('click', enableBtn);
+window.onload = checkAgreement;
