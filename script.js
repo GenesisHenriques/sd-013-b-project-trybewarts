@@ -1,17 +1,19 @@
 // window.onload = function () {
 // };
 
-document.getElementById('submit-btn').disabled = true;
+const botaoEnviar = document.getElementById('submit-btn');
+botaoEnviar.disabled = true;
+
 const checboxAgreement = document.querySelector('#agreement');
 
 function verificarCheckboxAgreement() {
   // se check = true (ou seja, se marcado)
   if (checboxAgreement.checked) {
     // habilita o botão
-    document.getElementById('submit-btn').disabled = false;
+    botaoEnviar.disabled = false;
   } else {
     // senão, desabilita o botão
-    document.getElementById('submit-btn').disabled = true;
+    botaoEnviar.disabled = true;
   }
 }
-checboxAgreement.addEventListener('click', verificarCheckboxAgreement);
+checboxAgreement.addEventListener('click', verificarCheckboxAgreement); 
