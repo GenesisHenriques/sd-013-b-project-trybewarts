@@ -9,7 +9,7 @@
   align-items: center;
   position: fixed;
   width: 100%;
-  background-color: rgb(50, 167, 145)    
+  background-color: rgb(50, 167, 145);
 }
 
 .trybewarts-header-logo {
@@ -28,20 +28,21 @@
 #main-form {
   display: flex;
 }
+
 .trybewarts-login {
-    display: flex;
+  display: flex;
 }
 
 .Login {
-    padding: 2px;
-    margin: 2px;
+  padding: 2px;
+  margin: 2px;
 }
 
 .Senha {
-    padding: 2px;
-    margin: 2px;
+  padding: 2px;
+  margin: 2px;
 }
 
 .Enter {
-    padding: 3px;
+  padding: 3px;
 }
