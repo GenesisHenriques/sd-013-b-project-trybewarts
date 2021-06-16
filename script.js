@@ -12,3 +12,15 @@ function loginAlert() {
 }
 
 button.addEventListener('click', loginAlert);
+
+document.getElementById('submit-btn').disabled = true;
+
+const checkbox = document.getElementById('agreement');
+
+checkbox.addEventListener('click', (event) => {
+  if (checkbox !== null) {
+    document.getElementById('submit-btn').disabled = false;
+  } else {
+    document.getElementById('submit-btn').disabled = true;
+  }
+});
