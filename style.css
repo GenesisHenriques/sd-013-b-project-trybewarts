@@ -10,3 +10,13 @@
   justify-content: space-between;
   align-items: center;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+  display: flex;
+  flex-direction: column;
+}
