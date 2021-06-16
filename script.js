@@ -1,10 +1,10 @@
-let botaoEnviar = document.querySelector("#enviar");
+const botaoEnviar = document.querySelector("#enviar");
 
 function verificarLoginESenha() {
-  let login = document.querySelector("#login");
-  let loginValor = login.value;
-  let senha = document.querySelector("#senha");
-  let senhaValor = senha.value;
+  const login = document.querySelector("#login");
+  const loginValor = login.value;
+  const senha = document.querySelector("#senha");
+  const senhaValor = senha.value;
 
   if (loginValor === "tryber@teste.com" && senhaValor === "123456") {
     alert("Olá, Tryber!");
