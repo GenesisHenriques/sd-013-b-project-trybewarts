@@ -22,6 +22,10 @@
   width: 675px;
 }
 
+.conteudos {
+  display: flex;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
@@ -29,3 +33,4 @@
 #trybewarts-header-title {
   color: white;
 }
+
