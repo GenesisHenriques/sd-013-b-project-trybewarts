@@ -38,3 +38,20 @@ main {
 #emailAndHouse {
   display: flex;
 }
+
+#checkboxes {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#labels {
+  display: flex;
+  justify-content: space-around;
+}
+
+#boxes {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 10px;
+}
