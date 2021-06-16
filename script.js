@@ -9,3 +9,16 @@ botaoEnviar.addEventListener('click', () => {
     alert('Login ou senha inválidos.');
   }
 });
+
+const checkBox = document.getElementById('agreement');
+
+let check = true;
+checkBox.addEventListener('click', () => {
+  if (check === true) {
+    // check = false;
+    document.getElementById('submit-btn').disabled = false;
+  } else {
+    // check = true;
+    document.getElementById('submit-btn').disabled = true;
+  }
+});
