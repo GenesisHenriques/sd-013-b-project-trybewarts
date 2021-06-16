@@ -16,4 +16,4 @@ function submitLogin(event) {
 // Espera o carregamento da página
 window.onload = () => {
   document.querySelector('.trybewarts-login').addEventListener('submit', submitLogin);
-}
+};
