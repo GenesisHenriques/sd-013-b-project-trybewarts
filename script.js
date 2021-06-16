@@ -28,4 +28,3 @@ function verificando() {
 }
 
 checkBotao.addEventListener('click', verificando);
-
