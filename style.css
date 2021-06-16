@@ -1,6 +1,9 @@
+/* CABEÇALHO */
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
+  justify-content: space-around;
+  color: white;
 }
 
 .trybewarts-header-logo {
@@ -11,6 +14,11 @@
   display: flex;
 }
 
+/* BODY */
+body {
+  background-color: rgb(221, 220, 220);
+}
+
 #main {
   display: flex;
 }
@@ -19,4 +27,13 @@
   display: flex;
   width: 675px;
   flex-direction: column;
+  text-align: center;
+}
+
+/* INPUTS */
+input {
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  border-color: rgb(50, 167, 145);
 }

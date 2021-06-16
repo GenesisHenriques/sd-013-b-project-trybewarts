@@ -11,17 +11,20 @@
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo trybewarts">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <form class="trybewarts-login" action="">
-            <label for="login"></label>
             <input type="email" name="login" id="login" placeholder="Login">
-            <label for="senha"></label>
             <input type="password" name="senha" id="senha" placeholder="Senha">
             <button id="btn-entrar">Entrar</button>
         </form>
     </header>
     <main id="main">
-        <h2>Form</h2>
         <form action method="GET" id="evaluation-form">
-            <input type="text" name="nome" id="nome" placeholder="Nome"/>
+            <h2>Forms</h2>
+            <div>
+                <input type="text" name="nome" id="input-name" placeholder="Nome"/>
+                <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
+                <input type="email" name="email" id="input-email" placeholder="Email">
+                <select name="casas" id="house"></select>
+            </div>
         </form>
     </main>
     <script src="script.js"></script>
