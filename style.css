@@ -20,3 +20,33 @@
 .trybewarts-login {
   display: flex;
 }
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  }
+  
+  body {
+  
+  }
+  
+  main {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  }
+  
+  #trybewarts-forms-logo {
+  display: flex;
+  flex-flow: row wrap;
+  align-self: flex-end;
+  height: 500px;
+  }
+  
+  #evaluation-form {
+  display: flex;
+  flex-flow: column;
+  width: 675px;
+  }
+  
