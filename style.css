@@ -27,7 +27,9 @@
 }
 
 .trybewarts-login button {
-  
+  padding: 8px 50px;
+  background-color: rgb(70, 32, 100);
+  color: white;
 }
 
 .trybewarts-login {
