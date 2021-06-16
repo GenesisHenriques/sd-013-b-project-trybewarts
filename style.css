@@ -19,22 +19,96 @@
 .trybewarts-login {
   display: flex;
 }
+
   
 main {
-display: flex;
-flex-flow: row-reverse wrap;
+  display: flex;  
+  background-color: grey;
 }
+
+main form {
+  display: flex;
+  flex-direction: row;
+}
+
+
   
 #trybewarts-forms-logo {
-display: flex;
-flex-flow: row wrap;
-align-self: flex-end;
 height: 500px;
 }
+
   
 #evaluation-form {
-display: flex;
-flex-flow: column;
-width: 675px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 675px;  
+}
+
+#names {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;  
+  
+  margin: 10px;  
+  width: 100%;
+}
+
+#email-select {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px;  
+}
+
+#label-family-container {
+  display: flex;
+  flex-direction: column ;
+  margin-top: 20px;
 }
   
+
+#label-content { 
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#form input {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 10px;
+}
+
+#names input {
+  width: 40%;
+  margin-top: 10px;
+} 
+
+#family-radio {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 20%;
+}
+
+#label-content-container {  
+  margin-top: 20px;
+  width: 50%;  
+  background-color: tomato;
+  }
+
+#family-checkbox input {
+  display: inline-block;
+}
+
+#label-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#names-radio-container {
+  display: flex;
+  flex-direction: column;
+}
