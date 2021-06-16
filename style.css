@@ -3,18 +3,32 @@
   background-color: rgb(50, 167, 145);
 }
 
-
 main {
   display: flex;
 }
 
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+
 #evaluation-form {
   display: flex;
   flex-direction: column;
-  background-color: rebeccapurple;
   width: 675px;
 }
 
-#trybewarts-forms-logo {
-  height: 500px;
+#name-lastname {
+  background-color: rgb(230, 188, 188);
+  padding: 20px;
+}
+
+#email-and-home{
+  background-color: red;
+  padding: 20px;
+}
+
+#label-family{
+  display: flex;
+  flex-direction: column;
 }

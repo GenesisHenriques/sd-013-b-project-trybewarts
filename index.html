@@ -11,26 +11,54 @@
     <header class="header">
     </header>
     <main>
+
         <form action="" method="get" id="evaluation-form">
-          <label for="input-name">Nome
-          <input type="text" id="input-name" placeholder="Nome">
-          </label>
-          <label for="input-lastname">Sobrenome
-            <input type="text" id="input-lastname" placeholder="Sobrenome">
-          </label>
-          <label for="input-Email">E-mail
-            <input type="email" id="input-Email" placeholder="Email">
-          </label>
-          <label for="house">Casa:
-            <select name="casa" id="house">
-              <option value="git" id="gitnoria-house">Gitnória</option>
-              <option value="git" id="reactpuff-house">Reactpuff</option>
-              <option value="git" id="corvinode-house">Corvinode</option>
-              <option value="git" id="gitnoria-house">pytherina-house</option>
-            </select>
-          </label>
+          
+          <div id="name-lastname">
+            <label for="input-name">
+            <input type="text" id="input-name" placeholder="Nome">
+            </label>
+            <label for="input-lastname">
+              <input type="text" id="input-lastname" placeholder="Sobrenome">
+            </label>
+          </div>
+          <div id="email-and-home">
+            <label for="input-email">
+              <input type="email" id="input-email" placeholder="Email">
+            </label>
+            <label for="house">Casa:
+              <select name="casa" id="house">
+                <option value="git" id="gitnoria-house">Gitnória</option>
+                <option value="git" id="reactpuff-house">Reactpuff</option>
+                <option value="git" id="corvinode-house">Corvinode</option>
+                <option value="git" id="pytherina-house">Pytherina</option>
+              </select>
+            </label>
+            
+            <hr>
+
+            <span id="radio-buttons-family">
+              <label for="" id="label-family">Qual sua família?
+
+                <label for="front">
+                  <input type="radio" name="family" id="front" value="Frontend">
+                  Frontend
+                </label>
+                <label for="back">
+                  <input type="radio" name="family" id="back" value="Backend">
+                  Backend
+                </label>
+                <label for="full">
+                  <input type="radio" name="family" id="full" value="FullStack">
+                </label>
+
+              </label>
+            </span>
+        </div>
+
         </form>
         <img src="images/trybewarts-colored.svg" alt="Logo-TrybeWarts" id="trybewarts-forms-logo">
     </main>
+
   </body>
 </html>
