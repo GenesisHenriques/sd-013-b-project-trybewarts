@@ -43,10 +43,10 @@ button.onclick = function () {
   'Família: ', `${document.querySelector('input[name="family"]:checked').value}`, '',
   'Matérias: ', `${subjectList}`, '',
   'Avaliação: ', `${document.querySelector('input[name="rate"]:checked').value}`, '',
-  'Observações: ', `${document.getElementById('textarea-box').value}`, ''
+  'Observações: ', `${document.getElementById('textarea').value}`, ''
   ]
 
-  const enteredDataArea = document.getElementById('main-content');
+  const enteredDataArea = document.getElementById('evaluation-form');
   enteredDataArea.innerHTML = '';
   const newUl = document.createElement('ul');
   newUl.className = 'entered-data-area'
@@ -58,7 +58,7 @@ button.onclick = function () {
     newLi.innerText = `${dataArray[index]}${dataArray[index + 1]}${dataArray[index + 2]}`;
     ul.appendChild(newLi);
   }
-}
+};
 
 textArea.addEventListener('keypress', () => {
   if (counter.innerText > 0) {
