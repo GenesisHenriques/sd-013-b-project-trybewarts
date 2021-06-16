@@ -1,39 +1,27 @@
-const Boxes = document.querySelectorAll('.subject');
+const agreement = document.getElementById('agreement');
 const submitBtn = document.getElementById('submit-btn');
 submitBtn.disabled = true;
 
 function checked() {
-  for (let i = 0; i < Boxes.length; i += 1) {
-    if (Boxes[i].checked === true) {
-      submitBtn.disabled = false;
-    }
+  if (agreement.checked === true) {
+    submitBtn.disabled = false;
   }
 }
 
-function zeroChecked() {
-  let nonCheckedQtd = 0;
-  for (let i = 0; i < Boxes.length; i += 1) {
-    if (Boxes[i].checked === false) {
-      nonCheckedQtd += 1;
-    }
-  }
-  if (nonCheckedQtd === Boxes.length) {
+function noChecked() {
+  if (agreement.checked === false) {
     submitBtn.disabled = true;
   }
 }
 
 function ableSubmit() {
-  for (let i = 0; i < Boxes.length; i += 1) {
-    Boxes[i].addEventListener('click', checked);
-  }
+  agreement.addEventListener('click', checked);
 }
 
 ableSubmit();
 
 function disableSubmit() {
-  for (let i = 0; i < Boxes.length; i += 1) {
-    Boxes[i].addEventListener('click', zeroChecked);
-  }
+  agreement.addEventListener('click', noChecked);
 }
 
 disableSubmit();
