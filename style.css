@@ -4,20 +4,20 @@
 
 .header {
   display: flex;
-  background-color: rgb(50, 167, 145); 
+  background-color: rgb(50, 167, 145);
   height: 100px;
-  justify-content: space-between; 
-  text-align: center;}
+  justify-content: space-between;
+  text-align: center; }
 
 
-#trybewarts-header-title{
-  align-self: center;
-}
+#trybewarts-header-title {
+  align-self: center; }
 
-.trybewarts-login{
+
+.trybewarts-login {
   display: flex;
-  align-self: center;
-}
+  align-self: center; }
+
 
 .trybewarts-login input {
   background-color: whitesmoke;
