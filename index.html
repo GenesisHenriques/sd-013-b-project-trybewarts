@@ -13,20 +13,40 @@
 
     <header class="header">
 
-        
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo trybewarts">
-        
-        <h1>Trybewarts</h1>
-        
-        <form class="trybewarts-login" action="GET">
-            <input type="text" placeholder="Login">
-            <input type="text" placeholder="Senha">
-            <button>Logar</button>
+
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+
+        <form class="trybewarts-login" action="">
+            <input type="email" name="email" id="loginEmail" placeholder="Login">
+            <input type="password" name="password" id="loginPassword" placeholder="Senha">
+            <button id="btnLogin">Logar</button>
         </form>
 
     </header>
-</body>
+
+    <main class="main">
+        <form id="evaluation-form" action="" method="GET">
+          <h3>Formulário</h3>
+          <div>
+            <input type="text" placeholder="Nome" name="name" id="input-name">
+            <input type="text" placeholder="Sobrenome" name="lastName" id="input-lastname">
+          </div>
+          <div>
+            <input type="email" placeholder="Email" name="email" id="input-email">
+            <select id="house" name="casa">
+              <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+              <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+              <option id="corvinode-house" value="Corvinode">Corvinode</option>
+              <option id="pytherina-house" value="Pytherina">Gitnória</Pytherina> 
+              </select>
+            </div>
+        </form>
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo trybewarts">
+      </main>
+      <script src="script.js"></script>
+    </body>
+
+<script src="script.js"></script>
 
 </html>
-</header>
-</header>
