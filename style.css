@@ -133,5 +133,11 @@ main {
 
 #rate-div-content label,
 #rate-div-content input {
-    /* margin: 0 4px */
+    margin: 0 4px
+}
+
+#leave-a-coment {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
 }
