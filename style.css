@@ -25,7 +25,7 @@
 
 #evaluation-form {
   display: flex;
-  /* flex-basis: 675px; */
+  flex-basis: 675px;
   flex-direction: column;
 }
 
@@ -38,9 +38,8 @@
 }
 
 .main {
-  display: flex;
-  justify-content:space-between;
-  flex-basis: 675px;
+  display: flex;  
+  width: 675px;
   flex-wrap: wrap;
   /* margin: 50px 0; */
 }
@@ -53,4 +52,8 @@
 .textArea {
   display: flex;
   flex-direction: column;
+}
+
+footer {
+  background-color: rgb(50, 167, 145);
 }
