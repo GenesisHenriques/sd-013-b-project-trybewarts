@@ -17,3 +17,4 @@ function loginButtonAddEventListner() {
   loginButton.addEventListener('click', validateForm);
 }
 loginButtonAddEventListner();
+
