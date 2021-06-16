@@ -23,3 +23,13 @@ body {
 .trybewarts-login input {
   margin: 5px;
 }
+
+main {
+  display: flex;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
