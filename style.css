@@ -15,3 +15,8 @@
 #trybewarts-forms-logo {
   width: 500px;
 }
+
+#divInputNameAndLastname , #divInputEmailAndSelect {
+  display: flex;
+  flex-direction: row;
+}
