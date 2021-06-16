@@ -51,16 +51,23 @@
   </div>  
   <div class="family-div">
     <label for="family" id="label-family">Qual sua família?</label>
-    <input type="radio" value="Frontend" name="family" id="">Frontend
-    <input type="radio" value="Backend" name="family" id="">Backend
-    <input type="radio" value="Fullstack" name="family" id="">Fullstack
+    <div class="family-radio-btn">
+      <input type="radio" value="Frontend" name="family" id="">Frontend
+    </div>
+    <div class="family-radion-btn">
+      <input type="radio" value="Backend" name="family" id="">Backend
+    </div>
+    <div class="family-radion-btn">
+      <input type="radio" value="FullStack" name="family" id="">Fullstack
+    </div>      
   </div>
   <div class="content-div">
     <label for="content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
     <div class="checkbox-div">
       <input type="checkbox" value="HoFs" name="content" id="">HoFs
       <input type="checkbox" value="Jest" name="content" id="">Jest
-      <input type="checkbox" value="React" name="content" id="">Promises
+      <input type="checkbox" value="Promises" name="content" id="">Promises
+      <input type="checkbox" value="React" name="content" id="">React
       <input type="checkbox" value="SQL" name="content" id="">SQL
       <input type="checkbox" value="Python" name="content" id="">Python
     </div>
@@ -68,11 +75,30 @@
   <div class="rate-div">
     <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label>
   </div>
-  
+  <div class="textarea-div">
+    <label class="textarea" for="textarea">Deixe seu comentário:</label>
+    <textarea name="" id="" cols="30" rows="10" maxlength="500"></textarea>
+  </div>
+  <div class="agreement-div">
+    <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+    <input type="checkbox" name="agreement" id="agreement">
+  </div>
+  <button type="submit" id="submit-btn">Enviar</button>
+
+  <footer class="footer">
+    <p>
+      Direitos reservados à Trybewarts©
+    </p>
+  </footer>
 
 
-  
+
   <!-- Fim de Trecho de Código do Alan -->
+<<<<<<< HEAD
   <script src="script.js"></script>
+=======
+
+<script src="script.js"></script>
+>>>>>>> 8c99f8e3ebdfa1de90dcd65b908ac56eda5961dc
 </body>
 </html>
