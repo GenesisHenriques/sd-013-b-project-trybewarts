@@ -57,3 +57,16 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.rate {
+  background-color: aqua;
+  width: 675px;
+  display: flex;
+  align-items: center;
+}
+
+.rate form{
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
