@@ -1,4 +1,4 @@
-const loginBtn = document.getElementById('loginBtn');
+const loginBtn = document.getElementById('btn-login');
 
 function canLogin(event) {
     const inputLogin = document.getElementById('input-login')
