@@ -15,9 +15,3 @@ function checkUser() {
     alert('Login ou senha inválidos.');
   }
 }
-
-//  if (userLogin !== 123) {
-//     console.log('invalido')
-//  }
-// console.log(userLogin)
-// }
