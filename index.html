@@ -49,17 +49,47 @@
         </div>
 
         <div class="inputs-family">
-          <label id="label-family" for="">
-            <p>Qual sua família?</p>
+          <div class="brother1">
+            <label id="label-family" for="">
+              <p>Qual sua família?</p>
+            </label>
+            <input id="frontend" type="radio" name="family" value="Frontend" />
+            <label for="frontend">Família Frontend</label>
+            <br />
+            <input id="backend" type="radio" name="family" value="Backend" />
+            <label for="backend">Família Backend</label>
+            <br />
+            <input
+              id="fullstack"
+              type="radio"
+              name="family"
+              value="FullStack"
+            />
+            <label for="fullstack">Família FullStack</label>
+          </div>
+          <div class="brother2">
+            <label id="label-content" for="">
+            <p>Qual conteúdo você está com mais vontade de aprender?</p>
           </label>
-          <input id="frontend" type="radio" name="family" value="Frontend" />
-          <label for="frontend">Família Frontend</label>
-          <br />
-          <input id="backend" type="radio" name="family" value="Backend" />
-          <label for="backend">Família Backend</label>
-          <br>
-          <input id="fullstack" type="radio" name="family" value="FullStack" />
-          <label for="fullstack">Família FullStack</label>
+            <input type="checkbox" value="HoFs" class="subject" id="hofs" />
+            <label for="hofs">HoFs</label>
+            <input type="checkbox" value="Jest" class="subject" id="jest" />
+            <label for="jest">Jest</label>
+            <input
+              type="checkbox"
+              value="Promises"
+              class="subject"
+              id="promises"
+            />
+            <label for="promises">Promises</label>
+            <br />
+            <input type="checkbox" value="React" class="subject" id="react" />
+            <label for="react">React</label>
+            <input type="checkbox" value="SQL" class="subject" id="sql" />
+            <label for="sql">SQL</label>
+            <input type="checkbox" value="Python" class="subject" id="python" />
+            <label for="python">Python</label>
+          </div>
         </div>
       </form>
 

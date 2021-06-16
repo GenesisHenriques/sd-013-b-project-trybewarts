@@ -29,5 +29,11 @@
 }
 
 .inputs-family {
-  
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.brother2 input {
+  margin: 5px;
 }
