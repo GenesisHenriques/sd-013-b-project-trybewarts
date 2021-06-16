@@ -37,20 +37,34 @@ main {
   border: 2px solid;
 }
 
-#evaluation-form div {
+#evaluation-form .container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-#evaluation-form div input {
+#evaluation-form .container input {
   width: 50%;
 }
 
-#evaluation-form div select {
+#evaluation-form .container select {
   width: 50%;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#label-family-box {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+#label-family-box input {
+  display: flex;
+}
+
+#label-family-box label {
+  display: flex;
 }
