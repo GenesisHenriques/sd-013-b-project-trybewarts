@@ -22,9 +22,21 @@
   <main class="main">
     <!-- FORMULÁRIO -->
     <form action="" id="evaluation-form" method="GET" name="evaluation-form">
-      <input type="text" name="input-name" id="input-name" placeholder="Nome">
-      <input type="text" name="input-lastname" id="input-lastname" placeholder="Sobrenome">
-      <input type="email" name="input-email" id="input-email" placeholder="Email">
+      <div class="line">
+        <input type="text" name="input-name" id="input-name" placeholder="Nome">
+        <input type="text" name="input-lastname" id="input-lastname" placeholder="Sobrenome">
+      </div>
+      <div class="line">
+        <input type="email" name="input-email" id="input-email" placeholder="Email">
+        <label for="house">Casa:
+          <select name="house" id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </label>
+      </div>
     </form>
     <div>
       <!-- LOGO TRYBEWARTS -->
