@@ -18,12 +18,25 @@
 }
 
 #evaluation-form {
-  flex-flow: column;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 675px;
 }
 
 .conteudos {
   display: flex;
+}
+
+#input-name {
+  height: 20px;
+  width: 40%;
+}
+
+#input-lastname {
+  height: 20px;
+  width: 40%;
 }
 
 #trybewarts-forms-logo {
