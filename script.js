@@ -11,3 +11,9 @@ function checkLogin() {
 }
 const loginButton = document.querySelector('.Enter');
 loginButton.addEventListener('click', checkLogin);
+const checkButton = document.getElementById('agreement');
+function addSubmitButton() {
+  const submitButton = document.getElementById('submit-btn');
+  submitButton.removeAttribute('disabled');
+}
+checkButton.addEventListener('click', addSubmitButton);
