@@ -9,3 +9,12 @@
   display: flex;
   flex-flow: column nowrap;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+}
