@@ -113,3 +113,12 @@ hr {
 .study-info .content-selector label {
   margin: 8px 16px 8px 0;
 }
+
+#rodape {
+  text-align: center;
+}
+
+#submit-btn {
+  width: 200px;
+  border-radius: 10px;
+}
