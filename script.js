@@ -10,4 +10,7 @@ function validateLogin() {
   }
 }
 
-submitBtn.addEventListener('click', validateLogin)
+window.onload = function() {
+  submitBtn.addEventListener('click', validateLogin);
+
+}
