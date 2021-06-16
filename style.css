@@ -26,3 +26,15 @@ main {
 #input-lastname {
   width: 50%;
 }
+
+#input-email {
+  width: 50%;
+}
+
+#house {
+  width: 50%;
+}
+
+#emailAndHouse {
+  display: flex;
+}
