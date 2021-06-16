@@ -10,3 +10,14 @@ function validacaoEmailSenha() {
   }
 }
 document.querySelector('.login').addEventListener('click', validacaoEmailSenha);
+
+function hideApear() {
+  const checkboxEnviar = document.getElementById('agreement');
+  const submit = document.getElementById('submit-btn');
+  if (checkboxEnviar.checked !== true) {
+    submit.setAttribute('disabled', true);
+  } else {
+    submit.removeAttribute('disabled');
+  }
+}
+document.getElementById('agreement').addEventListener('click', hideApear);
