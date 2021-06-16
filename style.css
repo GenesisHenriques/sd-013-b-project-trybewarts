@@ -43,8 +43,19 @@
 #evaluation-form {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   width: 675px;
+}
+
+.container-name-lastname {
+  display: flex;
+}
+
+#input-name {
+}
+
+#input-lastname {
 }
 
 #trybewarts-forms-logo {
