@@ -8,15 +8,13 @@ document.getElementById("btnLogin").addEventListener("click", function(event){
 
 function validatingLogin() {
   
-  alert('foi')
-
   const login = document.getElementById('login');
   const password = document.getElementById('password');
 
   if (login.value === 'tryber@teste.com' && password.value === '123456') {
-  alert('Olá, Tryber!');
+    alert('Olá, Tryber!');
   } else {
-  alert('Login ou senha inválidos.');
+    alert('Login ou senha inválidos.');
   }
 }
 
