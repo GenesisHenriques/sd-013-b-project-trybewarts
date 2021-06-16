@@ -6,3 +6,5 @@ function handleLogin() {
   }
   return window.alert('Login ou senha inválidos.');
 }
+
+const loginButton = document.querySelector('')
