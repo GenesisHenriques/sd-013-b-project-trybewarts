@@ -38,10 +38,9 @@
 }
 
 .main {
-  display: flex;  
+  display: flex;
   width: 675px;
-  flex-wrap: wrap;
-  /* margin: 50px 0; */
+  flex-wrap: wrap; 
 }
 
 #label-content {
