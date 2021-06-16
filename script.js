@@ -12,6 +12,6 @@ const bntEntrar = document.querySelector('#btn-entrar');
 bntEntrar.addEventListener('click', login);
 
 // CRIA SELECT PARA CASA //
-function criaCasas() {
-    
-}
+// function criaCasas() {
+
+// }
