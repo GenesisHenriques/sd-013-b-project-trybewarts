@@ -11,19 +11,14 @@
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo em T do projeto trybewarts">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <form method="get" class="trybewarts-login">
-      <label for="user">
-        <input type="text" name="login" id="user" placeholder="Login">		
-      </label>	
-      <label for="password">
-	<input type="password" name="login" id="password" placeholder="Senha">
-      </label>
+    <form method="get" name="loginForm" class="trybewarts-login">
+      <input type="text" name="login" id="user" placeholder="Login">
+      <input type="password" name="password" id="password" placeholder="Senha">
       <label for="btn-login">
-	<button type="submit">Entrar</button>
+	<button type="submit" id="btn-login">Entrar</button>
       </label>   
     </form>
   </header>
-
   <main class="main">
     <form id="evaluation-form" class="evaluation-form" action="" method="get">
       <input type="text" name="" id="input-name" placeholder="Nome">
@@ -139,7 +134,6 @@
   <footer>
     <p>Direitos reservados à Trybewarts©</p>
   </footer>
-
   <script src="script.js"></script>	
 </body>
 </html>
