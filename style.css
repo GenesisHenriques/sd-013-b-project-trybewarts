@@ -25,3 +25,7 @@ main {
   display: flex;
   max-width: 675px;
 }
+
+#side-image {
+  height: 500px;
+}
