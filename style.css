@@ -7,8 +7,8 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  align-items: center;  
-  justify-content: space-between;  
+  align-items: center;
+  justify-content: space-between;
 }
 
 .trybewarts-header-logo {
@@ -18,7 +18,11 @@
 .trybewarts-login {
   display: flex;
   width: 450px;
-  justify-content: space-around;    
+  justify-content: space-around;
+}
+
+#trybewarts-header-title {
+  color: white;
 }
 
 main {
@@ -29,4 +33,8 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
