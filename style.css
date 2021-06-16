@@ -90,7 +90,7 @@ hr {
 
 .study-info .content-selector {
   display: flex;
-  align-content: flex-start;
+  align-content: space-between;
   flex-wrap: wrap;
   flex-basis: 60%;
 }
