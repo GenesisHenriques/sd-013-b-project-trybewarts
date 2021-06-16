@@ -15,8 +15,8 @@
   width: 100%;
 }
 
-.trybewarts-header-logo img {
-  width: 70px;
+.trybewarts-header-logo {
+  width: 70px
 }
 
 .trybewarts-login input , .trybewarts-login button {
