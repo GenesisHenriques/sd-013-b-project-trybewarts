@@ -1,12 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang='pt-br'>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Trybe Warts</title>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='style.css'>
+  <title>Trybewarts Project</title>
 </head>
 <body>
+
+  <header class='header'>
+    <div>
+      <img src='images/trybewarts-header-logo.svg' class='trybewarts-header-logo'>
+    </div>
+    <div>
+      <h1 id='trybewarts-header-title'>Trybewarts</h1>
+    </div>
+    <div>
+      <form class='trybewarts-login'>
+        <label for='username'>
+          <input type='email' class='loginBox' id='username' placeholder='Login'>
+        </label>
+        
+        <label for='password'>
+          <input type='password' class='loginBox' id='password' placeholder='Senha'>
+        </label>
+        
+        <label for='loginBtn'>
+          <button type='submit' id='loginBtn'>Logar</button>
+        </label>
+      </form>
+    </div>
+  </header>
   <main class="main">
     <form id="evaluation-form">
 
@@ -24,5 +49,6 @@
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Imagem ilustrativa">
   </main>
+  <script src='script.js'></script>
 </body>
 </html>
