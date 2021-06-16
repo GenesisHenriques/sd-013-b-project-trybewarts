@@ -13,8 +13,8 @@ const buttonLogin = document.querySelector('#buttonLogin');
 buttonLogin.addEventListener('click', authenticateLogin);
 
 function authenticateCheckboxAgreement() {
-  const inputAgreement = document.querySelector('#agreement');
-  const submitBtn = document.querySelector('#submit-btn');
+  const inputAgreement = document.querySelector('agreement');
+  const submitBtn = document.getElementById('submit-btn');
   if (inputAgreement.checked === true) {
     submitBtn.disabled = false;
   } else {
@@ -22,5 +22,5 @@ function authenticateCheckboxAgreement() {
   }
 }
 
-const input = document.querySelector('#agreement');
+const input = document.getElementById('agreement');
 input.addEventListener('click', authenticateCheckboxAgreement);
