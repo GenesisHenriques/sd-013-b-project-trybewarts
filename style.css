@@ -18,3 +18,7 @@ main {
   display: flex;
   width: 675px;
 }
+
+body {
+  background-color: rgb(133, 133, 133);
+}
