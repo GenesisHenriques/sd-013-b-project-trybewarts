@@ -49,11 +49,10 @@ main {
 } 
 
 #trybewarts-forms-logo {
-    height: 500px;
-
+  height: 500px;
 }
 
 #family-choice {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
