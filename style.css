@@ -3,12 +3,11 @@
 * {
   margin: 0;
   padding: 0;
-  /*font-family: sans-serif;*/
-  font-family: 'Benne', serif;
+  font-family: Benne, serif;
 }
 
 h1 {
-  color: #fff;
+  color: white;
 }
 
 h2 {
@@ -25,9 +24,9 @@ header {
   margin-bottom: 25px;
 }
 
-#logar{
+#logar {
   background-color: indigo;
-  color: #fff;
+  color: white;
   padding: 20px;
 }
 
@@ -59,9 +58,6 @@ main {
 
 .first-forms input {
   width: 330px;
-}
-
-input {
   font-size: 15px;
   font-weight: 800;
   border-radius: 8px;
@@ -69,13 +65,14 @@ input {
   border: 0.1px solid gray;
 }
 
+
 label {
   font-size: 18px;
   font-weight: 800;
 }
 
-#input-name, #input-lastname, #input-email {
-  width: 40%; 
+#input-name , #input-lastname , #input-email {
+  width: 40%;
   margin-bottom: 15px;
 }
 
@@ -84,19 +81,15 @@ textarea {
   height: 120px;
 }
 
-#textarea:focus{
-  border-style: outset;
-  border:2px solid indigo;
-}
 .forms-conteudo {
   flex-direction: column;
 }
 
 .radio-forms {
   display: flex;
-  align-items: center;  
+  align-items: center;
 }
 
-.radio-forms label{
+.radio-forms label {
   margin-right: 10px;
 }
