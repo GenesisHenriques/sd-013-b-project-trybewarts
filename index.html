@@ -34,13 +34,12 @@ Requisito 17, 18 - Hyung
 Requisito 19 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trybewarts</title>
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -77,7 +76,7 @@ Requisito 19 -->
           <input type="radio" id="Back-family" name="family" value="Backend" required> Família Backend
           <input type="radio" id="Back-family" name="family" value="FullStack"required> Família Full-stack  
       </div>
-          <label id="label-techs">Qual conteúdo você está com mais vontade de aprender?</label>
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
       <div id = "checkboxes">
           <div id="labels">
               <label for="HoFs">HoFs</label>
@@ -109,7 +108,9 @@ Requisito 19 -->
             <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
             <input type="checkbox" id="agreement">
             <button type="submit" id="submit-btn">Enviar</button>
-      </div>
+            <label class="textarea">Deixe seu comentário:</label>
+                <textarea id="textarea" name="comentario" maxlength="500"></textarea>
+        </div>
     </form>
   </main>
   <aside>
