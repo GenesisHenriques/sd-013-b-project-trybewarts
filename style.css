@@ -16,13 +16,13 @@
   order: 1;
 }
 
-.header .trybewarts-login {
-  order: 2;
-}
-
 .trybewarts-login {
   display: flex;
   align-items: center;
+}
+
+.header .trybewarts-login {
+  order: 2;
 }
 
 .trybewarts-login input {
