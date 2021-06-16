@@ -70,6 +70,7 @@ input {
   flex-direction: column;
   width: 675px;
   align-self: flex-start;
+  line-height: 30px;
 }
 
 #trybewarts-forms-logo {
@@ -81,12 +82,18 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  line-height: 30px;
+  padding-bottom: 35px;
 }
 
 #textarea {
   padding: 5px;
   border: solid 1px rgb(150, 150, 150);
   border-radius: 6px;
+}
+
+#label-infos {
+  line-height: 35px;
 }
 
 #counter {
