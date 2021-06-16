@@ -22,11 +22,11 @@
   <main id='trybewarts-main'>
     <form id='evaluation-form' action="">
       <h2>Forms</h2>
-      <div>
+      <div id='div-name-lastname'>
         <input id='input-name' placeholder='Nome' type="text">
         <input id='input-lastname' placeholder='Sobrenome' type="text">
       </div>
-      <div>
+      <div id='div-email-house'>
         <input id='input-email' placeholder="Email" type="email">
         <select name="" id="house">
           <option id='gitnoria-house' value="Gitnória">Gitnória</option>
@@ -36,12 +36,26 @@
         </select>
       </div>
       <hr>
-      <div>
+      <div id='family-content-box'>
         <div id='family-container'>
           <p id='label-family'>Qual sua família?</p>
-          <input type="radio" value='Frontend' name="family" id="">Frontend
-          <input type="radio" value='Backend' name="family" id="">Backend
-          <input type="radio" value='FullStack' name="family" id="">FullStack
+          <input type="radio" value='Frontend' name="family" id="front-family">
+          <label for="front-family">Família Frontend</label>
+          <input type="radio" value='Backend' name="family" id="back-family">
+          <label for="back-family">Família Backend</label>
+          <input type="radio" value='FullStack' name="family" id="stack-family">
+          <label for="stack-family">Família FullStack</label>
+        </div>
+        <div id='content-container'>
+          <label id='label-content' for="">Qual conteúdo você está com mais vontade de aprender?</label>
+            <div id=''>
+              <input type="checkbox" value='HoFs' name="" id="">HoFs
+              <input type="checkbox" value='Jest' name="" id="">Jest
+              <input type="checkbox" value='Promises' name="" id="">Promises
+              <input type="checkbox" value='React' name="" id="">React
+              <input type="checkbox" value='SQL' name="" id="">SQL
+              <input type="checkbox" value='Python' name="" id="">Python
+            </div>
         </div>
       </div>
     </form>
