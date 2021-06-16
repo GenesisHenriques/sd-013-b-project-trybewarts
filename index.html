@@ -18,8 +18,8 @@
       <h1 id="trybewarts-header-title">Trybewarts</h1>
 
       <form class="trybewarts-login">
-        <input type="text" placeholder="Login" />
-        <input type="password" placeholder="Senha" />
+        <input id="login-input" type="text" placeholder="Login" />
+        <input id="password-input" type="password" placeholder="Senha" />
         <button id="logar" type="submit">Logar</button>
       </form>
     </header>
@@ -168,10 +168,13 @@
           <input type="checkbox" id="agreement" />
         </div>
 
-        <label for="textarea" class="textarea">Deixe seu comentário:</label>
-        <textarea id="textarea" maxlength="500"></textarea>
+        <div class="text-container">
+          <label for="textarea" class="textarea">Deixe seu comentário:</label>
+          <textarea id="textarea" maxlength="500"></textarea>
+          <div id="counter">500</div>
+        </div>
 
-        <button type="submit" id="submit-btn">Enviar</button>
+        <button type="submit" id="submit-btn" disabled>Enviar</button>
       </form>
 
       <div class="logo-section">
