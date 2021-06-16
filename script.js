@@ -5,7 +5,6 @@ const button = document.querySelector('#submit-btn');
 const textArea = document.querySelector('#textarea');
 const counter = document.querySelector('#counter');
 
-
 document.querySelector('#btn-login').addEventListener('click', () => {
   if (inputLogin.value === 'tryber@teste.com' && inputPassword.value === '123456') {
     alert('Olá, Tryber!');
@@ -24,7 +23,6 @@ agreement.addEventListener('change', () => {
   // https://flexiple.com/disable-button-javascript/
 });
 
-
 textArea.addEventListener('keypress', () => {
   if (counter.innerText > 0) {
     counter.innerText = parseInt(counter.innerText, 10) - 1;
@@ -34,7 +32,7 @@ textArea.addEventListener('keypress', () => {
 textArea.addEventListener('keyup', () => {
   if (textArea.value === '' && counter.innerText < 500) {
     counter.innerText = '500';
-  } 
+  }
 });
 
 textArea.addEventListener('keydown', (e) => {
@@ -42,4 +40,3 @@ textArea.addEventListener('keydown', (e) => {
     counter.innerText = parseInt(counter.innerText, 10) + 1;
   }
 });
-  
