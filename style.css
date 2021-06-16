@@ -21,6 +21,8 @@
 
 main {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #evaluation-form {
@@ -34,4 +36,9 @@ main {
   justify-content: flex-end;
   width: 500px;
   height: 500px;
+}
+
+#family {
+  display: flex;
+  flex-direction: column;
 }
