@@ -29,14 +29,18 @@ main {
 .trybewarts-login {
   align-items: center;
   display: flex;
+}
 
-  /* #rate-container input {
-    margin-left: 10px;
-  }
+#rate-container input {
+  margin-left: 10px;
+}
 
-  #text-area-container {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-  } */
+#text-area-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+footer {
+  text-align: center;
 }
