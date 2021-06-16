@@ -31,6 +31,22 @@
   flex-direction: column;
 }
 
+#evaluation-form :nth-child(1) {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+#evaluation-form:nth-child(1) input {
+  min-width: 250px;
+  flex-grow: 1;
+}
+
+#house {
+  min-width: 250px;
+  flex-grow: 1;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
