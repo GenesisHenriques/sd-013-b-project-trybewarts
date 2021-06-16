@@ -1,14 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+
+/* menu */
 .header {
     display: flex;
     background-color: rgb(50, 167, 145);
 }
 
+/* logo menu */
 .trybewarts-header-logo {
     justify-content: flex-start;
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+}
+
+/* form menu */
+.trybewarts-header-login {
+    display: flex;
 }
 
 /* main */
