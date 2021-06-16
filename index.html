@@ -17,22 +17,27 @@
   </header>
   <main>
     <form id="evaluation-form">
-      <input type="text" id="input-name" placeholder="Nome">
-      <input type="text" id="input-lastname" placeholder="Sobrenome">
-      <input type="text" id="input-email" placeholder="Email">
-      <p>Casa:</p>
-      <select name="Casa" id="house">
-        <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-        <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-        <option id="corvinode-house" value="Corvinode">Corvinode</option>
-        <option id="pyntheria-house" value="Pytheria">Pytheria</option>
-      </select>
+      <h2><p class="titulo">Forms</p></h2>
+      <div id="primeiro-grupo-inputs">
+        <input type="text" id="input-name" placeholder="Nome">
+        <input type="text" id="input-lastname" placeholder="Sobrenome">
+      </div>
+      <div id="segundo-grupo-inputs">
+        <input type="text" id="input-email" placeholder="Email">
+        <p class="texto">Casa:</p>
+        <select name="Casa" id="house">
+          <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+          <option id="corvinode-house" value="Corvinode">Corvinode</option>
+          <option id="pyntheria-house" value="Pytheria">Pytheria</option>
+        </select>
+      </div>
       <label id="label-infos">
         Você concorda com o uso das informações acima?"
         <input type="checkbox" id="agreement">
       </label>
-      <button type="submit" id="submit-btn" disabled>Enviar</button>
-  </form>
+      <button type="submit" id="submit-btn">Enviar</button>
+    </form>
   <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Trybewarts Logo" height="500px">
   </main>
 </body>
