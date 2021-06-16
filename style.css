@@ -2,3 +2,12 @@
   background-color: rgb(50, 167, 145);
   display: flex;
 }
+
+.main, .form {
+  display: flex;
+}
+
+.form {
+  width: 675px;
+  flex-direction: column;
+}
