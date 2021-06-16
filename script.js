@@ -1,4 +1,4 @@
-function checkLoginAndPassword(event) {
+function checkLoginAndPassword() {
   const login = document.getElementById('input-login').value;
   const password = document.getElementById('input-password').value;
   console.log(login);
