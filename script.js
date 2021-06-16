@@ -11,4 +11,4 @@ function checkLoginAndPassword() {
   }
 }
 
-document.getElementById('button-check').addEventListener('click', checkLoginAndPassword);
+document.getElementById('btn-login').addEventListener('click', checkLoginAndPassword);

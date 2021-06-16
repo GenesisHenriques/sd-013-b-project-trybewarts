@@ -6,11 +6,34 @@
 header {
   background-color: rgb(50, 167, 145);
   display: flex;
-	justify-content: space-between;
-	
+  justify-content: space-between;
 }
 
 .trybewarts-login {
-	display: flex;
+  display: flex;
+}
 
+.trybewarts-login input {
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 140px;
+  margin-right: 10px;
+}
+
+.trybewarts-login button {
+  background-color: indigo;
+  border: none;
+  border-radius: 10px;
+  width: 140px;
+  color: white;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+}
+
+#trybewarts-main {
+  display: flex;
 }
