@@ -8,10 +8,25 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   align-items: center;  
-  justify-content: space-between;
+  justify-content: space-between;  
+}
+
+.trybewarts-header-logo {
+  width: 70px;
 }
 
 .trybewarts-login {
-  display: flex;  
+  display: flex;
+  width: 450px;
+  justify-content: space-around;    
 }
 
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
