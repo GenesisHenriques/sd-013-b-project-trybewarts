@@ -29,3 +29,8 @@ main {
 #side-img {
   height: 500px;
 }
+
+.input-radio {
+  display: flex;
+  flex-direction: column;
+}
