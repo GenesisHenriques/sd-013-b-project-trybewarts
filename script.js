@@ -17,3 +17,13 @@ loginBtn.addEventListener('click', () => {
   }
   return loginFail();
 });
+
+const checkbox = document.querySelector('#agreement');
+checkbox.addEventListener('change', () => {
+  const submitBtn = document.querySelector('#submit-btn');
+  if (checkbox.checked) {
+    submitBtn.removeAttribute('disabled');
+  } else {
+    submitBtn.setAttribute('disabled', true);
+  }
+});
