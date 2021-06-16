@@ -36,8 +36,8 @@
 }
 #entrar { 
     padding: 10px;
-    background-color: red;
-    color: black;
+    background-color: darkgreen;
+    color: white;
     border-radius: 10px;
     flex: 1;
 }
