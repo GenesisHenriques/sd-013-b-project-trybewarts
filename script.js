@@ -5,10 +5,10 @@ const botaoEntrar = document.getElementById('button-entrar');
 
 function login() {
   if (inputLogin.value !== 'tryber@teste.com' && inputSenha.value !== '123456') {
-      alert('Login ou senha inválidos.')
+    alert('Login ou senha inválidos.');
   }
   if (inputLogin.value === 'tryber@teste.com' && inputSenha.value === '123456') {
-      alert('Olá, Tryber!')
+    alert('Olá, Tryber!');
   }
 }
 botaoEntrar.addEventListener('click', login);
