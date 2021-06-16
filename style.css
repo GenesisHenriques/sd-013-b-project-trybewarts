@@ -87,9 +87,9 @@ textarea {
 
 .radio-forms {
   display: flex;
-  align-items: center;
 }
 
-.radio-forms label {
+.radio-forms div {
+  display: flex;
   margin-right: 10px;
 }
