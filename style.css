@@ -10,6 +10,14 @@
   justify-content: space-between;
 }
 
+.loginBox {
+  border-radius: 4px;
+}
+
 .trybewarts-header-logo {
   height: 50px;
+}
+
+.trybewarts-login {
+  display: flex;
 }
