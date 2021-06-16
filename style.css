@@ -37,11 +37,17 @@ main {
 }
 
 #email-and-home{
-  background-color: red;
+
   padding: 20px;
 }
 
 #label-family{
+  
+  display: flex;
+  flex-direction: column;
+}
+
+#radio-buttons-family {
   display: flex;
   flex-direction: column;
 }
