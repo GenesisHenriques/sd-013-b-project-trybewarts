@@ -27,6 +27,22 @@
   flex-direction: column;
 }
 
+.name-container {
+  display: flex;
+  margin: 10px;
+}
+
+#input-name {
+  width: 300px;
+  padding: 5px;
+}
+
+#input-lastname {
+  width: 300px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
