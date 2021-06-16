@@ -1,4 +1,4 @@
-function login () {
+function login() {
   const usuario = document.querySelector('#login');
   const senha = document.querySelector('#senha');
   if (usuario.innerText === 'tryber@teste.com' || senha.value === '123456') {
