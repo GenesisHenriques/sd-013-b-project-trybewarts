@@ -1,16 +1,16 @@
-//Padrão email e senha ao clicar no botão
+// Padrão email e senha ao clicar no botão
 
 function pattern() {
-  let button = document.getElementById('button');
-  button.addEventListener('click', function(){
-    let email = document.getElementById('email');
-    let password = document.getElementById('password');
+  const button = document.getElementById('button');
+  button.addEventListener('click', () => {
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
     if (email.value === 'tryber@teste.com' && password.value === '123456') {
-      alert('Olá, Tryber!')
-    } 
-    if (email.value !== 'tryber@teste.com' && password.value !== '123456') {
-      alert('Login ou senha inválidos.')
+      alert('Olá, Tryber!');
     }
-  })
+    if (email.value !== 'tryber@teste.com' || password.value !== '123456') {
+      alert('Login ou senha inválidos.');
+    }
+  });
 }
-pattern()
+pattern();
