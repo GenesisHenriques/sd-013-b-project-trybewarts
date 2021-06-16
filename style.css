@@ -18,3 +18,19 @@
   justify-content: space-between;
   flex-direction: row;
 }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  width: 500px;
+}
