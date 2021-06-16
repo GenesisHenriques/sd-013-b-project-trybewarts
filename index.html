@@ -25,6 +25,21 @@
 
     <main>
       <form id="evaluation-form">
+        <div>
+          <input type="text" id="input-name" placeholder="Nome">
+          <input type="text" id="input-lastname" placeholder="Sobrenome">
+        </div>
+
+        <div>
+        <input type="text" id="input-email" placeholder="Email">
+        <select name="" id="house">
+          <option value="Gitnória" id="gitnoria-house"></option>
+          <option value="Reactpuff" id="reactpuff-house"></option>
+          <option value="Corvinode" id="corvinode-house"></option>
+          <option value="Pythenira" id="pytherina-house"></option>        
+        </select>
+        </div>
+      
         <label id="label-family" for="">Qual sua família?</label>
         <input type="radio" name="family" value="Frontend">
         <input type="radio" name="family" value="Backend">
@@ -36,16 +51,11 @@
         <input type="checkbox" value="React" class="subject">
         <input type="checkbox" value="SQL" class="subject">
         <input type="checkbox" value="Python" class="subject">
+
+        <label class="textarea" for="textarea">Deixe seu comentário:</label>
+        <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
       </form>
-          <input type="text" id="input-name" placeholder="Nome">
-          <input type="text" id="input-lastname" placeholder="Sobrenome">
-          <input type="text" id="input-email" placeholder="Email">
-        <select name="" id="house">
-          <option value="Gitnória" id="gitnoria-house"></option>
-          <option value="Reactpuff" id="reactpuff-house"></option>
-          <option value="Corvinode" id="corvinode-house"></option>
-          <option value="Pythenira" id="pytherina-house"></option>        
-        </select>
+
 
       <aside>
         <img id= "trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
