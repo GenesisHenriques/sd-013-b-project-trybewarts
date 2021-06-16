@@ -4,7 +4,7 @@
   height: 100px;
   padding: 10px 50px;
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .trybewarts-header-logo {
@@ -12,7 +12,7 @@
 }
 
 .trybewarts-login {
-  display: flex; 
+  display: flex;
 }
 
 #trybewarts-header-title {
