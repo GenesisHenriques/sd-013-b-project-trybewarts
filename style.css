@@ -19,7 +19,6 @@
 .trybewarts-login {
   display: flex;
 }
-<<<<<<< HEAD
 
 footer {
   bottom: 0;
@@ -32,24 +31,3 @@ footer {
   align-items: center;
   justify-content: center;
 }
-=======
-  
-main {
-display: flex;
-flex-flow: row-reverse wrap;
-}
-  
-#trybewarts-forms-logo {
-display: flex;
-flex-flow: row wrap;
-align-self: flex-end;
-height: 500px;
-}
-  
-#evaluation-form {
-display: flex;
-flex-flow: column;
-width: 675px;
-}
-  
->>>>>>> 7d8e5579403f4df014e1e588e36e588c95b9a5c3
