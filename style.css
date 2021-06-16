@@ -53,3 +53,13 @@ form button {
 main {
   display: flex;
 }
+}
+
+.header img {
+  width: 70px;
+  height: 70px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
