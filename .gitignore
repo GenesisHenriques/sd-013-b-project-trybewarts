@@ -4,3 +4,4 @@ cypress/reports
 cypress/screenshots
 .DS_Store
 package-lock.json
+cypress/fixtures/example.json
