@@ -5,7 +5,9 @@ function loginAlert() {
     const passwordInput = document.querySelector('.password');
 
     if (loginInput.value == '' && passwordInput.value == '') {
-        alert ('Login ou senha inválidos');
+        alert ('Login ou senha inválidos.');
+    } else {
+        alert ('Olá, Tryber!');
     }
 }
 
