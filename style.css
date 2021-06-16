@@ -6,7 +6,7 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -17,4 +17,16 @@ main {
 #evaluation-form {
   display: flex;
   width: 675px;
+.trybewarts-login {
+  display: flex;
+}
+
+.login-input {
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.button {
+  width: 80px;
 }
