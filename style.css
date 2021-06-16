@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -10,9 +11,11 @@
   align-items: center;
   height: 6rem;
 }
+
 .trybewarts-header-logo {
   width: 5rem;
 }
+
 .trybewarts-login {
   display: flex;
 }
@@ -45,7 +48,6 @@ option {
 
 footer {
   bottom: 0;
-  /* position: absolute; */
   background-color: grey;
   width: 100%;
   text-align: center;
