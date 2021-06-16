@@ -29,3 +29,11 @@ function verifyLogin() {
 const btnLogar = document.querySelector('#btn-login');
 
 btnLogar.addEventListener('click', verifyLogin);
+
+//  Limita os comentários a 500 caracteres
+function limitComments() {
+  let commentBox = document.getElementsByTagName('textarea')[0];
+
+
+
+}
