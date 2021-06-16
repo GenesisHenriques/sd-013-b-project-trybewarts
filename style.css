@@ -9,10 +9,23 @@
   align-items: center;
 }
 
-.trybewarts-header-logo{
-  height: 50px;
-}
-
 .trybewarts-login {
   display: flex;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
