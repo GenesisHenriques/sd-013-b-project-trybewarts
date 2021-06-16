@@ -33,6 +33,12 @@ button {
   width: 675px;
 }
 
-main {
+.main {
   display: flex;
+}
+
+#trybewarts-forms-logo{
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
 }
