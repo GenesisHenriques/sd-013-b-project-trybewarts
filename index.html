@@ -24,6 +24,7 @@
     <form id="evaluation-form" action="">
 
       <h2>Forms</h2>
+      <br>
 
       <div class="first-forms">
         <input placeholder="Nome" type="text" name="" id="input-name">
@@ -42,14 +43,100 @@
       <hr>
        <br>
 
-      <div>
-        <label for="" id="label-family">Qual sua família?</label>  
+      <div class="form-familia">
+        <label for="" id="label-family">Qual sua família?</label> 
+        <br> 
 
-          <input type="text" name="family" id="" value="Frontend">
-          <input type="text" name="family" id="" value="Backend">
-          <input type="text" name="family" id="" value="FullStack">
+        <input type="radio" name="family" id="Frontend" value="Frontend">
+        <label for="Frontend"> Frontend</label><br>
+
+        <input type="radio" name="family" id="Backend" value="Backend">
+        <label for="Backend">Backend</label><br>
+
+        <input type="radio" name="family" id="FullStack" value="FullStack" > 
+        <label for="FullStack">FullStack</label>
       </div> 
-   
+
+      <div class="form-conteudo">
+        <label for="" id="label-content"> Qual conteúdo você está com mais vontade de aprender?</label>
+        <br>  
+        <label for="HoFs">HoFs</label>
+        <input type="checkbox" name="HoFs" class="subject" value="HoFs">
+
+        <label for="Jest">Jest</label>
+        <input type="checkbox" name="Jest" class="subject" value="Jest">
+
+        <label for="Promises">Promises</label>
+        <input type="checkbox" name="Promises" class="subject" value="Promises">
+
+        <label for="React">React</label>
+        <input type="checkbox" name="React" class="subject" value="React">
+
+        <label for="SQL">SQL</label>
+        <input type="checkbox" name="SQL" class="subject" value="SQL">
+
+        <label for="Python">Python</label>
+        <input type="checkbox" name="Python" class="subject" value="Python">
+
+      </div>
+
+      <br>
+      <hr>
+       <br>
+
+      <div class="radio-forms">
+        <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+
+        <div>
+          <input type="radio" name="rate" id="1" value="">
+          <label for="1">1</label>
+        </div>
+        <div>
+          <input type="radio" name="rate" id="2" value="">
+          <label for="2">2</label>
+        </div>
+        <div>
+          <input type="radio" name="rate" id="3" value="">
+          <label for="3">3</label>
+        </div>
+        <div>
+          <input type="radio" name="rate" id="4" value="">
+          <label for="4">4</label>
+        </div>
+        <div>
+          <input type="radio" name="rate" id="5" value="">
+          <label for="5">5</label>
+        </div>
+        <div>
+          <input type="radio" name="rate" id="6" value="">
+          <label for="6">6</label>
+        </div>
+        <div>
+          <input type="radio" name="rate" id="7" value="">
+          <label for="7">7</label>
+        </div>
+        <div>
+          <input type="radio" name="rate" id="8" value="">
+          <label for="8">8</label>
+        </div>
+        <div>
+          <input type="radio" name="rate" id="9" value="">
+          <label for="9">9</label>
+        </div>
+        <div>
+          <input type="radio" name="rate" id="10" value="">
+          <label for="10">10</label>
+        </div>
+        <div>
+
+      </div>
+      <br>
+      <div>
+        <label class="textarea">Deixe seu comentário:</labe> 
+          <br>
+        <textarea name="textarea" id="textarea" maxlength="500" placeholder="500"></textarea>
+      </div>
+    </div>
     </form>
 
     <div id="photo">
