@@ -6,12 +6,12 @@
   display: flex;
   background-color: rgb(50, 167, 145); 
   height: 100px;
-  justify-content: space-between; }
+  justify-content: space-between; 
+  text-align: center;}
 
 
-.trybewarts-header-logo {
-
-  
+#trybewarts-header-title{
+  align-self: center;
 }
 
 .trybewarts-login{
