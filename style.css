@@ -5,28 +5,24 @@
 
 .header {
   background-color: rgb(50, 167, 145);
+  padding: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .trybewarts-header-logo {
-  padding: 10px;
+  height: 60px;
 }
 
 .trybewarts-login {
   color: white;
   padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 
 #trybewarts-header-title {
   color: white;
   padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 
 main {
