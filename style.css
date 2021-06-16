@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -11,13 +10,32 @@
   align-items: center;
   height: 6rem;
 }
-
 .trybewarts-header-logo {
   width: 5rem;
 }
-
 .trybewarts-login {
   display: flex;
+}
+
+main {
+  display: flex;
+  flex-flow: row-reverse wrap;
+}
+
+#trybewarts-forms-logo {
+  display: flex;
+  flex-flow: row wrap;
+  align-self: flex-end;
+  height: 500px;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-flow: column;
+  width: 675px;
+}
+option {
+  color: black;
 }
 
 footer {
