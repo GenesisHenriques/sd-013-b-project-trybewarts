@@ -20,12 +20,13 @@ main {
 }
 
 #evaluation-form {
+  width: 675px;
   flex-direction: column;
   display: flex;
-  max-width: 675px;
+  
 }
 
-#side-img {
+#trybewarts-forms-logo {
   height: 500px;
 }
 
