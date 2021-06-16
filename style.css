@@ -38,3 +38,21 @@ main {
 #trybewarts-forms-logo {
   width: 500px;
 }
+
+.nome-sobrenome {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  /* border: 5px solid red; */
+}
+
+#trybewarts-forms-logo {
+  display: flex;
+  justify-content: flex-end;
+  /* border: 5px solid red; */
+}
+
+.email-casa {
+  display: flex;
+  /* border: 5px solid red; */
+}
