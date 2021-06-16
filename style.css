@@ -39,7 +39,6 @@ body {
 
 #familias {
   flex-wrap: wrap;
-  flex-direction: column;
   width: 150px;
   padding: 10px;
   margin-left: 25px;
@@ -50,7 +49,7 @@ body {
 }
 
 /* INPUTS */
-.input-text, select {
+.input-text , select {
   height: 40px;
   width: 200px;
   margin-bottom: 20px;
