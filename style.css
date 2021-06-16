@@ -41,13 +41,15 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  width: 100%;
 }
 
 #evaluation-form .container input {
   width: 50%;
 }
 
-#evaluation-form .container select {
+#evaluation-form .container #label-house , select {
+  margin-left: 10px;
   width: 50%;
 }
 
@@ -55,16 +57,22 @@ main {
   height: 500px;
 }
 
-#label-family-box {
+.family-box {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.column {
   flex-direction: column;
-  border: 2px solid black;
 }
 
-#label-family-box input {
-  display: flex;
+.wrap {
+  flex-wrap: wrap;
 }
 
-#label-family-box label {
+#rate-container {
   display: flex;
+  width: 100%;
 }
