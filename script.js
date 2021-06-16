@@ -13,6 +13,6 @@ function validateLogin() {
   }
 }
 
-window.onload = function() {
+window.onload = function main() {
   submitBtn.addEventListener('click', validateLogin);
 }
