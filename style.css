@@ -17,8 +17,14 @@ main {
   display: flex;
 }
 
-form {
+#evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+}
+
+input {
+  width: 30%;
+  border-radius: 5px;
+  height: 30px;;
 }
