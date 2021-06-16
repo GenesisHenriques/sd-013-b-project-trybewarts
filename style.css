@@ -66,10 +66,19 @@
   width: 300px;
 }
 
-#label-family {
-  margin-bottom: 5px;
+.family {
+  margin: 7px;
 }
 
 .radios {
   margin: 3px;
+}
+
+.content {
+  margin-top: 7px;
+  margin-left: 7px;
+}
+
+.subject {
+  margin: 4px;
 }
