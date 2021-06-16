@@ -11,3 +11,15 @@ function entrar() {
 }
 
 loginButton.addEventListener('click', entrar);
+
+function enableBtn() {
+  if (check.checked) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+}
+
+const check = document.getElementById('agreement');
+const submitBtn = document.getElementById('submit-btn');
+check.addEventListener('click', enableBtn)
