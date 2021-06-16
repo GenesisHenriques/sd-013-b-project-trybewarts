@@ -33,6 +33,6 @@ main {
   flex-direction: column;
 }
 
-#trybewarts-header-logo {
+.trybewarts-header-logo {
   height: 500px;
 }
