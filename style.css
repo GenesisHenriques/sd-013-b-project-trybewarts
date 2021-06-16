@@ -33,7 +33,6 @@ main {
   height: 500px;
 }
 
-
 #evaluation-form {
   display: flex;
   flex-direction: column;
@@ -45,35 +44,21 @@ main {
   padding: 20px;
 }
 
-#email-and-home{
-
+#email-and-home {
   padding: 20px;
 }
 
-#label-family{
-  
+#label-family {
   display: flex;
   flex-direction: column;
 }
 
-#radio-buttons-family {
-  display: flex;
-  flex-direction: column;
-}
-
-#agreement-section {
+.checkboxes {
   display: flex;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  background-color: aquamarine;
-  height: 50px;
-}
-
-footer h3 {
-  color: white;
+  text-align: center;
+  background-color: azure;
+  padding: 20px;
 }
