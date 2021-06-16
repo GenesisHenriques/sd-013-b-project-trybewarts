@@ -5,12 +5,10 @@
   align-items: center;
 }
 
-.header image{
-	width: 5%;
-	height: 5%;
-}
 
-#header-login{
+
+.trybewarts-login{
+	display: flex;
 	padding-right: 5%;
 }
 

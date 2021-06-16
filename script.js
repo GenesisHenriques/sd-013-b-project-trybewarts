@@ -1,8 +1,8 @@
 function welcomeTrybe() {
-  const valLogin = document.getElementById('login').value;
-  const valSenha = document.getElementById('senha').value;
+  const valLogin = document.getElementById('Login').value;
+  const valSenha = document.getElementById('Senha').value;
 
-  if (valLogin !== ('tryber@teste.com' || valSenha !== '12345')) {
+  if (valLogin !== ('tryber@teste.com') && valSenha !== ('12345')) {
     alert('Login ou senha inválidos.');
   } else {
     alert('Olá, Tryber!');
