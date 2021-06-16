@@ -8,3 +8,5 @@ function entrar() {
     alert('Login ou senha inválidos.');
   }
 }
+
+console.log(entrar);
