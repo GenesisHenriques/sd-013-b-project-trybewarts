@@ -12,10 +12,38 @@ html , body {
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 100px;
 }
 
-<<<<<<< HEAD
+.header img {
+  width: 100px;
+  height: 100px;
+}
+
+header .trybewarts-login{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-right: 100px;
+}
+
+form input {
+  width: 35%;
+  height: 35px;
+  border-radius: 5px;
+  margin: 8px;
+}
+
+form button {
+  width: 20%;
+  height: 35px;
+  border-radius: 5px;
+}
+
+
 #evaluation-form {
   display: flex;
   width: 675px;
@@ -24,9 +52,4 @@ html , body {
 
 main {
   display: flex;
-=======
-.header img {
-  width: 70px;
-  height: 70px;
->>>>>>> 9fa1f6c0fd8c5d1cd9537a4681ece7af2b71fe48
 }
