@@ -60,8 +60,3 @@ main {
   display: flex;
   margin: 10px 30px;
 }
-
-.containerFamilia {
-  display: flex;
-  flex-direction: column;
-}
