@@ -17,7 +17,26 @@
       <button class="Enter">Entrar</button>
     </form>
   </header>
-
+  <main>
+    <form id="evaluation-form">
+        <input id="input-name" type="text" placeholder="Nome">
+        <input id="input-lastname" type="text" placeholder="Sobrenome">
+        <input id="input-email" type="email" placeholder="Email">
+        <select id="house">
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+        </select>
+        <div class="radioButtons">
+            <label id="label-family">Qual sua família?</label>
+            <label for="Frontend"><input id="Frontend" type="radio" value="Frontend" name="family">Frontend</label> 
+            <label for="Backend"><input id="Backend" type="radio" value="Backend" name="family">Backend</label>
+            <label for="FullStack"><input id="FullStack" type="radio" value="FullStack" name="family">FullStack</label>
+        </div>
+    </form>
+    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
+  </main>
   <script src="script.js"></script>
 </body>
 </html>

@@ -46,3 +46,46 @@
 .Enter {
   padding: 3px;
 }
+
+#evaluation-form {
+  height: 500px;
+  margin-top: 100px;
+  width: 675px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aquamarine;
+}
+
+main {
+  display: flex;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#input-name {
+  display: flex;
+  align-self: flex-start;
+}
+
+#input-lastname {
+  display: flex;
+  align-self: flex-end;
+}
+
+#input-email {
+  display: flex;
+  align-self: flex-start;
+}
+
+#house {
+  display: flex;
+  align-self: flex-end;
+}
+
+.radioButtons {
+  display: flex;
+  flex-direction: column;
+}

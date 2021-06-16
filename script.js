@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 function checkLogin() {
   const login = document.querySelector('.Login');
   const password = document.querySelector('.Password');
@@ -11,6 +9,5 @@ function checkLogin() {
     alert('Login ou senha inválidos.');
   }
 }
->>>>>>> db4c89fbf945ac8ea6a610c9abcf13ff58c2973d
 const loginButton = document.querySelector('.Enter');
 loginButton.addEventListener('click', checkLogin);
