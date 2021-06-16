@@ -21,8 +21,9 @@ function verifyLogin() {
 }
 
 const btnLogar = document.querySelector('#btn-login');
-const textArea = document.querySelector('#text-area');
+const textArea = document.querySelector('#textarea');
 const object = document.getElementById('agreement');
+const counter = document.querySelector('#counter');
 
 btnLogar.addEventListener('click', verifyLogin);
 
@@ -30,9 +31,10 @@ function validationComentario(event) {
   const elementoAlvo = event.target;
   const text = elementoAlvo.value;
   const larguraText = text.length;
+  counter.innerText = 500 - larguraText;
   if (larguraText >= 500) {
     elementoAlvo.blur();
-    document.getElementById('text-area').readOnly = true;
+    document.getElementById('textarea').readOnly = true;
   }
 }
 
