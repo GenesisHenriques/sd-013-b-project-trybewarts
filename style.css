@@ -36,3 +36,7 @@ main {
 .trybewarts-forms-logo {
   height: 500px;
 }
+
+.verification {
+  display: flex;
+}
