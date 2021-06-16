@@ -1,4 +1,27 @@
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
+  justify-content: space-between;
+}
+
+.header img {
+  width: 100px;
+  padding: 10px;
+}
+
+.trybewarts-login {
+  align-items: center;
+  display: flex;
+  width: 500px;
+}
+
+.form-control {
+  margin-right: 8px;
+  width: 500px;
+}
+
+.trybewarts-login .btn {
+  background-color: purple;
+  color: white;
+  width: 500px;
 }
