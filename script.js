@@ -17,7 +17,6 @@ agreement.addEventListener('change', () => {
   } else {
     button.disabled = true;
   }
- 
   // Aprendi sobre button.disabled, neste link
   // https://flexiple.com/disable-button-javascript/
 });
