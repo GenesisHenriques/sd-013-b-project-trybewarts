@@ -13,3 +13,13 @@
   width: 80px;
   height: 80px;
 }
+
+.main-container {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  justify-content: space-between;
+  width: 675px;
+}
