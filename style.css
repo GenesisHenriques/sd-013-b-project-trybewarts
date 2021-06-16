@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+body {
+  background-color: whitesmoke;
+}
+
 .header {
   align-items: center;
   background-color: rgb(50, 167, 145);
@@ -45,25 +49,44 @@
   padding: 10px 20px;
 }
 
-.trybewarts-login input::-webkit-outer-spin-button,
-.trybewarts-login input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-.trybewarts-login input[type=number] {
-  -moz-appearance: textfield;
-}
-
 main {
+  padding: 20px 80px;
   display: flex;
+  justify-content: space-between;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
+  text-align: center;
   width: 675px;
+}
+
+#evaluation-form h2 {
+  margin-bottom: 20px;
+}
+
+#evaluation-form div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#evaluation-form input {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  width: 300px;
+}
+
+#evaluation-form select {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  width: 275px;
 }
 
 #trybewarts-forms-logo {
