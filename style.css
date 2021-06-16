@@ -10,6 +10,15 @@
   display: flex;
 }
 
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
 
 /* Fim de Trecho de Código do Genesis */
 

@@ -1,28 +1,21 @@
 // Ínicio de Trecho de Código do Genesis
-document.getElementById("btnLogin").addEventListener("click", function(event){
-  event.preventDefault()
-  validatingLogin();
-});
-
-
-
 function validatingLogin() {
-  
-  alert('foi')
-
   const login = document.getElementById('login');
   const password = document.getElementById('password');
 
   if (login.value === 'tryber@teste.com' && password.value === '123456') {
-  alert('Olá, Tryber!');
+    alert('Olá, Tryber!');
   } else {
-  alert('Login ou senha inválidos.');
+    alert('Login ou senha inválidos.');
   }
 }
 
+function setPreventDefault(event) {
+  event.preventDefault();
+  validatingLogin();
+}
 
-
-
+document.getElementById('btnLogin').addEventListener('click', setPreventDefault);
 
 // Fim de Trecho de Código do Genesis
 
