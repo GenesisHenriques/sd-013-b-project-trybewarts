@@ -56,7 +56,9 @@ body {
 }
 
 #trybewarts-forms-logo {
+  width: 500px;
   height: 500px;
+  order: 2;
 }
 
 #family-container {
