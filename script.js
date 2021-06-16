@@ -27,12 +27,10 @@ function generateRadiosBtn() {
     rate.value = index;
     yourRate.appendChild(rate);
     yourRate.appendChild(rateLabel);
-
   }
 }
 // Posicione os radio buttons para ficar lado a lado
 // Posicione os radio buttons à direita da label
-
 
 btnLogin.addEventListener('click', verifyLogin);
 generateRadiosBtn();
