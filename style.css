@@ -39,6 +39,10 @@ main {
   height: 500px;
 }
 
+.input-section {
+  display: flex;
+}
+
 .family-section {
   display: flex;
   flex-direction: column;
