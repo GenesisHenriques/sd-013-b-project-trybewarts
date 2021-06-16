@@ -6,4 +6,35 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 60px;
+}
+
+form {
+  display: flex;
+}
+
+#trybewarts-header-title {
+  display: flex;
+  text-align: center;
+
+}
+
+.trybewarts-header-logo {
+  width: 40px;
+  height: 40px;
+}
+
+button {
+  background-color: rgb(57, 2, 129);
+  color: white;
+  border-radius: 5px;
+  width: 80px;
+  margin-left: 10px;
+}
+
+#senha {
+  margin-left: 10px;
 }
