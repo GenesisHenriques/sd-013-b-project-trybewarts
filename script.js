@@ -13,14 +13,14 @@ function loginAlert() {
 
 button.addEventListener('click', loginAlert);
 
-document.getElementById('submit-btn').disabled = true;
-
 const checkbox = document.getElementById('agreement');
 
-checkbox.addEventListener('click', (event) => {
+const submitBtn = document.getElementById('submit-btn');
+submitBtn.disabled = true;
+checkbox.addEventListener('click', () => {
   if (checkbox !== null) {
-    document.getElementById('submit-btn').disabled = false;
+    submitBtn.disabled = false;
   } else {
-    document.getElementById('submit-btn').disabled = true;
+    submitBtn.disabled = true;
   }
 });
