@@ -1,4 +1,3 @@
-//Login e Senha
 const loginButton = document.querySelector('.Enter');
 loginButton.addEventListener('click', function () {
     const login = document.querySelector('.Login');
@@ -8,7 +7,7 @@ loginButton.addEventListener('click', function () {
     if (login.value === correctLogin && password.value === correctPassword) {
       alert('Olá, Tryber!');
     } else {
-      alert('Login ou senha inválidos'); 
+      alert('Login ou senha inválidos.'); 
     }
     
 });
