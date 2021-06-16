@@ -34,7 +34,9 @@
           <option id="pytherina-house" value="">Pytherina</option>
         </select>
       </div>
+
       <hr>
+
       <div class="forms-list">
         <h3 id="label-family">Qual sua família?</h3><br>
         <input type="radio" id="familia-frontend" name="family" value="Frontend">
@@ -46,26 +48,52 @@
       </div> 
   
       <div class="forms-list">
-        <h3>Qual conteúdo você está com mais vontade de aprender?</h3>
-        <input type="radio" id="hofs" name="gender" value="hofs">
-        <label for="male">HoFs</label><br>
-        <input type="radio" id="jest" name="gender" value="jest">
-        <label for="female">Jest</label><br>
-        <input type="radio" id="promisses" name="gender" value="promisses">
-        <label for="other">Promisses</label>
-        <input type="radio" id="react" name="gender" value="react">
-        <label for="male">React</label><br>
-        <input type="radio" id="sql" name="gender" value="sql">
-        <label for="female">SQL</label><br>
-        <input type="radio" id="python" name="gender" value="python">
-        <label for="other">python</label>
+        <h3 id="label-content">Qual conteúdo você está com mais vontade de aprender?</h3>
+        <input type="checkbox" id="hofs" name="hofs" value="HoFs">
+        <label for="hofs">HoFs</label><br>
+        <input type="checkbox" id="jest" name="jest" value="Jest">
+        <label for="jest">Jest</label><br>
+        <input type="checkbox" id="promises" name="promises" value="Promises">
+        <label for="promises">Promisses</label>
+        <input type="checkbox" id="react" name="react" value="React">
+        <label for="react">React</label><br>
+        <input type="checkbox" id="sql" name="sql" value="SQL">
+        <label for="sql">SQL</label><br>
+        <input type="checkbox" id="python" name="python" value="Python">
+        <label for="python">python</label>
       </div> 
 
-      <button id="submit-btn" type="submit">Enviar</button> 
+      <hr>
+      
+      <div class="rate">
+        <label id="label-rate">Como você avalia a Trybewarts?</label>
+        <input id="label-rate" type="radio" value="1" name="rate"> 1
+        <input id="label-rate" type="radio" value="2" name="rate"> 2
+        <input id="label-rate" type="radio" value="3" name="rate"> 3
+        <input id="label-rate" type="radio" value="4" name="rate"> 4
+        <input id="label-rate" type="radio" value="5" name="rate"> 5
+        <input id="label-rate" type="radio" value="6" name="rate"> 6
+        <input id="label-rate" type="radio" value="7" name="rate"> 7
+        <input id="label-rate" type="radio" value="8" name="rate"> 8
+        <input id="label-rate" type="radio" value="9" name="rate"> 9
+        <input id="label-rate" type="radio" value="10" name="rate"> 10 
+      </div>
+
+      <label class="textarea" for="textarea">Deixe seu comentário:</label>
+      <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea> 
+
+      <div class="terms">
+        <label id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" id="agreement" name="" value="">
+      </div>
+
+      <button id="submit-btn" type="submit" disabled>Enviar</button> 
     </form> 
   </main> 
 
   <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
+  
+  <footer id="footer">Direitos reservados à Trybewarts©</footer>
   <script src="script.js"></script>
 </body>
 </html>
