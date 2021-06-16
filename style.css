@@ -12,11 +12,13 @@
 
 main {
   display: flex;
+  flex-direction: column;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
+  flex-direction: column;
 }
 
 .trybewarts-login {
