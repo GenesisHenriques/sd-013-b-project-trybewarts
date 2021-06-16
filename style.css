@@ -4,8 +4,7 @@
   height: 100px;
   padding: 10px 50px;
   align-items: center;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
 }
 
 .trybewarts-header-logo {
@@ -27,3 +26,14 @@ input {
 button {
   margin: 2px;
 }
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+main {
+  display: flex;
+}
+
