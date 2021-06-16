@@ -28,7 +28,7 @@ header h1 {
     display: flex;
 }
 
-input {
+.trybewarts-login input {
     padding: 5px;
     height: 23px;
     margin: 0 5px;
@@ -62,6 +62,14 @@ main {
     justify-content: space-evenly;
 }
 
+.forms-div input {
+    padding: 5px;
+    height: 23px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+}
+
 #house {
     width: 140px;
     padding: 5px;
@@ -81,4 +89,17 @@ main {
 
 #trybewarts-forms-logo {
     height: 300px;
+}
+
+#family-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#family-div,
+#family-div span,
+#family-div label {
+    padding: 5px;
 }
