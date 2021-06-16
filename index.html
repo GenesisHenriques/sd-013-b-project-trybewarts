@@ -14,8 +14,8 @@
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form method="GET" class="trybewarts-login">
-      <label for="input_login"><input type="text" id="input_login" placeholder="Login"></label>
-      <label for="input_senha"><input type="password" id="input_senha" placeholder="Senha"></label>
+      <input type="text" id="input_login" placeholder="Login">
+      <input type="password" id="input_senha" placeholder="Senha">
       <button type="button" id="btn_logar">Logar</button>
     </form>
   </header>
@@ -79,11 +79,19 @@
 
       <div>
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-        <input type="checkbox" name="agreement" id="agreement">
+        <input type="checkbox" name="agreement" id="agreement" required>
+      </div>
+
+      <div>
+        <button type="submit" id="submit-btn">Enviar</button>
       </div>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
   </main>
+  <footer id="footer">
+    <p>Direitos reservados à Trybewarts©</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 
