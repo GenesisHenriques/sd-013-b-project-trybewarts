@@ -33,7 +33,14 @@ main {
 #evaluation-form {
   display: flex;
   flex-basis: 675px;
-  flex-direction: column;
+  flex-flow: column;
+  border: 2px solid;
+}
+
+#evaluation-form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 #trybewarts-forms-logo {
