@@ -9,6 +9,6 @@ main {
 
 form {
   display: flex;
-  background-color: aqua;
+  flex-direction: column;
   width: 675px;
 }
