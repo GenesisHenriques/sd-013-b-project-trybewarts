@@ -82,3 +82,18 @@
 .subject {
   margin: 4px;
 }
+
+.avaliation {
+  margin: 7px;
+}
+
+.text {
+  margin: 7px;
+}
+
+#rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
