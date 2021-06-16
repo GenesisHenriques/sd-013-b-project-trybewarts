@@ -27,12 +27,16 @@ main {
   height: 500px;
 }
 
+#family-and-content {
+  display: flex;
+}
+
 #family {
   display: flex;
   flex-direction: column;
 }
 
-#content {
+#checkboxs {
   display: flex;
-  flex-direction: column;
 }
+
