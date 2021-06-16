@@ -1,9 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.header h1 {
+  color: white;
+}
+
+.header .trybewarts-header-logo {
+  width: 100px;
 }
 
 .header .trybewarts-login {
   display: flex;
+}
+
+.header .trybewarts-login input {
+  border: none;
+  border-radius: 8px;
+  margin-right: 12px;
+  outline: none;
+  padding: 8px 12px;
+  width: 150px;
+}
+
+.header .trybewarts-login button {
+  background-color: purple;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  padding: 8px 32px;
+}
+
+.header .trybewarts-login button:hover {
+  filter: brightness(95%);
+}
+
+.header .trybewarts-login button:active {
+  filter: brightness(75%);
 }
