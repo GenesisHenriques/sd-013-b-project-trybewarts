@@ -14,25 +14,35 @@
         <div class="forms-login">
                 <input id ='input-login' type="email" placeholder="Login" name='login'>
                 <input id ='input-senha' type="password" placeholder="Senha" name='login'>
-                <button id='entrar'>Magick Begin</button>
+                <button onclick='trybelogin()' id='entrar'>Magick Begin</button>
             </div>
       </form>
     </header>
     <main>
       <div id="left-side">
         <form action="" id="evaluation-form">
-          <div class="form-item">
-          <label for="input-name">Nome: </label>
+          <div id="name-section">
+          <div>
           <input type="text" name="name" id="input-name" placeholder="Nome">
         </div>
-        <div class="form-item">
-          <label for="input-lastname">Sobrenome: </label>
+        <div>
           <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">
         </div>
-        <div class="form-item">
-          <label for="input-email">Email: </label>
+      </div>
+      <div id="other-info-section">
+        <div>
           <input type="email" name="email" id="input-email" placeholder="Email">
         </div>
+        <div class="form-item house">
+          <label for="house">Casa: </label>
+          <select name="house" id="house">
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+          </select>
+        </div>
+      </div>
         </form>
     </div>
     <div id="right-side">
@@ -40,4 +50,6 @@
     </div>
     </main>
 </body>
+<script src="script.js"></script>
 </html>
+

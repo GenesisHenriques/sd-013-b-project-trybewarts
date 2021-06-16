@@ -1,20 +1,48 @@
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
-header {
-    background-color: rgb(50, 167, 145);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    width: 100%;
+
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 8vh;
 }
+
 .trybewarts-header-logo {
-    width: 5%;
+  height: 100%;
 }
+
+main {
+  display: flex;
+  margin-top: 8vh;
+}
+
+#entrar { 
+  padding: 10px;
+  background-color: darkgreen;
+  color: white;
+  border-radius: 10px;
+  flex: 1;
+  cursor: pointer;
+}
+
+#evaluation-form{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  background-color: thistle;
+}
+
 .forms-login {
     display: flex;
 }
@@ -24,54 +52,87 @@ header {
     align-items: center;
     padding: 10px;
 }
+
+#left-side {
+  display: flex;
+  justify-content: center;
+  flex-basis: 50%;
+  flex-grow: 1;
+  background-color: red;
+  
+}
+
+#right-side {
+  display: flex;
+  justify-content: center;
+  flex-basis: 50%;
+  flex-grow: 1;
+  background-color: blue;
+}
+
+#trybewarts-forms-logo {
+  width: 500px;
+}
+
 #input-login {
     padding: 15px;
     border: 1px solid rgb(50, 167, 145);
     flex: 1;
     border-radius: 5px;
+    margin: 0px 10px;
 }
 #input-senha {
     padding: 15px;
     border: 1px solid rgb(50, 167, 145);
     flex: 1;
     border-radius: 5px;
+    margin: 0px 5px;
 }
-#entrar { 
-    padding: 10px;
-    background-color: darkgreen;
-    color: white;
-    border-radius: 10px;
-    flex: 1;
+
+#name-section {
+  display: flex;
 }
-main {
-    display: flex;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #trybewarts-forms-logo {
-    height: 500px;
-  }
-  
-  #left-side {
-    flex-basis: 50%;
-    flex-grow: 1;
-    background-color: red;
-  }
-  
-  #right-side {
-    display: flex;
-    flex-basis: 50%;
-    flex-grow: 1;
-    background-color: blue;
-    justify-content: center ;
-  }
-  
-  .form-item {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-  } 
+
+#name-section div {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: tomato;
+  width: 50%;
+}
+
+#name-section input {
+  padding: 15px 10px;
+  border-radius: 20px;
+  flex-grow: 1;
+}
+
+#other-info-section {
+  display: flex;
+}
+
+#other-info-section div {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: tomato;
+  align-items: center;
+  width: 50%;
+}
+
+#other-info-section input{
+  padding: 15px 10px;
+  border-radius: 20px;
+  flex-grow: 1; 
+}
+
+#other-info-section select{
+  padding: 15px 10px;
+  border-radius: 20px;
+  flex-grow: 1; 
+}
+
+#other-info-section label{
+  padding: 15px 10px;
+  font-size: 22px;
+
+}
+
