@@ -1,12 +1,16 @@
-<<<<<<< HEAD
 const loginInput = document.querySelector('#login');
 const passwordInput = document.querySelector('#password');
 const btnLogin = document.querySelector('#btn-login');
 
 function verifyLogin() {
-  const loginCorrect = '';
-  const passwordCorrect = '';
-  if 
+  const loginCorrect = 'tryber@teste.com';
+  const passwordCorrect = '123456';
+  if (loginInput != loginCorrect && passwordInput != passwordCorrect) {
+    alert('Login ou senha inválidos!');
+  }
+  else {
+    alert('Olá, Tryber!');
+  }
 }
-=======
->>>>>>> e9f3a982f14f39024a1a8c0ff9eacfa8e3dde62b
+
+btnLogin.addEventListener('click', verifyLogin);
