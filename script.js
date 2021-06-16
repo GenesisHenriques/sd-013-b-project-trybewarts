@@ -9,7 +9,7 @@ function submitForm(event) {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');
-  }      
+  }  
 }
 
 button.addEventListener('click', submitForm);
