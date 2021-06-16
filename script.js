@@ -1,4 +1,4 @@
-function authenticateLogin() {
+function authenticateLogin() { // função para autentificar o login
   const inputEmail = document.querySelector('#login');
   const inputPassword = document.querySelector('#senha');
   const fail = 'Login ou senha inválidos.';
@@ -12,13 +12,13 @@ function authenticateLogin() {
 const buttonLogin = document.querySelector('#buttonLogin');
 buttonLogin.addEventListener('click', authenticateLogin);
 
-function authenticateCheckboxAgreement() {
-  const inputAgreement = document.querySelector('agreement');
-  const submitBtn = document.getElementById('submit-btn');
-  if (inputAgreement.checked === true) {
-    submitBtn.disabled = false;
-  } else {
-    submitBtn.disabled = true;
+function authenticateCheckboxAgreement() { // função para a funcionalidade do botão;
+  const inputAgreement = document.querySelector('#agreement'); // recuperando o input;
+  const submitBtn = document.querySelector('#submit-btn'); // recuperando o button;
+  if (inputAgreement.checked === true) { // se houver a propriedade checked no input;
+    submitBtn.disabled = false; // não desabilite o botão;
+  } else { // caso contrario;
+    submitBtn.disabled = true; // desabilite o botão;
   }
 }
 
