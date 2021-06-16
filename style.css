@@ -22,14 +22,14 @@ main {
 #evaluation-form {
   flex-direction: column;
   display: flex;
-  max-width: 675px;
-}
-
-#side-img {
-  height: 500px;
+  width: 675px;
 }
 
 .input-radio {
   display: flex;
   flex-direction: column;
+}
+
+#trybewarts-header-logo {
+  height: 500px;
 }
