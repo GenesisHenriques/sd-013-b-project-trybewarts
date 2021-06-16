@@ -1,6 +1,6 @@
 .header {
-	background-color: rgb(50, 167, 145);
-	display: flex;
+  background-color: rgb(50, 167, 145);
+  display: flex;
 }
 
 main {
@@ -13,6 +13,21 @@ main {
   flex-direction: column;
 }
 
-#trybewarts-forms-logo{
+#trybewarts-forms-logo {
   height: 500px;
+}
+
+#casa-email , #nome-sobrenome {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#house , #input-email{
+  flex-grow: 1;
+  margin: 10px 10px;
+}
+
+#input-name , #input-lastname {
+  flex-grow: 1;
+  margin: 10px 10px;
 }
