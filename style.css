@@ -4,16 +4,16 @@
   justify-content: space-between;
 }
 
-.trybewarts-login{
+.trybewarts-login {
   display: flex;
   align-items: flex-start;
 }
 
-main{
+main {
   display: flex;
 }
 
-#evaluation-form{
+#evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
