@@ -1,6 +1,6 @@
 const loginInput = document.querySelector('#login');
 const passwordInput = document.querySelector('#password');
-const btnLogin = document.querySelector('#btn-login');
+const btnLogin = document.querySelector('#enviar');
 
 function verifyLogin() {
   const loginCorrect = 'tryber@teste.com';
