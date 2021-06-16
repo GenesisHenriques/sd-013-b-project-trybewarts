@@ -33,3 +33,11 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#top-form input {
+  width: 45%;
+}
+
+#house {
+  width: 40.3%;
+}
