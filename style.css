@@ -65,3 +65,11 @@
 #input-email {
   width: 300px;
 }
+
+#label-family {
+  margin-bottom: 5px;
+}
+
+.radios {
+  margin: 3px;
+}
