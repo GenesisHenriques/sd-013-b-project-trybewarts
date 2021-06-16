@@ -10,3 +10,17 @@ login.addEventListener('click', () => {
     window.alert('Olá, Tryber!');
   }
 });
+
+// checar se botão está selecionado
+const checkBtn = document.getElementById('agreement');
+const subBtn = document.getElementById('submit-btn');
+
+function submitAvailable() {
+  if (checkBtn.checked === false) {
+    subBtn.setAttribute('disabled', '');
+  } else if (checkBtn.checked === true) {
+    subBtn.removeAttribute('disabled');
+  }
+}
+submitAvailable();
+checkBtn.addEventListener('click', submitAvailable);
