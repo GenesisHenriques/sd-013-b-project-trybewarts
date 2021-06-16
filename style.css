@@ -25,3 +25,21 @@
   color: white;
   width: 500px;
 }
+
+.main , .form {
+  display: flex;
+}
+
+.form {
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  width: 500px;
+}
+
+#divInputNameAndLastname , #divInputEmailAndSelect {
+  display: flex;
+  flex-direction: row;
+}
