@@ -37,13 +37,12 @@
   display: flex;
 }
 
-.main {
-  display: flex;
-<<<<<<< HEAD
+.main {  
   justify-content:space-around;
   display: flex;
 }
-=======
-  justify-content: space-around;
+
+#label-content {
+  display: flex;
+  flex-direction: column;
 }
->>>>>>> 0a28a0043020ca4414937e7886d14a143a592408
