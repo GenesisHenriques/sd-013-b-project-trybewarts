@@ -5,10 +5,15 @@
 
 main {
   display: flex;
+  border: 3px solid black;
 }
 
-form {
+form #evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
+}
+
+.input-selected {
+  display: flex;
 }
