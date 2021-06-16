@@ -16,4 +16,4 @@ function verificarCheckboxAgreement() {
     botaoEnviar.disabled = true;
   }
 }
-checboxAgreement.addEventListener('click', verificarCheckboxAgreement); 
+checboxAgreement.addEventListener('click', verificarCheckboxAgreement);
