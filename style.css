@@ -42,3 +42,20 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-content {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 400px;
+}
+
+.multiple-choices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
