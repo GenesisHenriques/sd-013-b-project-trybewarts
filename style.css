@@ -47,10 +47,9 @@ footer {
   align-items: center;
   background-color: rgb(50, 167, 145);
   padding: 20px 0;
-  /* com esse código, coloco o footer sempre na parte de baixo da página */
   position: absolute;
   bottom: 0;
-  width: 100%; 
+  width: 100%;
 }
 
 footer p {
