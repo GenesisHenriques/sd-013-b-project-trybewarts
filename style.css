@@ -15,19 +15,19 @@
   width: 100%;
 }
 
-.header img {
+.trybewarts-header-logo img {
   width: 70px;
 }
 
 .trybewarts-login input , .trybewarts-login button {
   border: none;
   border-radius: 5px;
-  padding: 8px;
-  margin: 5px;
+  padding: 10px;
+  margin: 6px;
 }
 
 .trybewarts-login button {
-  padding: 8px 50px;
+  padding: 10px 50px;
   background-color: rgb(70, 32, 100);
   color: white;
 }
