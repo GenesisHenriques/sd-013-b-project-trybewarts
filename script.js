@@ -10,3 +10,14 @@ function welcomeTrybe() {
 }
 
 document.getElementById('button-login').addEventListener('click', welcomeTrybe);
+
+function habilitaBotão() {
+  const botao = document.querySelector('#submit-btn');
+  const checkbox = document.querySelector('#agreement');
+  if (checkbox.checked) {
+    botao.disabled = false;
+  } else { botao.disabled = true; }
+}
+
+const agreed = document.querySelector('#label-infos');
+agreed.addEventListener('click', habilitaBotão);
