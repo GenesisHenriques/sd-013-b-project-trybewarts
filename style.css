@@ -11,11 +11,30 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  align-self: center;
 }
 
 .trybewarts-login {
   display: flex;
+  align-self: center;
+  width: 40%;
+}
+
+#btn-login {
+  background-color: rgb(73, 21, 116);
+  border: none;
+  width: 200px;
+  height: 40px;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
 }
 
 main {
@@ -54,4 +73,22 @@ input {
 .rate-buttons label {
   display: flex;
   align-items: center;
+}
+.texto {
+  width: 50px;
+}
+
+#family-div {
+  display: flex;
+  max-width: 48%;
+}
+
+#family-div label {
+  display: flex;
+  flex-direction: column;
+}
+
+#family-div input {
+  display: flex;
+  width: 13px;
 }
