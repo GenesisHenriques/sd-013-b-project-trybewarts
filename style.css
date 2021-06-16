@@ -10,3 +10,9 @@
 #rate-container input {
   margin-left: 10px;
 }
+
+#text-area-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
