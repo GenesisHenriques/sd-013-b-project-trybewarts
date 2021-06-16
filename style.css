@@ -20,11 +20,6 @@
   color: whitesmoke;
 }
 
-#evaluation-form {
-  display: flex;
-  width: 675px;
-}
-
 #main-form {
   display: flex;
 }
@@ -63,6 +58,7 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+  margin-top: 100px;
 }
 
 #input-name {
