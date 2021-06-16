@@ -1,5 +1,8 @@
-document.getElementById('submit-btn').disabled = true;
-let checboxAgreement = document.querySelector('#agreement');
+window.onload = function() {
+  document.getElementById('submit-btn').disabled = true;
+}
+
+const checboxAgreement = document.querySelector('#agreement');
 
 function verificarCheckboxAgreement() {
   // se check = true (ou seja, se marcado)
