@@ -1,13 +1,17 @@
 // Login
-const login = document.getElementById("login").value;
-const pwd = document.getElementById("senha").value;
-const loginButton = document.getElementById("login-button");
+const loginButton = document.getElementById('login-button');
 
-loginButton.addEventListener("click", (event) => {
+function interrompeForm(event) {
   event.preventDefault();
-  if (login !== "" && pwd === "") {
-    alert("Olá, Tryber!");
+}
+loginButton.addEventListener('click', interrompeForm);
+
+loginButton.addEventListener('click', () => {
+  const login = document.getElementById('login').value;
+  const pwd = document.getElementById('senha').value;
+  if (login === 'tryber@teste.com' && pwd === '123456') {
+    window.alert('Olá, Tryber!');
   } else {
-    alert("Login ou senha inválidos.");
+    window.alert('Login ou senha inválidos.');
   }
 });
