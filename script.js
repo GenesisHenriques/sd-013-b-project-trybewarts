@@ -22,7 +22,7 @@ function authenticateCheckboxAgreement() { // função para a funcionalidade do 
   }
 }
 
-const input = document.querySelector('#agreement');
+const input = document.getElementById('agreement');
 input.addEventListener('click', authenticateCheckboxAgreement);
 
 const textArea = document.querySelector('#textarea');
