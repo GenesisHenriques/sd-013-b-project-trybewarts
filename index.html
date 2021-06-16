@@ -89,14 +89,25 @@
           <input type="radio" name="rate" id="dez" value="10">
           <label for="dez">10</label>
         </div>
-        
+
         <div>
           <label class="textarea">Deixe seu comentário:</label><br>
           <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
         </div>
+
+        <div id="Termos">
+          <label for='agreement' id="label-infos">Você concorda com o uso das informações acima?</label>
+          <input type="checkbox" id="agreement" value="sim">
+          <button type="submit" id="submit-btn" disabled >Enviar</button>
+        </div>
       </form>
       <img src="images/trybewarts-colored.svg" alt="Trybewarts Logo" id="trybewarts-forms-logo">
     </main>
+
+    <footer class="rodape">
+      <p class="rodape-text">Direitos reservados à Trybewarts©</p>
+    </footer>
+
   </body>
   <script src="script.js"></script>
 </html>

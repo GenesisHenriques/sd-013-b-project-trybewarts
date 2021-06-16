@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  margin: 0; 
+  margin: 0;
 }
 
 .header {
@@ -8,16 +8,16 @@
   background-color: rgb(50, 167, 145);
   height: 100px;
   justify-content: space-between;
-  text-align: center; 
+  text-align: center;
 }
 
 #trybewarts-header-title {
-  align-self: center; 
+  align-self: center;
 }
 
 .trybewarts-login {
+  align-self: center;
   display: flex;
-  align-self: center; 
 }
 
 .trybewarts-login input {
@@ -45,4 +45,15 @@
 
 h2 {
   text-align: center;
+}
+
+footer {
+  background-color: saddlebrown;
+  bottom: 0;
+  color: silver;
+  height: 30px;
+  padding-top: 8px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
