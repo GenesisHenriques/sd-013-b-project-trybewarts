@@ -7,14 +7,14 @@
   align-items: center;
 }
 
-#trybewarts-forms-logo{
+#trybewarts-forms-logo {
   height: 500px;
 }
 
 footer {
- text-align: center;
- background-color: aqua;
- padding: 1%;
+  text-align: center;
+  background-color: aqua;
+  padding: 1%;
 }
 
 .login-container {
@@ -23,5 +23,16 @@ footer {
 }
 
 .trybewarts-login {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  margin: 10px auto 0;
+}
+
+main {
   display: flex;
 }
