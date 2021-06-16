@@ -4,6 +4,6 @@
   flex-direction: flex-start;
 }
 
-.trybewarts-header-logo {
-
+.trybewarts-login {
+  display: flex;
 }
