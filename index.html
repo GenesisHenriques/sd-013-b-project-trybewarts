@@ -15,14 +15,12 @@
         alt=""
       />
       <h1 id="trybewarts-header-title">Trybewarts</h1>
-
       <form method="get" class="trybewarts-login">
         <input type="text" id="nome" placeholder="Login" />
         <input type="text" id="password" placeholder="Senha" />
         <button id="button">Enviar</button>
       </form>
     </header>
-
     <main>
       <form id="evaluation-form">
         <div>
@@ -64,13 +62,15 @@
         </div>
         <label class="textarea" for="textarea">Deixe seu comentário:</label>
         <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        <div>
+          <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
+          <input id="agreement" type="checkbox">
+        </div>
       </form>
-
       <aside>
         <img id= "trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
       </aside>
     </main>
-
     <script src="script.js"></script>
   </body>
 </html>
