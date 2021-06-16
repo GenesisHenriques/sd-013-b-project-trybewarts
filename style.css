@@ -44,3 +44,9 @@ main {
 #rate-box {
   display: flex;
 }
+
+#text-area {
+}
+#text-area p{
+  position: relative;
+}
