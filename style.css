@@ -43,6 +43,14 @@ main {
   justify-content: space-around;
 }
 
+#evaluation-form div input {
+  width: 50%;
+}
+
+#evaluation-form div select {
+  width: 50%;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
