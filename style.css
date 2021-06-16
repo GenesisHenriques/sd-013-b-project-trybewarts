@@ -34,13 +34,18 @@ main {
   flex-flow: column;
   width: 675px;
 }
+
 option {
   color: black;
 }
 
+#submit-btn {
+  display: block;
+}
+
 footer {
   bottom: 0;
-  position: absolute;
+  /* position: absolute; */
   background-color: grey;
   width: 100%;
   text-align: center;
