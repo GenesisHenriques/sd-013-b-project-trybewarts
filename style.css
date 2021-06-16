@@ -58,8 +58,18 @@
 
 .form-container {
   display: flex;
+  justify-content: center;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+.inputs {
+  display: flex;
+  width: 225px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
 }
