@@ -3,10 +3,6 @@
   margin: 0;
 }
 
-#primeiro-grupo-inputs, #segundo-grupo-inputs {
-  display: flex;
-}
-
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -56,6 +52,10 @@ input {
   margin: 5px;
 }
 
+#primeiro-grupo-inputs #segundo-grupo-inputs {
+  display: flex;
+}
+
 #house {
   width: 25%;
 }
@@ -77,4 +77,17 @@ input {
 #family-div input {
   display: flex;
   width: 13px;
+}
+
+#content-div {
+  display: flex;
+  width: 48%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color:#454a4d;
+  color: white;
+  padding: 20px;
 }
