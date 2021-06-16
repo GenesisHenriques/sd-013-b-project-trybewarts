@@ -15,6 +15,9 @@ footer {
   background-color: rgb(60, 64, 73);
   color: white;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
@@ -44,6 +47,7 @@ input {
   background-color: rgb(50, 167, 145);
   color: white;
   font-size: 45px;
+  margin-bottom: 25px;
 }
 
 .trybewarts-header-logo {
