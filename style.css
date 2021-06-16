@@ -1,0 +1,4 @@
+#familia {
+  display: flex;
+  flex-direction: column;
+}
