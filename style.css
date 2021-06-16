@@ -16,7 +16,18 @@
 }
 
 .header img {
-  width: 100px;
+  width: 70px;
+}
+
+.trybewarts-login input, .trybewarts-login button {
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 5px;
+}
+
+.trybewarts-login button {
+  
 }
 
 .trybewarts-login {
