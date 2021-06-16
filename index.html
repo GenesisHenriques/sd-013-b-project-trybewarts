@@ -27,18 +27,26 @@
 
     <main class="content-main">
       <form action="" id="evaluation-form">
-        <input type="text" id="input-name" placeholder="Nome" />
+        <div class="inputs">
+          <input type="text" id="input-name" placeholder="Nome" />
 
-        <input type="text" id="input-lastname" placeholder="Sobrenome" />
+          <input type="text" id="input-lastname" placeholder="Sobrenome" />
+        </div>
+        <div class="inputs">
+          <input
+            type="email"
+            name="email"
+            id="input-email"
+            placeholder="Email"
+          />
 
-        <input type="email" name="email" id="input-email" placeholder="Email" />
-
-        <select name="casa" id="house">
-          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-          <option value="Gitnória" id="corvinode-house">Corvinode</option>
-          <option value="Gitnória" id="pytherina-house">Pytherina</option>
-        </select>
+          <select name="casa" id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Gitnória" id="corvinode-house">Corvinode</option>
+            <option value="Gitnória" id="pytherina-house">Pytherina</option>
+          </select>
+        </div>
       </form>
 
       <img

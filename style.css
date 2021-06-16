@@ -15,6 +15,11 @@
 
 .content-main {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.content-main .inputs {
+  flex-basis: auto;
 }
 
 #evaluation-form {
