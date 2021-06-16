@@ -35,6 +35,7 @@ main {
 
 .trybewarts-forms-logo {
 <<<<<<< HEAD
+<<<<<<< HEAD
   height: 500px;
 }
 
@@ -43,11 +44,13 @@ main {
 }
 =======
   height: 500px;  
+=======
+  height: 500px;
+>>>>>>> d535bc001e618a3d3c2848236016bbe35764262a
 }
 
 .main {
   display: flex;
-  justify-content:space-around;
-
+  justify-content: space-around;
 }
 >>>>>>> fd9a07cc0d535efb1f7bc0fa0a381dd46ff4994a
