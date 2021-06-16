@@ -20,6 +20,7 @@
 }
 
 .trytbewarts-login {
+  align-content: center;
   display: flex;
 }
 
@@ -31,4 +32,8 @@ main {
   display: flex;
   flex-direction: column;
   width: 675px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
