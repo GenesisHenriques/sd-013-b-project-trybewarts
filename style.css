@@ -28,19 +28,13 @@ main {
   width: 100vw;
 }
 
-#label-rate {
-  display: ;
-}
-
 #evaluation-form {
   border: 2px solid black;
   display: flex;
   flex-direction: column;
+  width: 675px;
 }
 
 #trybewarts-forms-logo {
  width: 40vw;
-}
-
-input[type=radio] {
 }
