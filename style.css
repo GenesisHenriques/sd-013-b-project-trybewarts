@@ -29,6 +29,10 @@
   width: 675px;
 }
 
+.conteudos {
+  display: flex;
+}
+
 #input-name {
   height: 20px;
   width: 40%;
@@ -46,3 +50,4 @@
 #trybewarts-header-title {
   color: white;
 }
+
