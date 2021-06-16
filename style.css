@@ -10,6 +10,8 @@
   align-items: center;
   color: white;
   height: 60px;
+  padding: 10px 150px;
+
 }
 
 form {
@@ -66,7 +68,7 @@ main {
 
 #input-name , #input-lastname , #input-email {
   flex: 1;
-  padding: 12px 20px;
+  padding: 12px;
   margin: 8px;
   box-sizing: border-box;
   border: 3px solid rgb(196, 196, 196);
@@ -78,7 +80,7 @@ input:focus {
 
 select {
   flex: 1;
-  padding: 10px 20px;
+  padding: 10px;
   margin: 8px;
   border: none;
   border-radius: 4px;
