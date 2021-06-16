@@ -57,7 +57,11 @@ header {
   height: 500px;
 }
 
-#choice-family {
+.display-flex-column {
 	display: flex;
 	flex-direction: column;
+}
+
+.display-flex {
+	display: flex;
 }
