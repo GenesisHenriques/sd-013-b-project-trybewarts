@@ -5,6 +5,7 @@
   padding: 10px 50px;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .trybewarts-header-logo {
@@ -35,4 +36,10 @@ button {
 
 main {
   display: flex;
+}
+
+.lines {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
 }
