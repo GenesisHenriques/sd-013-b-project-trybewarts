@@ -39,17 +39,22 @@ Requisito 19 -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trybewarts</title>
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h3>Trybewarts</h3>
-    </header>
-    <link rel= "stylesheet" href="style.css">
-    <title>Trybewarts</title>
-</head>
 <body>
+    <header class="header">
+        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <form class="trybewarts-login" action="" method="GET">
+            <input id="login-input" type="email" name="Login" placeholder="Login">
+            <input id="password-input" type="password" name="Senha" placeholder="Senha">
+            <button id="enter-button">Enter</button>
+        </form>
+    </header>
+
   <main>
     <form id="evaluation-form">
       <div id="nameAndLastName">
@@ -86,7 +91,12 @@ Requisito 19 -->
             <button type="submit" id="submit-btn">Enviar</button>
       </div>
     </form>
-</main>
+  </main>
+  <aside>
+
+
+  </aside>
+  <script src="script.js"></script>
 </body>
 <script src="script.js"></script>
 </html>
