@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header class="header">
       <img class="trybewarts-header-logo"src="images/trybewarts-header-logo.svg" alt="">
       <h1 id="trybewarts-header-title">Trybewarts</h1>
@@ -17,23 +16,7 @@
           <input id="input-senha" type="password" placeholder="Senha">
           <button id="login-btn">Entrar</button>
       </form>
- </header>
-
- <main id="main-form">
-    <form id="evaluation-form" action="GET">
-        <input id="input-name" type="text" placeholder="Nome">
-        <input id="input-lastname" type="text" placeholder="Sobrenome">
-        <input id="input-email" type="text" placeholder="Email">
-        <select name="casa" id="house">
-            <option id="gitnoria-house" value="">Gitnória</option>
-            <option id="reactpuff-house" value="">Reactpuff</option>
-            <option id="corvinode-house" value="">Corvinode</option>
-            <option id="pytherina-house" value="">Pytherina</option>
-        </select>
-    </form>
-<<<<<<< HEAD
-  </main>
-
+  </header>
 
   <main id="main-form">
     <form id="evaluation-form" action="GET">
@@ -50,47 +33,39 @@
           <option id="corvinode-house" value="">Corvinode</option>
           <option id="pytherina-house" value="">Pytherina</option>
         </select>
+      </div>
+      <hr>
+      <div class="forms-list">
+        <h3 id="label-family">Qual sua família?</h3><br>
+        <input type="radio" id="familia-frontend" name="family" value="Frontend">
+        <label for="male">Família Frontend</label><br>
+        <input type="radio" id="familia-beckend" name="family" value="Backend">
+        <label for="female">Família Backend</label><br>
+        <input type="radio" id="familia-fullstack" name="family" value="FullStack">
+        <label for="other">Família Fullstack</label>
       </div> 
+  
+      <div class="forms-list">
+        <h3>Qual conteúdo você está com mais vontade de aprender?</h3>
+        <input type="radio" id="hofs" name="gender" value="hofs">
+        <label for="male">HoFs</label><br>
+        <input type="radio" id="jest" name="gender" value="jest">
+        <label for="female">Jest</label><br>
+        <input type="radio" id="promisses" name="gender" value="promisses">
+        <label for="other">Promisses</label>
+        <input type="radio" id="react" name="gender" value="react">
+        <label for="male">React</label><br>
+        <input type="radio" id="sql" name="gender" value="sql">
+        <label for="female">SQL</label><br>
+        <input type="radio" id="python" name="gender" value="python">
+        <label for="other">python</label>
+      </div> 
+
+      <button id="submit-btn" type="submit">Enviar</button> 
     </form> 
   </main> 
-  
-  <hr>
-  <form class="forms">
-    <div class="forms-list">
-      <h3 id="label-family">Qual sua família?</h3><br>
-      <input type="radio" id="familia-frontend" name="family" value="Frontend">
-      <label for="male">Família Frontend</label><br>
-      <input type="radio" id="familia-beckend" name="family" value="Backend">
-      <label for="female">Família Backend</label><br>
-      <input type="radio" id="familia-fullstack" name="family" value="FullStack">
-      <label for="other">Família Fullstack</label>
-    </div> 
-  
-    <div class="forms-list">
-      <h3>Qual conteúdo você está com mais vontade de aprender?</h3>
-      <input type="radio" id="hofs" name="gender" value="hofs">
-      <label for="male">HoFs</label><br>
-      <input type="radio" id="jest" name="gender" value="jest">
-      <label for="female">Jest</label><br>
-      <input type="radio" id="promisses" name="gender" value="promisses">
-      <label for="other">Promisses</label>
-      <input type="radio" id="react" name="gender" value="react">
-      <label for="male">React</label><br>
-      <input type="radio" id="sql" name="gender" value="sql">
-      <label for="female">SQL</label><br>
-      <input type="radio" id="python" name="gender" value="python">
-      <label for="other">python</label>
-    </div>  
-
-  </form>
 
   <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
   <script src="script.js"></script>
-=======
-    
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt=""> 
-</main>
-<script src="script.js"></script>
->>>>>>> 9b14cee197c008fa69b4de7ce866221bc661a278
 </body>
 </html>
