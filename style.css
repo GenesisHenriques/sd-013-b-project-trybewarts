@@ -42,6 +42,10 @@ form {
     margin: 10px;
 }
 
+#label-infos {
+  font-size: 13px;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
