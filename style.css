@@ -53,7 +53,7 @@ footer {
   height: 500px;
 }
 
-#family-radios{
+#family-radios {
   display: flex;
   flex-direction: column;
 }
