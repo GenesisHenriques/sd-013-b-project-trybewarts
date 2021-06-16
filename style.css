@@ -1,7 +1,11 @@
-/* <!-- Ínicio de Trecho de Código do Genesis --> */
+/*Ínicio de Trecho de Código do Genesis*/
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+}
 
-  /* <!-- Fim de Trecho de Código do Genesis --> */
+/* <!Fim de Trecho de Código do Genesis*/
 
-  /* <!-- Inicio de Trecho de código do Alan --> */
+/* <!-- Inicio de Trecho de código do Alan --> */
   
-  /* <!-- Fim de Trecho de Código do Alan --> */
+/* <!-- Fim de Trecho de Código do Alan --> */
