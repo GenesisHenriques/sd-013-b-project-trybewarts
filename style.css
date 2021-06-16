@@ -1,0 +1,25 @@
+<<<<<<< HEAD
+=======
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+}
+
+.trybewarts-header-logo {
+  height: 100px;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+#main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+>>>>>>> c15a0b94a1042180cbde045a33ba484d4d06c049
