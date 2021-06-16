@@ -8,12 +8,19 @@
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-between;
+  color: white;
+  align-items: center;
+  padding: 0 50px;
+}
+.header img {
+  width: 100px;
 }
 
 .trybewarts-login {
   display: flex;
   align-items: baseline;
   justify-content: right;
+
 }
 
 #main-page {
