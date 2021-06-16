@@ -1,0 +1,9 @@
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  border: 2px solid black;
+  display: flex;
+  width: 675px;
+}
