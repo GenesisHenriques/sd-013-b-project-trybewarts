@@ -9,6 +9,10 @@
   flex-wrap: wrap;
 }
 
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
 #trybewarts-header-title {
   color: white;
   display: flex;
