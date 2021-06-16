@@ -67,3 +67,16 @@ main {
   display: flex;
   justify-content: space-around;
 }
+
+.rate {
+  background-color: aqua;
+  width: 675px;
+  display: flex;
+  align-items: center;
+}
+
+.rate form {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
