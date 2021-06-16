@@ -1,6 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer {
+  background-color: rgb(46, 53, 51);
+  display: flex;
+  justify-content: center;
+}
+
+.footer p {
+  color: white;
+  margin: 8px;
+  font-size: 20px;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+.trybewarts-header-logo {
+  align-self: flex-start;
+}
+
+#trybewarts-header-title {
+  color: white;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
 
 .main {
