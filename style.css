@@ -56,6 +56,11 @@ main {
   flex-direction: column;
 }
 
+.textarea div {
+  align-self: flex-end;
+  color: gray;
+}
+
 #rate {
   display: flex;
 }

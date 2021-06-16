@@ -20,3 +20,13 @@ function habilitaBotão() {
 }
 
 document.querySelector('#label-infos').addEventListener('click', habilitaBotão);
+
+function atualizaContador() {
+  const contador = document.querySelector('#textarea');
+  const div = document.querySelector('#counter');
+  let counter = 500;
+  counter -= contador.value.length;
+  div.innerText = counter.toString();
+}
+
+document.querySelector('#textarea').addEventListener('keyup', atualizaContador);
