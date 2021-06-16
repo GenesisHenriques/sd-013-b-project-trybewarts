@@ -54,8 +54,13 @@ document.body.appendChild(main);
 
 const formEvaluator = document.createElement('form');
 formEvaluator.id = 'evaluation-form';
+formEvaluator.innerText = 'forms';
 main.appendChild(formEvaluator);
 
+//10. Alinhe os campos de 'Nome' e 'Sobrenome' para que fiquem em linha
+const div1Forms = document.createElement('div');
+div1Forms.classList = 'div1Forms'
+formEvaluator.appendChild(div1Forms);
 
 // 6. Faça com que o formulário do requisito 5 seja um container flex com o eixo principal vertical
 
@@ -69,16 +74,87 @@ main.appendChild(imgFormsLogo);
 const nomeInput = document.createElement('input');
 nomeInput.id = 'input-name';
 nomeInput.placeholder = 'Nome';
-formEvaluator.appendChild(nomeInput);
+div1Forms.appendChild(nomeInput);
 
 const sobrenomeInput = document.createElement('input');
 sobrenomeInput.id = 'input-lastname';
 sobrenomeInput.placeholder = 'Sobrenome';
-formEvaluator.appendChild(sobrenomeInput);
+div1Forms.appendChild(sobrenomeInput);
 
 const emailInput = document.createElement('input');
 emailInput.id = 'input-email';
 emailInput.placeholder = 'Email';
-formEvaluator.appendChild(emailInput);
+div1Forms.appendChild(emailInput);
 
 // 9. Crie um select 'Casa' contendo quatro options
+
+const select = document.createElement('select');
+select.id= 'house';
+div1Forms.appendChild(select)
+
+const opitonGitnória = document.createElement('option'); 
+opitonGitnória.value = 'Gitnória';
+opitonGitnória.innerText = 'Gitnória';
+opitonGitnória.id = 'gitnoria-house';
+select.appendChild(opitonGitnória);
+
+const opitonReactpuff =document.createElement('option');
+opitonReactpuff.value = 'Reactpuff';
+opitonReactpuff.innerText = 'Reactpuff';
+opitonReactpuff.id = 'reactpuff-house';
+select.appendChild(opitonReactpuff);
+
+const opitonCorvinode =document.createElement('option');
+opitonCorvinode.value = 'Corvinode';
+opitonCorvinode.innerText = 'Corvinode';
+opitonCorvinode.id = 'corvinode-house';
+select.appendChild(opitonCorvinode);
+
+const opitonPytherina =document.createElement('option');
+opitonPytherina.value = 'Pytherina';
+opitonPytherina.innerText = 'Pytherina';
+opitonPytherina.id = 'pytherina-house';
+select.appendChild(opitonPytherina);
+
+//12. Crie um campo de entrada para qual família a pessoa estudante se identifica
+const div2Forms = document.createElement('div');
+div2Forms.classList = 'div2Forms'
+formEvaluator.appendChild(div2Forms);
+
+const div2Child1 = document.createElement('div');
+div2Child1.classList = 'div2Child1';
+div2Forms.appendChild(div2Child1);
+
+const labelTitle = document.createElement('label');
+labelTitle.innerText = 'Qual sua família?';
+labelTitle.id = 'label-family'
+div2Child1.appendChild(labelTitle);
+
+const ul = document.createElement('ul');
+labelTitle.appendChild(ul)
+for (let index = 0; index < 3 ; index += 1) {
+  const li = document.createElement('li');
+  ul.appendChild(li);
+}
+
+
+const radioInput1 = document.createElement('input');
+radioInput1.type = 'radio';
+radioInput1.value = 'Frontend';
+radioInput1.name = 'family';
+labelTitle.appendChild(radioInput1)
+
+
+
+const labelInput1 = document.createElement('label');
+labelInput1.htmlFor = 'Frontend';
+labelInput1.innerText = 'Família Frontend';
+labelTitle.appendChild(labelInput1);
+
+
+
+const div2Child2 = document.createElement('div');
+div2Child2.classList = 'div2Child2';
+div2Forms.appendChild(div2Child2);
+
+

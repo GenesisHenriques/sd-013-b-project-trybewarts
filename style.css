@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 .header {
   display: flex;
   align-items: center;
@@ -17,9 +22,32 @@ main {
 #evaluation-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 675px;
+  margin-top: 30px;
+  
 }
 
 #trybewarts-forms-logo{
   height: 500px;
+}
+
+.div1Forms{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items:center;
+  width: 60%;
+  margin-top: 30px;
+}
+
+#label-family{
+  display: flex;
+  width: 40%;
+  background-color:red;
+}
+
+.div2Forms{
+  background-color: aquamarine;
+  width:100%;
 }
