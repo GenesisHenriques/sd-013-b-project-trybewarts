@@ -10,8 +10,6 @@ function verifcaLogin(login, senha) {
 
 btn.addEventListener('click', () => {
   const inputLogin = document.querySelector('#textLogin').value;
-  console.log(inputLogin);
   const inputPassword = document.querySelector('#textSenha').value;
-  console.log(inputPassword);
   verifcaLogin(inputLogin, inputPassword);
 });
