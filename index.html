@@ -62,67 +62,89 @@
               <option value="git" id="pytherina-house">Pytherina</option>
             </select>
           </label>
-          <hr />
-          <span id="radio-buttons-family">
-            <label for="" id="label-family"
-              >Qual sua família?
-
-              <label for="front">
-                <input type="radio" name="family" id="front" value="Frontend" />
-                Frontend
-              </label>
-              <label for="back">
-                <input type="radio" name="family" id="back" value="Backend" />
-                Backend
-              </label>
-              <label for="full">
-                <input type="radio" name="family" id="full" value="FullStack" />
-                FullStack
-              </label>
-            </label>
-          </span>
         </div>
-        <div class="checkboxes">
-          <label for="" id="label-content"
-            >Qual conteúdo você está com mais vontade de aprender?</label
-          >
-          <label for="checkHoFs">HoFs</label>
-          <input
-            type="checkbox"
-            name="checkHoFs"
-            class="subject"
-            value="HoFs"
-          />
-          <label for="checkJest">Jest</label>
-          <input
-            type="checkbox"
-            name="checkJest"
-            class="subject"
-            value="Jest"
-          />
-          <label for="checkPromises">Promises</label>
-          <input
-            type="checkbox"
-            name="checkPromises"
-            class="subject"
-            value="Promises"
-          />
-          <label for="checkReact">React</label>
-          <input
-            type="checkbox"
-            name="checkReact"
-            class="subject"
-            value="React"
-          />
-          <label for="checkSQL">SQL</label>
-          <input type="checkbox" name="checkSQL" class="subject" value="SQL" />
-          <label for="checkPython">Python</label>
-          <input
-            type="checkbox"
-            name="checkPython"
-            class="subject"
-            value="Python"
-          />
+        <hr />
+        <div class="family-content">
+          <div class="family">
+            <span id="radio-buttons-family">
+              <label for="" id="label-family"
+                >Qual sua família?
+
+                <label for="front">
+                  <input
+                    type="radio"
+                    name="family"
+                    id="front"
+                    value="Frontend"
+                  />
+                  Frontend
+                </label>
+                <label for="back">
+                  <input type="radio" name="family" id="back" value="Backend" />
+                  Backend
+                </label>
+                <label for="full">
+                  <input
+                    type="radio"
+                    name="family"
+                    id="full"
+                    value="FullStack"
+                  />
+                  FullStack
+                </label>
+              </label>
+            </span>
+          </div>
+
+          <div class="checkboxes">
+            <label for="" id="label-content"
+              >Qual conteúdo você está com mais vontade de aprender?</label
+            >
+            <div class="check-content">
+              <label for="checkHoFs">HoFs</label>
+              <input
+                type="checkbox"
+                name="checkHoFs"
+                class="subject"
+                value="HoFs"
+              />
+              <label for="checkJest">Jest</label>
+              <input
+                type="checkbox"
+                name="checkJest"
+                class="subject"
+                value="Jest"
+              />
+              <label for="checkPromises">Promises</label>
+              <input
+                type="checkbox"
+                name="checkPromises"
+                class="subject"
+                value="Promises"
+              />
+              <label for="checkReact">React</label>
+              <input
+                type="checkbox"
+                name="checkReact"
+                class="subject"
+                value="React"
+              />
+              <label for="checkSQL">SQL</label>
+              <input
+                type="checkbox"
+                name="checkSQL"
+                class="subject"
+                value="SQL"
+              />
+              <label for="checkPython">Python</label>
+              <input
+                type="checkbox"
+                name="checkPython"
+                class="subject"
+                value="Python"
+              />
+            </div>
+          </div>
         </div>
         <div class="radios">
           <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
@@ -142,7 +164,7 @@
           <textarea
             name="area"
             id="textarea"
-            cols="30"
+            cols="80"
             rows="10"
             maxlength="500"
           ></textarea>

@@ -45,6 +45,20 @@ main {
   flex-direction: column;
 }
 
-.checkboxes {
+.family-content {
   display: flex;
+}
+
+.check-content {
+  background-color: red;
+  display: flex;
+  flex-flow: row wrap;
+  width: 200px;
+}
+
+.family {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  width: 300px;
 }
