@@ -24,3 +24,15 @@ function authenticateCheckboxAgreement() { // função para a funcionalidade do 
 
 const input = document.querySelector('#agreement');
 input.addEventListener('click', authenticateCheckboxAgreement);
+
+const textArea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
+const maxLength = 500;
+
+counter.innerText = String(maxLength);
+
+function changeLetterCounter(event) {
+  counter.innerText = maxLength - event.target.value.length;
+}
+
+textArea.addEventListener('keyup', changeLetterCounter);
