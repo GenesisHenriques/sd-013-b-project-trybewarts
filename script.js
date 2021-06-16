@@ -1,10 +1,10 @@
-let email = document.getElementById('input-login');
-let password = document.getElementById('input-senha');
+const email = document.getElementById('input-login');
+const password = document.getElementById('input-senha');
 const loginButton = document.getElementById('entrar');
 
 function checkEmail() {
-  for (letter of email.value) {
-    if (letter === '@'){
+  for (let letter = 0; letter < email.value.length; letter += 1) {
+    if (email.value[letter] === '@') {
       return true;
     }
   }
@@ -12,19 +12,16 @@ function checkEmail() {
 }
 
 function passwordCheck() {
-  if (password.value !== ''){
-    
+  if (password.value !== '') {
     return true;
-    
   }
   return false;
 }
 
 function checkLogin() {
-  if (passwordCheck() === true && checkEmail() === true ){
+  if (passwordCheck() === true && checkEmail() === true) {
     alert('Olá, Tryber!');
-  }
-  else {
+  } else {
     alert('Login ou senha inválidos.');
   }
 }
