@@ -1,4 +1,3 @@
-
 function validacaoEmailSenha() {
   const login = document.getElementById('login').value;
   const senha = document.getElementById('senha').value;
