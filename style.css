@@ -27,7 +27,7 @@
   margin: 6px;
 }
 
-.trybewarts-login button, #submit-btn {
+.trybewarts-login button , #submit-btn {
   padding: 10px 50px;
   background-color: rgb(70, 32, 100);
   color: white;
@@ -76,7 +76,7 @@
   width: 300px;
 }
 
-#evaluation-form input , #evaluation-form select, #submit-btn {
+#evaluation-form input , #evaluation-form select , #submit-btn {
   border: 1.5px solid rgb(51, 51, 51);
   border-radius: 5px;
   padding: 8px;
