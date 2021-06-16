@@ -31,13 +31,12 @@
   flex-direction: column;
 }
 
-#evaluation-form :nth-child(1) {
+#evaluation-form :nth-child( 1 ) {
   display: flex;
   flex-wrap: wrap;
-
 }
 
-#evaluation-form:nth-child(1) input {
+#evaluation-form:nth-child( 1 ) input {
   min-width: 250px;
   flex-grow: 1;
 }
