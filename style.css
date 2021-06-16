@@ -34,11 +34,10 @@ main {
 }
 
 .trybewarts-forms-logo {
-  height: 500px;  
+  height: 500px;
 }
 
 .main {
   display: flex;
-  justify-content:space-around;
-
+  justify-content: space-around;
 }
