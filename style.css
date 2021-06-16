@@ -42,8 +42,18 @@
   display: flex;
   align-self: center; }
   
-  
-  .trybewarts-login input {
+
+footer {
+  background-color: saddlebrown;
+  color: silver;
+  text-align: center;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+
+.trybewarts-login input {
   background-color: whitesmoke;
   margin-left: 20px;
   margin-right: 10px;
