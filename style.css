@@ -3,14 +3,31 @@ main {
   justify-content: center;
 }
 
+footer {
+  margin-top: 25px;
+  height: 80px;
+  background-color: rgb(60, 64, 73);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border-radius: 5px;
+  background-color: rgb(78, 43, 131);
+  color: white;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   background-color: rgb(50, 167, 145);
+  color: white;
 }
 
 .trybewarts-header-logo {
   align-self: flex-start;
+  height: 80px;
 }
 
 .trybewarts-login {
@@ -35,16 +52,31 @@ main {
   align-self: flex-end;
 }
 
-button {
-  border-radius: 5px;
-  background-color: rgb(78, 43, 131);
-  color: white;
-}
-
 #avaliate {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+#textarea {
+  padding: 5px;
+}
 
+#counter {
+  text-align: end;
+  display: inline-block;
+  margin-top: -20px;
+  margin-right: 5px;
+  z-index: 1;
+}
+
+#families {
+  display: flex;
+  flex-direction: column;
+}
+
+#checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
