@@ -19,3 +19,15 @@
 .trybewarts-login {
   display: flex;
 }
+
+footer {
+  bottom: 0;
+  position: absolute;
+  background-color: grey;
+  width: 100%;
+  text-align: center;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
