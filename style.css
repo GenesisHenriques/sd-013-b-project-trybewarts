@@ -1,3 +1,7 @@
+.credentials {
+  height: 20px;
+}
+
 .display-flex {
   display: flex;
 }
