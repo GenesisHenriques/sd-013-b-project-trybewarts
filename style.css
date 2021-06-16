@@ -69,6 +69,11 @@
   justify-content: space-between;
 }
 
+.radio-element label {
+  margin-right: 20px;
+  width: 50px;
+}
+
 #evaluation-form .name label , #evaluation-form .info label {
   margin-bottom: 5px;
 }
@@ -112,10 +117,6 @@
   margin-bottom: 20px;
 }
 
-.radio-element label {
-  margin-right: 20px;
-  width: 50px;
-}
 #agreement {
   margin-bottom: 15px;
 }
@@ -127,4 +128,3 @@ footer {
   padding: 20px;
   font-size: 1.1em;
 }
-
