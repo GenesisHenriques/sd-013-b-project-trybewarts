@@ -12,7 +12,6 @@
 .trybewarts-login {
   display: flex;
   align-items: center;
-
 }
 
 main {
@@ -23,8 +22,7 @@ main {
   width: 675px;
   flex-direction: column;
   display: flex;
-  
-}
+  }
 
 #trybewarts-forms-logo {
   height: 500px;
@@ -33,4 +31,8 @@ main {
 .input-radio {
   display: flex;
   flex-direction: column;
+}
+
+#trybewarts-header-logo {
+  height: 500px;
 }
