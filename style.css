@@ -29,7 +29,7 @@
   flex-direction: column;
 }
 
-.trybewarts-forms-logo {
+#trybewarts-forms-logo {
   height: 500px;
 }
 
@@ -40,6 +40,8 @@
 .main {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  /* margin: 50px 0; */
 }
 
 #label-content {
