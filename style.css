@@ -3,9 +3,11 @@
   display: flex;
   justify-content: space-between;
 }
+
 .trybewarts-login {
-    display: flex;
+  display: flex;
 }
+
 #trybewarts-header-title {
-    display: flex;
+  display: flex;
 }
