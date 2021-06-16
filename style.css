@@ -1,3 +1,30 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  height: 100px;
+  justify-content: space-between;
+  text-align: center; }
+
+
+#trybewarts-header-title {
+  align-self: center; }
+
+
+.trybewarts-login {
+  display: flex;
+  align-self: center; }
+
+
+.trybewarts-login input {
+  background-color: whitesmoke;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
 .main-container {
   display: flex;
   flex-wrap: wrap;
