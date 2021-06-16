@@ -37,3 +37,7 @@
 .brother2 input {
   margin: 5px;
 }
+
+.avaliador {
+  display: flex;
+}
