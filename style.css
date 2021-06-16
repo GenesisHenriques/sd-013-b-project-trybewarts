@@ -6,10 +6,18 @@
 .header {
   width: 100%;
   height: 200px;
+  justify-content: space-between;
   display: flex;
   background-color: rgb(50, 167, 145);
 }
 
-.trybewarts-header-logo {
-  justify-content: space-around;
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.trybewarts-login input {
+  flex-grow: 1;
+  margin-right: 5px;
 }
