@@ -13,36 +13,41 @@
         src="images/trybewarts-header-logo.svg"
         alt="trybe-logo"
         class="trybewarts-header-logo"
-        />
-      </header>
+      />
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <form action="" class="trybewarts-login">
+        <input type="text" name="login" id="header-login" placeholder="Login">
+        <input type="password" name="password" id="header-password" placeholder="Senha">
+        <button type="submit" id="login-button">Login</button>
+      </form>
+    </header>
+    <div>
       <div>
-        <div>
-          <main>
-            <form action="" method="get" id="evaluation-form">
+        <main>
+          <form action="" method="get" id="evaluation-form">
 
-              <div id="evaluation-form">
-                <input type="text" id="input-name" placeholder="Nome">
-                <input type="text" id="input-lastname" placeholder="Sobrenome">
-              </div>
+            <div id="evaluation-form">
+              <input type="text" id="input-name" placeholder="Nome">
+              <input type="text" id="input-lastname" placeholder="Sobrenome">
+            </div>
 
-              <div class="input-selected">
-                <input type="text" id="input-email" placeholder="Email">
-                
-                <h3>Casa</h3>
-                <select id="house">
-                    <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-                    <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                    <option value="Corvinode" id="corvinode-house">Corvinode</option>
-                    <option value="Pytherina" id="pytherina-house">Pytherina</option>
-                </select>
-              </div>
-            </form>
-          </main>
-        </div>
-
-        <div>
-
-        </div>
+            <div><input type="text" id="input-email" placeholder="Email">
+              
+              <select id="house">
+                <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                <option value="Pytherina" id="pytherina-house">Pytherina</option>
+              </select>
+            </div>
+          </form>
+        </main>
       </div>
+
+      <div>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
