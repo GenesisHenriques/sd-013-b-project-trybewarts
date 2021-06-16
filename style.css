@@ -3,6 +3,13 @@
   display: flex;
 }
 
+.trybewarts-header-logo {
+  height: 100px;
+}
+
+.trybewarts-login {
+  display: flex;
+}
 #main {
   display: flex;
 }
