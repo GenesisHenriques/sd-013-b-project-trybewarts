@@ -39,6 +39,11 @@
 
 .main {
   display: flex;
+<<<<<<< HEAD
   justify-content:space-around;
   display: flex;
 }
+=======
+  justify-content: space-around;
+}
+>>>>>>> 0a28a0043020ca4414937e7886d14a143a592408
