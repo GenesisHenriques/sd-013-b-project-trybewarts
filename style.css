@@ -29,11 +29,8 @@ main {
   display: flex;
   flex-direction: column;
 }
-<<<<<<< HEAD
-=======
 
 #trybewarts-forms-logo {
   height: 500px;
   justify-self: flex-end;
 }
->>>>>>> 749203c641d4c4aea663e6d6d1b1fc74670d0ed9
