@@ -1,0 +1,14 @@
+
+.display-flex {
+  display: flex;
+
+}
+
+#evaluation-form {
+  flex-flow: column;
+  width: 675px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
