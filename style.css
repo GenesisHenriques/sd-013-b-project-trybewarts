@@ -8,9 +8,9 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 10%;
 }
 
 /* logo menu */
@@ -19,7 +19,7 @@
 }
 
 /* form menu */
-.trybewarts-header-login {
+.trybewarts-login {
   display: flex;
 }
 
@@ -42,4 +42,10 @@ main {
 .family-section {
   display: flex;
   flex-direction: column;
+}
+
+/* rodapé */
+footer {
+  color: white;
+  background-color: rgb(95, 95, 95);
 }
