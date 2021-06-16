@@ -7,10 +7,17 @@ header {
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .trybewarts-login {
   display: flex;
+}
+
+.trybewarts-header-logo {
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 90px;
 }
 
 .trybewarts-login input {
@@ -32,6 +39,7 @@ header {
 #evaluation-form {
   display: flex;
   width: 675px;
+  flex-direction: column;
 }
 
 #trybewarts-main {
