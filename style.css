@@ -45,6 +45,7 @@ main {
 }
 
 #email-and-home {
+  background-color: red;
   padding: 20px;
 }
 
@@ -53,12 +54,20 @@ main {
   flex-direction: column;
 }
 
-.checkboxes {
+.family-content {
   display: flex;
 }
 
-footer {
-  text-align: center;
-  background-color: azure;
-  padding: 20px;
+.check-content {
+  background-color: red;
+  display: flex;
+  flex-flow: row wrap;
+  width: 200px;
+}
+
+.family {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  width: 300px;
 }
