@@ -1,4 +1,10 @@
 .header {
+<<<<<<< HEAD
   display: flex;
   background-color: rgb(50, 167, 145);
 }
+=======
+  background-color: rgb(50, 167, 145);
+  display: flex;
+}
+>>>>>>> ce77b3737150dbdb3ade96632c44d727929dd6b1
