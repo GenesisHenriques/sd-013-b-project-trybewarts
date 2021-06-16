@@ -20,25 +20,43 @@
         <form action method="GET" id="evaluation-form">
             <h2>Forms</h2>
             <div id="dados">
-                <input type="text" name="nome" id="input-name" placeholder="Nome"/>
-                <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
-                <input type="email" name="email" id="input-email" placeholder="Email">
+                <input class="input-text" type="text" name="nome" id="input-name" placeholder="Nome"/>
+                <input class="input-text" type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
+                <input class="input-text" type="email" name="email" id="input-email" placeholder="Email">
                 <select name="casas" id="house"></select>
             </div>
+            <div id="familias">
+                <label id="label-family" for="">Qual sua família?</label>
+                <div class="family-options">
+                    <label for="family">Frontend</label>
+                    <input class="input-radio" type="radio" name="family" value="Frontend">
+                </div>
+                <div class="family-options">
+                    <label for="family">Backend</label>
+                    <input class="input-radio" type="radio" name="family" value="Backend">
+                </div>
+                <div class="family-options"> 
+                    <label for="family">FullStack</label>
+                    <input class="input-radio" type="radio" name="family" value="FullStack">
+                </div>
+            </div>
+            <div id="checkboxes">
+                <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
+               
+                <label for="HoFs"> HoFs</label>
+                <input class="subject" type="checkbox" name="HoFs" value="HoFs">
+                <label for="Jest"> Jest</label>
+                <input class="subject" type="checkbox" name="Jest" value="Jest">
+                <label for="Promises"> Promises</label>
+                <input class="subject" type="checkbox" name="Promises" value="Promises">
+                <label for="React"> React</label>
+                <input class="subject" type="checkbox" name="React" value="React">
+                <label for="SQL"> SQL</label>
+                <input class="subject" type="checkbox" name="SQL" value="SQL">
+                <label for="Python"> Python</label>
+                <input class="subject" type="checkbox" name="Python" value="Python">
+            </div>
         </form>
-
-        <fieldset>
-            <label id="label-family" for="">Qual sua família?</label>
-           
-            <input type="radio" name="family">
-            <label for="family">Frontend</label>
-    
-            <input type="radio" name="family">
-            <label for="family">Backend</label>
-    
-            <input type="radio" name="family">
-            <label for="family">FullStack</label>
-        </fieldset>
 
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da Trybewarts">
         

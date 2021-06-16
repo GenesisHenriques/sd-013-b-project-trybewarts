@@ -37,15 +37,29 @@ body {
   margin-left: 25px;
 }
 
+#familias {
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 150px;
+  padding: 10px;
+  margin-left: 25px;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
 
 /* INPUTS */
-input , select {
+.input-text, select {
   height: 40px;
   width: 200px;
   margin-bottom: 20px;
   border-radius: 10px;
+  border-color: rgb(50, 167, 145);
+}
+
+.input-radio {
+  margin-top: 10px;
+  border-radius: 5px;
   border-color: rgb(50, 167, 145);
 }
