@@ -1,19 +1,19 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(50, 167, 145);
-  }
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(50, 167, 145);
+}
   
-  .trybewarts-header-logo {
-    align-self: flex-start;
-  }
+.trybewarts-header-logo {
+  align-self: flex-start;
+}
   
-  .trybewarts-login {
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-  }
+.trybewarts-login {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
   
 #trybewarts-header-title {
-    align-self: center;
-  }
+  align-self: center;
+}
