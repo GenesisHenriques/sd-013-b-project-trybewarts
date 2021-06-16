@@ -6,8 +6,8 @@
 }
 
 .trybewarts-login {
-	display: flex;
-	padding-right: 5%;
+  display: flex;
+  padding-right: 5%;
 }
 
 main {
@@ -42,15 +42,10 @@ main {
 
 #label-family {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 #family-buttons {
   display: flex;
-  flex-direction: column
-  
-}
-
-#label-family p {
-  
+  flex-direction: column;
 }
