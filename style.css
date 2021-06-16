@@ -37,4 +37,23 @@ main {
 
 #trybewarts-forms-logo {
  width: 40vw;
+  height: 500px;
+}
+
+.nomeSobrenome {
+  display: flex;
+}
+
+.emailSelect {
+  display: flex;
+}
+
+.containerFamilia {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
 }
