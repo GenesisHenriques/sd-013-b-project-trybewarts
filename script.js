@@ -1,13 +1,13 @@
 const cadastros = {
   user: 'tryber@teste.com',
-  pass: '123456'
-}
+  pass: '123456',
+};
+
 const bntLogin = document.getElementById('bntLogin');
-bntLogin.addEventListener('click',validarLogin);
 
 function validarLogin() {
-  let login = document.getElementById('login').value;
-  let senha = document.getElementById('senha').value;
+  const login = document.getElementById('login').value;
+  const senha = document.getElementById('senha').value;
 
   if ((cadastros.user === login) && (cadastros.pass === senha)) {
     alert('Olá, Tryber!');
@@ -15,3 +15,5 @@ function validarLogin() {
     alert('Login ou senha inválidos.');
   }
 }
+
+bntLogin.addEventListener('click', validarLogin);
