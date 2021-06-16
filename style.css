@@ -39,3 +39,7 @@ main {
 #name-lastname {
   display: flex;
 }
+
+#email-house {
+  display: flex;
+}
