@@ -10,11 +10,16 @@
 <body>
     <header class="header">
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
-        <form class="trybewarts-login" action="">
-            <input type="email" placeholder="Login">
-            <input type="password" placeholder="Senha">
-            <button>Logar</button>
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <form onsubmit="return false"  name= "frmEnvia" class="trybewarts-login" action="">
+            <input class="input-email" name="inputEmail" type="email" placeholder="Login">
+            <input class="input-senha" name= "inputSenha" type="password" placeholder="Senha">
+            <button class="button-login">Logar</button>
         </form>
     </header>
+    <main class="flex">
+        <form class="flex form-main" id="evaluation-form" action=""></form>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
