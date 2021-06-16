@@ -9,3 +9,9 @@ document.getElementById('btn-login').addEventListener('click', (e) => {
   }
   alert('Olá, Tryber!');
 });
+document.getElementById('agreement').addEventListener('click', (e) => {
+  const submitButton = document.getElementById('submit-btn');
+  if (e.target.value === 'on') {
+    submitButton.toggleAttribute('disabled');
+  }
+});

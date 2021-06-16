@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+#primeiro-grupo-inputs, #segundo-grupo-inputs {
+  display: flex;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
