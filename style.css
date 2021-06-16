@@ -20,11 +20,16 @@
   width: 70px;
 }
 
-.trybewarts-login input , .trybewarts-login button {
+.trybewarts-login input , .trybewarts-login button , #submit-btn {
   border: none;
   border-radius: 5px;
   padding: 10px;
   margin: 6px;
+}
+
+.form-text {
+  text-align: center;
+  margin: 20px;
 }
 
 .trybewarts-login button , #submit-btn {
