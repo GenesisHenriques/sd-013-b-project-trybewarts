@@ -49,8 +49,6 @@ form {
 .logo-form .logo-container {
   display: flex;
   justify-content: flex-end;
-  position: absolute;
-  
 }
 
 main select {
