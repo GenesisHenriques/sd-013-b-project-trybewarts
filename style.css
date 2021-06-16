@@ -85,8 +85,8 @@ hr {
 }
 
 .rate-buttons input {
-  width: 20px;
-  height: 20px;
+  display: flex;
+  width: 15px;
 }
 
 .rate-buttons label {
@@ -114,12 +114,6 @@ hr {
   width: 48%;
 }
 
-.rate-buttons input {
-  display: flex;
-  width: 15px;
-  width: auto;
-}
-
 #submit-btn {
   background-color: rgb(73, 21, 116);
   border: none;
@@ -134,7 +128,7 @@ hr {
 footer {
   display: flex;
   justify-content: center;
-  background-color:#454a4d;
+  background-color: rgb(61, 61, 71);
   color: white;
   padding: 20px;
 }
