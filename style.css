@@ -6,3 +6,7 @@
 .trybewarts-header-logo {
   flex-wrap: wrap;
 }
+
+#rate-container input {
+  margin-left: 10px;
+}
