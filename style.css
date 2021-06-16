@@ -7,6 +7,7 @@
   display: flex;
 }
 
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -39,4 +40,18 @@ input {
 
 #house {
   width: 25%;
+}
+
+.rate-buttons {
+  display: flex;
+}
+
+.rate-buttons input {
+  width: 20px;
+  height: 20px;
+}
+
+.rate-buttons label {
+  display: flex;
+  align-items: center;
 }
