@@ -1,6 +1,7 @@
 const loginInput = document.querySelector('#login');
 const passwordInput = document.querySelector('#password');
 const btnLogin = document.querySelector('#enviar');
+const yourRate = document.querySelector('.your-rate');
 
 function verifyLogin() {
   const loginCorrect = 'tryber@teste.com';
@@ -14,4 +15,24 @@ function verifyLogin() {
   }
 }
 
+function generateRadiosBtn() {
+  for (let index = 1; index < 11; index += 1) {
+    const rate = document.createElement('input');
+    const rateLabel = document.createElement('label');
+    rateLabel.innerText = index;
+    // rateLabel.for = `${index}`;
+    // console.log(rateLabel);
+    rate.type = 'radio';
+    rate.name = 'rate';
+    rate.value = index;
+    yourRate.appendChild(rate);
+    yourRate.appendChild(rateLabel);
+
+  }
+}
+// Posicione os radio buttons para ficar lado a lado
+// Posicione os radio buttons à direita da label
+
+
 btnLogin.addEventListener('click', verifyLogin);
+generateRadiosBtn();
