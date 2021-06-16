@@ -9,18 +9,17 @@
   flex-wrap: wrap;
 }
 
-<<<<<<< HEAD
 .trybewarts-login {
   align-items: center;
   display: flex;
-=======
-#rate-container input {
-  margin-left: 10px;
-}
 
-#text-area-container {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
->>>>>>> 4c73d2f94f01aa657c9b8995af24f341c4ea22bb
+  /* #rate-container input {
+    margin-left: 10px;
+  }
+
+  #text-area-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  } */
 }
