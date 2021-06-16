@@ -54,3 +54,7 @@ form {
 .logo-form {
   display: flex;
 }
+
+#evaluation {
+  font-size: 15px;
+}
