@@ -12,13 +12,11 @@ botaoEnviar.addEventListener('click', () => {
 
 const checkBox = document.getElementById('agreement');
 
-let check = true;
 checkBox.addEventListener('click', () => {
-  if (check === true) {
-    // check = false;
-    document.getElementById('submit-btn').disabled = false;
+  const submit = document.getElementById('submit-btn');
+  if (submit.disabled === true) {
+    submit.disabled = false;
   } else {
-    // check = true;
-    document.getElementById('submit-btn').disabled = true;
+    submit.disabled = true;
   }
 });
