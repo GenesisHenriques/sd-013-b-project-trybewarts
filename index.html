@@ -65,34 +65,20 @@
         </div>
         <hr />
         <div class="family-content">
+
           <div class="family">
             <span id="radio-buttons-family">
-              <label for="" id="label-family"
-                >Qual sua família?
-
-                <label for="front">
-                  <input
-                    type="radio"
-                    name="family"
-                    id="front"
-                    value="Frontend"
-                  />
-                  Frontend
-                </label>
-                <label for="back">
-                  <input type="radio" name="family" id="back" value="Backend" />
-                  Backend
-                </label>
-                <label for="full">
-                  <input
-                    type="radio"
-                    name="family"
-                    id="full"
-                    value="FullStack"
-                  />
-                  FullStack
-                </label>
+              
+              <label for="" id="label-family">Qual sua família?
               </label>
+
+              <input type="radio" name="family" id="front" value="Frontend"/>
+              <label for="front">Frontend</label>
+              <input type="radio" name="family" id="back" value="Backend" />
+              <label for="back">Backend</label>
+              <input type="radio" name="family" id="full" value="FullStack"/>
+              <label for="full">FullStack</label>
+              
             </span>
           </div>
 
@@ -169,6 +155,11 @@
             maxlength="500"
           ></textarea>
         </div>
+        <span>
+          <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+          <input type="checkbox" name="" id="agreement">
+        </span>
+        <button type="submit" id="submit-btn" disabled>Enviar</button>
       </form>
       <img
         src="images/trybewarts-colored.svg"
@@ -176,6 +167,9 @@
         id="trybewarts-forms-logo"
       />
     </main>
+    <footer>
+      <h3>Direitos reservados à Trybewarts©</h3>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

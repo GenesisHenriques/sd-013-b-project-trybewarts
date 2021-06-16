@@ -65,7 +65,7 @@ main {
   width: 200px;
 }
 
-.family {
+.family input {
   display: flex;
   flex-direction: column;
   background-color: blue;
