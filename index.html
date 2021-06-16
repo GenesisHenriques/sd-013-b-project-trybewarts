@@ -39,17 +39,11 @@
         </select>
       </div>
 
-      <spam>Casa:</spam>
-      <select name="" id="house">
-        <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-        <option value="Corvinode" id="corvinode-house">Corvinode</option>
-        <option value="Pytherina" id="pytherina-house">Pytherina</option>
-      </select>
-
       <div class="multiple-choices">
-        <label id="label-family">
+        <label id="family-radios">
+          <label id="label-family">
           Qual sua família?
+          </label>
           <label for="radio-frontend">
             <input type="radio" name="family" value="Frontend" id="radio-frontend" checked>Frontend
           </label>
@@ -61,8 +55,10 @@
           </label>
         </label>
 
-        <label id="label-content">
+        <label id="subject-checkboxes">
+          <label id="label-content">
           Qual conteúdo você está com mais vontade de aprender?
+          </label>
           <label for="checkbox-hofs">
             <input type="checkbox" name="subjects" value="HoFs" class="subject" id="checkbox-hofs">HoFs
           </label>
@@ -84,11 +80,13 @@
         </label>
       </div>
 
-      <div class="inputs">
-        <label id="label-rate">Como você avalia a Trybewarts?</spam>
+      <div class="rating">
+        <label id="label-rate">
+          Como você avalia a Trybewarts?
+        </label>
 
         <input type="radio" name="rate" id="rate1" value="1">
-        <label for="rate1">1</label>
+        <label for="rate1"></label>1</label>
         
         <input type="radio" name="rate" id="rate2" value="2">
         <label for="rate2">2</label>
@@ -130,9 +128,9 @@
     </form>
     
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="lodo da trybewarts">
-
-    <footer>Direitos reservados à Trybewarts©</footer>
   </main>
+
+  <footer>Direitos reservados à Trybewarts©</footer>
 
   <script src="script.js"></script>
 </body>
