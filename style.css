@@ -40,7 +40,7 @@
 .main {
   display: flex;
   width: 675px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 #label-content {
@@ -54,5 +54,7 @@
 }
 
 footer {
+  text-align: center;
+  height: 50px;
   background-color: rgb(50, 167, 145);
 }
