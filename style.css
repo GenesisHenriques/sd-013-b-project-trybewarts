@@ -42,6 +42,11 @@ main {
   display: flex;
 }
 
-.class {
+.emailSelect {
   display: flex;
+}
+
+.containerFamilia {
+  display: flex;
+  flex-direction: column;
 }
