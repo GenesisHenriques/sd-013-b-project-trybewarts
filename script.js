@@ -1,7 +1,7 @@
-window.onload = function() {
-  document.getElementById('submit-btn').disabled = true;
-}
+// window.onload = function () {
+// };
 
+document.getElementById('submit-btn').disabled = true;
 const checboxAgreement = document.querySelector('#agreement');
 
 function verificarCheckboxAgreement() {
