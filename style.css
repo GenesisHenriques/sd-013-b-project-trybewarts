@@ -42,7 +42,7 @@ body {
 }
 
 /* INPUTS */
-input, select {
+input , select {
   height: 40px;
   width: 200px;
   margin-bottom: 20px;
