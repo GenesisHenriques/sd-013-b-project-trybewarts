@@ -1,16 +1,19 @@
-const trybeEmail = document.getElementById('trybe-email');
-const trybePassword = document.getElementById('trybe-password');
-const submitBtn = document.getElementById('submit-btn');
+const trybeEmail = document.getElementById("trybe-email");
+const trybePassword = document.getElementById("trybe-password");
+const submitBtn = document.getElementById("submit-btn");
 
 function validateLogin() {
-  if (trybeEmail.value !== 'tryber@teste.com' || trybePassword.value !== '123456') {
-    alert('Login ou senha inválidos');
+
+  if (
+    trybeEmail.value !== "tryber@teste.com" ||
+    trybePassword.value !== "123456"
+  ) {
+    alert("Login ou senha inválidos");
   } else {
-    alert('Olá, Tryber!');
+    alert("Olá, Tryber!");
   }
 }
 
 window.onload = function() {
   submitBtn.addEventListener('click', validateLogin);
-
 }
