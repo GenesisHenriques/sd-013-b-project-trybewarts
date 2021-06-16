@@ -24,3 +24,7 @@ checkbox.addEventListener('click', () => {
     submitBtn.disabled = true;
   }
 });
+
+submitBtn.addEventListener('click', () => {
+  
+})
