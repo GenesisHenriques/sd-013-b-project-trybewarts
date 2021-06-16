@@ -17,7 +17,7 @@ botaoLogar.addEventListener('click', verificarLoginESenha);
 
 const checkBotao = document.querySelector('#agreement');
 
-checkBotao.addEventListener('click', function () {
+checkBotao.addEventListener('click', function verificando() {
   const check = document.querySelector('#agreement').checked;
   const botaoEnviar = document.querySelector('#submit-btn');
   if (check === true) {
