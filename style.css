@@ -45,17 +45,6 @@
   padding: 10px 20px;
 }
 
-.trybewarts-login input::-webkit-outer-spin-button,
-.trybewarts-login input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-.trybewarts-login input[type=number] {
-  -moz-appearance: textfield;
-}
-
 main {
   display: flex;
 }
