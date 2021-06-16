@@ -22,6 +22,7 @@ function verifyLogin() {
 
 const btnLogar = document.querySelector('#btn-login');
 const textArea = document.querySelector('#text-area');
+const object = document.getElementById('agreement');
 
 btnLogar.addEventListener('click', verifyLogin);
 
@@ -36,3 +37,18 @@ function validationComentario(event) {
 }
 
 textArea.addEventListener('keyup', validationComentario);
+
+function desligarButton() {
+  const checked = [object.checked];
+  if (checked[0] === false) {
+    document.querySelector('#submit-btn').disabled = true;
+  } else {
+    document.querySelector('#submit-btn').disabled = false;
+  }
+}
+
+object.addEventListener('click', desligarButton);
+
+window.onload = function windowOnload() {
+  desligarButton();
+};
