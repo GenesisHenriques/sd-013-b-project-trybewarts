@@ -12,3 +12,16 @@
   display: flex;
   align-items: center;
 }
+
+#evalution-form{
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  justify-content: flex-start;
+}  
+
+.main-form{
+  display: flex;
+  flex-direction: column;
+  
+}
