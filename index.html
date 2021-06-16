@@ -14,29 +14,52 @@
 
         <h1 id="trybewarts-header-title">Trybewarts</h1>
 
+<<<<<<< HEAD
     <form class="trybewarts-login">
             <input type="text" placeholder="Login" name="username">
             <input type="password" placeholder="Senha" name="psw">
             <button type="submit">Entrar</button>
           </form>
 
+=======
+        <button type="submit">Entrar</button>
+      </form>
+>>>>>>> 39043567462792b821a914a03c9ea01fd4391a3b
    </header>
 
   <main>
     <form action="" id="evaluation-form">
       <h2>Forms</h2>
-      <input type="text" id="input-name" placeholder="Nome">
-      <input type="text" id="last-name" placeholder="Sobrenome">
-      <input type="email" name="" id="input-email" placeholder="Email">
-      <select name="" id="house">
-        <option value="Gitnória"  id="gitnoria-house">Gitnória</option>
-        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-        <option value="Corvinode" id="corvinode-house">Corvinode</option>
-        <option value="Pytherina" id="pytherina-house">Pytherina</option>
-      </select>
+      <div id="nome-e-sobrenome">
+        <input type="text" id="input-name" placeholder="Nome">
+        <input type="text" id="input-lastname" placeholder="Sobrenome">
+      </div>
+      <div id="email-e-casa">
+        <input type="email" name="" id="input-email" placeholder="Email">
+        <select name="" id="house">
+          <option value="Gitnória"  id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
+      </div>
+      <div id="familia">
+        <label id="label-family">Qual sua família?</label>
+        <div>
+          <input type="radio" name="family" id="family-1" value="Frontend">
+          <label for="family-1">Frontend</label>
+        </div>
+        <div>
+          <input type="radio" name="family" id="family=2" value="Backend">
+          <label for="family-2">Backend</label>
+        </div>
+        <div>
+          <input type="radio" name="family" id="family-3" value="FullStack">
+          <label for="family-3">FullStack</label>
+        </div>
+      </div>
     </form>
     <img src="images/trybewarts-colored.svg" alt="trybewarts logo" id="trybewarts-forms-logo">
   </main>
-
 </body>
 </html>
