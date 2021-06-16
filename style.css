@@ -7,6 +7,7 @@ header {
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .trybewarts-login {
@@ -32,9 +33,16 @@ header {
 #evaluation-form {
   display: flex;
   width: 675px;
-	flex-direction: column;
+  flex-direction: column;
 }
 
 #trybewarts-main {
   display: flex;
+  justify-content: space-between;
+}
+
+#trybewarts-forms-logo {
+  width: 500px;
+  height: 500px;
+  order: 2;
 }
