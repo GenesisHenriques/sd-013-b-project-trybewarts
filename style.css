@@ -51,7 +51,6 @@ form {
   justify-content: flex-end;
 }
 
-main select {
-  position:relative;
-  width: 100px;
+.logo-form {
+  display: flex;
 }
