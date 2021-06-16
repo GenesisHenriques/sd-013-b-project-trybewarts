@@ -4,13 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+}
+
 /* menu */
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10%;
+  padding: 10px 0;
 }
 
 /* logo menu */
@@ -50,6 +54,7 @@ main {
 
 /* rodapé */
 footer {
+  height: 5em;
   color: white;
   background-color: rgb(95, 95, 95);
 }
