@@ -86,7 +86,6 @@ hr {
 }
 
 .rate-buttons input {
-  display: flex;
   width: 15px;
 }
 
@@ -95,24 +94,47 @@ hr {
   align-items: center;
 }
 
-#family-div {
+#rate-info {
   display: flex;
-  max-width: 48%;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#family-div label {
+#family-div {
+  display: flex;
+  flex-direction: column;
+  max-width: 48%;
+  width: 50%;
+}
+
+
+#label-family-options {
+  display: flex;
+  flex-direction: column;
+}
+
+#family-div #label-family{
   display: flex;
   flex-direction: column;
 }
 
 #family-div input {
-  display: flex;
   width: 13px;
 }
 
 #content-div {
   display: flex;
   width: 48%;
+  flex-wrap: wrap;
+}
+
+.subject {
+  width: 20px;
+}
+
+#content-checkbox {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #submit-btn {
@@ -132,4 +154,8 @@ footer {
   background-color: rgb(61, 61, 71);
   color: white;
   padding: 20px;
+}
+
+.learning-info {
+  display: flex;
 }
