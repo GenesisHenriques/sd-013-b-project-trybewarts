@@ -2,3 +2,13 @@
   display: flex;
   background-color: rgb(50, 167, 145);
 }
+
+.form-conteiner {
+  display: flex;
+  justify-content: space-between
+}
+
+.conteiner {
+  display: flex;
+  align-items: center;
+}
