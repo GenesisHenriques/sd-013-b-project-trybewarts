@@ -1,13 +1,13 @@
 .header {
  display: flex;
  background-color: rgb(50,167,145);
-<<<<<<< HEAD
+ justify-content: space-between;
 }
 .trybewarts-header-logo {
- display: flex;
- 
+
 }
-=======
- 
+.trybewarts-login {
+display: flex;
+align-items: center;
 }
->>>>>>> 79e4e778e82ecfd2deb0684ce15e63cabf9c50ba
+
