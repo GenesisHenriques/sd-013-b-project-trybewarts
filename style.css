@@ -97,21 +97,31 @@ hr {
 #family-div {
   display: flex;
   max-width: 48%;
+  width: 50%;
 }
 
-#family-div label {
+#family-div #label-family{
   display: flex;
   flex-direction: column;
 }
 
 #family-div input {
-  display: flex;
   width: 13px;
 }
 
 #content-div {
   display: flex;
   width: 48%;
+  flex-wrap: wrap;
+}
+
+.subject {
+  width: 50px;
+}
+
+#content-checkbox {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #submit-btn {
@@ -131,4 +141,8 @@ footer {
   background-color: rgb(61, 61, 71);
   color: white;
   padding: 20px;
+}
+
+.learning-info {
+  display: flex;
 }
