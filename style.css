@@ -3,6 +3,10 @@
   background-color: rgb(50, 167, 145);
 }
 
+.trybewarts-header-logo {
+  align-self: flex-start;
+}
+
 main {
   display: flex;
 }
