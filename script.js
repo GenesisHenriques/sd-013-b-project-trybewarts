@@ -6,7 +6,7 @@ function verificarLoginESenha() {
   let senha = document.querySelector("#senha");
   let senhaValor = senha.value;
 
-  if (loginValor == "tryber@teste.com" && senhaValor == "123456") {
+  if (loginValor === "tryber@teste.com" && senhaValor === "123456") {
     alert("Olá, Tryber!");
   } else {
     alert("Login ou senha inválidos.");
