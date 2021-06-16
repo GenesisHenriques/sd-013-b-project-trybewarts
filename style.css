@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.subtitle {
+  margin-left: 300px;
+}
+
 .loginBox {
   border-radius: 4px;
 }
@@ -32,28 +36,32 @@ main {
   border: 2px solid black;
   display: flex;
   flex-direction: column;
+  margin-left: 50px;
   width: 675px;
 }
 
 #trybewarts-forms-logo {
- width: 40vw;
+  width: 40vw;
   height: 500px;
-}
-
-.nomeSobrenome {
-  display: flex;
-}
-
-.emailSelect {
-  display: flex;
 }
 
 .containerFamilia {
   display: flex;
   flex-direction: column;
+  margin-right: 200px;
 }
 
 .conteudo {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudoFamilia {
+  display: flex;
+  margin: 10px 30px;
+}
+
+.containerFamilia {
   display: flex;
   flex-direction: column;
 }
