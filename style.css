@@ -64,22 +64,20 @@
   justify-content: space-between;
 }
 
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
 #evaluation-form label {
   margin-bottom: 5px;
-}
-
-#evaluation-form #input-name {
-  width: 300px;
-}
-
-#evaluation-form #input-lastname {
-  width: 300px;
 }
 
 #evaluation-form input , #evaluation-form select , #submit-btn {
   border: 1.5px solid rgb(51, 51, 51);
   border-radius: 5px;
   padding: 8px;
+  width: 300px;
 }
 
 #trybewarts-logo {
@@ -93,6 +91,16 @@
   height: 500px;
 }
 
+input[type="radio"] {
+  display: inline;
+}
+
+#radio-buttons {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 #agreement {
   margin-bottom: 15px;
 }

@@ -33,19 +33,30 @@
           <input id="input-lastname" name="input-lastname" type="text" placeholder="Sobrenome">
         </div>
       </div>
-      <div class="form-element">
-        <label for="input-email">Email</label>
-        <input id="input-email" name="input-email" type="email" placeholder="Email">
+      <div class="info">
+        <div class="form-element">
+          <label for="input-email">Email</label>
+          <input id="input-email" name="input-email" type="email" placeholder="Email">
+        </div>
+        <div class="form-element">
+        <label for="house">Na Trywarts, a qual casa você pertence?</label>
+          <select name="house" id="house">
+            <option id="select-one" selected disabled>Selecione</option>
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
       </div>
-      <div class="form-element">
-      <label for="house">Na Trywarts, a qual casa você pertence?</label>
-        <select name="house" id="house">
-          <option id="select-one" selected disabled>Selecione</option>
-          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-          <option value="Corvinode" id="corvinode-house">Corvinode</option>
-          <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
+      </div>
+      <div id="radio-buttons">
+        <p id="label-family">Qual sua Família</p>
+        <label>Frontend</label>
+        <input type="radio" name="family">
+        <label>Backend</label>
+        <input type="radio" name="family">
+        <label>FullStack</label>
+        <input type="radio" name="family">
       </div>
       <div>
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
