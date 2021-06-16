@@ -1,14 +1,29 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-}
-
-.form-conteiner {
-  display: flex;
-  justify-content: space-between
-}
-
-.conteiner {
-  display: flex;
+  height: 100px;
+  padding: 10px 50px;
   align-items: center;
+  justify-content: space-between;
+  
+}
+
+.trybewarts-header-logo {
+  height: 75px;
+}
+
+.trybewarts-login {
+  display: flex; 
+}
+
+#trybewarts-header-title {
+  color: white;
+}
+
+input {
+  margin: 2px;
+}
+
+button {
+  margin: 2px;
 }
