@@ -5,9 +5,7 @@
   align-items: center;
 }
 
-
-
-.trybewarts-login{
+.trybewarts-login {
 	display: flex;
 	padding-right: 5%;
 }
@@ -31,12 +29,23 @@ main {
   flex-direction: row;
   justify-content: space-between;
 }
-#house , #input-email{
+
+#house , #input-email {
   flex-grow: 1;
-  margin: 10px 10px;
+  margin: 10px;
 }
 
 #input-name , #input-lastname {
   flex-grow: 1;
-  margin: 10px 10px;
+  margin: 10px;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column
+  
+}
+
+#label-family p {
+  
 }
