@@ -48,6 +48,14 @@
   width: 675px;
 }
 
+#evaluation-form > * {
+  margin-bottom: 10px;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#submit-btn {
+  align-self: flex-start;
 }
