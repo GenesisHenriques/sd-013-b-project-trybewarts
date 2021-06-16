@@ -19,8 +19,7 @@ loginButton.addEventListener('click', loginVerification);
 function ableButton() {
   if (infoCheckbox.checked !== false) {
     submitButton.disabled = false;
-  }
-  else {
+  } else {
     submitButton.disabled = true;
   }
 }
