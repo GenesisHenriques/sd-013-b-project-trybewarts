@@ -50,6 +50,12 @@
   filter: brightness(75%);
 }
 
+hr {
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
 #evaluation-form {
   display: flex;
   width: 675px;
@@ -62,4 +68,37 @@
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+.study-info {
+  font-size: 1.25em;
+  font-weight: 550;
+  line-height: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.study-info .family-selector {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+}
+
+.study-info .family-selector label {
+  margin: 8px 0;
+}
+
+.study-info .content-selector {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-basis: 60%;
+}
+
+.study-info .content-selector span {
+  width: 100%;
+}
+
+.study-info .content-selector label{
+  margin: 8px 16px 8px 0;
 }
