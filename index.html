@@ -15,7 +15,7 @@
         <form class="trybewarts-login" action="">
         <input id="username" type="text" placeholder="Login">
         <input id="password" type="text" placeholder="Senha">
-        <button onclick=handleLogin()>Logar</button>
+        <button id="login-button">Logar</button>
     </form>
     </header>
     <main>
@@ -46,9 +46,98 @@
                     <input type="radio" name="family" value="FullStack">FullStack
                 </div> 
             </div>
+
+
+            <label id="label-content" for="content">Qual conteúdo você está com mais vontade de aprender?</label>
+            <div id="content-box">
+                <div>
+                    <label for="HoFs">HoFs</label>
+                    <input class="subject" type="checkbox" id="HoFs" name="HoFs" value="HoFs">
+                </div>
+                <div>
+                    <label for="Jest">Jest</label>
+                    <input class="subject" type="checkbox" name="Jest" value="Jest">
+    
+                </div>
+                <div>
+                    <label for="Promises">Promises</label>
+                    <input class="subject" type="checkbox" name="Promises" value="Promises">
+    
+                </div>
+                <div>
+                    <label for="React">React</label>
+                    <input class="subject" type="checkbox" name="React" value="React">
+                </div>
+                <div>
+                    <label for="SQL">SQL</label>
+                    <input class="subject" type="checkbox" name="SQL" value="SQL">
+                </div>
+                <div>
+                    <label for="Python">Python</label>
+                    <input class="subject" type="checkbox" name="Python" value="Python">
+                </div>
+            </div>
+
+            <div id="rate-box">
+                <label id="label-rate" for="">Como você avalia a Trybewarts? </label>
+                <div>
+                    <label for="1">1</label>
+                    <input type="radio" name="rate" value="1">
+                </div>
+                <div>
+                    <label for="2">2</label>
+                    <input type="radio" name="rate" value="2">
+                </div>
+                <div>
+                    <label for="3">3</label>
+                    <input type="radio" name="rate" value="3">
+                </div>
+                <div>
+                    <label for="4">4</label>
+                    <input type="radio" name="rate" value="4">
+                </div>
+                <div>
+                    <label for="5">5</label>
+                    <input type="radio" name="rate" value="5">
+                </div>
+                <div>
+                    <label for="6">6</label>
+                    <input type="radio" name="rate" value="6">
+                </div>
+                <div>
+                    <label for="7">7</label>
+                    <input type="radio" name="rate" value="7">
+                </div>
+                <div>
+                    <label for="8">8</label>
+                    <input type="radio" name="rate" value="8">
+                </div>
+                <div>
+                    <label for="9">9</label>
+                    <input type="radio" name="rate" value="9">
+                </div>
+                <div>
+                    <label for="10">10</label>
+                    <input type="radio" name="rate" value="10">
+                </div>
+            </div>
+
+            <label class="textarea" for="">Deixe seu comentário:</label>
+            <textarea name="" id="" maxlength="500" cols="30" rows="10"></textarea>
+
+            <label id="label-infos" for="">Você concorda com o uso das informações acima?
+                <input required type="checkbox" name="info" id="agreement">
+            </label>
+            <button type="submit" disabled id="submit-btn">Enviar</button>
         </form>
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
+    
     </main>
+    <footer>
+        <p>
+            Direitos reservados à Trybewarts©
+        </p> 
+    </footer>
 </body>
 <script src="script.js"></script>
 </html>

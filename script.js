@@ -7,4 +7,22 @@ function handleLogin() {
   return window.alert('Login ou senha inválidos.');
 }
 
-// const loginButton = document.querySelector('')
+// function handleSubmit(event) {
+//   const { target } = event;
+//   target.disabled = false;
+// }
+
+const loginButton = document.querySelector('#login-button');
+loginButton.addEventListener('click', handleLogin);
+
+const agreement = document.querySelector('#agreement');
+const submitButton = document.querySelector('#submit-btn');
+agreement.addEventListener('click', (event) => {
+  const { checked } = event.target;
+  if (checked === true) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+});
+//  submitButton.addEventListener('click', handleSubmit);

@@ -36,3 +36,11 @@ main {
 .trybewarts-header-logo {
   height: 500px;
 }
+
+#content-box {
+  display: flex;
+}
+
+#rate-box {
+  display: flex;
+}
