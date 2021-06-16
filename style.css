@@ -9,6 +9,10 @@
   align-items: center;
 }
 
-.trybe-warts {
+.trybewarts-header-logo{
+  height: 50px;
+}
+
+.trybewarts-login {
   display: flex;
 }
