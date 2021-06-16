@@ -70,6 +70,7 @@ hr {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
 .inputs {
   display: flex;
   width: 225px;
@@ -79,6 +80,7 @@ hr {
   display: flex;
   justify-content: space-between;
 }
+
 .study-info {
   font-size: 1.25em;
   font-weight: 550;
