@@ -23,8 +23,9 @@
         <input type="text" name="Nome" id="input-name" placeholder="Nome">
         <input type="text" name="Sobrenome" id="input-lastname" placeholder="Sobrenome">
       </div>
-      <div>
+      <div class="name-container">
         <input type="email" name="Email" id="input-email" placeholder="Email">
+        <label for="house">Casa</label>
         <select name="casa" id="house">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
@@ -32,10 +33,22 @@
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
       </div>
+      <label for="" id="label-family">Qual sua família?</label>
+      <div class="radio-container">
+        <div class="inputs-container">
+          <label for="frontend">Front-End: </label>
+          <label for="backend">Back-End: </label>
+          <label for="fullstack">Full-Stack: </label>
+        </div>
+        <div class="inputs-container">
+          <input type="radio" name="family" id="frontend" value="Frontend">
+          <input type="radio" name="family" id="backend" value="Backend">
+          <input type="radio" name="family" id="fullstack" value="FullStack">
+        </div>
+      </div>
     </form>
 </main>
   <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
-  <label for="casa">Casa</label>
 <script src="script.js"></script>
 </body>
 </html>
