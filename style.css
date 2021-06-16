@@ -15,6 +15,7 @@ html , body {
   height: 100px;
 }
 
+<<<<<<< HEAD
 #evaluation-form {
   display: flex;
   width: 675px;
@@ -23,4 +24,9 @@ html , body {
 
 main {
   display: flex;
+=======
+.header img {
+  width: 70px;
+  height: 70px;
+>>>>>>> 9fa1f6c0fd8c5d1cd9537a4681ece7af2b71fe48
 }
