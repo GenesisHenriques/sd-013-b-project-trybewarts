@@ -19,7 +19,8 @@
     flex-direction: column;
   }
 
-
-
-
+  .textarea-div {
+    display: flex;
+    flex-direction: column;
+  }
 /* Fim de Trecho de Código do Alan */

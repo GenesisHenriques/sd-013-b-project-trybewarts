@@ -31,15 +31,17 @@ generateRateButtons();
 
 function generateRateButtons () {
   const rateDiv = document.getElementsByClassName('rate-div');
-  for (let index = 0; index < 10; index += 1) {
+  for (let index = 1; index < 11; index += 1) {
     const radioBtn = document.createElement('input');
     const radioBtnLabel = document.createElement('label');
     radioBtn.setAttribute('type','radio');
     radioBtn.setAttribute('name','rate');
     radioBtn.setAttribute('value', index);
-    radioBtnLabel.setAttribute('for', 'rate')
+    radioBtn.setAttribute('id', index)
+    radioBtnLabel.setAttribute('for', index)
     radioBtnLabel.innerText = index;
-    rateDiv[0].appendChild(radioBtn, radioBtnLabel);
+    rateDiv[0].appendChild(radioBtn);
+    rateDiv[0].appendChild(radioBtnLabel);
   }
 }
 
