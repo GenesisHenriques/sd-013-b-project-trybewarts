@@ -4,3 +4,18 @@
 
   background-color: rgb(50, 167, 145);
 }
+
+.trybewarts-login {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-right: 5px;
+}
+
+.trybewarts-login > * {
+  margin-bottom: 5px;
+}
+
+#btn-login {
+  align-self: flex-start;
+}
