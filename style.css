@@ -1,13 +1,14 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
 }
 
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-around;
-  padding: 10px;
+  justify-content: space-between;
+  padding: 10px 200px;
 }
 
 #trybewarts-header-title {
