@@ -12,7 +12,7 @@
     <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <section class="login-form">
-      <form action="" class="trybewarts-login" method="GET">
+      <form name="login-form" action="" class="trybewarts-login" method="GET">
         <input id="login" name="login" type="email" placeholder="Login">
         <input id="password" name="password" type="password" placeholder="Senha">
         <button id="btn-login">Logar</button>
@@ -21,18 +21,20 @@
   </header>
   <main class="main">
     <!-- FORMULÁRIO -->
-    <form action="" id="evaluation-form" method="GET">
-      
+    <form action="" id="evaluation-form" method="GET" name="evaluation-form">
+      <input type="text" name="input-name" id="input-name" placeholder="Nome">
+      <input type="text" name="input-lastname" id="input-lastname" placeholder="Sobrenome">
+      <input type="email" name="input-email" id="input-email" placeholder="Email">
     </form>
     <div>
       <!-- LOGO TRYBEWARTS -->
+      <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
     </div>
   </main>
-  <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
-  
-  <footer class="footer">
-    <p>Direitos reservados à Trybewarts©</p>
-  </footer>
+    
+    <footer class="footer">
+      <p>Direitos reservados à Trybewarts©</p>
+    </footer>
 </body>
 <script src="script.js"></script>
 </html>
