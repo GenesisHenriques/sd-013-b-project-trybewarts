@@ -35,12 +35,19 @@
 main {
   display: flex;
   background-color: rgb(238, 238, 238);
+  justify-content: center;
+  padding: 20px;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
 }
 
 input {
@@ -54,10 +61,23 @@ input {
 
 #primeiro-grupo-inputs , #segundo-grupo-inputs {
   display: flex;
+  align-items: center;
 }
 
 #house {
-  width: 25%;
+  width: 40%;
+  border: none;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: black;
+  margin: 20px 0;
 }
 
 .rate-buttons {
@@ -72,9 +92,6 @@ input {
 .rate-buttons label {
   display: flex;
   align-items: center;
-}
-.texto {
-  width: 50px;
 }
 
 #family-div {
@@ -95,6 +112,23 @@ input {
 #content-div {
   display: flex;
   width: 48%;
+}
+
+.rate-buttons input {
+  display: flex;
+  width: 15px;
+  width: auto;
+}
+
+#submit-btn {
+  background-color: rgb(73, 21, 116);
+  border: none;
+  height: 40px;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 15px;
 }
 
 footer {
