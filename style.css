@@ -21,3 +21,13 @@
 .header h1 {
   margin: auto;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
