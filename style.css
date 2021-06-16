@@ -22,7 +22,7 @@ form {
   flex-basis: 50%;
   flex-grow: 1;
   background-color: blue;
-  justify-content: center;
+  justify-content: center ;
 }
 
 .form-item {
