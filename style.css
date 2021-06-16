@@ -40,3 +40,16 @@ main {
 #trybewarts-forms-logo {
   width: 500px;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(50, 167, 145);
+  padding: 20px 0;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
