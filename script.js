@@ -1,14 +1,15 @@
-function checkLoginAndPassword() {
-  const login = document.getElementById('input-login').value;
-  const password = document.getElementById('input-password').value;
-  console.log(login);
-  console.log(password);
+const loginBtn = document.getElementById('btn-login');
 
-  if (login === 'tryber@teste.com' && password === '123456') {
+function canLogin(event) {
+  const inputLogin = document.getElementById('input-login');
+  const inputPasswrd = document.getElementById('input-password');
+  if (inputLogin.value === 'tryber@teste.com' && inputPasswrd.value === '123456') {
     alert('Olá, Tryber!');
+    event.preventDefault();
   } else {
     alert('Login ou senha inválidos.');
+    event.preventDefault();
   }
 }
 
-document.getElementById('btn-login').addEventListener('click', checkLoginAndPassword);
+loginBtn.addEventListener('click', canLogin);
