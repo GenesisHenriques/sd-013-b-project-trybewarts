@@ -35,3 +35,12 @@ header {
   width: 140px;
   color: white;
 }
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+}
+
+#trybewarts-main {
+  display: flex;
+}
