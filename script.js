@@ -9,5 +9,4 @@ function Logar() {
     alert('Login ou senha inválidos.');
   }
 }
-
 button.addEventListener('click', Logar);
