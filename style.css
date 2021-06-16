@@ -49,3 +49,17 @@
 .header .trybewarts-login button:active {
   filter: brightness(75%);
 }
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
