@@ -30,6 +30,7 @@ body {
   text-align: center;
 }
 
+<<<<<<< HEAD
 /* INPUTS */
 input {
   height: 40px;
@@ -37,3 +38,8 @@ input {
   border-radius: 10px;
   border-color: rgb(50, 167, 145);
 }
+=======
+#trybewarts-forms-logo {
+  height: 500px;
+}
+>>>>>>> 22f1a9f347d8cd4e806951d44e8675d4479a0f66
