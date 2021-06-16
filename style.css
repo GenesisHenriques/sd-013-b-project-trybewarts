@@ -22,3 +22,18 @@
 .trybewarts-login {
   display: flex;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
