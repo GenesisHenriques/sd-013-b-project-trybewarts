@@ -12,4 +12,23 @@
 
 .trybewarts-header-logo {
   text-align: left;
+  width: 50px;
+}
+
+.trybewarts-header-title {
+  text-align: center;
+}
+
+.trytbewarts-login {
+  display: flex;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
 }
