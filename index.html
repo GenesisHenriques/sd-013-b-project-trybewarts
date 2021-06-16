@@ -34,9 +34,10 @@
   <div class="personal-info-div">
     <input type="text" name="name" id="input-name" placeholder="Nome">
     <input type="text" name="last-name" id="input-lastname" placeholder="Sobrenome">
-    <input type="email" name="email" id="input-email" placeholder="Email">
   </div>
-  <div class="house-div">
+  <div class="email-and-house-div"></div>
+  <input type="email" name="email" id="input-email" placeholder="Email">  
+    <label for="house">Qual sua casa?</label>
     <select name="house" id="house">
       <option value="Gitnória" id="gitnoria-house">Gitnória</option>
       <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
@@ -52,11 +53,16 @@
   </div>
   <div class="content-div">
     <label for="content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-    <input type="checkbox" value="HoFs" name="content" id="">HoFs
-    <input type="checkbox" value="Jest" name="content" id="">Jest
-    <input type="checkbox" value="React" name="content" id="">Promises
-    <input type="checkbox" value="SQL" name="content" id="">SQL
-    <input type="checkbox" value="Python" name="content" id="">Python
+    <div class="checkbox-div">
+      <input type="checkbox" value="HoFs" name="content" id="">HoFs
+      <input type="checkbox" value="Jest" name="content" id="">Jest
+      <input type="checkbox" value="React" name="content" id="">Promises
+      <input type="checkbox" value="SQL" name="content" id="">SQL
+      <input type="checkbox" value="Python" name="content" id="">Python
+    </div>
+  </div>
+  <div class="rate-div">
+    <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label>
   </div>
   
 

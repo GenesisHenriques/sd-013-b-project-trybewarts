@@ -28,4 +28,15 @@ function validatingLogin() {
 
 // Inicio de Trecho de código do Alan
 
+function generateRateButtons () {
+  const rateDiv = document.getElementsByClassName('rate-div');
+  for (let index = 0; index < 10; index += 1) {
+    const radioBtn = document.createElement('input');
+    radioBtn.setAttribute('type','radio');
+    radioBtn.setAttribute('name','rate');
+    radioBtn.setAttribute('value', index);
+    rateDiv[0].appendChild(radioBtn);
+  }
+}
+
 // Fim de Trecho de Código do Alan
