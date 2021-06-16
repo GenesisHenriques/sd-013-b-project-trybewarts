@@ -1,14 +1,12 @@
-	let buttonLogin = document.getElementById('button-login');
-	
-	function welcomeTrybe(){
-		let valLogin = document.getElementById('login').value;
-		let valSenha = document.getElementById('senha').value;
-		
-		if(valLogin !== ('tryber@teste.com' || valSenha !== '12345')){
-			alert('Login ou senha inválidos.')
-		}else{
-			alert( 'Olá, Tryber!');
-		}
-	}
+function welcomeTrybe() {
+  const valLogin = document.getElementById('login').value;
+  const valSenha = document.getElementById('senha').value;
 
-	buttonLogin.addEventListener('click', welcomeTrybe);
+  if (valLogin !== ('tryber@teste.com' || valSenha !== '12345')) {
+    alert('Login ou senha inválidos.');
+  } else {
+    alert('Olá, Tryber!');
+  }
+}
+
+document.getElementById('button-login').addEventListener('click', welcomeTrybe);
