@@ -1,4 +1,4 @@
-function validateForm() {
+function validateLoginForm() {
   const defaultLogin = 'tryber@teste.com';
   const defaultPassword = '123456';
   const validatePassword = document.getElementById('password');
@@ -14,7 +14,7 @@ function validateForm() {
 
 function loginButtonAddEventListner() {
   const loginButton = document.getElementById('btn-login');
-  loginButton.addEventListener('click', validateForm);
+  loginButton.addEventListener('click', validateLoginForm);
 }
 loginButtonAddEventListner();
 

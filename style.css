@@ -5,24 +5,18 @@
 }
 
 .header {
-  background-color: rgb(50, 167, 145);
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-.header h1 {
-  margin-right: 10px;
-  order: 1;
+  background-color: rgb(50, 167, 145);
+  color: #feb236;
+  display: flex;
+  font-family: 'Yusei Magic', monospace, sans-serif;
+  font-size: 35px;
+  justify-content: space-between;
 }
 
 .trybewarts-login {
-  display: flex;
   align-items: center;
-}
-
-.header .trybewarts-login {
-  order: 2;
+  display: flex;
 }
 
 .trybewarts-login input {
@@ -30,12 +24,15 @@
 }
 
 .trybewarts-login button {
+  background-color: #6b5b95;
   margin-right: 10px;
   padding: 8px;
 }
 
 .main {
+  align-items: center;
   display: flex;
+  justify-content: space-between;
 }
 
 .evaluation-form {
