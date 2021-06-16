@@ -50,3 +50,8 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+}
