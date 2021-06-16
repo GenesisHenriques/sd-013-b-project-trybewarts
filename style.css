@@ -1,11 +1,18 @@
-/*Ínicio de Trecho de Código do Genesis*/
+/* Ínicio de Trecho de Código do Genesis */
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgb(50, 167, 145);
 }
 
-/* <!Fim de Trecho de Código do Genesis*/
+.trybewarts-login {
+  display: flex;
+}
 
-/* <!-- Inicio de Trecho de código do Alan --> */
+
+/* Fim de Trecho de Código do Genesis */
+
+/* Inicio de Trecho de código do Alan */
   
-/* <!-- Fim de Trecho de Código do Alan --> */
+/* Fim de Trecho de Código do Alan */
