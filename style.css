@@ -1,6 +1,17 @@
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header image{
+	width: 5%;
+	height: 5%;
+}
+
+#header-login{
+	padding-right: 5%;
 }
 
 main {
