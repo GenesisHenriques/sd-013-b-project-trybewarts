@@ -54,7 +54,7 @@ Requisito 19 -->
             <button id="enter-button">Enter</button>
         </form>
     </header>
-
+  <div id="main-container">
   <main>
     <form id="evaluation-form">
       <div id="nameAndLastName">
@@ -70,7 +70,14 @@ Requisito 19 -->
               <option value="Pytherina" id="Pytherina">Pytherina</option>
           </select>
       </div>
-      <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+      <hr>
+      <label id="label-family" for="family">Qual sua família?</label>
+      <div id="family-choice">
+          <input type="radio" id="Front-family" name="family" value="Frontend" required> Família Frontend
+          <input type="radio" id="Back-family" name="family" value="Backend" required> Família Backend
+          <input type="radio" id="Back-family" name="family" value="FullStack"required> Família Full-stack  
+      </div>
+          <label id="label-techs">Qual conteúdo você está com mais vontade de aprender?</label>
       <div id = "checkboxes">
           <div id="labels">
               <label for="HoFs">HoFs</label>
@@ -93,9 +100,9 @@ Requisito 19 -->
     </form>
   </main>
   <aside>
-
-
+    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
   </aside>
+ </div>
   <script src="script.js"></script>
 </body>
 </html>

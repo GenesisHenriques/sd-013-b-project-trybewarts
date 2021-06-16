@@ -27,12 +27,33 @@
     order: 2;
 }
 /* main */
+#main-container {
+ 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 main {
   display: flex;
 }
 
 #evaluation-form {
   display: flex;
+  height: 500px;
   width: 675px;
+  justify-content: center ;
+  align-items: center;
   flex-direction: column;
 } 
+
+#trybewarts-forms-logo {
+    height: 500px;
+
+}
+
+#family-choice {
+    border: 2px solid deeppink;
+    display: flex;
+    flex-direction: column;
+}
