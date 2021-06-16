@@ -21,23 +21,23 @@
 }
 
 .trybewarts-login {
-  display: flex;  
+  display: flex;
   align-items: center;
 }
 
 .trybewarts-login input {
-  margin-right: 10px;  
+  margin-right: 10px;
 }
 
-.trybewarts-login button{
-  margin-right: 10px; 
+.trybewarts-login button {
+  margin-right: 10px;
   padding: 8px;
 }
 
 .main {
   display: flex;
 }
-      
+
 .evaluation-form {
   display: flex;
   flex-direction: column;
@@ -48,7 +48,12 @@
 .linha {
   display: flex;
 }
-      
+
 .trybewarts-forms-logo {
   height: 500px;
+}
+
+.familia {
+  display: flex;
+  flex-direction: column;
 }
