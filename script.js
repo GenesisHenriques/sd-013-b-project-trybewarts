@@ -1,7 +1,7 @@
 const buttonLogin = document.getElementById('login-btn');
 
 function checkLogin(event) {
-  const email = document.getElementById('input-email');
+  const email = document.getElementById('input-email-login');
   const senha = document.getElementById('input-senha');
 
   event.preventDefault();
