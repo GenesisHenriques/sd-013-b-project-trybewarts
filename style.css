@@ -1,3 +1,9 @@
+footer {
+  background-color: slategrey;
+  color: white;
+  text-align: center;
+}
+
 .credentials {
   height: 20px;
 }
