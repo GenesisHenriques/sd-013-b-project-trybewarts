@@ -23,38 +23,47 @@ agreement.addEventListener('change', () => {
   // https://flexiple.com/disable-button-javascript/
 });
 
-button.onclick = function () {
-
+function getSubjectList() {
   const subjectArray = document.querySelectorAll('input[type="checkbox"]:checked');
-
   let subjectList = '';
   for (let index = 0; index < subjectArray.length; index += 1) {
     if (subjectList === '') {
       subjectList = `${subjectArray[index].value}`;
     } else {
-      subjectList = subjectList + `, ${subjectArray[index].value}`;
+      subjectList = `${subjectList}, ${subjectArray[index].value}`;
     }
   }
-  
-  const dataArray = [
-  'Nome: ', `${document.getElementById('input-name').value} `, `${document.getElementById('input-lastname').value}`,
-  'Email: ', `${document.getElementById('input-email').value}`, '',
-  'Casa: ', `${document.getElementById('house').value}`, '',
-  'Família: ', `${document.querySelector('input[name="family"]:checked').value}`, '',
-  'Matérias: ', `${subjectList}`, '',
-  'Avaliação: ', `${document.querySelector('input[name="rate"]:checked').value}`, '',
-  'Observações: ', `${document.getElementById('textarea').value}`, ''
-  ]
+  return subjectList;
+}
 
+function getDataArray(parameter1) {
+  const lastName = document.getElementById('input-lastname').value;
+  const myArray = [
+    'Nome: ', `${document.getElementById('input-name').value} `, `${lastName}`,
+    'Email: ', `${document.getElementById('input-email').value}`, '',
+    'Casa: ', `${document.getElementById('house').value}`, '',
+    'Família: ', `${document.querySelector('input[name="family"]:checked').value}`, '',
+    'Matérias: ', `${parameter1}`, '',
+    'Avaliação: ', `${document.querySelector('input[name="rate"]:checked').value}`, '',
+    'Observações: ', `${document.getElementById('textarea').value}`, ''];
+  return myArray;
+}
+
+function eraseAndInsert() {
   const enteredDataArea = document.getElementById('evaluation-form');
   enteredDataArea.innerHTML = '';
   const newUl = document.createElement('ul');
-  newUl.className = 'entered-data-area'
+  newUl.className = 'entered-data-area';
   enteredDataArea.appendChild(newUl);
+}
 
+button.onclick = function () {
+  const subjectListString = getSubjectList();
+  const dataArray = getDataArray(subjectListString);
+  eraseAndInsert();
   for (let index = 0; index < dataArray.length; index += 3) {
     const ul = document.querySelector('.entered-data-area');
-    let newLi = document.createElement('li');
+    const newLi = document.createElement('li');
     newLi.innerText = `${dataArray[index]}${dataArray[index + 1]}${dataArray[index + 2]}`;
     ul.appendChild(newLi);
   }
