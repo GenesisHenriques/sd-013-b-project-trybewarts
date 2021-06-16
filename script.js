@@ -10,10 +10,12 @@ function validatingLogin() {
   }
 }
 
-document.getElementById('btnLogin').addEventListener('click', function (event) {
+function setPreventDefault(event) {
   event.preventDefault();
   validatingLogin();
-});
+}
+
+document.getElementById('btnLogin').addEventListener('click', setPreventDefault);
 
 // Fim de Trecho de Código do Genesis
 
