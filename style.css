@@ -73,6 +73,10 @@ main {
   margin-top: 10px;
 }
 
+#evaluation-form hr {
+  margin: 25px 0;
+}
+
 #evaluation-form input {
   background-color: white;
   border: none;
