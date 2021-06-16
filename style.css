@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(50 , 167 , 145);
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+  margin-right: 50px;
+}
