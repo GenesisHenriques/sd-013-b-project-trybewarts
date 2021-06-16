@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,24 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>TrybeWarts</title>
 </head>
-<body>
-   <header class="header">
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo TrybeWarts">
-   </header>
 
-   <script src="script.js"></script>
+<body>
+    <header class="header">
+        <!-- imagem requisito 2 -->
+        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo TrybeWarts">
+        <!-- formulario requisito 3 -->
+        <form class="trybewarts-login" action="">
+            <label for="login">Login:</label>
+            <input type="email" id="login" placeholder="Login" required>
+
+            <label for="senha">Senha:</label>
+            <input type="number" id="senha" placeholder="Senha" required>
+
+            <button>Login</button>
+        </form>
+    </header>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
