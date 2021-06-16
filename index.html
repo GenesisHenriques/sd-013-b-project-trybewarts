@@ -14,12 +14,12 @@
   <main>
     <form action="" method="GET" id="evaluation-form">
 
-      <div class="first-line">
+      <div class="first-line-form">
         <input id="input-name" type="text" placeholder="Nome">
         <input id="input-lastname" type="text" placeholder="Sobrenome">
       </div>
       
-      <div class="second-line">
+      <div class="second-line-form">
         <input id="input-email" type="text" name="" placeholder="Email">
         
         <label for="house">Casa</label>
@@ -31,10 +31,33 @@
         </select>
       </div>
 
-      <label id="label-family" for="family">Qual sua família?</label>
-      <input type="radio" name="family" id="">Família Frontend
-      <input type="radio" name="family" id="">Família Backend
-      <input type="radio" name="family" id="">Família FullStack
+      <div class="family-select">
+        <label id="label-family" for="family">Qual sua família?</label>
+        <div>
+          <input type="radio" name="family" id="family1" value="Frontend">
+          <label for="family1">Família Frontend</label>
+        </div>
+        <div>
+          <input type="radio" name="family" id="family2" value="Backend">
+          <label for="family2">Família Backend</label>
+        </div>
+        <div>
+          <input type="radio" name="family" id="family3" value="FullStack">
+          <label for="family3">Família FullStack</label>
+        </div>
+      </div>
+
+      <div class="checkbox">
+        <label id="label-content" for="subject">Qual conteúdo você está com mais vontade de aprender?</label>
+        <div class="checkbox-options">
+          <input class="subject" type="checkbox" value="HoFs">HoFs
+          <input class="subject" type="checkbox" value="Jest">Jest
+          <input class="subject" type="checkbox" value="Promises">Promises
+          <input class="subject" type="checkbox" value="React">React
+          <input class="subject" type="checkbox" value="SQL">SQL
+          <input class="subject" type="checkbox" value="Python">Python
+        </div>
+      </div>
     </form>
     
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da escola de magia Trybewarts">
