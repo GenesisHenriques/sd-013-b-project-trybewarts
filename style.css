@@ -46,6 +46,8 @@ input {
   color: white;
   font-size: 45px;
   margin-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .trybewarts-header-logo {
