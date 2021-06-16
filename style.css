@@ -18,7 +18,6 @@
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
 #trybewarts-header-title {
@@ -26,7 +25,6 @@
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
 main {
