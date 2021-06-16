@@ -14,12 +14,7 @@
 /* Fim de Trecho de Código do Genesis */
 
 /* Inicio de Trecho de código do Alan */
-.family-div , .content-div {
-  display: flex;
-  flex-direction: column;
-}
-
-.textarea-div {
+.family-div , .content-div , .textarea-div {
   display: flex;
   flex-direction: column;
 }
