@@ -5,4 +5,24 @@
 
 .trybewarts-header-logo {
     justify-content: flex-start;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* main */
+main {
+  display: flex;
+}
+
+/* form */
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
