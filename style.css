@@ -1,8 +1,12 @@
-<<<<<<< HEAD
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
 }
 
 #main-page {
@@ -13,9 +17,3 @@
   display: flex;
   width: 675px;
 }
-=======
-.header {
-  display: flex;
-  background-color: rgb(50, 167, 145);
-}
->>>>>>> refs/remotes/origin/eaeniko-project-trybewarts
