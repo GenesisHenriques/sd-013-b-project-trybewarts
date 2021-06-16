@@ -21,3 +21,14 @@ function submitInfo() {
 }
 
 checkedBox.addEventListener('click', submitInfo);
+// const evaluationClass = document.querySelector('.evaluation');
+// function addInput () {
+//   for (let index = 1; index < 11; index+= 1) {
+//     const abc = document.createElement('input')
+//     abc.setAttribute('type', 'radio')
+//     abc.setAttribute('name', 'name')
+//     evaluationClass.appendChild(abc)
+//     abc.innerText = index
+//   }
+// }
+// addInput ()
