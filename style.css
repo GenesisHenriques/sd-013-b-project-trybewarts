@@ -11,6 +11,8 @@ header {
 
 #main-form {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #evaluation-form {
@@ -22,6 +24,7 @@ header {
 
 #trybewarts-forms-logo {
   height: 500px;
+  display: flex;
 }
 
 .forms {
