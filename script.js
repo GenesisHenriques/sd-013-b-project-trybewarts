@@ -27,5 +27,18 @@ function verifyLogin() {
 }
 
 const btnLogar = document.querySelector('#btn-login');
+const textArea = document.querySelector('#text-area');
 
 btnLogar.addEventListener('click', verifyLogin);
+
+function validationComentario(event) {
+  const elementoAlvo = event.target;
+  const text = elementoAlvo.value;
+  const larguraText = text.length;
+  if (larguraText >= 500) {
+    elementoAlvo.blur();
+    document.getElementById('text-area').readOnly = true;
+  }
+}
+
+textArea.addEventListener('keyup', validationComentario);
