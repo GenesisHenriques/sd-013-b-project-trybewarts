@@ -41,3 +41,7 @@
   color: rgb(236, 236, 236);
 }
 
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
