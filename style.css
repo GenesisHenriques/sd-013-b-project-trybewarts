@@ -41,3 +41,8 @@
 .avaliador {
   display: flex;
 }
+
+.concordo {
+  display: flex;
+  align-items: center;
+}
