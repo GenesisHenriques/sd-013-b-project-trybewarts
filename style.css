@@ -58,3 +58,8 @@ form {
 #evaluation {
   font-size: 15px;
 }
+
+.family {
+  display: flex;
+  flex-direction: column;
+}
