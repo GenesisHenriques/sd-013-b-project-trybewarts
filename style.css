@@ -50,7 +50,7 @@ main {
   flex-direction: column;
 }
 
-.textarea{
+.textarea {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
