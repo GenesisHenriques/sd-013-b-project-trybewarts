@@ -19,5 +19,4 @@ function habilitaBotão() {
   } else { botao.disabled = true; }
 }
 
-const agreed = document.querySelector('#label-infos');
-agreed.addEventListener('click', habilitaBotão);
+document.querySelector('#label-infos').addEventListener('click', habilitaBotão);
