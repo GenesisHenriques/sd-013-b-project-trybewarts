@@ -96,3 +96,7 @@ select {
   display: flex;
   flex-direction: column;
 }
+
+.rates {
+  display: flex;
+}
