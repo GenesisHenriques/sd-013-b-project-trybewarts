@@ -58,3 +58,27 @@ main.appendChild(formEvaluator);
 
 
 // 6. Faça com que o formulário do requisito 5 seja um container flex com o eixo principal vertical
+
+// 7. Adicione a logo da Trybewarts no lado direito da página
+const imgFormsLogo = document.createElement('img');
+imgFormsLogo.src = 'images/trybewarts-colored.svg';
+imgFormsLogo.id = 'trybewarts-forms-logo';
+main.appendChild(imgFormsLogo);
+
+// 8.Acrescente no formulário os inputs de 'Nome:', 'Sobrenome:' e 'Email:'
+const nomeInput = document.createElement('input');
+nomeInput.id = 'input-name';
+nomeInput.placeholder = 'Nome';
+formEvaluator.appendChild(nomeInput);
+
+const sobrenomeInput = document.createElement('input');
+sobrenomeInput.id = 'input-lastname';
+sobrenomeInput.placeholder = 'Sobrenome';
+formEvaluator.appendChild(sobrenomeInput);
+
+const emailInput = document.createElement('input');
+emailInput.id = 'input-email';
+emailInput.placeholder = 'Email';
+formEvaluator.appendChild(emailInput);
+
+// 9. Crie um select 'Casa' contendo quatro options
