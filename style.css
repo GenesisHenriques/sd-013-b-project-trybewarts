@@ -19,7 +19,7 @@
   width: 70px;
 }
 
-.trybewarts-login input, .trybewarts-login button {
+.trybewarts-login input ,.trybewarts-login button {
   border: none;
   border-radius: 5px;
   padding: 8px;
