@@ -107,37 +107,36 @@ Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, pr
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd sd-013-b-project-trybewarts`
 
-2. Crie uma branch a partir da branch `master`
-  * Verifique que você está na branch `master`
+2. Instale as dependências e inicialize o projeto
+  * Instale as dependências:
+    * `npm install`
+3. Crie uma branch a partir da branch `main`
+  * Verifique que você está na branch `main`
     * Exemplo: `git branch`
-  * Se não estiver, mude para a branch `master`
-    * Exemplo: `git checkout master`
+  * Se não estiver, mude para a branch `main`
+    * Exemplo: `git checkout main`
   * Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
-    * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    * Exemplo: `git checkout -b joaozinho-trybewarts-project`
+    * Você deve criar uma branch no seguinte formato: `nome-sobrenome-nome-do-projeto`
+    * Exemplo: `git checkout -b joao-silva-trybewarts-project`
 
-3. Crie na raiz do projeto os arquivos que você precisará desenvolver:
+4. Crie na raiz do projeto os arquivos que você precisará desenvolver:
   * Verifique que você está na raiz do projeto
-    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joaozinho/code/**sd-013-b-project-trybewarts**_
+    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joao/code/**sd-013-b-project-trybewarts**_
   * Crie os arquivos index.html, style.css e script.js
     * Exemplo: `touch index.html style.css script.js`
 
-4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
+5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
   * Verifique que as mudanças ainda não estão no _stage_
     * Exemplo: `git status` (devem aparecer listados os novos arquivos em vermelho)
   * Adicione o novo arquivo ao _stage_ do Git
-      * Exemplo:
-        * `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
-        * `git status` (devem aparecer listados os arquivos em verde)
-  * Faça o `commit` inicial
-      * Exemplo:
+	@@ -135,10 +137,10 @@ Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, pr
         * `git commit -m 'iniciando o projeto. VAMOS COM TUDO :rocket:'` (fazendo o primeiro commit)
         * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
 
-5. Adicione a sua branch com o novo `commit` ao repositório remoto
-  * Usando o exemplo anterior: `git push -u origin joaozinho-trybewarts-project`
+6. Adicione a sua branch com o novo `commit` ao repositório remoto
+  * Usando o exemplo anterior: `git push -u origin joao-silva-trybewarts-project`
 
-6. Crie um novo `Pull Request` _(PR)_
+7. Crie um novo `Pull Request` _(PR)_
   * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-013-b-project-trybewarts/pulls)
   * Clique no botão verde _"New pull request"_
   * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
@@ -391,7 +390,7 @@ Pontos importantes:
   * Deverá conter a opção com text e value `Pytherina` e com o id ``pytherina-house``
 
   #### O que será verificado:
-  
+
   - Existe um elemento `select` com o id `house`
   - Existe um elemento `option` com o id `gitnoria-house`
   - Existe um elemento `option` com o id `reactpuff-house`
@@ -472,7 +471,7 @@ Pontos importantes:
 
   - Existe um elemento `label` com o id `label-rate` que possui um conteúdo de texto `Como você avalia a Trybewarts?`
   - Existem 10 `radio-buttons` com o atributo `name="rate"`
-  - Existem 10 `radio-buttons` contendo o atributo `value` de 1 a 10  
+  - Existem 10 `radio-buttons` contendo o atributo `value` de 1 a 10
   - Os `radio-buttons` estão à direita do texto da label
 
 ### 15. Crie uma textarea com o id 'textarea' e uma label com a classe 'textarea' contendo o número máximo de caracteres igual à 500
@@ -593,7 +592,7 @@ Esses requisitos **não** são verificáveis pelo avaliador automático.
 #### A pessoa dona da branch deve garantir que o último commit nessa branch é seu. Pode ser feita alguma alteração que não afete o cumprimento dos requisitos para realizar o commit.
 
 A outra pessoa integrante da dupla deve criar uma nova `branch` a partir da `branch` de trabalho _(a primeira branch criada pela equipe)_.
-Exemplo: 
+Exemplo:
 1. Use `git branch` para ter certeza de que está na branch de trabalho;
 2. Caso não esteja use `git checkout joaozinho-trybewarts-project`  para trocar de `branch`;
 3. User `git checkout -b mariazinha-trybewarts-project` para criar uma nova branch a partir da branch anterior (`joaozinnho-trybewarts-project`);
@@ -604,7 +603,7 @@ Exemplo:
 1. Adicione sua branch com o novo `commit` ao repositório remoto
 
    * Usando o exemplo anterior: `git push -u origin mariazinha-trybewarts-project`
-   
+
 2. Crie um novo `Pull Request` (PR)
   * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-013-b-project-trybewarts/pulls)
   * Clique no botão verde _"New pull request"_
@@ -613,7 +612,7 @@ Exemplo:
   * Adicione uma descrição para o _Pull Request_, um título claro que o identifique, e clique no botão verde _"Create pull request"_
   * **Não se preocupe em preencher mais nada por enquanto!**
   * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-013-b-project-trybewarts/pulls) e confira que o seu _Pull Request_ está criado
- 
+
 #### ⚠️ Para o seu projeto ser avaliado você deve se assegurar que o último commit na branch é da pessoa dona da branch.
 
 
@@ -629,7 +628,7 @@ Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus co
 
   * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
 
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-013-a`.
+  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-013-b`.
 
 Caso tenha alguma dúvida, [aqui tem um vídeo explicativo](https://vimeo.com/362189205).
 
