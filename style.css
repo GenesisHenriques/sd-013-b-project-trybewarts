@@ -1,24 +1,23 @@
 .header {
-    background-color: rgb(50, 167, 145);
-    display: flex;
-    justify-content: space-between;
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-between;
 }
 
 .trybewarts-header-logo {
-    width: 50px;
-    margin-left:
+  width: 50px;
 }
 
 .trybewarts-login {
-    margin-right:15px;
-    width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  margin-right: 15px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .trybewarts-login input {
-    height: 30px;
+  height: 30px;
 }
 
 main {
