@@ -47,7 +47,37 @@
 #evaluation-form {
   display: flex;
   flex-direction: column;
+  padding: 20px;
   width: 675px;
+}
+
+.form-element {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 20px;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+
+#evaluation-form label {
+  margin-bottom: 5px;
+}
+
+#evaluation-form #input-name {
+  width: 300px;
+}
+
+#evaluation-form #input-lastname {
+  width: 300px;
+}
+
+#evaluation-form input, #evaluation-form select {
+  border: 1.5px solid rgb(51, 51, 51);
+  border-radius: 5px;
+  padding: 8px;
 }
 
 #trybewarts-logo {
