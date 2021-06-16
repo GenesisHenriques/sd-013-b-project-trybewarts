@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-const boxes = document.getElementsByClassName('subject');
+const boxes = document.querySelectorAll('.subject');
 const submitBtn = document.getElementById('submit-btn');
 submitBtn.disabled = true;
 
@@ -38,20 +37,3 @@ function disableSubmit() {
 }
 
 disableSubmit();
-=======
-// Validar acesso do login
-
-const login = document.getElementById('login-input');
-const password = document.getElementById('password-input');
-const enterButton = document.getElementById('enter-button');
-
-function checkLogin() {
-  if (login.value === 'tryber@teste.com' && password.value === '123456') {
-    alert('Olá, Tryber!');
-  } else {
-    alert('Login ou senha inválidos.');
-  }
-}
-
-enterButton.addEventListener('click', checkLogin);
->>>>>>> cc4d1318ebbdac64ea0fdc95a061a00cc8143f4b
