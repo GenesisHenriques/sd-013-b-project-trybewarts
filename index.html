@@ -9,51 +9,70 @@
   </head>
   <body>
     <div class="header-container">
-    <header class="header">
-      <img
-        class="trybewarts-header-logo"
-        src="images/trybewarts-header-logo.svg"
-        alt="Logo escola"
-      />
-       <h1 id="trybewarts-header-title">Trybewarts</h1>
-      <form class="trybewarts-login">
-        <label for="user-login">
-          <input
-            type="email"
-            name="login"
-            id="user-login"
-            placeholder="Login"
-          />
-        </label>
-        <label for="user-pass">
-          <input
-            type="password"
-            name="password"
-            id="user-pass"
-            placeholder="Senha"
-          />
-        </label>
-        <button type="submit" id="button-login">Logar</button>
-      </form>
-    </header>
+      <header class="header">
+        <img
+          class="trybewarts-header-logo"
+          src="images/trybewarts-header-logo.svg"
+          alt="Logo escola"
+        />
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <form class="trybewarts-login">
+          <label for="user-login">
+            <input
+              type="email"
+              name="login"
+              id="user-login"
+              placeholder="Login"
+            />
+          </label>
+          <label for="user-pass">
+            <input
+              type="password"
+              name="password"
+              id="user-pass"
+              placeholder="Senha"
+            />
+          </label>
+          <button type="submit" id="button-login">Logar</button>
+        </form>
+      </header>
     </div>
     <main>
-        <form id="evaluation-form">
-            <label for="input-name">
-            <input type="text" name="name" id="input-name" placeholder="Nome">
-            </label>
-            <label for="input-lastname">
-            <input type="text" name="last-name" id="input-lastname" placeholder="Sobrenome">
-            </label>
-            <label for="input-mail">
-            <input trype="email" name="user-email" id="input-email" placeholder="Email">
-            </label>
-            </form>
-            <img
-            id="trybewarts-forms-logo"
-            src="images/trybewarts-colored.svg"
-            alt="Logo escola maior"
-            />
+      <form id="evaluation-form">
+        <label for="input-name">
+          <input type="text" name="name" id="input-name" placeholder="Nome" />
+        </label>
+        <label for="input-lastname">
+          <input
+            type="text"
+            name="last-name"
+            id="input-lastname"
+            placeholder="Sobrenome"
+          />
+        </label>
+        <label for="input-mail">
+          <input
+            trype="email"
+            name="user-email"
+            id="input-email"
+            placeholder="Email"
+          />
+        </label>
+      </form>
+      <img
+        id="trybewarts-forms-logo"
+        src="images/trybewarts-colored.svg"
+        alt="Logo escola maior"
+      />
+      <label for="house"
+        >Casa
+        <select name="user-house" id="house">
+          <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+          <option id="corvinode-house" value="Corvinode">Corvinode</option>
+          <option id="pytherina-house" value="Pytherina">Pytherina</option>
+        </select>
+      </label>
     </main>
     <script src="script.js"></script>
   </body>
