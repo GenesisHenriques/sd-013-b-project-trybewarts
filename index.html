@@ -26,35 +26,73 @@
     </header>
 
     <main>
-      <section class="form-section">
-        <form action="" id="evaluation-form">
-          <!-- Primeira seção -->
-          <div class="input-section">
-            <input type="text" id="input-name" placeholder="Nome" />
-            <input type="text" id="input-lastname" placeholder="Sobrenome" />
+      <form action="" id="evaluation-form">
+        <!-- Primeira seção -->
+        <div class="input-section">
+          <input type="text" id="input-name" placeholder="Nome" />
+          <input type="text" id="input-lastname" placeholder="Sobrenome" />
+        </div>
+
+        <div class="input-section">
+          <input type="text" id="input-email" placeholder="Email" />
+
+          <label for="house">Casa:</label>
+          <select name="house" id="house">
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+          </select>
+        </div>
+
+        <hr />
+        <!-- Segunda seção -->
+        <div class="input-section">
+          <div class="family-section">
+            <label id="label-family">Qual sua família?</label>
+
+            <label for="frontend">
+              <input
+                type="radio"
+                name="family"
+                id="frontend"
+                value="Frontend"
+              />
+              Frontend:
+            </label>
+
+            <label for="backend">
+              <input type="radio" name="family" id="backend" value="Backend" />
+              Backend:
+            </label>
+
+            <label for="fullstack">
+              <input
+                type="radio"
+                name="family"
+                id="fullstack"
+                value="FullStack"
+              />
+              FullStack:
+            </label>
           </div>
+        </div>
 
-          <div class="input-section">
-            <input type="text" id="input-email" placeholder="Email" />
+        <div class="input-section">
+          <div class="content-section">
+            <label id="label-content">
+              Qual conteúdo você está com mais vontade de aprender?
+            </label>
 
-            <label for="house">Casa:</label>
-            <select name="house" id="house">
-              <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-              <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-              <option id="corvinode-house" value="Corvinode">Corvinode</option>
-              <option id="pytherina-house" value="Pytherina">Pytherina</option>
-            </select>
+            <div class="checkboxes"></div>
           </div>
-
-          <!-- Segunda seção -->
-
-          <!-- Terceira seção -->
-        </form>
-      </section>
+        </div>
+        <!-- Terceira seção -->
+      </form>
       <div class="logo-section">
         <img
           id="trybewarts-forms-logo"
-          src="./images/trybewarts-colored.svg"
+          src="images/trybewarts-colored.svg"
           alt="Trybewarts Logo"
         />
       </div>
