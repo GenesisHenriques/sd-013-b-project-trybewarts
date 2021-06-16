@@ -9,3 +9,16 @@ button.addEventListener('click', () => {
     window.alert('Login ou senha inválidos.');
   }
 });
+
+// function createInput() {
+//   const pixelBoard = document.querySelector('#pixel-board');
+
+//   for (let i = 0; i < 5; i += 1) {
+//     for (let j = 0; j < 5; j += 1) {
+//       const pixel = document.createElement('div');
+//       pixel.className = 'pixel';
+
+//       pixelBoard.appendChild(pixel);
+//     }
+//   }
+// }
