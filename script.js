@@ -13,17 +13,16 @@ function verificarLoginESenha() {
   }
 }
 
-botaoLogar.addEventListener("click", verificarLoginESenha);
-
+botaoLogar.addEventListener('click', verificarLoginESenha);
 
 const checkBotao = document.querySelector('#agreement');
 
-checkBotao.addEventListener('click', function (){
-  let check = document.querySelector('#agreement').checked;
-  let botaoEnviar = document.querySelector('#submit-btn');
-  if(check == true) {
+checkBotao.addEventListener('click', function () {
+  const check = document.querySelector('#agreement').checked;
+  const botaoEnviar = document.querySelector('#submit-btn');
+  if (check === true) {
     botaoEnviar.removeAttribute('disabled');
   } else {
     botaoEnviar.setAttribute('disabled', 'disabled');
   }
-})
+});
