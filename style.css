@@ -16,3 +16,13 @@
   display: flex;
   justify-content: space-between;
 }
+
+.main-content {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
