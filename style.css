@@ -30,7 +30,7 @@ button {
 
 #evaluation-form {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   width: 675px;
 }
 
@@ -62,14 +62,24 @@ button {
   justify-content: flex-end;
 }
 
-#familia {
-  margin-left: 30px;
-}
-
 .form-check {
-  margin-left: 13%;
+  flex-direction: column;
+  align-items: center;
+  margin-left:5%;
+  flex-basis: 600px;
+  
 }
 
 #label-family {
-  margin-left: 14%;
+ margin-left: 25%;
 }
+
+.section-checkbox{
+ display:flex;
+ flex-direction:row;
+ 
+}
+
+/*#section-avaliation{
+  flex-direction: row;
+}*/

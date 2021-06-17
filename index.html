@@ -37,16 +37,60 @@
           </select>
         </div>
       </div>
-      <label id="label-family">Qual sua família?</label><br>
-      <div class="form-check">
-      <label class="form-check-label" for="family-frontend">Família Backend</label>
-      <input class="form-check-input" type="radio" id="family-frontend" value="Frontend" name="family"><br>
-      <label class="form-check-label" for="family-backend">Família Frontend</label>
-      <input class="form-check-input" type="radio" id="family-backend" value="Backend" name="family"><br>
-      <label class="form-check-label" for="family-fullstack">Família FullStack</label>
-      <input class="form-check-input" type="radio" id="family-fullstack" value="FullStack" name="family">
-      </div>
-    </form>
+      
+      <section class="section-checkbox">
+        <div class="form-check">
+          <label id="label-family">Qual sua família?</label> <br>
+          <label class="form-check-label" for="family-frontend">Família Backend</label>
+          <input class="form-check-input" type="radio" id="family-frontend" value="Frontend" name="family"><br>
+          <label class="form-check-label" for="family-backend">Família Frontend</label>
+          <input class="form-check-input" type="radio" id="family-backend" value="Backend" name="family"><br>
+          <label class="form-check-label" for="family-fullstack">Família FullStack</label>
+          <input class="form-check-input" type="radio" id="family-fullstack" value="FullStack" name="family">
+        </div>
+       
+        <div class="form-check-option">
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <label class="subject" for="content-hofs">HoFs</label>
+          <input class="subject" type="radio" id="content-hofs" value="HoFs" name="content-option">
+          <label class="subject" for="content-jest">Jest</label>
+          <input class="subject" type="radio" id="content-Jest" value="Jest" name="content-option">
+          <label class="subject" for="content-promises">Promises</label>
+          <input class="subject"type="radio" id="content-promises" value="Promises" name="content-option">
+          <label class="subject" for="content-react">React</label>
+          <input class="subject"type="radio" id="content-react" value="React" name="content-option">
+          <label class="subject" for="content-sql">SQL</label>
+          <input class="subject"type="radio" id="content-sql" value="SQL" name="content-option">
+          <label class="subject" for="content-python">Python</label>
+          <input class="subject"type="radio" id="content-python" value="Python" name="content-option">      
+        </div>
+        </section>
+
+        <section id="avaliation"> 
+          <label id="label-rate">Como você avalia a Trybewarts?</label> 
+          <div> 
+            <label for = "label-avaliation">1</label> <input type="radio" id="avaliation-1" value="1" name="rate">
+            <label for = "label-avaliation">2</label> <input type="radio" id="avaliation-2" value="2" name="rate">
+            <label for = "label-avaliation">3</label> <input type="radio" id="avaliation-3" value="3" name="rate">
+            <label for = "label-avaliation">4</label> <input type="radio" id="avaliation-4" value="4" name="rate">
+            <label for = "label-avaliation">5</label> <input type="radio" id="avaliation-5" value="5" name="rate">
+            <label for = "label-avaliation">6</label> <input type="radio" id="avaliation-6" value="6" name="rate">
+            <label for = "label-avaliation">7</label> <input type="radio" id="avaliation-7" value="7" name="rate">
+            <label for = "label-avaliation">8</label> <input type="radio" id="avaliation-8" value="8" name="rate">
+            <label for = "label-avaliation">9</label> <input type="radio" id="avaliation-9" value="9" name="rate">
+            <label for = "label-avaliation">10</label> <input type="radio" id="avaliation-10" value="10" name="rate">
+          </div>
+          <label id="label-rate">Deixe seu comentário?</label> 
+          <div>
+
+            
+          </div>
+
+
+        </section>
+
+        
+      </form>
     <img id="trybewarts-forms-logo" src = "images/trybewarts-colored.svg" alt="logo trybewarts">
   </main>
   <script src="script.js"></script>
