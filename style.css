@@ -39,3 +39,12 @@ main {
 #checkbox {
   display: flex;
 }
+
+footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: dimgrey;
+  height: 25px;
+}
