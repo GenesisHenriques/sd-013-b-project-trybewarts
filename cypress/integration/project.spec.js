@@ -341,7 +341,6 @@ describe('Trybewarts', () => {
       });
     });
   });
-*/
 
   describe("16 - Crie um campo de entrada do tipo 'checkbox' com o id 'agreement' para validar as informações", () => {
     it('Uma label com o id "label-infos" deve possuir o texto "Você concorda com o uso das informações acima?"', () => {
@@ -363,6 +362,7 @@ describe('Trybewarts', () => {
         .should('have.text', 'Enviar');
     });
   });
+*/
 
   describe("18 - Faça com que o botão 'Enviar' seja habilitado somente após a checkbox do requisito 16 ser selecionada", () => {
     it('O botão deve inicialmente estar desabilitado', () => {
