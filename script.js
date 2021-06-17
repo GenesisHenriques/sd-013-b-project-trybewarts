@@ -35,3 +35,23 @@ function charCounter() {
 }
 
 textArea.addEventListener('input', charCounter);
+
+function stopDefAction(event) {
+  event.preventDefault();
+}
+
+const inputName = document.getElementById('input-name');
+const inputLastName = document.getElementById('input-lastname');
+const divInput = document.querySelector('.box-container');
+const inputEmail = document.getElementById('input-email');
+
+function updtForm() {
+  const createP = document.createElement('p');
+  createP.innerText = 'Nome: ' + inputName.value + ' ' + inputLastName.value;
+  divInput.appendChild(createP);
+  divInput.removeChild(inputName);
+  divInput.removeChild(inputLastName);
+}
+
+submitBtn.addEventListener('click', stopDefAction, false);
+submitBtn.addEventListener('click', updtForm);
