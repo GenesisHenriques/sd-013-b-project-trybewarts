@@ -24,8 +24,10 @@ for (let index = 1; index <= 10; index += 1) {
   radio.type = 'radio';
   radio.value = index;
   radio.name = 'rate';
+  radio.id = index;
   paiRadioButtons.appendChild(radio);
   label.innerHTML = index;
+  label.htmlFor = index;
   paiRadioButtons.appendChild(label);
 }
 
