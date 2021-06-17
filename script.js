@@ -14,7 +14,7 @@ function submitLogin(event) {
 }
 
 function toggleButton() {
-  const submitButton = document.getElementById('submit-btn')
+  const submitButton = document.getElementById('submit-btn');
   submitButton.disabled = !submitButton.disabled;
 }
 
