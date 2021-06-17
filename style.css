@@ -8,6 +8,8 @@
   align-items: center;
   background-color: rgb(50, 167, 145);
   color: white;
+  padding: 8px;
+  font-family: 'Almendra SC';
 }
 
 .trybewarts-header-logo {
@@ -15,16 +17,26 @@
   justify-content: flex-start;
   width: 50px;
   align-items: center;
-  margin-left: 40px;
 }
 
 .trybewarts-login {
   display: flex;
+  font-family: 'Almendra SC';
+}
+
+#button {
+  background-color: rgb(117, 35, 155);
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  font-family: 'Almendra SC';
 }
 
 .main-container {
   display: flex;
   justify-content: center;
+  font-family: 'Almendra SC';
+  margin-bottom: 30px;
 }
 
 #evaluation-form {
@@ -32,4 +44,14 @@
   flex-direction: column;
   width: 675px;
   margin-right: 50px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(80, 80, 80);
+  color: white;
+  font-family: 'Almendra SC';
+  height: 40px;
+  position: relative;
 }
