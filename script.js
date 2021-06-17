@@ -22,13 +22,18 @@ function submitInfo() {
 
 checkedBox.addEventListener('click', submitInfo);
 // const evaluationClass = document.querySelector('.evaluation');
-// function addInput () {
-//   for (let index = 1; index < 11; index+= 1) {
-//     const abc = document.createElement('input')
-//     abc.setAttribute('type', 'radio')
-//     abc.setAttribute('name', 'name')
-//     evaluationClass.appendChild(abc)
-//     abc.innerText = index
+// function addInput() {
+//   for (let index = 1; index < 11; index += 1) {
+//     const inputCreation = document.createElement('input');
+//     const labelCreation = document.createElement('label');
+//     labelCreation.setAttribute('for', index);
+//     labelCreation.innerText = index;
+//     inputCreation.setAttribute('id', ''index);
+//     inputCreation.setAttribute('type', 'radio');
+//     inputCreation.setAttribute('name', 'name');
+//     inputCreation.innerText = index;
+//     evaluationClass.appendChild(inputCreation);
+//     evaluationClass.appendChild(labelCreation);
 //   }
 // }
-// addInput ()
+// addInput();
