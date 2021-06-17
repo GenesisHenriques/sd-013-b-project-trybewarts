@@ -4,14 +4,23 @@
   box-sizing: border-box;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: Yusei Magic, monospace, sans-serif;
+}
+
 .header {
   align-items: center;
   background-color: rgb(50, 167, 145);
   color: rgb(254, 178, 54);
   display: flex;
-  font-family: Yusei Magic, monospace, sans-serif;
-  font-size: 35px;
+  font-size: 55px;
   justify-content: space-between;
+}
+
+.header img {
+  height: 150px;
 }
 
 .trybewarts-login {
@@ -24,7 +33,6 @@
 }
 
 .trybewarts-login button {
-  background-color: rgb(107, 91, 149);
   margin-right: 10px;
   padding: 8px;
 }
@@ -68,4 +76,8 @@
   width: 675px;
   padding: 10px 0;
   text-align: center;
+}
+
+label.textarea {
+  display: none;
 }
