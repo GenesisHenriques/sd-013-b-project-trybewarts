@@ -30,10 +30,6 @@ body {
   display: flex;
 }
 
-.trybewarts-login label {
-  display: none;
-}
-
 .trybewarts-login input {
   border: none;
   border-radius: 5px;
@@ -50,15 +46,15 @@ body {
 }
 
 main {
+  align-items: center;
   padding: 20px 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
-  text-align: center;
   width: 675px;
 }
 
@@ -66,23 +62,8 @@ main {
   margin-bottom: 20px;
 }
 
-#evaluation-form div {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
 #evaluation-form hr {
   margin: 25px 0;
-}
-
-#evaluation-form input {
-  background-color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 15px;
-  width: 300px;
 }
 
 #evaluation-form select {
@@ -94,5 +75,75 @@ main {
 }
 
 #trybewarts-forms-logo {
+  margin-left: 20px;
   height: 500px;
+}
+
+#form-content-1 {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#form-content-1 input {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 15px;
+  width: 300px;
+}
+
+#form-content-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#form-content-2 input {
+  margin-right: 10px;
+}
+
+#form-content-2 label {
+  margin: 0;
+}
+
+#form-content-2 ul {
+  padding: 0;
+  list-style: none;
+}
+
+#form-content-2 ul li {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding: 5px 0;
+}
+
+#form-content-3 {
+  display: flex;
+}
+
+#form-content-3 ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+#form-content-3 ul li {
+  margin-right: 20px;
+  padding: 5px 0;
+}
+
+.label-title {
+  font-size: 1.2em;
+}
+
+footer {
+  background-color: grey;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
