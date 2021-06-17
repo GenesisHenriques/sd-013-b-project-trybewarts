@@ -22,7 +22,7 @@ const textArea = document.getElementById('textarea');
 const counter = document.getElementById('counter');
 
 function counterCaracter() {
-  counter.innerText = `Caracteres Disponívei: ${500 - textArea.value.length}`;
+  counter.innerText = `Caracteres Disponíveis: ${500 - textArea.value.length}`;
 }
 
 textArea.addEventListener('input', counterCaracter);
