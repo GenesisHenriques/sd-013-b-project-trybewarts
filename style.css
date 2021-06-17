@@ -155,8 +155,24 @@ main {
     margin: 30px;
     width: 400px;
     height: 30px;
-    background-color: rgb(61, 2, 156);
-    color: white;
     border: none;
+    color: white;
     border-radius: 5px;
+}
+
+.btn-enabled {
+    background-color: rgb(61, 2, 156);
+}
+
+.btn-disabled {
+    background-color: rgb(126, 126, 126);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    height: 30px;
 }

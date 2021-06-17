@@ -1,9 +1,8 @@
-const loginButton = document.querySelector('#login-button');
-const loginInput = document.querySelector('#login');
-const passwordInput = document.querySelector('#password');
-const agreeCheckbox = document.querySelector('#agreement');
-const agreeBtn = document.querySelector('#submit-btn');
-
+const loginInput = document.querySelector('#login'); // seleciona input do login
+const loginButton = document.querySelector('#login-button'); // seleciona botão para logar
+const passwordInput = document.querySelector('#password'); // seleciona input da senha
+const agreeCheckbox = document.querySelector('#agreement'); // seleciona o checkbox de concordo com os termos
+const agreeBtn = document.querySelector('#submit-btn'); // seleciona o botão de enviar no final do formulário
 function verifyLogin() {
   if (loginInput.value !== 'tryber@teste.com') return false;
   if (passwordInput.value !== '123456') return false;
@@ -19,4 +18,6 @@ loginButton.addEventListener('click', (e) => {
 });
 agreeCheckbox.addEventListener('change', () => {
   agreeBtn.toggleAttribute('disabled');
+  agreeBtn.classList.toggle('btn-disabled');
+  agreeBtn.classList.toggle('btn-enabled');
 });
