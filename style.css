@@ -61,23 +61,18 @@ button {
   margin-left: 15px;
   justify-content: flex-end;
 }
-
 .form-check {
   flex-direction: column;
   align-items: center;
   margin-left:5%;
   flex-basis: 600px;
-  
 }
-
 #label-family {
  margin-left: 25%;
 }
-
 .section-checkbox{
  display:flex;
  flex-direction:row;
- 
 }
 
 /*#section-avaliation{
