@@ -34,7 +34,7 @@ button {
   width: 675px;
 }
 
-main {
+.main-conteiner {
   display: flex;
 }
 
@@ -42,4 +42,22 @@ main {
   display: flex;
   justify-content: center;
   padding: 2%;
+  margin-left: 10%;
+  align-items: center;
+  justify-content: flex-start;
+}  
+
+#trybewarts-forms-logo {
+  height: 500px;
+  display: flex;
+  margin-left: 15%;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+}
+
+#house {
+  margin-left: 15px;
 }
