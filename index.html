@@ -41,63 +41,67 @@
       <section class="section-checkbox">
         <div class="form-check">
           <label id="label-family">Qual sua família?</label> <br>
-          <input class="form-check-input" type="radio" id="family-frontend" value="Frontend" name="family">FrontEnd
+          <label class="form-check-label" for="family-frontend">FrontEnd</label>
+          <input class="form-check-input" type="radio" id="family-frontend" value="Frontend" name="family">
           <br>
-          <input class="form-check-input" type="radio" id="family-backend" value="Backend" name="family">Backend
+          <label class="form-check-label" for="family-backend">Backend</label>
+          <input class="form-check-input" type="radio" id="family-backend" value="Backend" name="family">
           <br>
-          <input class="form-check-input" type="radio" id="family-fullstack" value="FullStack" name="family">FullStack
+          <label class="form-check-label" for="family-fullstack">FullStack</label>
+          <input class="form-check-input" type="radio" id="family-fullstack" value="FullStack" name="family">
           <br>          
         </div>
        
-        <div class="form-check-option">
+        <div class="form-check-inline">
           <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <label class="subject" for="content-hofs">HoFs</label>
-          <input class="subject" type="radio" id="content-hofs" value="HoFs" name="content-option">
+          <input class="subject form-check-input" type="checkbox" id="content-hofs" value="HoFs" name="content-option">
           <label class="subject" for="content-jest">Jest</label>
-          <input class="subject" type="radio" id="content-Jest" value="Jest" name="content-option">
+          <input class="subject form-check-input" type="checkbox" id="content-Jest" value="Jest" name="content-option">
           <label class="subject" for="content-promises">Promises</label>
-          <input class="subject"type="radio" id="content-promises" value="Promises" name="content-option">
+          <input class="subject form-check-input"type="checkbox" id="content-promises" value="Promises" name="content-option">
           <label class="subject" for="content-react">React</label>
-          <input class="subject"type="radio" id="content-react" value="React" name="content-option">
+          <input class="subject form-check-input"type="checkbox" id="content-react" value="React" name="content-option">
           <label class="subject" for="content-sql">SQL</label>
-          <input class="subject"type="radio" id="content-sql" value="SQL" name="content-option">
+          <input class="subject form-check-input"type="checkbox" id="content-sql" value="SQL" name="content-option">
           <label class="subject" for="content-python">Python</label>
-          <input class="subject"type="radio" id="content-python" value="Python" name="content-option">      
+          <input class="subject form-check-input"type="checkbox" id="content-python" value="Python" name="content-option">      
         </div>
         </section>
 
         <section id="avaliation"> 
           <br>
           <br>
-          <div> 
+          <div class="form-check-inline"> 
             <label id="label-rate">Como você avalia a Trybewarts?</label> 
-            <input type="radio" id="avaliation-1" value="1" name="rate"> <label for = "label-avaliation">1</label> 
-            <input type="radio" id="avaliation-2" value="2" name="rate"> <label for = "label-avaliation">2</label> 
-            <input type="radio" id="avaliation-3" value="3" name="rate"> <label for = "label-avaliation">3</label> 
-            <input type="radio" id="avaliation-4" value="4" name="rate"> <label for = "label-avaliation">4</label> 
-            <input type="radio" id="avaliation-5" value="5" name="rate"> <label for = "label-avaliation">5</label> 
-            <input type="radio" id="avaliation-6" value="6" name="rate"> <label for = "label-avaliation">6</label> 
-            <input type="radio" id="avaliation-7" value="7" name="rate"> <label for = "label-avaliation">7</label> 
-            <input type="radio" id="avaliation-8" value="8" name="rate"> <label for = "label-avaliation">8</label> 
-            <input type="radio" id="avaliation-9" value="9" name="rate"> <label for = "label-avaliation">9</label> 
-            <input type="radio" id="avaliation-10" value="10" name="rate"> <label for = "label-avaliation">10</label> 
+            <input class="form-check-input" type="radio" id="avaliation-1" value="1" name="rate"> <label for = "avaliation-1">1</label> 
+            <input class="form-check-input" type="radio" id="avaliation-2" value="2" name="rate"> <label for = "avaliation-2">2</label> 
+            <input class="form-check-input" type="radio" id="avaliation-3" value="3" name="rate"> <label for = "avaliation-3">3</label> 
+            <input class="form-check-input" type="radio" id="avaliation-4" value="4" name="rate"> <label for = "avaliation-4">4</label> 
+            <input class="form-check-input" type="radio" id="avaliation-5" value="5" name="rate"> <label for = "avaliation-5">5</label> 
+            <input class="form-check-input" type="radio" id="avaliation-6" value="6" name="rate"> <label for = "avaliation-6">6</label> 
+            <input class="form-check-input" type="radio" id="avaliation-7" value="7" name="rate"> <label for = "avaliation-7">7</label> 
+            <input class="form-check-input" type="radio" id="avaliation-8" value="8" name="rate"> <label for = "avaliation-8">8</label> 
+            <input class="form-check-input" type="radio" id="avaliation-9" value="9" name="rate"> <label for = "avaliation-9">9</label> 
+            <input class="form-check-input" type="radio" id="avaliation-10" value="10" name="rate"> <label for = "avaliation-10">10</label> 
             
-          </div>        
+          </div>
           
         </section>
-        <label class="textarea" cols="9" rows = "10">Deixe seu comentário:</label>
-        <textarea id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        <section class="note">
+        <label class="textarea is-white" cols="9" rows = "10">Deixe seu comentário:</label>
+        <textarea class="textarea is-primary" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
         <br>
-        <div>
+        <div class="form-check-inline">
             <label id="label-infos">Você concorda com o uso das informações acima?</label> 
-            <input id="agreement" type="checkbox" >
-            <button type="submit" id="submit-btn">Enviar</button>
+            <input class="form-check-input" id="agreement" type="checkbox" ><br><br>
+            <button class="button is-primary is-rounded" type="submit" id="submit-btn">Enviar</button>
         </div>
-
-        <footer id="footer">Direitos reservados à Trybewarts©</footer>
+      </section>
     </form>
     <img id="trybewarts-forms-logo" src = "images/trybewarts-colored.svg" alt="logo trybewarts">
   </main>
+  <footer id="footer">Direitos reservados à Trybewarts©</footer>
   <script src="script.js"></script>
 </body>
 </html>

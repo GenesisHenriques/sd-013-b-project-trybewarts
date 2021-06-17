@@ -62,19 +62,48 @@ button {
   justify-content: flex-end;
 }
 
+.section-checkbox {
+  display: flex;
+  margin-left: 13%;
+}
+
 .form-check {
-  flex-direction: column;
-  align-items: center;
-  margin-left: 5%;
-  flex-basis: 600px;
+  display: block;
 }
 
 #label-family {
-  margin-left: 25%;
+  display: flex;
 }
 
-.section-checkbox {
+.form-check-inline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-right: 18%; 
+  margin-left: 13%;
+}
+
+.subject {
   display: flex;
   flex-direction: row;
 }
 
+.note {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13%;
+}
+
+.is-rounded {
+  width: 100%;
+  margin-bottom: 20%;
+}
+
+#footer {
+  background-color: teal;
+  display: flex;
+  color: white;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
