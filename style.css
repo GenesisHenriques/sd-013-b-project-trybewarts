@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +33,7 @@ main {
   background-color: red;
 }
 
-#entrar { 
+#entrar {
   padding: 10px;
   background-color: darkgreen;
   color: white;
@@ -43,7 +42,7 @@ main {
   cursor: pointer;
 }
 
-#evaluation-form{
+#evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
@@ -51,13 +50,14 @@ main {
 }
 
 .forms-login {
-    display: flex;
+  display: flex;
 }
+
 .trybewarts-login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 #right-side {
@@ -72,18 +72,19 @@ main {
 }
 
 #input-login {
-    padding: 15px;
-    border: 1px solid rgb(50, 167, 145);
-    flex: 1;
-    border-radius: 5px;
-    margin: 0 10px;
+  padding: 15px;
+  border: 1px solid rgb(50, 167, 145);
+  flex: 1;
+  border-radius: 5px;
+  margin: 0 10px;
 }
+
 #input-senha {
-    padding: 15px;
-    border: 1px solid rgb(50, 167, 145);
-    flex: 1;
-    border-radius: 5px;
-    margin: 0 10px;
+  padding: 15px;
+  border: 1px solid rgb(50, 167, 145);
+  flex: 1;
+  border-radius: 5px;
+  margin: 0 10px;
 }
 
 #name-section {
@@ -116,21 +117,21 @@ main {
   width: 50%;
 }
 
-#other-info-section input{
+#other-info-section input {
   padding: 15px 10px;
   border-radius: 20px;
-  flex-grow: 1; 
+  flex-grow: 1;
   margin: 0 10px;
 }
 
-#other-info-section select{
+#other-info-section select {
   padding: 15px 10px;
   border-radius: 20px;
-  flex-grow: 1; 
+  flex-grow: 1;
   margin: 0 10px;
 }
 
-#other-info-section label{
+#other-info-section label {
   padding: 15px 10px;
   font-size: 22px;
 
@@ -146,7 +147,6 @@ main {
   flex-direction: column;
   flex-basis: 30%;
   margin: 10px;
-  
 }
 
 #family-div h3 {
@@ -176,6 +176,8 @@ main {
 
 #trybe-rate {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 #values {
@@ -190,13 +192,33 @@ main {
   background-color: brown;
 }
 
+#caixa-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+#textarea {
+  resize: none;
+  height: 75px;
+  width: 75%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.textarea {
+  font-size: 22px;
+}
+
 footer {
-    display:flex;
-    justify-content: center;
-    position: absolute;
-    background-color: rgb(50, 167, 145) ;
-    color:black ;
-    padding: 15px;
-    bottom: 0;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background-color: rgb(50, 167, 145);
+  color: black;
+  padding: 15px;
+  bottom: 0;
+  width: 100%;
 }
