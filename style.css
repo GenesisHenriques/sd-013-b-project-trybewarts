@@ -1,8 +1,8 @@
 * {
   box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: Ubuntu, sans-serif;
 }
 
 *:focus {
@@ -12,10 +12,10 @@
 .header {
   align-items: center;
   background-color: rgb(50, 167, 145);
+  color: white;
   display: flex;
   height: 13vh;
   justify-content: space-between;
-  color: white;
   padding: 0 50px;
   width: 100%;
 }
@@ -24,7 +24,7 @@
   width: 70px;
 }
 
-.trybewarts-login input , .trybewarts-login button , #submit-btn {
+.trybewarts-login input , .trybewarts-login button {
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -36,7 +36,7 @@
   margin: 20px;
 }
 
-.trybewarts-login button , #submit-btn {
+.trybewarts-login button {
   padding: 10px 50px;
   background-color: rgb(70, 32, 100);
   color: white;
@@ -90,7 +90,7 @@
   margin-left: 5px;
 }
 
-.form-element input , .form-element select , #submit-btn {
+.form-element input , .form-element select {
   border: 1.5px solid rgb(190, 190, 190);
   border-radius: 5px;
   padding: 8px;
@@ -156,6 +156,7 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
   margin-top: 20px;
 }
 
@@ -167,12 +168,51 @@
   margin-left: 10px;
 }
 
+#textarea-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#textarea-container label {
+  margin-bottom: 5px;
+}
+
+#textarea-container textarea {
+  border-radius: 5px;
+}
+
 #agreement-container {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
   margin-top: 20px;
 }
 
-#agreement {
-  margin-bottom: 15px;
+#agreement-container label {
+  margin-right: 10px;
+}
+
+#agreement-container input {
+  width: 16px;
+  height: 16px;
+}
+
+#submit-btn {
+  border: 1.5px solid rgb(70, 32, 100);
+  border-radius: 5px;
+  background-color: rgb(70, 32, 100);
+  color: white;
+  padding: 8px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+#submit-btn:hover {
+  background-color: rgb(102, 39, 151);
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 footer {
