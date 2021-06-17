@@ -23,6 +23,27 @@ function releasingSubmitButton() {
 const agreement = document.querySelector('#agreement');
 agreement.addEventListener('click', releasingSubmitButton);
 
+// const submitButton = document.getElementById('submit-btn');
+
+// submitButton.addEventListener('click', () => {
+//   const checkBox = document.getElementById('agreement');
+//   if (checkBox.checked) {
+//     document.getElementById('submit-btn').disabled = false;
+//   } else {
+//     document.getElementById('submit-btn').disabled = true;
+//   }
+// });
+
+// let checker = document.getElementById('agreement');
+// let sendbtn = document.getElementById('submit-btn');
+// checker.onchange = function () {
+//   if (sendbtn.disabled === true) {
+//     sendbtn.disabled = this.checked;
+//   } else {
+//     sendbtn.disabled = !!this.checked;
+//   }
+// };
+
 // function createInput() {
 //   const pixelBoard = document.querySelector('#pixel-board');
 
