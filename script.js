@@ -1,5 +1,6 @@
 const buttonLogin = document.getElementById('btnLogin');
 
+//  Confirms if the login and password is confirmed;
 function loginConfirmation() {
   const loginId = document.getElementById('loginEmail').value;
   const passwordId = document.getElementById('loginPassword').value;
@@ -14,6 +15,7 @@ const buttonSubmit = document.getElementById('submit-btn');
 
 const checkedBox = document.getElementById('agreement');
 
+//  enable button after check the agreement box;
 function submitInfo() {
   if (checkedBox.checked === true) {
     buttonSubmit.disabled = false;
