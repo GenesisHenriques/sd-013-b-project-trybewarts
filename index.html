@@ -82,11 +82,18 @@
             <input name='rate' value='10' type='radio'>10
         </div>
 
-        <br>
-        <textarea id='textarea' maxlength='500'>
-        </textarea>
-        <label class='textarea' text='Deixe seu comentário:'>
+        <label for='textarea' class='textarea'>
+          Deixe seu comentário:
         </label>
+          <textarea maxlength='500' id='textarea'></textarea>
+
+        <div class='confirm'>
+          <label for='agreement' id='label-infos'>
+            Você concorda com o uso das informações acima?
+          </label>
+            <input type='checkbox' id='agreement'>
+            <button type='submit' id='submit-btn' disabled>Enviar</button>
+        </div>
 
       </form>
       <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
