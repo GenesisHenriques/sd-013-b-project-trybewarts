@@ -1,5 +1,5 @@
 window.onload = function () {
-  
+
 };
 
 /** VARIÁVEIS */
@@ -43,28 +43,28 @@ function verificarCheckboxAgreement() {
 checboxAgreement.addEventListener('click', verificarCheckboxAgreement);
 divComentario.append('Caracteres restantes: ');
 
-/* 
+/*
 function contarCaracteresTextarea() {
   contador = contador - 1;
   divComentario.append(contador + ' ');
   console.log(textoCompleto);
 }
 
-textarea.addEventListener('input', contarCaracteresTextarea); 
+textarea.addEventListener('input', contarCaracteresTextarea);
 */
 
 let contador = 5;
 const desc = document.querySelector('#textarea');
-desc.addEventListener('keypress', function(e) {
+desc.addEventListener('keypress', function (e) {
   const maxChars = 5;
   let inputLength;
 
   contador = contador - 1;
   inputLength = desc.value.length;
-  
+
   if (inputLength >= maxChars) {
     e.preventDefault();
   }
-  
+
   divComentario.append(contador);
 });

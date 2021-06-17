@@ -20,7 +20,7 @@
 #evaluation-form {
   display: flex;
   width: 675px;
-  height: 500px;;
+  height: 500px;
   flex-direction: column;
 }
 
@@ -36,7 +36,7 @@
 
 .trybewarts-forms-logo {
   height: 500px;
-  }
+}
 
 .trybewarts-login {
   display: flex;
