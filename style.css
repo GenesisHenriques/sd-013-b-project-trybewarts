@@ -38,3 +38,7 @@
 hr {
   width: 100%;
 }
+
+.name-container {
+  display: flex;
+}
