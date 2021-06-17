@@ -37,7 +37,7 @@ form {
   height: 500px;
 }
 
-#label-family {
-  display: flex;
-  flex-direction: column;
+.columnais {
+    display: flex;
+    flex-direction: column;
 }
