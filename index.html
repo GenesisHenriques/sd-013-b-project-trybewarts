@@ -40,11 +40,11 @@
       
       <section class="section-checkbox">
         <div class="form-check">
-          <label id="label-family">Qual sua família?</label> <br>
+          <label id="label-family">Qual sua família?</label> 
           <label class="form-check-label" for="family-frontend">Família Backend</label>
-          <input class="form-check-input" type="radio" id="family-frontend" value="Frontend" name="family"><br>
+          <input class="form-check-input" type="radio" id="family-frontend" value="Frontend" name="family">
           <label class="form-check-label" for="family-backend">Família Frontend</label>
-          <input class="form-check-input" type="radio" id="family-backend" value="Backend" name="family"><br>
+          <input class="form-check-input" type="radio" id="family-backend" value="Backend" name="family">
           <label class="form-check-label" for="family-fullstack">Família FullStack</label>
           <input class="form-check-input" type="radio" id="family-fullstack" value="FullStack" name="family">
         </div>
@@ -80,13 +80,14 @@
             <input type="radio" id="avaliation-8" value="8" name="rate"> <label for = "label-avaliation">8</label> 
             <input type="radio" id="avaliation-9" value="9" name="rate"> <label for = "label-avaliation">9</label> 
             <input type="radio" id="avaliation-10" value="10" name="rate"> <label for = "label-avaliation">10</label> 
-          </div>
-          <label id="label-rate">Deixe seu comentário?</label> 
-          <div>  </div>
+            
+          </div>        
+          
         </section>
-
-        
-      </form>
+        <label class="textarea" cols="9" rows = "10">Deixe seu comentário:</label>
+        <textarea id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+            
+    </form>
     <img id="trybewarts-forms-logo" src = "images/trybewarts-colored.svg" alt="logo trybewarts">
   </main>
   <script src="script.js"></script>
