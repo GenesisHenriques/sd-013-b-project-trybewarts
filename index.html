@@ -84,8 +84,9 @@
                 </div>
                 <div id="comentario">
                     <label class="textarea" for="comentario">Deixe seu comentário:</label>
-                    <textarea name="comentario" maxlength="500" cols="30" rows="10"></textarea>
-                </div>
+                    <textarea id="text-area" name="comentario" maxlength="500" cols="30" rows="10"></textarea>
+                    <div id="counter">500 characteres restantes</div>
+                    </div>
                 <div>                    
                     <label id="label-infos" for="infos">Você concorda com o uso das informações acima?</label>
                     <input id="agreement" type="checkbox" name="infos" value="infos" required>
@@ -93,9 +94,7 @@
                 <button type="submit" id="submit-btn">Enviar</button>
             </section>
         </form>
-
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da Trybewarts">
-        
     </main>
     <footer>Direitos reservados à Trybewarts©</footer>
     <script src="script.js"></script>

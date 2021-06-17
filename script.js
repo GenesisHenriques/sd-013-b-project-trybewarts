@@ -23,3 +23,13 @@ criaCasas('Gitnória', 'gitnoria-house');
 criaCasas('Reactpuff', 'reactpuff-house');
 criaCasas('Corvinode', 'corvinode-house');
 criaCasas('Pytherina', 'pytherina-house');
+
+// CONTADOR
+const myTextArea = document.getElementById('text-area');
+const charsTest = document.getElementById('counter');
+const charsMax = 500;
+
+myTextArea.addEventListener('input', () => {
+  const restante = charsMax - myTextArea.value.length;
+  charsTest.textContent = `${restante} caracteres restantes`;
+});
