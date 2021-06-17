@@ -1,3 +1,4 @@
+/* Constantes que serão utilizadas no decorrer do código */
 const inputLogin = document.querySelector('#login');
 const inputPassword = document.querySelector('#password');
 const agreement = document.querySelector('#agreement');
@@ -21,10 +22,11 @@ agreement.addEventListener('change', () => {
   } else {
     button.disabled = true;
   }
-  // Aprendi sobre button.disabled, neste link
-  // https://flexiple.com/disable-button-javascript/
+/* Aprendi sobre button.disabled, neste link
+   https://flexiple.com/disable-button-javascript/ */
 });
 
+/* Cria uma string contendo todos os itens preenchidos na checkbox de tarefas */
 function getSubjectList() {
   const subjectArray = document.querySelectorAll('input[class="subject"]:checked');
   let subjectList = '';
@@ -38,6 +40,7 @@ function getSubjectList() {
   return subjectList;
 }
 
+/* Cria um array contendo as informações preenchidas pelo usuário */
 function getDataArray(parameter1) {
   const lastName = document.getElementById('input-lastname').value;
   const myArray = [
@@ -51,6 +54,7 @@ function getDataArray(parameter1) {
   return myArray;
 }
 
+/* Apaga o conteúdo do formulário e cria uma ul vazia dentro dele */
 function eraseAndInsert() {
   const enteredDataArea = document.getElementById('evaluation-form');
   enteredDataArea.innerHTML = '';
@@ -59,6 +63,8 @@ function eraseAndInsert() {
   enteredDataArea.appendChild(newUl);
 }
 
+/* Assim que o botão de envio é clicado, o formulário é esvaziado, e seu espaço é preenchido
+por uma ul com lis contendo as informações preenchidas. */
 button.onclick = function () {
   const subjectListString = getSubjectList();
   const dataArray = getDataArray(subjectListString);
@@ -71,23 +77,23 @@ button.onclick = function () {
   }
 };
 
-// Quando uma tecla é pressionada o contador é tem o valor 1 subtraido dele, enquanto o contador
-// for maior que 0.
+/* Quando uma tecla é pressionada o contador é tem o valor 1 subtraido dele, enquanto o contador
+for maior que 0. */
 textArea.addEventListener('keypress', () => {
   if (counter.innerText > 0) {
     counter.innerText = parseInt(counter.innerText, 10) - 1;
   }
 });
 
-// Quando a tecla delete ou Backspace é solta e o textArea não tiver conteudo,
-// o contador volta para 500.
+/* Quando a tecla delete ou Backspace é solta e o textArea não tiver conteudo,
+o contador volta para 500. */
 textArea.addEventListener('keyup', () => {
   if (textArea.value === '' && counter.innerText < 500) {
     counter.innerText = '500';
   }
 });
 
-// Toda vez que a tecla Backspace é apertado o contador ganha +1, enquanto for menor que 500.
+/* Toda vez que a tecla Backspace é apertado o contador ganha +1, enquanto for menor que 500. */
 textArea.addEventListener('keydown', (e) => {
   if (e.key === 'Backspace' && counter.innerText < 500) {
     counter.innerText = parseInt(counter.innerText, 10) + 1;
