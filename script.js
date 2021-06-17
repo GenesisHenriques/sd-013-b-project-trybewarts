@@ -40,9 +40,7 @@ function countdownTextAreaMaxLength() {
   });
 }
 
-const formMainInfoInObjectFormat = {};
-
-function getNameInObjectFormact() {
+function getNameInObjectFormact(formMainInfoInObjectFormat) {
   const getInputNameValue = document.querySelector('#input-name').value;
   const getInputLastNameValue = document.querySelector('#input-lastname').value;
   formMainInfoInObjectFormat.name = getInputNameValue.concat(' ', getInputLastNameValue);
@@ -51,7 +49,7 @@ function getNameInObjectFormact() {
 
 getNameInObjectFormact();
 
-function getEmailInObjectFormact() {
+function getEmailInObjectFormact(formMainInfoInObjectFormat) {
   const getInputEmailValue = document.querySelector('#input-email').value;
   formMainInfoInObjectFormat.email = getInputEmailValue;
   return formMainInfoInObjectFormat;
@@ -59,7 +57,7 @@ function getEmailInObjectFormact() {
 
 getEmailInObjectFormact();
 
-function getTextareaInObjectFormact() {
+function getTextareaInObjectFormact(formMainInfoInObjectFormat) {
   const getTextareaValue = document.querySelector('#textarea').value;
   if (getTextareaValue === '') {
     formMainInfoInObjectFormat.comment = '';
@@ -91,7 +89,7 @@ function getValueOfTheObject(inputClass, formMainInfoInObjectFormat) {
   }
 }
 
-function getFamiliaInObjectFormat(formMainInfoInObjectFormat, className) {
+function getInputInObjectFormat(formMainInfoInObjectFormat, className) {
   const inputClassName = document.getElementsByClassName(className);
   for (let index = 0; index < inputClassName.length; index += 1) {
     const inputClass = inputClassName[index];
@@ -107,9 +105,9 @@ function submitButtonEventListener() {
   submitButton.addEventListener('click', (e) => {
     e.preventDefault();
     let formMainInfoInObjectFormat = {};
-    formMainInfoInObjectFormat = getFamiliaInObjectFormat(formMainInfoInObjectFormat, 'familia');
-    formMainInfoInObjectFormat = getFamiliaInObjectFormat(formMainInfoInObjectFormat, 'subject');
-    formMainInfoInObjectFormat = getFamiliaInObjectFormat(formMainInfoInObjectFormat, 'avaliacao');
+    formMainInfoInObjectFormat = getInputInObjectFormat(formMainInfoInObjectFormat, 'familia');
+    formMainInfoInObjectFormat = getInputInObjectFormat(formMainInfoInObjectFormat, 'subject');
+    formMainInfoInObjectFormat = getInputInObjectFormat(formMainInfoInObjectFormat, 'avaliacao');
     console.log(formMainInfoInObjectFormat);
   });
 }
