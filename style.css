@@ -1,45 +1,133 @@
-.header {
-  background-color: rgb(50, 167, 145);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body , input , textarea , select , button {
+  font-family: Indie Flower, cursive;
+  letter-spacing: 1px;
+  background-color: rgb(239, 239, 239);
+  outline: none;
+  border: none;
+}
+
+input , textarea , select {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 2.5px;
+}
+
+textarea {
+  width: 100%;
+}
+
+#button-login {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: black;
+  border: none;
+  width: 150px;
+  color: white;
+  font-weight: 800;
+}
+
+.header-container {
   display: flex;
+  height: 10vh;
+  background-color: rgb(50, 167, 145);
+}
+
+.header {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+  width: 1400px;
+  margin: 0 auto;
+  background-color: rgb(50, 167, 145);
 }
 
 .trybewarts-header-logo {
-  display: flex;
-  align-items: flex-start;
-}
-
-.trybewarts-login {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  height: 80%;
 }
 
 #trybewarts-header-title {
   color: white;
 }
 
-main {
+.trybewarts-login {
   display: flex;
-  justify-content: center;
 }
 
 #evaluation-form {
-  width: 675px;
   display: flex;
   flex-direction: column;
+  width: 675px;
+}
+
+main {
+  display: flex;
+  width: 1400px;
+  margin: 50px auto;
+  justify-content: space-between;
+  line-height: 30px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+  margin: 0 auto;
+}
+
+.container-data {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .container-select {
   display: flex;
-  flex-direction: column;
+  padding: 10px;
 }
 
 .container-family {
   display: flex;
   flex-direction: column;
+  width: 50%;
+}
+
+.container-label {
+  width: 50%;
+}
+
+.label {
+  width: 250px;
+}
+
+.container-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5px;
+}
+
+.label-info {
+  display: flex;
+  padding: 5px;
+  width: 100%;
+}
+
+.label-info p {
+  margin-right: 10px;
+}
+
+.footer-container {
+  background-color: rgb(50, 167, 145);
+  padding: 10px;
+}
+
+.footer {
+  text-align: center;
+  color: white;
 }

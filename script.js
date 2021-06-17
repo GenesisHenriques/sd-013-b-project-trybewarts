@@ -1,6 +1,6 @@
 const buttonLogin = document.getElementById('button-login');
-const inputLogin = document.getElementById('user-login');
-const inputSenha = document.getElementById('user-pass');
+const inputLogin = document.getElementById('email');
+const inputSenha = document.getElementById('senha');
 
 function validLogin() {
   if (inputLogin.value === 'tryber@teste.com' && inputSenha.value === '123456') {
