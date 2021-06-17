@@ -22,10 +22,19 @@ function verifyAgreement() {
   }
 }
 
+function createCount(event) {
+  const eventValue = event.target.value;
+  const labelCount = document.getElementById('counter');
+
+  labelCount.innerText = 500 - eventValue.length;
+}
+
 window.onload = () => {
   const buttonLogin = document.getElementById('buttonLogin');
   const checkboxAgreement = document.getElementById('agreement');
+  const textarea = document.getElementById('textarea');
 
   buttonLogin.addEventListener('click', checkLogin);
   checkboxAgreement.addEventListener('change', verifyAgreement);
+  textarea.addEventListener('keyup', createCount);
 };
