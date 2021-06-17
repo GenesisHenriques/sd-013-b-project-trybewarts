@@ -7,7 +7,35 @@ body {
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
-  padding: 0 5%;
+}
+
+#forms {
+  background-color: purple;
+  border: none;
+  border-radius: 5%;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  margin: 8px 2px;
+  cursor: pointer;
+}
+
+#login {
+  background-color: #f1f1f1;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#senha {
+  background-color: #f1f1f1;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .trybewarts-header-logo {
@@ -34,24 +62,80 @@ body {
 
 main {
   display: flex;
+  justify-content: center;
+  font-size: 17px;
+}
+
+select {
+  background-color: #f1f1f1;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
-  width: 100%;
-  background-color: aqua;
-
 }
 
 .container {
   display: flex;
   justify-content: space-between;
+  padding: 10px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: solid 1px;
+  border-bottom: solid 1px
 }
 
-#evaluation-form .form1 {
-  background-color: white;
+#input-name {
+  width: 300px;
+  background-color: #f1f1f1;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
+#input-lastname {
+  width: 300px;
+  background-color: #f1f1f1;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
+#submit-btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#input-email {
+  background-color: #f1f1f1;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(50, 167, 145) ;
+  color: white;
+  text-align: center;
+}
