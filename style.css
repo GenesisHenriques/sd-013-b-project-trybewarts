@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(200, 200, 200);
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -56,7 +65,7 @@ main {
   width: 200px;
 }
 
-.family {
+.family input {
   display: flex;
   flex-direction: column;
   background-color: blue;

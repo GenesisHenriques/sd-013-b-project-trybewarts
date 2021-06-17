@@ -1,7 +1,6 @@
 const userEmail = document.querySelector('#user-email');
 const userPass = document.querySelector('#input-pass');
 const buttonLogin = document.querySelector('#input-login');
-
 function validLogin() {
   if (userEmail.value !== 'tryber@teste.com') {
     return false;
