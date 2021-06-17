@@ -9,6 +9,10 @@
   align-self: center;
 }
 
+.trybewarts-header-logo {
+  width: 100px;
+}
+
 .trybewarts-login {
   display: flex;
   align-self: center;
