@@ -2,6 +2,9 @@ const loginInput = document.querySelector('#login');
 const passwordInput = document.querySelector('#password');
 const btnLogin = document.querySelector('#enviar');
 const yourRate = document.querySelector('.your-rate');
+const submitBtn = document.querySelector('#submit-btn');
+submitBtn.disabled = true;
+const agreementChk = document.querySelector('#agreement');
 
 function verifyLogin() {
   const loginCorrect = 'tryber@teste.com';
@@ -30,5 +33,14 @@ function generateRadiosBtn() {
   }
 }
 
+function isAgreementCheck(event) {
+  if (event.target.checked) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+}
+
 btnLogin.addEventListener('click', verifyLogin);
 generateRadiosBtn();
+agreementChk.addEventListener('click', isAgreementCheck);
