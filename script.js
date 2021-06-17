@@ -1,6 +1,4 @@
-const button = document.querySelector('.logar');
-
-button.addEventListener('click', () => {
+function logging() {
   const senha = document.querySelector('.senha').value;
   const email = document.querySelector('.email').value;
   if (email === 'tryber@teste.com' && senha === '123456') {
@@ -8,7 +6,7 @@ button.addEventListener('click', () => {
   } else {
     window.alert('Login ou senha inválidos.');
   }
-});
+}
 
 function releasingSubmitButton() {
   const checkBox = document.getElementById('agreement');
@@ -23,16 +21,8 @@ function releasingSubmitButton() {
 
 const agreement = document.querySelector('#agreement');
 agreement.addEventListener('click', releasingSubmitButton);
-
-// let checker = document.getElementById('agreement');
-// let sendbtn = document.getElementById('submit-btn');
-// checker.onchange = function () {
-//   if (sendbtn.disabled === true) {
-//     sendbtn.disabled = this.checked;
-//   } else {
-//     sendbtn.disabled = !!this.checked;
-//   }
-// };
+const button = document.querySelector('.logar');
+button.addEventListener('click', logging);
 
 // function createInput() {
 //   const pixelBoard = document.querySelector('#pixel-board');

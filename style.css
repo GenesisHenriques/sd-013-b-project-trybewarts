@@ -46,3 +46,7 @@ main {
 .confirm {
   display: flex;
 }
+
+footer {
+  display: flex;
+}
