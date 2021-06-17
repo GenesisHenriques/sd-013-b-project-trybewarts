@@ -76,6 +76,7 @@ input {
 #trybewarts-forms-logo {
   height: 500px;
   align-self: flex-end;
+  align-items: center;
 }
 
 #avaliate {
