@@ -52,10 +52,10 @@
 .house {
   display: flex;
   flex-grow: 1;
-  align-self: center;
+  align-items: center;
 }
 
-#house {
+#house, hr {
   width: 100%;
 }
 
@@ -65,18 +65,25 @@
 }
 
 .famRadios {
+  display: flex;
+  flex-direction: column;
   width: 40%;
+}
+
+.contentOptions {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
 }
 
 #label-family input {
   flex-grow: 1;
 }
 
-.famRadios {
+#label-content {
   display: flex;
-  flex-direction: column;
 }
-
-hr {
-  width: 100%;
+  
+.contentsLabels {
+  padding: 0 20px 0 2px;
 }
