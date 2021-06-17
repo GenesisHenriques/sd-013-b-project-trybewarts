@@ -28,3 +28,8 @@ main {
   display: flex;
   width: 500px;
 }
+
+#label-container {
+  display: flex;
+  flex-direction: column;
+}
