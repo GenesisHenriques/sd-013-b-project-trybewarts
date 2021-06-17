@@ -10,6 +10,19 @@ button.addEventListener('click', () => {
   }
 });
 
+function releasingSubmitButton() {
+  const checkBox = document.getElementById('agreement');
+  const submitButton = document.getElementById('submit-btn');
+  if (checkBox.checked) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+}
+
+const agreement = document.querySelector('#agreement');
+agreement.addEventListener('click', releasingSubmitButton);
+
 // function createInput() {
 //   const pixelBoard = document.querySelector('#pixel-board');
 
