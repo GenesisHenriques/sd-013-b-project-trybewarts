@@ -13,6 +13,13 @@ body {
   font-style: 400;
 }
 
+@font-face {
+  font-family: HarryP;
+  src: url('Fonts/harry_p/HARRYP__.TTF') format('truetype');
+  font-weight: 400;
+  font-style: 400;
+}
+
 /* header */
 .header {
   background-color: rgb(50, 167, 145);
@@ -50,14 +57,14 @@ body {
   background-color: whitesmoke;
   width: 220px;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 #enter-button {
   background-color: rgb(112, 0, 177);
   color: white;
   align-self: center;
-  font-family: sans-serif;
+  font-weight: 700;
   border-radius: 5px;
   height: 30px;
   margin: 5px;
