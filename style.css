@@ -31,21 +31,16 @@ form {
 #evaluation-form {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  margin: 15px;
-}
-
-#personal-data {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    margin: 10px;
-}
-
-#label-infos {
-  font-size: 13px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+.agreements {
+  display: flex;
+}
+
+#submit-btn {
+  width: 60px;
 }
