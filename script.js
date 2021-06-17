@@ -9,15 +9,13 @@ botao.addEventListener('click', () => {
   }
 });
 
-document.getElementById("submit-btn").disabled = true;
+const submitButton = document.getElementById('submit-btn').disabled;
+const check = document.getElementById('agreement');
 
-let check = document.getElementById('agreement');
-
-check.addEventListener('change', function() {
-    if (this.checked) {
-        document.getElementById("submit-btn").disabled = false;
-    } else {
-        document.getElementById("submit-btn").disabled = true;
-    }
-    
-})
+check.addEventListener('change', () => {
+  if (this.checked) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+});
