@@ -9,11 +9,11 @@ botao.addEventListener('click', () => {
   }
 });
 
-const submitButton = document.getElementById('submit-btn').disabled;
+const submitButton = document.getElementById('submit-btn');
 const check = document.getElementById('agreement');
 
-check.addEventListener('change', () => {
-  if (this.checked) {
+check.addEventListener('change', (event) => {
+  if (event.target.checked) {
     submitButton.disabled = false;
   } else {
     submitButton.disabled = true;
