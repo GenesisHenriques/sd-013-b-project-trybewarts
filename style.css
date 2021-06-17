@@ -10,16 +10,29 @@ body {
 }
 
 .trybewarts-header-logo {
-  color: black;
+  padding: 50px 0;
 }
 
 .trybewarts-login {
   display: flex;
-  color: black;
+  padding: 50px 0;
 }
 
 #trybewarts-header-title {
-  color: black;
+  font-size: 120px;
+  font-family: 'Harry Potter', sans-serif;
+  background: linear-gradient(to bottom, #cfc09f 22%,#cfc09f 24%,
+  #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow:
+		5px 5px 10px rgba(0, 0, 0, 0.4),
+		-5px -5px 10px rgba(0, 0, 0, 0.4);
+/* O text-shadow e o background foram baseados no link abaixo
+   https://codepen.io/mandymichael/pen/xpLNeV */
 }
 
 main {
