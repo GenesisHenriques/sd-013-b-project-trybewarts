@@ -46,9 +46,26 @@ main {
   display: flex;
   height: 500px;
   width: 675px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  border: 2px solid blueviolet;
+}
+
+#first-step {
+  border: 5px solid green;
+  display: flex;
+  flex-direction: column;
+  /* height: 100px; */
+  justify-content: space-around ;
+  /* justify-content: center; */
+}
+
+#first-step input {
+  margin: 5px;
+  width: 300px;
+  height: 25px;
+  /* justify-content: center; */
 }
 
 #trybewarts-forms-logo {
@@ -58,6 +75,27 @@ main {
 #family-choice {
   display: flex;
   flex-direction: column;
+}
+
+hr {
+  width: 650px;
+  font-size: larger;
+}
+
+#family-choice {
+  border: 2px solid yellow;
+  display: flex;
+}
+
+#techs-options {
+  border: 2px solid green;
+}
+
+#rate-options {
+  border: 2px solid deeppink;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 /* footer */

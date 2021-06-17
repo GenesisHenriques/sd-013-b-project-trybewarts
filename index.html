@@ -55,29 +55,34 @@ Requisito 19 -->
     </header>
   <div id="main-container">
   <main>
-    <form id="evaluation-form">
+      <form id="evaluation-form">
+        <h3>Forms</h3>
+      <div id="first-step">  
       <div id="nameAndLastName">
           <input type="text" id="input-name" placeholder="Nome">
           <input type="text" id="input-lastname" placeholder="Sobrenome">
       </div>
       <div id="emailAndHouse">
           <input type="text" id="input-email" placeholder="Email">
-          <select id="house">
-              <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-              <option value="Corvinode" id="corvinode-house">Corvinode</option>
-              <option value="Pytherina" id="pytherina-house">Pytherina</option>
-          </select>
+          <label for="house"> Casa:
+              <select id="house"> 
+                  <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                  <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                  <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                  <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                </select>
+            </label>
+        </div>
       </div>
       <hr>
-      <label id="label-family" for="family">Qual sua família?</label>
       <div id="family-choice">
+      <label id="label-family" for="family">Qual sua família?</label>
           <input type="radio" id="Front-family" name="family" value="Frontend" required> Família Frontend
           <input type="radio" id="Back-family" name="family" value="Backend" required> Família Backend
           <input type="radio" id="Back-family" name="family" value="FullStack"required> Família Full-stack  
       </div>
+      <div id = "techs-options">
           <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-      <div id = "checkboxes">
           <div id="labels">
               <label for="HoFs">HoFs</label>
               <label for="Jest">Jest</label>
@@ -94,6 +99,9 @@ Requisito 19 -->
                 <input class="subject" type="checkbox" value="SQL" id="SQL">
                 <input class="subject" type="checkbox" value="Python" id="Python">
             </div>
+        </div>
+            <hr>
+            <div id="rate-options">
             <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
                 <input type="radio" name="rate" value="1"> 1
                 <input type="radio" name="rate" value="2"> 2
@@ -105,12 +113,12 @@ Requisito 19 -->
                 <input type="radio" name="rate" value="8"> 8
                 <input type="radio" name="rate" value="9"> 9 
                 <input type="radio" name="rate" value="10"> 10
+            </div>
             <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
             <input type="checkbox" id="agreement">
             <button type="submit" id="submit-btn">Enviar</button>
             <label class="textarea">Deixe seu comentário:</label>
                 <textarea id="textarea" name="comentario" maxlength="500"></textarea>
-        </div>
     </form>
   </main>
   <aside>
