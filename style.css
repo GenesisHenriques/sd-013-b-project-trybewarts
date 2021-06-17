@@ -85,10 +85,6 @@
   margin-left: 5px;
 }
 
-#evaluation-form .name label , #evaluation-form .info label {
-  margin-bottom: 5px;
-}
-
 .form-element input , .form-element select , #submit-btn {
   border: 1.5px solid rgb(51, 51, 51);
   border-radius: 5px;
@@ -149,6 +145,22 @@
 .label-content {
   display: flex;
   width: 100px;
+}
+
+#rate-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#numbers-container {
+  display: flex;
+  margin-left: 10px;
+}
+
+#numbers-container input {
+  margin-left: 10px;
 }
 
 #agreement-container {
