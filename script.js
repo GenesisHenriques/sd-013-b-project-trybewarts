@@ -27,7 +27,31 @@ function counterCaracter() {
 
 textArea.addEventListener('input', counterCaracter);
 
-// -----Requisito 21-------
+//-----Requisito 21-------
+function removeAdd(idFather, idChild) {
+  const father = document.getElementsByClassName(idFather)[0];
+  const child = document.getElementById(idChild);
+   
+  let text = document.createElement('p');
+  text.innerText = child.value;
+  father.appendChild(text);
+
+  father.removeChild(child);
+}
+
+function genesis() {
+  removeAdd('personal-info-div', 'input-name');
+  removeAdd('personal-info-div', 'input-lastname');
+  removeAdd('body', 'input-email');
+  removeAdd('body', 'house');
+  removeAdd('family-radio-btn', 'house');
+}
+
+
+
+
+
+
 
 // Fim de Trecho de Código do Genesis
 
