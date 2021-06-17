@@ -82,9 +82,41 @@ getTextareaInObjectFormact();
 // }
 
 // submitButtonEventListener();
+function getValueOfTheObject(inputClass, formMainInfoInObjectFormat) {
+  if (inputClass.name in formMainInfoInObjectFormat) {
+    formMainInfoInObjectFormat[inputClass.name]
+    += ' '.concat(inputClass.value);
+  } else {
+    formMainInfoInObjectFormat[inputClass.name] = inputClass.value;
+  }
+}
+
+function getFamiliaInObjectFormat(formMainInfoInObjectFormat, className) {
+  const inputClassName = document.getElementsByClassName(className);
+  for (let index = 0; index < inputClassName.length; index += 1) {
+    const inputClass = inputClassName[index];
+    if (inputClass.checked) {
+      getValueOfTheObject(inputClass, formMainInfoInObjectFormat);
+    }
+  }
+  return formMainInfoInObjectFormat;
+}
+
+function submitButtonEventListener() {
+  const submitButton = document.getElementById('submit-btn');
+  submitButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    let formMainInfoInObjectFormat = {};
+    formMainInfoInObjectFormat = getFamiliaInObjectFormat(formMainInfoInObjectFormat, 'familia');
+    formMainInfoInObjectFormat = getFamiliaInObjectFormat(formMainInfoInObjectFormat, 'subject');
+    formMainInfoInObjectFormat = getFamiliaInObjectFormat(formMainInfoInObjectFormat, 'avaliacao');
+    console.log(formMainInfoInObjectFormat);
+  });
+}
 
 window.onload = function start() {
   disableButton();
   loginButtonAddEventListner();
   countdownTextAreaMaxLength();
+  submitButtonEventListener();
 };
