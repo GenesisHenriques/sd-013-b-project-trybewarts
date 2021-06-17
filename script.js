@@ -10,6 +10,7 @@ function login() {
 }
 const bntEntrar = document.querySelector('#btn-entrar');
 bntEntrar.addEventListener('click', login);
+
 // CRIA SELECT PARA CASA //
 function criaCasas(nome, id) {
   const select = document.querySelector('#house');
@@ -22,6 +23,7 @@ criaCasas('Gitnória', 'gitnoria-house');
 criaCasas('Reactpuff', 'reactpuff-house');
 criaCasas('Corvinode', 'corvinode-house');
 criaCasas('Pytherina', 'pytherina-house');
+
 // ATIVA BOTÃO DE ENVIAR //
 // const condição = document.querySelector('#agreement');
 // const button = document.querySelector('#submit-btn');
@@ -35,7 +37,7 @@ criaCasas('Pytherina', 'pytherina-house');
 // }
 // addEvento();
 // CONTADOR
-const myTextArea = document.getElementById('text-area');
+const myTextArea = document.getElementById('textarea');
 const charsTest = document.getElementById('counter');
 const charsMax = 500;
 myTextArea.addEventListener('input', () => {
