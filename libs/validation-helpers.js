@@ -14,6 +14,9 @@ function getSelectedRadioInput(inputs) {
 // salvando informações do formulário
 function getName(inputId) {
   const nameInput = document.querySelector(inputId);
+
+  if (!nameInput) return null;
+
   const name = nameInput.value.trim();
 
   if (!name.length) {
@@ -25,6 +28,9 @@ function getName(inputId) {
 
 function getEmail() {
   const emailInput = document.querySelector('#input-email');
+
+  if (!emailInput) return null;
+
   const email = emailInput.value.trim();
   const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
@@ -38,6 +44,8 @@ function getEmail() {
 function getSelectedHouse() {
   const houseSelect = document.querySelector('#house');
 
+  if (!houseSelect) return null;
+
   if (!houseSelect.selectedIndex) {
     throw new Error('Erro! Selecione uma casa');
   }
@@ -47,6 +55,9 @@ function getSelectedHouse() {
 
 function getSelectedFamily() {
   const familyInputs = document.querySelectorAll('input[name="family"]');
+
+  if (!familyInputs.length) return null;
+
   const selectedInput = getSelectedRadioInput(familyInputs);
 
   if (selectedInput === '') {
@@ -58,6 +69,9 @@ function getSelectedFamily() {
 
 function getSelectedContent() {
   const contentInputs = document.querySelectorAll('input[name="content"]');
+
+  if (!contentInputs.length) return null;
+
   const selectedInputs = [];
 
   contentInputs.forEach((input) => {
@@ -75,6 +89,9 @@ function getSelectedContent() {
 
 function getRating() {
   const ratingInputs = document.querySelectorAll('input[name="rate"]');
+
+  if (!ratingInputs.length) return null;
+
   const selectedInput = getSelectedRadioInput(ratingInputs);
 
   if (selectedInput === '') {
@@ -86,6 +103,9 @@ function getRating() {
 
 function getComment() {
   const textArea = document.querySelector('textarea');
+
+  if (!textArea) return null;
+
   const text = textArea.value.trim();
 
   if (!text.length) {
@@ -95,12 +115,10 @@ function getComment() {
   return text;
 }
 
-export {
-  getName,
-  getEmail,
-  getSelectedHouse,
-  getSelectedFamily,
-  getSelectedContent,
-  getRating,
-  getComment,
-};
+getName();
+getEmail();
+getSelectedHouse();
+getSelectedFamily();
+getSelectedContent();
+getRating();
+getComment();
