@@ -40,6 +40,11 @@
   padding: 10px 50px;
   background-color: rgb(70, 32, 100);
   color: white;
+  cursor: pointer;
+}
+
+.trybewarts-login button:hover {
+  background-color: rgb(102, 39, 151);
 }
 
 .trybewarts-login {
