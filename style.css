@@ -20,13 +20,10 @@ footer {
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   height: 80px;
-  padding: 0 15%;
 }
 
 .main {
-  justify-content: center;
   background-color: beige;
-  padding: 0 15%;
 }
 
 .trybewarts-login , .main , footer {
@@ -64,7 +61,7 @@ footer {
 
 .formZone1 input , .house {
   flex-grow: 1;
-  width: 320px;
+  min-width: 250px;
   margin: 5px 2px;
 }
 
