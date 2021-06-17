@@ -28,23 +28,81 @@ function counterCaracter() {
 textArea.addEventListener('input', counterCaracter);
 
 //-----Requisito 21-------
-function removeAdd(idFather, idChild) {
-  const father = document.getElementsByClassName(idFather)[0];
-  const child = document.getElementById(idChild);
+function removeAddName() {
+  const father = document.getElementsByClassName('personal-info-div')[0];
+  const name = document.getElementById('input-name');
+  const lastName = document.getElementById('input-lastname');
    
   let text = document.createElement('p');
-  text.innerText = child.value;
+  text.innerText = `Nome: -${name.value}- -${lastName.value}-`;
+  father.appendChild(text);
+  
+  father.removeChild(name);
+  father.removeChild(lastName);
+}
+
+function removeAddEmail () {
+  const father = document.getElementsByClassName('body')[0];
+  const email = document.getElementById('input-email');
+
+  let text = document.createElement('p');
+  text.innerText = `Email: -${email.value}-`;
   father.appendChild(text);
 
+  father.removeChild(email);
+}
+
+function removeAddHouse() {
+  const father = document.getElementsByClassName('body')[0];
+  const house = document.getElementById('house');
+  const labelHouse = document.getElementById('labelHouse');
+
+  let text = document.createElement('p');
+  text.innerText = `Casa: -${house.value}-`;
+  father.appendChild(text);
+
+  father.removeChild(house);
+  father.removeChild(labelHouse);
+}
+
+function removeAddFamily() {
+  const father = document.getElementsByClassName('body')[0];
+  const child = document.getElementsByClassName('family-div')[0];
+  let family = '';
+  
+  if (document.getElementById('familyUm').checked === true) {
+    family = document.getElementById('familyUm');
+  } else if (document.getElementById('familyDois').checked === true) {
+    family = document.getElementById('familyDois');
+  } else if (document.getElementById('familyTres').checked === true) {
+    family = document.getElementById('familyTres');
+  } else {}
+  
+  let text = document.createElement('p');
+  text.innerText = `Família: -${family.value}-`;
+  father.appendChild(text);
+  
   father.removeChild(child);
 }
 
+function removeAddContent() {
+  const subject = document.getElementsByClassName('subject');
+  let itens = '';
+  
+  for (let index = 0; index < subject.length; index += 1) {
+    // if (subject[index].checked === true) {
+    //   itens += `${subject[index].value} `;
+    //   console.log(itens);
+    // } else {}
+  }
+}
+
 function genesis() {
-  removeAdd('personal-info-div', 'input-name');
-  removeAdd('personal-info-div', 'input-lastname');
-  removeAdd('body', 'input-email');
-  removeAdd('body', 'house');
-  removeAdd('family-radio-btn', 'house');
+  removeAddName();
+  removeAddEmail();
+  removeAddHouse();
+  removeAddFamily();
+  removeAddContent();
 }
 
 
