@@ -60,4 +60,17 @@ button {
 
 #house {
   margin-left: 15px;
+  justify-content: flex-end;
+}
+
+#familia{
+  margin-left: 30px;
+}
+
+.form-check {
+  margin-left: 13%;
+}
+
+#label-family {
+  margin-left: 14%;
 }
