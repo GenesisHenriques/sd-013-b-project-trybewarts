@@ -23,14 +23,12 @@ agreementCheck.addEventListener('click', () => {
     submitButton.disabled = false;
   }
 });
+// https://www.easyprogramming.net/javascript/js_count_characters.php
 
-// document.getElementById('textarea').addEventListener('keyup', () => {
-//   const characterCount = document(this).val().length;
-//   const current = document.getElementById('current');
-//   const maximum = document.getElementById('maximum');
-//   const TheCount = document.getElementById('counter');
+const textarea = document.getElementById('textarea');
+const maximum = document.getElementById('maximum');
 
-//   current.text(characterCount);
-//   current.text(maximum);
-//   current.text(TheCount);
-// });
+textarea.addEventListener('keyup', () => {
+  const characters = textarea.value.split('');
+  maximum.innerText = characters.length;
+});
