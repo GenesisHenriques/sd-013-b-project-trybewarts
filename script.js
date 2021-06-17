@@ -15,7 +15,7 @@ function validateLogin() {
 }
 
 function validateAgreement() {
-  if (submitBtn.checked = true) {
+  if (submitBtn.checked) {
     submitBtn.disabled = false;
   }
 }
@@ -24,4 +24,3 @@ window.onload = function main() {
   loginBtn.addEventListener('click', validateLogin);
   checkAgreement.addEventListener('click', validateAgreement);
 };
-
