@@ -53,27 +53,27 @@
       <div class="techs">
         <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
         <div>
-          <input class="subject" type="checkbox" checked="checked" value="HoFs">
+          <input class="subject" type="checkbox" value="HoFs" id="HoFs">
           <label for="HoFs"> HoFs</label>
         </div>
         <div>
-            <input class="subject" type="checkbox" checked="checked" value="Jest">
+            <input class="subject" type="checkbox"value="Jest">
             <label for="Jest">Jest</label>
         </div>
         <div>
-          <input class="subject" type="checkbox" checked="checked" value="Promises">
+          <input class="subject" type="checkbox" value="Promises">
           <label for="Promises">Promises</label>
         </div>
         <div>
-          <input class="subject" type="checkbox" checked="checked" value="React">
+          <input class="subject" type="checkbox" value="React">
           <label for="React">React</label>
         </div>
         <div>
-          <input class="subject" type="checkbox" checked="checked" value="SQL">
+          <input class="subject" type="checkbox" value="SQL">
           <label for="SQL">SQL</label>
         </div>
         <div>
-          <input class="subject" type="checkbox" checked="checked" value="Python">
+          <input class="subject" type="checkbox" value="Python">
           <label for="Python">Python</label>
         </div>
       </div>
@@ -83,14 +83,17 @@
       <hr>
       <label for="textarea" class="textarea">Deixe seu comentário:</label>
       <textarea id="textarea" maxlength="500"></textarea>
+      <div>
+        <label id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input id="agreement" type="checkbox">
+      </div>
+
+      <button type="submit" id="submit-btn">Enviar</button>
     </form>
     <hr>
     <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
+     <footer>Direitos reservados à Trybewarts©</footer>
   </main>
-  <div>
-    <label id="label-infos">Você concorda com o uso das informações acima?</label>
-    <input id="agreement" type="checkbox">
-  </div>
   <script src="script.js"></script>
 </body>
 </html>
