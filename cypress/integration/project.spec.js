@@ -159,7 +159,7 @@ describe('Trybewarts', () => {
 
     });
   });
-
+*/
   describe('5 - Adicione um formulário no corpo da página, posicionado ao lado esquerdo', () => {
     it('Deve existir um formulário com o id `evaluation-form`', () => {
       cy.get(EVALUATION_FORM).should('exist');
@@ -178,7 +178,7 @@ describe('Trybewarts', () => {
       cy.get(EVALUATION_FORM).should('have.css', 'width', '675px');
     });
   });
-
+/*
   describe('6 - Crie um id para o formulário do requisito 5', () => {
     it('Esse id deverá se chamar `evaluation-form`', () => {
       cy.get('#evaluation-form').should('exist');
