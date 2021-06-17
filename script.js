@@ -23,10 +23,10 @@ bntEnviar.disabled = true;
 function verify() {
   // console.log('test função');
   if (getPermission.checked === true) {
-    console.log('teste se');
+    // console.log('teste se');
     bntEnviar.disabled = false;
   } else if (getPermission.checked === false) {
-    console.log('teste ou se');
+    // console.log('teste ou se');
     bntEnviar.disabled = true;
   }
 }
