@@ -12,3 +12,22 @@ function login() {
   }
 }
 botaoEntrar.addEventListener('click', login);
+
+// Requesito 14 - Radios buttons do elemento label-rate(avalia de 1 a 10);
+const containerRate = document.getElementById('label-container-3');
+
+function criarRadioButtonsRate() {
+  for (let index = 0; index <= 10; index += 1) {
+    const radioButtonRate = document.createElement('input');
+    radioButtonRate.type = 'radio';
+    radioButtonRate.value = index;
+    radioButtonRate.id = index;
+    radioButtonRate.name = 'rate';
+    const labelDoRadio = document.createElement('label');
+    labelDoRadio.for = index;
+    labelDoRadio.innerText = index.toString();
+    containerRate.appendChild(radioButtonRate);
+    containerRate.appendChild(labelDoRadio);
+  }
+}
+criarRadioButtonsRate();
