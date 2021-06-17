@@ -66,9 +66,12 @@ buttonEnable.addEventListener('click', () => {
 });
 
 const getSelect = document.getElementById('house');
-const labelThreeText = getSelect.selectedOptions[0].innerText;
 const createLabelThree = document.createElement('label');
-createLabelThree.innerText = `Casa: ${labelThreeText}`;
+buttonEnable.addEventListener('click', () => {
+  createLabelTwo.innerText = `Email: ${getValue('input-email')}`;
+  const labelThreeText = getSelect.selectedOptions[0].innerText;
+  createLabelThree.innerText = `Casa: ${labelThreeText}`;
+});
 
 const createLabelFour = document.createElement('label');
 const inputFamily = document.getElementsByName('family');
@@ -80,12 +83,27 @@ for (let index = 0; index < inputFamily.length; index += 1) {
 
 const createLabelFive = document.createElement('label');
 const inputContent = document.getElementsByClassName('subject');
+createLabelFive.className = 'labelFive';
 createLabelFive.innerText = 'Matérias: ';
 for (let index = 0; index < inputContent.length; index += 1) {
   inputContent[index].addEventListener('click', () => {
-    createLabelFive.innerText += `${inputContent[index].defaultValue} `;
+    if (inputContent[index].classList.contains('selected')) {
+      inputContent[index].classList.remove('selected');
+    } else {
+      inputContent[index].classList.add('selected');
+    }
+    // createLabelFive.innerText += `${inputContent[index].defaultValue}, `;
   });
 }
+
+const checkSelected = document.getElementsByClassName('selected');
+buttonEnable.addEventListener('click', () => {
+  for (let index = 0; index < checkSelected.length; index += 1) {
+    createLabelFive.innerText += `${checkSelected[index].defaultValue}, `;
+  }
+  const fur = createLabelFive.innerText.slice(0, -2);
+  createLabelFive.innerText = fur;
+});
 
 const createLabelSix = document.createElement('label');
 const inputRate = document.getElementsByName('rate');
