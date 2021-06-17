@@ -35,8 +35,3 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
-
-main form {
-  display: flex;
-  flex-wrap: nowrap;
-}
