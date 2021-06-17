@@ -28,3 +28,18 @@ for (let index = 1; index <= 10; index += 1) {
   label.innerHTML = index;
   paiRadioButtons.appendChild(label);
 }
+
+// script do requisito 18 - fazer o botão ser habilitado com o checkbox
+// o 'disabled = true' serve para desabilitar um botão, assim como o '= false' habilita novamente
+
+const checkbox = document.getElementById('agreement');
+const submit = document.getElementById('submit-btn');
+submit.disabled = true;
+
+checkbox.addEventListener('click', (evento) => {
+  if (evento.target.checked) {
+    submit.disabled = false;
+  } else {
+    submit.disabled = true;
+  }
+});
