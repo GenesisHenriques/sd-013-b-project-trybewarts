@@ -10,16 +10,19 @@ button.addEventListener('click', () => {
   }
 });
 
-const submitButton = document.getElementById('submit-btn');
-
-submitButton.addEventListener('click', () => {
+function releasingSubmitButton() {
   const checkBox = document.getElementById('agreement');
+  const submitButton = document.getElementById('submit-btn');
+
   if (checkBox.checked) {
-    document.getElementById('submit-btn').disabled = false;
+    submitButton.disabled = false;
   } else {
-    document.getElementById('submit-btn').disabled = true;
+    submitButton.disabled = true;
   }
-});
+}
+
+const agreement = document.querySelector('#agreement');
+agreement.addEventListener('click', releasingSubmitButton);
 
 // let checker = document.getElementById('agreement');
 // let sendbtn = document.getElementById('submit-btn');
