@@ -1,12 +1,18 @@
-*{
+* {
   padding: 0;
   margin: 0;
   border: 0;
 }
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100px;
+}
+
+.trybewarts-header-logo {
+  height: 90%;
 }
 
 .trybewarts-login {
@@ -17,37 +23,98 @@
 
 main {
   display: flex;
+  justify-content: space-evenly;
+  background-color: grey;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 675px;
   margin-top: 30px;
-  
 }
 
-#trybewarts-forms-logo{
+#trybewarts-forms-logo {
   height: 500px;
 }
 
-.div1Forms{
+.div1Forms {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+  font-size: 25px;
+}
+
+.div2Forms {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  align-items:center;
-  width: 60%;
   margin-top: 30px;
+  width: 100%;
 }
 
-#label-family{
+#house , #input-email , #input-lastname , #input-name {
+  padding: 20px;
+  border-radius: 15px;
+  margin: 5px;
+  width: 35%;
+}
+
+.div2Child1 {
   display: flex;
-  width: 40%;
-  background-color:red;
+  flex-direction: column;
+  width: 50%;
 }
 
-.div2Forms{
-  background-color: aquamarine;
-  width:100%;
+#ul-lista {
+  font-size: large;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.div2Child2 {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+}
+
+#uldiv2-lista {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.liDiv2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+}
+
+#label-content {
+  font-size: 25px;
+  width: 100%;
+  height: 40%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
 }
