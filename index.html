@@ -11,21 +11,27 @@
 </head>
 <body>
   <header class="header">
+
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo em T do projeto trybewarts">
+
     <h1 id="trybewarts-header-title">Trybewarts</h1>
+
     <form method="get" name="loginForm" class="trybewarts-login">
       <input type="text" name="login" id="user" placeholder="Login">
       <input type="password" name="password" id="password" placeholder="Senha">
       <button type="submit" id="btn-login">Entrar</button>
     </form>
+
   </header>
 
   <main class="main">
+
     <form id="evaluation-form" class="evaluation-form" action="" method="get">
       <div class="linha">
         <input type="text" name="name" id="input-name" placeholder="Nome">
         <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">
       </div>
+
       <div class="linha">
         <input type="text" name="email" id="input-email" placeholder="Email">
         <p>Casa:
@@ -105,7 +111,8 @@
         
       <div class="textarea-container">
         <label class="textarea" for="comment"> Deixe seu comentário:
-          <textarea name="" id="comment" maxlength="500"></textarea>		 
+        <textarea name="" id="textarea" maxlength="500"></textarea>
+        <span id="counter"></span>	  		 
         </label>
       </div>
 
@@ -115,7 +122,7 @@
       </div>
 
       <div class="submit-btn-container">
-	      <button id="submit-btn" type="submit">Enviar</button>
+	<button id="submit-btn" type="submit">Enviar</button>
       </div>
     </form>
 

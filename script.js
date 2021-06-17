@@ -17,7 +17,7 @@ function loginButtonAddEventListner() {
   loginButton.addEventListener('click', validateLoginForm);
 }
 
-function buttonDisable() {
+function disableButton() {
   const submitButton = document.getElementById('submit-btn');
   const agreement = document.getElementById('agreement');
   submitButton.disabled = true;
@@ -31,7 +31,17 @@ function buttonDisable() {
   });
 }
 
+function countdownTextAreaMaxLength() {
+  const textArea = document.querySelector('#textarea');
+  const createEnterText = document.getElementById('counter');
+  createEnterText.innerText = textArea.maxLength;
+  textArea.addEventListener('keyup', () => {
+    createEnterText.innerText = textArea.maxLength - textArea.value.length;
+  });
+}
+
 window.onload = function start() {
-  buttonDisable();
+  disableButton();
   loginButtonAddEventListner();
+  countdownTextAreaMaxLength();
 };
