@@ -10,7 +10,7 @@
   height: 80px;
 }
 
-.trybewarts-login, #main {
+.trybewarts-login , #main {
   display: flex;
 }
 
@@ -18,7 +18,7 @@
   height: 80px;
 }
 
-.trybewarts-login input, .bntSub {
+.trybewarts-login input , .bntSub {
   margin: 30px 10px;
 }
 
@@ -37,13 +37,13 @@
   flex-wrap: wrap;
 }
 
-.formZone1 input, .house {
+.formZone1 input , .house {
   flex-grow: 1;
   width: 320px;
   margin: 5px 2px;
 }
 
-.formZone1 input, #house {
+.formZone1 input , #house {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid gray;
@@ -55,7 +55,7 @@
   align-items: center;
 }
 
-#house, hr {
+#house , hr {
   width: 100%;
 }
 
@@ -83,7 +83,7 @@
 #label-content {
   display: flex;
 }
-  
+
 .contentsLabels {
   padding: 0 20px 0 2px;
 }
