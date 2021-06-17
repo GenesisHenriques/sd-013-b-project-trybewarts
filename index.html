@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bulma/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Trybewarts</title>
 </head>
@@ -13,9 +14,9 @@
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Trybewarts">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form action="" class="trybewarts-login">
-      <input type="text" placeholder="Login" name="username" id="input-login">
-      <input type="password" placeholder="Senha" name="psw" id="input-senha">
-      <button id="entrar">Entrar</button>
+      <input type="text" placeholder="Login" name="username" id="input-login" class="input">
+      <input type="password" placeholder="Senha" name="psw" id="input-senha" class="input">
+      <button id="entrar" class="button">Entrar</button>
     </form>
    </header>
 
@@ -23,17 +24,19 @@
     <form action="" id="evaluation-form">
       <h2>Forms</h2>
       <div id="nome-e-sobrenome">
-        <input type="text" id="input-name" placeholder="Nome">
-        <input type="text" id="input-lastname" placeholder="Sobrenome">
+        <input type="text" id="input-name" placeholder="Nome" class="input">
+        <input type="text" id="input-lastname" placeholder="Sobrenome" class="input">
       </div>
       <div id="email-e-casa">
-        <input type="email" name="" id="input-email" placeholder="Email">
-        <select name="" id="house">
-          <option value="Gitnória"  id="gitnoria-house">Gitnória</option>
-          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-          <option value="Corvinode" id="corvinode-house">Corvinode</option>
-          <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
+        <input type="email" name="" id="input-email" placeholder="Email" class="input">
+        <div class="select">
+          <select name="" id="house">
+            <option value="Gitnória"  id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </div>
       </div>
       <div id="familia-e-conteudos">
         <div id="familia">
@@ -77,14 +80,15 @@
         </div>
       </div>
       <div id="comentario-e-check">
-        <label for="textarea" class="textarea">Deixe seu comentário:</label>
-        <textarea name="textarea" id="textarea" cols="3" rows="3" maxlength="500"></textarea>
+        <label for="textarea" class="textarea" id="labelTextArea">Deixe seu comentário:</label>
+        <label for="textarea">Deixe seu comentário:</label>
+        <textarea class="textarea" name="textarea" id="textarea" cols="3" rows="3" maxlength="500"></textarea>
         <div id="check">
           <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
           <input type="checkbox" name="agreement" id="agreement">
         </div>
       </div>
-      <button type="submit" id="submit-btn">Enviar</button>
+      <button type="submit" id="submit-btn" class="button">Enviar</button>
     </form>
     <img src="images/trybewarts-colored.svg" alt="trybewarts logo" id="trybewarts-forms-logo">
   </main>
