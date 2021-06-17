@@ -21,21 +21,23 @@ body {
 }
 
 #login {
-  background-color: #f1f1f1;
-  padding: 10px 10px;
+  background-color: rgb(233, 228, 228);
+  padding: 10px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 #senha {
-  background-color: #f1f1f1;
-  padding: 10px 10px;
+  background-color: rgb(233, 228, 228);
+  padding: 10px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .trybewarts-header-logo {
@@ -46,14 +48,6 @@ body {
 #trybewarts-header-title {
   color: white;
   font-size: 40px;
-}
-
-#login {
-  margin-right: 10px;
-}
-
-#senha {
-  margin-right: 10px;
 }
 
 .trybewarts-login {
@@ -67,8 +61,8 @@ main {
 }
 
 select {
-  background-color: #f1f1f1;
-  padding: 10px 10px;
+  background-color: rgb(233, 228, 228);
+  padding: 10px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
@@ -88,13 +82,13 @@ select {
   margin-top: 20px;
   margin-bottom: 20px;
   border-top: solid 1px;
-  border-bottom: solid 1px
+  border-bottom: solid 1px;
 }
 
 #input-name {
   width: 300px;
-  background-color: #f1f1f1;
-  padding: 10px 10px;
+  background-color: rgb(233, 228, 228);
+  padding: 10px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
@@ -103,8 +97,8 @@ select {
 
 #input-lastname {
   width: 300px;
-  background-color: #f1f1f1;
-  padding: 10px 10px;
+  background-color: rgb(233, 228, 228);
+  padding: 10px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
@@ -112,7 +106,7 @@ select {
 }
 
 #submit-btn {
-  background-color: #4CAF50;
+  background-color: green;
   border: none;
   color: white;
   padding: 10px 32px;
@@ -122,8 +116,8 @@ select {
 }
 
 #input-email {
-  background-color: #f1f1f1;
-  padding: 10px 10px;
+  background-color: rgb(233, 228, 228);
+  padding: 10px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
@@ -135,7 +129,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(50, 167, 145) ;
+  background-color: rgb(50, 167, 145);
   color: white;
   text-align: center;
 } 
