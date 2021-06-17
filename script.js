@@ -15,7 +15,7 @@ function validateLogin() {
 }
 
 function validateAgreement() {
-  if (submitBtn.checked) {
+  if (submitBtn.checked === true) {
     submitBtn.disabled = false;
   }
 }
