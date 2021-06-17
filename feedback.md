@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: 8
 
 ---
 
@@ -19,11 +19,11 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: O enunciado do requisito 21 não ficou tão claro. Ficamos em dúvida o que era pra ser feito exatamente, so conseguimos descobrir fazendo testes.
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: Arthur Junior / Rodrigo Marchi
 
 ---
 
