@@ -8,7 +8,83 @@
   <title>Projeto Trybewarts</title>
 </head>
 <body>
-  
+
+  <header class="header" style="background-color: rgb(50, 167, 145);">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <form class="trybewarts-login">
+      <input id = "login-user" placeholder="Login">
+      <input id = "login-pass" placeholder="Senha">
+      <button id = "login-button">logar</button>
+    </form>
+  </header>
+
+  <main>
+    <form id="evaluation-form">forms
+
+      <div class="div1Forms">
+        <input id="input-name" placeholder="Nome">
+        <input id="input-lastname" placeholder="Sobrenome">
+        <input id="input-email" placeholder="Email">
+        <label for="house">Casa:</label>
+        <select id="house">
+          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
+      </div>
+
+      <div class="div2Forms">
+        <div class="div2Child1">
+          <div id="label-family">Qual sua família?</div>
+          <ul id="ul-lista">
+            <li>
+              <input id="Frontend" type="radio" value="Frontend" name="family">
+              <label for="Frontend">Família Frontend</label>
+            </li>
+            <li>
+              <input id="Backend" type="radio" value="Backend" name="family">
+              <label for="Backend">Família Backend</label>
+            </li>
+            <li>
+              <input id="FullStack" type="radio" value="FullStack" name="family">
+              <label for="FullStack">Família FullStack</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="div2Child2">
+          <div id="label-content">Qual conteúdo você está com mais vontade de aprender?</div>
+          <ul id="uldiv2-lista">
+            <li class="liDiv2">
+              <input class="subject" type="checkbox" id="HoFs" value="HoFs">
+              <label for="HoFs">HoFs</label></li><li class="liDiv2">
+                <input class="subject" type="checkbox" id="Jest" value="Jest">
+                <label for="Jest">Jest</label>
+              </li>
+              <li class="liDiv2">
+                <input class="subject" type="checkbox" id="Promises" value="Promises">
+                <label for="Promises">Promises</label>
+              </li>
+              <li class="liDiv2">
+                <input class="subject" type="checkbox" id="React" value="React">
+                <label for="React">React</label>
+              </li>
+              <li class="liDiv2">
+                <input class="subject" type="checkbox" id="SQL" value="SQL">
+                <label for="SQL">SQL</label>
+              </li>
+              <li class="liDiv2">
+                <input class="subject" type="checkbox" id="Python" value="Python">
+                <label for="Python">Python</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </form>
+      <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo"></main>
 
   <script src="script.js"></script>
 </body>
