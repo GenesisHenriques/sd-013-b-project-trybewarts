@@ -40,12 +40,26 @@ function countdownTextAreaMaxLength() {
   });
 }
 
+function getKey(className) {
+  switch (className) {
+  case 'family':
+    return 'Família';
+  case 'Matérias':
+    return 'Matérias';
+  case 'rate':
+    return 'Avaliação';
+  default:
+    break;
+  }
+}
+
 function getValueOfTheObject(inputClass, formMainInfoInObjectFormat) {
-  if (inputClass.name in formMainInfoInObjectFormat) {
-    formMainInfoInObjectFormat[inputClass.name]
+  const key = getKey(inputClass.name);
+  if (key in formMainInfoInObjectFormat) {
+    formMainInfoInObjectFormat[key]
     += ' '.concat(inputClass.value);
   } else {
-    formMainInfoInObjectFormat[inputClass.name] = inputClass.value;
+    formMainInfoInObjectFormat[key] = inputClass.value;
   }
 }
 
