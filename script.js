@@ -1,5 +1,5 @@
 // Login
-const loginButton = document.getElementById('login-button');
+const loginButton = document.getElementById("login-button");
 
 function interrompeForm(event) {
   event.preventDefault();
@@ -15,3 +15,17 @@ loginButton.addEventListener('click', () => {
     window.alert('Login ou senha inválidos.');
   }
 });
+const getPermission = document.getElementById('agreement');
+getPermission.addEventListener('click', verify);
+
+function verify() {
+  console.log('test função');
+  const bntEnviar = document.getElementById('submit-btn');
+  if (getPermission.checked !== true) {
+    console.log('teste se');
+    bntEnviar.disable = 'true';
+  } else {
+    console.log('teste else');
+    bntEnviar.disable = 'false';
+  }
+}
