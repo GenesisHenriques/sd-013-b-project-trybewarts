@@ -24,11 +24,33 @@
 
 /* login-header */
 .trybewarts-login {
+  
+  /* border: 2px solid black; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 425px;
   order: 2;
+}
+
+.trybewarts-login input {
+  height: 28px;
+  margin: 5px;
+  background-color: whitesmoke;
+  width: 220px;
+  border: none;
+  border-radius: 3px;
+}
+
+#enter-button {
+  background-color: rgb(112, 0, 177);
+  color: white;
+  align-self: center;
+  font-family: sans-serif;
+  border-radius: 5px;
+  height: 30px;
+  margin: 5px;
+  border: none;
+  width: 70px;
 }
 
 /* main */
@@ -66,7 +88,7 @@ main {
 #first-step input {
   margin: 5px;
   width: 300px;
-  height: 25px;
+  height: 28px;
 }
 
 #trybewarts-forms-logo {
