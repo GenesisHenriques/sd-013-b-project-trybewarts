@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
   <title>Trybewarts</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -24,8 +23,9 @@
     </form>
   </header>
 
-  <main id="main">
+  <main class="main">
     <form action="" id="evaluation-form">
+<<<<<<< HEAD
       <div class="name-container">
         <input type="text" name="nome" id="input-name" placeholder="Nome">
         <input type="text" name="sobreNome" id="input-lastname" placeholder="Sobrenome">
@@ -40,18 +40,57 @@
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
+=======
+      <div class="formZone1">
+        <input type="text" name="nome" id="input-name" placeholder="Nome">
+        <input type="text" name="sobreNome" id="input-lastname" placeholder="Sobrenome">
+        <input type="text" name="email" id="input-email" placeholder="Email">
+        <label for="house" class="house">Casa:
+          <select name="house" id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </label>
+>>>>>>> 798374a90e08b0029ecc1de2366f744bd5577ef9
       </div>
       
       <hr>
-      <div></div>
+      <div class="formZone2"><!--12,13-->
+        <div class="famRadios">
+          <label id="label-family">Qual sua família?</label>
+          <label for="Frontend">
+            <input type="radio" name="family" value="Frontend" id="Frontend">Família Frontend</label>
+          <label for="Backend">
+            <input type="radio" name="family" value="Backend" id="Backend">Família Backend</label>
+          <label for="FullStack">
+            <input type="radio" name="family" value="FullStack" id="FullStack">Família FullStack</label>
+        </div>
+        <div class="contentOptions">
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <label for="HoFs" class="contentsLabels"><input type="checkbox" name="content" id="HoFs" class="subject" value="HoFs">HoFs</label>
+          <label for="Jest" class="contentsLabels"><input type="checkbox" name="content" id="Jest" class="subject" value="Jest">Jest</label>
+          <label for="Promises" class="contentsLabels"><input type="checkbox" name="content" id="Promises" class="subject" value="Promises">Promises</label>
+          <label for="React" class="contentsLabels"><input type="checkbox" name="content" id="React" class="subject" value="React">React</label>
+          <label for="SQL" class="contentsLabels"><input type="checkbox" name="content" id="SQL" class="subject" value="SQL">SQL</label>
+          <label for="Python" class="contentsLabels"><input type="checkbox" name="content" id="Python" class="subject" value="Python">Python</label>
+        </div>
+      </div>
       <hr>
-      <div></div>
+      <div class="formZone3"><!--14,15,16,17,18-->
+
+      </div>
     </form>
 
-    <div>
+    <div><!--7-->
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
     </div>
   </main>
+
+  <footer><!--19-->
+    <p>Direitos reservados à Trybewarts©</p>
+  </footer>
 
   <script src="script.js"> </script>
 </body>
