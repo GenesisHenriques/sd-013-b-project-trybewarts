@@ -70,6 +70,8 @@
 }
 
 .radio-element label {
+  align-items: center;
+  display: flex;
   margin-right: 20px;
   width: 50px;
 }
@@ -78,7 +80,7 @@
   margin-bottom: 5px;
 }
 
-#evaluation-form input , #evaluation-form select , #submit-btn {
+#evaluation-form .form-element input , #evaluation-form .form-element select , #submit-btn {
   border: 1.5px solid rgb(51, 51, 51);
   border-radius: 5px;
   padding: 8px;
@@ -96,25 +98,56 @@
   height: 500px;
 }
 
-.family-radio {
-  display: inline;
+#options-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 #radio-buttons {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 20%;
 }
 
 .radio-element {
+  align-items: center;
   display: flex;
-  justify-content: flex-start;
   margin-bottom: 10px;
   width: 100px;
 }
 
 #radio-buttons #label-family {
   margin-bottom: 20px;
+}
+
+#checkbox-container {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+}
+
+.checkbox-content {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  width: 100px;
+}
+
+.checkbox-content label {
+  margin-left: 5px;
+}
+
+.label-content {
+  display: flex;
+  width: 100px;
+}
+
+#agreement-container {
+  margin-top: 20px;
 }
 
 #agreement {

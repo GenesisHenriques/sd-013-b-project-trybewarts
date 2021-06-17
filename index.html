@@ -49,25 +49,59 @@
           </select>
       </div>
       </div>
-      <div id="radio-buttons">
-        <label id="label-family">Qual sua família?</label>
-        <div class="radio-element">
-          <label>Frontend</label>
-          <input type="radio" name="family" value="Frontend">
-        </div>
-        <div class="radio-element">
-        <label>Backend</label>
-          <input type="radio" name="family" value="Backend">
-        </div>
-        <div class="radio-element">
-          <label>FullStack</label>
-          <input type="radio" name="family" value="FullStack">
-            </div>
+
+      <hr>
+
+      <div id="options-container">
+        <div id="radio-buttons">
+          <label id="label-family">Qual sua família?</label>
+          <div class="radio-element">
+            <label for="front-end">Frontend</label>
+            <input id="front-end" type="radio" name="family">
           </div>
-      <div>
-        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
-          <input type="checkbox" id="agreement" required>
-        </label>
+          <div class="radio-element">
+          <label for="back-end">Backend</label>
+            <input id="back-end" type="radio" name="family">
+          </div>
+          <div class="radio-element">
+            <label for="full-stack">FullStack</label>
+            <input id="full-stack" type="radio" name="family">
+          </div>
+        </div>
+        <div id="checkbox-container">
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div class="checkbox-content">
+            <input type="checkbox" name="hofs" value="HoFs">
+            <label for="hofs">HoFs</label>
+          </div>
+          <div class="checkbox-content">
+            <input type="checkbox" name="jest" value="Jest">
+            <label for="jest">Jest</label>
+          </div>
+          <div class="checkbox-content">
+            <input type="checkbox" name="promises" value="Promises">
+            <label for="promises">Promises</label>
+          </div>
+          <div class="checkbox-content">
+            <input type="checkbox" name="react" value="React">
+            <label for="react">React</label>
+          </div>
+          <div class="checkbox-content">
+            <input type="checkbox" name="sql" value="SQL">
+            <label for="sql">SQL</label>
+          </div>
+          <div class="checkbox-content">
+            <input type="checkbox" name="python" value="Python">
+            <label for="python">Python</label>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="agreement-container">
+        <input type="checkbox" id="agreement" required>
+        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
       </div>
       <button type="submit" id="submit-btn">Enviar</button>
      </form>
