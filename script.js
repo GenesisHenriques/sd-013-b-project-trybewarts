@@ -134,17 +134,13 @@ function createRatingInputs() {
   const feedbackSection = document.querySelector('.feedback-section');
 
   for (let i = 1; i < 11; i += 1) {
-    const label = document.createElement('label');
-    label.for = i;
-
-    const radioInput = document.createElement('input');
-    radioInput.type = 'radio';
-    radioInput.name = 'rate';
-    radioInput.id = i;
-    radioInput.value = i;
-
-    label.appendChild(radioInput);
-    label.innerHTML += i;
+    const label = createInputWithLabel({
+      type: 'radio',
+      name: 'rate',
+      id: i,
+      className: '',
+      labelText: i,
+    });
 
     feedbackSection.appendChild(label);
   }
