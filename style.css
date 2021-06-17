@@ -81,7 +81,7 @@ main {
 #satisfaction {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0;
 }
 
 #text-area {
@@ -97,7 +97,7 @@ main {
 
 .dados-pessoais {
   flex: 1;
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0;
   display: flex;
 }
 
@@ -119,5 +119,5 @@ main {
 }
 
 hr {
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0;
 }
