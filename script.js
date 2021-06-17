@@ -21,13 +21,12 @@ loginButton.addEventListener('click', checkUser);
 const checkbox = document.getElementById('agreement');
 const sendButton = document.getElementById('submit-btn');
 
-
-checkbox.addEventListener('change', enableButton);
-
-function enableButton () {
+function enableButton() {
   if (sendButton.disabled === true) {
     sendButton.disabled = false;
   } else {
     sendButton.disabled = true;
   }
 }
+
+checkbox.addEventListener('change', enableButton);

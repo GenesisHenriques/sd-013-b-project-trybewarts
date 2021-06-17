@@ -44,3 +44,8 @@ form {
 #submit-btn {
   width: 60px;
 }
+
+footer {
+  text-align: center;
+  background-color: rgba(92, 0, 92, 0.342);
+}
