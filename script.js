@@ -4,7 +4,6 @@ const loginButton = document.querySelector('#loginButton');
 const rateContainer = document.querySelector('#rate-container');
 const submitButton = document.querySelector('#submit-btn');
 const verifAgreement = document.querySelector('#agreement');
-submitButton.disabled = true;
 
 function login() {
   const validEmail = email.value;
@@ -34,8 +33,16 @@ function createRateRadios() {
 
 createRateRadios();
 
-function activeSubmitButton(){
-  submitButton.disabled = false;
+function changeButton(event) {
+  if (event.target.checked) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
 }
 
-verifAgreement.addEventListener
+function addEventCheck() {
+  verifAgreement.addEventListener('click', changeButton);
+}
+
+addEventCheck();
