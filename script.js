@@ -13,3 +13,18 @@ entrar.addEventListener('click', () => {
     window.alert('Login ou senha inválidos.');
   }
 });
+
+// script para criar os radio buttons dinaâmicamente do requisito 14
+
+const paiRadioButtons = document.getElementById('pai-radio-buttons');
+
+for (let index = 1; index <= 10; index += 1) {
+  const radio = document.createElement('input');
+  const label = document.createElement('label');
+  radio.type = 'radio';
+  radio.value = index;
+  radio.name = 'rate';
+  paiRadioButtons.appendChild(radio);
+  label.innerHTML = index;
+  paiRadioButtons.appendChild(label);
+}
