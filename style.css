@@ -22,43 +22,42 @@
 
 main {
   display: flex;
-  flex-flow: column wrap;;
+  flex-flow: column wrap;
 }
 
-  
 #trybewarts-forms-logo {
-height: 500px;
+  height: 500px;
 }
-  
+
 #evaluation-form {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
-  width: 675px;  
+  width: 675px;
 }
 
 #names {
   display: flex;
   flex-flow: row;
-  justify-content: space-between;  
-  margin: 10px;  
+  justify-content: space-between;
+  margin: 10px;
   width: 100%;
 }
 
 #email-select {
   display: flex;
   flex-flow: row wrap;
-  margin: 10px;  
+  margin: 10px;
 }
 
 #label-family-container {
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   margin-top: 20px;
-}  
+}
 
-#label-content { 
+#label-content {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -73,7 +72,7 @@ height: 500px;
 #names input {
   width: 40%;
   margin-top: 10px;
-} 
+}
 
 #family-radio {
   display: flex;
@@ -82,9 +81,9 @@ height: 500px;
   width: 20%;
 }
 
-#label-content-container {  
+#label-content-container {
   margin-top: 20px;
-  width: 50%;  
+  width: 50%;
 }
 
 #family-checkbox input {
