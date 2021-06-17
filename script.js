@@ -6,7 +6,7 @@ import {
   getSelectedContent,
   getRating,
   getComment,
-} from './utils/validation-helpers.js';
+} from './utils/validation-helpers.js'; // eslint-disable-line
 
 const maxTextLength = 500;
 
@@ -96,7 +96,7 @@ function createInputWithLabel({ type, name, id, className, labelText }) {
   input.type = type;
   input.name = name;
   input.id = id;
-  input.class = className;
+  input.className = className;
   input.value = labelText;
 
   label.appendChild(input);
