@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
     <title>Trybewarts</title>
 
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./script.js"></script>
   </head>
   <body>
     <header class="header">
@@ -50,31 +52,6 @@
         <div class="input-section">
           <div class="family-section">
             <label id="label-family">Qual sua família?</label>
-
-            <label for="frontend">
-              <input
-                type="radio"
-                name="family"
-                id="frontend"
-                value="Frontend"
-              />
-              Frontend
-            </label>
-
-            <label for="backend">
-              <input type="radio" name="family" id="backend" value="Backend" />
-              Backend
-            </label>
-
-            <label for="fullstack">
-              <input
-                type="radio"
-                name="family"
-                id="fullstack"
-                value="FullStack"
-              />
-              FullStack
-            </label>
           </div>
 
           <div class="content-section">
@@ -82,68 +59,7 @@
               Qual conteúdo você está com mais vontade de aprender?
             </label>
 
-            <div class="checkboxes">
-              <label for="hofs">
-                <input
-                  class="subject"
-                  type="checkbox"
-                  name="content"
-                  id="hofs"
-                  value="HoFs"
-                />
-                HoFs
-              </label>
-              <label for="jest">
-                <input
-                  class="subject"
-                  type="checkbox"
-                  name="content"
-                  id="jest"
-                  value="Jest"
-                />
-                Jest
-              </label>
-              <label for="promises">
-                <input
-                  class="subject"
-                  type="checkbox"
-                  name="content"
-                  id="promises"
-                  value="Promises"
-                />
-                Promises
-              </label>
-              <label for="react">
-                <input
-                  class="subject"
-                  type="checkbox"
-                  name="content"
-                  id="react"
-                  value="React"
-                />
-                React
-              </label>
-              <label for="sql">
-                <input
-                  class="subject"
-                  type="checkbox"
-                  name="content"
-                  id="sql"
-                  value="SQL"
-                />
-                SQL
-              </label>
-              <label for="python">
-                <input
-                  class="subject"
-                  type="checkbox"
-                  name="content"
-                  id="python"
-                  value="Python"
-                />
-                Python
-              </label>
-            </div>
+            <div class="checkbox-section"></div>
           </div>
         </div>
 
@@ -208,7 +124,5 @@
       </div>
     </main>
     <footer>Direitos reservados à Trybewarts©</footer>
-
-    <script src="script.js"></script>
   </body>
 </html>

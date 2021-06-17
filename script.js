@@ -1,3 +1,13 @@
+import {
+  getName,
+  getEmail,
+  getSelectedHouse,
+  getSelectedFamily,
+  getSelectedContent,
+  getRating,
+  getComment,
+} from './utils/validation-helpers.js';
+
 const maxTextLength = 500;
 
 // validação de login
@@ -38,103 +48,6 @@ function addTextAreaEventListener() {
 
     counter.innerText = maxTextLength - event.target.value.length;
   });
-}
-
-// salvando informações do formulário
-function getName(inputId) {
-  const nameInput = document.querySelector(inputId);
-  const name = nameInput.value.trim();
-
-  if (!name.length) {
-    throw new Error('Erro! Nome inválido');
-  }
-
-  return name;
-}
-
-function getEmail() {
-  const emailInput = document.querySelector('#input-email');
-  const email = emailInput.value.trim();
-  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-  if (!email.match(emailPattern)) {
-    throw new Error('Erro! Email inválido');
-  }
-
-  return email;
-}
-
-function getSelectedHouse() {
-  const houseSelect = document.querySelector('#house');
-
-  if (!houseSelect.selectedIndex) {
-    throw new Error('Erro! Selecione uma casa');
-  }
-
-  return houseSelect.options[houseSelect.selectedIndex].innerText;
-}
-
-function getSelectedRadioInput(inputs) {
-  let selectedInput = '';
-
-  inputs.forEach((input) => {
-    if (input.checked) {
-      selectedInput = input.value;
-      return null;
-    }
-  });
-
-  return selectedInput;
-}
-
-function getSelectedFamily() {
-  const familyInputs = document.querySelectorAll('input[name="family"]');
-  const selectedInput = getSelectedRadioInput(familyInputs);
-
-  if (selectedInput === '') {
-    throw new Error('Erro! Selecione uma família');
-  }
-
-  return selectedInput;
-}
-
-function getSelectedContent() {
-  const contentInputs = document.querySelectorAll('input[name="content"]');
-  const selectedInputs = [];
-
-  contentInputs.forEach((input) => {
-    if (input.checked) {
-      selectedInputs.push(input.value);
-    }
-  });
-
-  if (!selectedInputs.length) {
-    throw new Error('Erro! Selecione ao menos um conteúdo');
-  }
-
-  return selectedInputs;
-}
-
-function getRating() {
-  const ratingInputs = document.querySelectorAll('input[name="rate"]');
-  const selectedInput = getSelectedRadioInput(ratingInputs);
-
-  if (selectedInput === '') {
-    throw new Error('Erro! Dê uma nota de avaliação');
-  }
-
-  return selectedInput;
-}
-
-function getComment() {
-  const textArea = document.querySelector('textarea');
-  const text = textArea.value.trim();
-
-  if (!text.length) {
-    throw new Error('Erro! Escreva um comentário');
-  }
-
-  return text;
 }
 
 function getFormData() {
@@ -189,7 +102,63 @@ function addSubmitButtonEventListener() {
   });
 }
 
+function createInputWithLabel({ type, name, id, className, labelText }) {
+  const label = document.createElement('label');
+  label.for = id;
+
+  const input = document.createElement('input');
+  input.type = type;
+  input.name = name;
+  input.id = id;
+  input.class = className;
+  input.value = labelText;
+
+  label.appendChild(input);
+  label.innerHTML += labelText;
+
+  return label;
+}
+
+// criando familias dinamicamente
+function createFamilyInputs(familyArray) {
+  const familySection = document.querySelector('.family-section');
+
+  familyArray.forEach((family) => {
+    const label = createInputWithLabel({
+      type: 'radio',
+      name: 'family',
+      id: family.toLowerCase(),
+      className: '',
+      labelText: family,
+    });
+
+    familySection.appendChild(label);
+  });
+}
+
+// criando conteúdos dinamicamente
+function createContentInputs(contentArray) {
+  const checkboxSection = document.querySelector('.checkbox-section');
+
+  contentArray.forEach((content) => {
+    const label = createInputWithLabel({
+      type: 'checkbox',
+      name: 'content',
+      id: content.toLowerCase(),
+      className: 'subject',
+      labelText: content,
+    });
+
+    checkboxSection.appendChild(label);
+  });
+}
+
 window.onload = () => {
+  const familyArray = ['Frontend', 'Backend', 'FullStack'];
+  const contentArray = ['HoFs', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
+
+  createFamilyInputs(familyArray);
+  createContentInputs(contentArray);
   addLoginButtonEventListener();
   addAgreementCheckboxEventListener();
   addTextAreaEventListener();
