@@ -2,6 +2,13 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: 'KGHappy';
+  src: url('Fonts/kg_happy/KGHAPPY.ttf') format('truetype'), url('Fonts/kg_happy/KGHAPPYShadows.ttf') format('truetype'), url('Fonts/kg_happy/KGHAPPYSolid.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* header */
 .header {
   background-color: rgb(50, 167, 145);
@@ -20,15 +27,16 @@
 .header h1 {
   color: white;
   order: 1;
+  margin: 0 15px;
 }
 
 /* login-header */
 .trybewarts-login {
-  
+
   /* border: 2px solid black; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   order: 2;
 }
 
@@ -60,8 +68,11 @@
   flex-wrap: wrap;
 }
 
-main {
-  display: flex;
+span {
+  font-family: 'KGHappy';
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 5px;
 }
 
 #evaluation-form {
@@ -80,6 +91,7 @@ main {
   /* border: 5px solid green; */
   display: flex;
   flex-direction: column;
+  font-family: 'KGHappy';
   height: 100px;
   margin: 10px;
   justify-content: space-around;
@@ -97,13 +109,15 @@ main {
 
 hr {
   width: 650px;
-  font-size: larger;
+  margin: 20px 0;
 }
 
 #second-step {
 
   /* border: 2px solid black; */
   display: flex;
+  font-family: 'KGHappy';
+  font-size: 16px;
   justify-content: space-around;
   margin: 8px;
   width: 100%;
@@ -111,10 +125,11 @@ hr {
 
 #family-container {
 
+  align-self: start;
   /* border: 2px solid firebrick; */
   display: flex;
   flex-direction: column;
-  align-self: start;
+  margin: 0 15px;
   width: 40%;
 }
 
@@ -131,8 +146,8 @@ hr {
   /* border: 2px solid blue; */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  width: 50%;
+  justify-content: space-between;
+  width: 45%;
   align-items: center;
 }
 
@@ -157,12 +172,20 @@ hr {
   margin: 5px;
 }
 
+#label-rate {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 #rate-options {
 
   /* border: 2px solid deeppink; */
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  font-size: 20px;
+  margin: 5px 0;
+  width: 99%;
+  align-items: center;
 }
 
 #feedback {
@@ -170,8 +193,11 @@ hr {
   /* border: 2px solid darkgoldenrod; */
   display: flex;
   flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
   margin: 10px 0;
   width: 99%;
+  height: 80px;
 }
 
 #agreement-container {
@@ -180,6 +206,8 @@ hr {
   /* border: 2px solid sienna; */
   display: flex;
   flex-direction: column;
+  font-family: 'KGHappy';
+  margin: 10px;
   justify-content: space-between;
   height: 65px;
   width: 100%;
