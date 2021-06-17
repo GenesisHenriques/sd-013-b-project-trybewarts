@@ -17,3 +17,14 @@ function addSubmitButton() {
   submitButton.removeAttribute('disabled');
 }
 checkButton.addEventListener('click', addSubmitButton);
+
+const textArea = document.getElementById('textarea');
+textArea.addEventListener('keyup', countChar);
+// let counter = 500;
+const spanCounter = document.getElementById('counter');
+// spanCounter.innerText = counter;
+function countChar(event) {
+  let coutChar = textArea.value.length;
+  let available = 500 - coutChar;
+  document.getElementById('counter').innerText = available;
+}

@@ -57,12 +57,13 @@
             <label for="10"><input id="10" type="radio" value="10" name="rate">10</label>
         </div>
         <label class="textarea">Deixe seu comentário:</label>
-        <textarea maxlength="500" rows="5" cols="50"></textarea>
+        <textarea id="textarea" maxlength="500" minlength="0" rows="5" cols="50"></textarea>
+        <span id="counter">500</span>
         <div>
             <label id="label-infos">Você concorda com o uso das informações acima?</label>
             <input id="agreement" type="checkbox">
         </div>
-        <button id="submit-btn" type="submit" disabled='true'>Enviar</button>
+        <button class="Enter" id="submit-btn" type="submit" disabled='true'>Enviar</button>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
   </main>
