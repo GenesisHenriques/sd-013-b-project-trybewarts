@@ -6,10 +6,8 @@ function addLoginButtonEventListener() {
 
   loginButton.addEventListener('click', (event) => {
     event.preventDefault();
-
     const login = document.querySelector('#login-input').value;
     const senha = document.querySelector('#password-input').value;
-
     if (login !== 'tryber@teste.com' || senha !== '123456') {
       alert('Login ou senha inválidos.');
     } else {
