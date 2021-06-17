@@ -68,6 +68,10 @@
   flex-wrap: wrap;
 }
 
+main {
+  display: flex;
+}
+
 span {
   font-family: 'KGHappy';
   font-size: 28px;

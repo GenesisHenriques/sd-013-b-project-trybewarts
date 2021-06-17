@@ -48,8 +48,8 @@ Requisito 19 -->
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <form class="trybewarts-login" action="" method="GET">
-            <input id="login-input" type="email" name="Login" placeholder="Login">
-            <input id="password-input" type="password" name="Senha" placeholder="Senha">
+            <input id="login-input" type="email" name="Login" placeholder="Login" required>
+            <input id="password-input" type="password" name="Senha" placeholder="Senha" required>
             <button type="button" id="enter-button">Logar</button>
         </form>
     </header>
@@ -59,11 +59,11 @@ Requisito 19 -->
         <span>Forms</span>
       <div id="first-step">  
       <div id="nameAndLastName">
-          <input type="text" id="input-name" placeholder="Nome">
-          <input type="text" id="input-lastname" placeholder="Sobrenome">
+          <input type="text" id="input-name" placeholder="Nome" required>
+          <input type="text" id="input-lastname" placeholder="Sobrenome" required>
       </div>
       <div id="emailAndHouse">
-          <input type="text" id="input-email" placeholder="Email">
+          <input type="text" id="input-email" placeholder="Email" required>
           <label for="house"> Casa:
               <select id="house"> 
                   <option value="Gitnória" id="gitnoria-house">Gitnória</option>
