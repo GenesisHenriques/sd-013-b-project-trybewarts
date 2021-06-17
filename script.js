@@ -43,13 +43,29 @@ function stopDefAction(event) {
 const inputName = document.getElementById('input-name');
 const inputLastName = document.getElementById('input-lastname');
 const divInput = document.querySelector('.box-container');
+const inputEmail = document.getElementById('input-email');
+const option = document.getElementsByTagName('option');
+const select = document.getElementById('house');
+const label = document.getElementById('houses');
 
-function updtForm() {
+function updFormName() {
   const createP = document.createElement('p');
   createP.innerText = `Nome: ${inputName.value} ${inputLastName.value}`;
   divInput.appendChild(createP);
   divInput.removeChild(inputName);
   divInput.removeChild(inputLastName);
+}
+
+function updFormEmail() {
+  const pEmail = document.createElement('p');
+  pEmail.innerText = `Email: ${inputEmail.value}`;
+  divInput.appendChild(pEmail);
+  divInput.removeChild(inputEmail);
+}
+
+function updtForm() {
+  updFormName();
+  updFormEmail();
 }
 
 submitBtn.addEventListener('click', stopDefAction, false);
