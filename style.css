@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -5,7 +10,7 @@
   height: 80px;
 }
 
-.trybewarts-login {
+.trybewarts-login, #main {
   display: flex;
 }
 
@@ -13,16 +18,12 @@
   height: 80px;
 }
 
-.trybewarts-login input {
+.trybewarts-login input, .bntSub {
   margin: 30px 10px;
 }
 
-.bntSub {
-  margin: 30px 10px;
-}
-
-#main {
-  display: flex;
+#trybewarts-forms-logo {
+  height: 500px;
 }
 
 #evaluation-form {
@@ -31,36 +32,49 @@
   flex-direction: column;
 }
 
-#evaluation-form :nth-child( 1 ) {
+.formZone1 {
   display: flex;
   flex-wrap: wrap;
 }
 
-#evaluation-form:nth-child( 1 ) input {
+.formZone1 input, .house {
   flex-grow: 1;
-  max-width: 100%;
-  min-width: 230px;
+  width: 320px;
+  margin: 5px 2px;
 }
 
-#input-email {
-  flex-grow: 1;
-  min-width: 50%;
-  max-width: 100%;
+.formZone1 input, #house {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
 }
 
 .house {
   display: flex;
-  min-width: 50%;
-  max-width: 100%;
   flex-grow: 1;
+  align-self: center;
 }
 
-.house select {
+#house {
   width: 100%;
 }
 
-#trybewarts-forms-logo {
-  height: 500px;
+.formZone2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.famRadios {
+  width: 40%;
+}
+
+#label-family input {
+  flex-grow: 1;
+}
+
+.famRadios {
+  display: flex;
+  flex-direction: column;
 }
 
 hr {
