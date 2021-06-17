@@ -9,6 +9,10 @@ const btnLogin = document.getElementById('btn-login');
 const agreement = document.getElementById('agreement');
 const btnSubmit = document.getElementById('submit-btn');
 
+const commentSection = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+let commentSize;
+
 function validateLogin() {
   if ((login.value === defaultLogin) || (password.value === defaultPassword)) {
     alert('Olá, Tryber!');
@@ -20,3 +24,12 @@ function validateLogin() {
 btnLogin.addEventListener('click', validateLogin);
 
 agreement.addEventListener('click', () => { btnSubmit.toggleAttribute('disabled'); });
+
+function commentCounter() {
+  commentSize = commentSection.value;
+  const input = commentSize.length;
+  const sub = (500 - (input));
+  counter.innerText = (sub);
+}
+
+commentSection.addEventListener('input', commentCounter);
