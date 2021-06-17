@@ -69,7 +69,13 @@ function submitForm(event) {
   const email = document.getElementById('input-email');
   const house = document.getElementById('house');
   const textarea = document.getElementById('textarea');
-  form.innerHTML = `Nome: ${name.value} ${lastName.value} <br> Email: ${email.value} <br> Casa: ${house.value} <br> Família: ${family} <br> Matérias: ${content} <br> Avaliação: ${rate} <br> Observações: ${textarea.value}`;
+  form.innerHTML = `Nome: ${name.value} ${lastName.value} <br>
+    Email: ${email.value} <br>
+    Casa: ${house.value} <br>
+    Família: ${family} <br>
+    Matérias: ${content} <br>
+    Avaliação: ${rate} <br>
+    Observações: ${textarea.value}`;
 }
 
 window.onload = () => {
