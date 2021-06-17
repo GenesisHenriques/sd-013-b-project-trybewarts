@@ -50,6 +50,7 @@ function addTextAreaEventListener() {
   });
 }
 
+// salvando dados do formulario
 function getFormData() {
   return {
     name: getName('#input-name'),
@@ -70,6 +71,7 @@ function createUserDataElement(elementName, text) {
   return element;
 }
 
+// mostrando os dados salvos na tela
 function setResponse(formData) {
   const form = document.querySelector('#evaluation-form');
   form.innerHTML = '';
@@ -84,22 +86,6 @@ function setResponse(formData) {
   form.appendChild(createUserDataElement('Matérias', content));
   form.appendChild(createUserDataElement('Avaliação', formData.rating));
   form.appendChild(createUserDataElement('Observações', formData.comment));
-}
-
-function addSubmitButtonEventListener() {
-  const submitButton = document.querySelector('#submit-btn');
-
-  submitButton.addEventListener('click', (event) => {
-    event.preventDefault();
-
-    try {
-      const formData = getFormData();
-
-      setResponse(formData);
-    } catch (error) {
-      alert(error.message);
-    }
-  });
 }
 
 function createInputWithLabel({ type, name, id, className, labelText }) {
@@ -153,12 +139,50 @@ function createContentInputs(contentArray) {
   });
 }
 
+// criando itens de avaliação dinamicamente
+function createRatingInputs() {
+  const feedbackSection = document.querySelector('.feedback-section');
+
+  for (let i = 1; i < 11; i += 1) {
+    const label = document.createElement('label');
+    label.for = i;
+
+    const radioInput = document.createElement('input');
+    radioInput.type = 'radio';
+    radioInput.name = 'rate';
+    radioInput.id = i;
+    radioInput.value = i;
+
+    label.appendChild(radioInput);
+    label.innerHTML += i;
+
+    feedbackSection.appendChild(label);
+  }
+}
+
+function addSubmitButtonEventListener() {
+  const submitButton = document.querySelector('#submit-btn');
+
+  submitButton.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    try {
+      const formData = getFormData();
+
+      setResponse(formData);
+    } catch (error) {
+      alert(error.message);
+    }
+  });
+}
+
 window.onload = () => {
   const familyArray = ['Frontend', 'Backend', 'FullStack'];
   const contentArray = ['HoFs', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
 
   createFamilyInputs(familyArray);
   createContentInputs(contentArray);
+  createRatingInputs();
   addLoginButtonEventListener();
   addAgreementCheckboxEventListener();
   addTextAreaEventListener();
