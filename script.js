@@ -86,10 +86,9 @@ function replaceFormByObject(formMainInfoInObjectFormat) {
   while (form.children.length) {
     form.removeChild(form.firstElementChild);
   }
-  for (const key in formMainInfoInObjectFormat) {
-    if (Object.hasOwnProperty.call(formMainInfoInObjectFormat, key)) {
-      form.appendChild(addInfos(formMainInfoInObjectFormat, key));
-    }
+  for (let index = 0; index < Object.keys(formMainInfoInObjectFormat).length; index += 1) {
+    form.appendChild(addInfos(formMainInfoInObjectFormat,
+      Object.keys(formMainInfoInObjectFormat)[index]));
   }
 }
 
@@ -104,21 +103,24 @@ function getTextareaInObjectFormat(formMainInfoInObjectFormat) {
 }
 
 function getNameInObjectFormat(formMainInfoInObjectFormat) {
+  const nome = 'Nome';
   const getInputNameValue = document.querySelector('#input-name').value;
   const getInputLastNameValue = document.querySelector('#input-lastname').value;
-  formMainInfoInObjectFormat['Nome'] = getInputNameValue.concat(' ', getInputLastNameValue);
+  formMainInfoInObjectFormat[nome] = getInputNameValue.concat(' ', getInputLastNameValue);
   return formMainInfoInObjectFormat;
 }
 
 function getEmailInObjectFormat(formMainInfoInObjectFormat) {
+  const email = 'Email';
   const getInputEmailValue = document.querySelector('#input-email').value;
-  formMainInfoInObjectFormat['Email'] = getInputEmailValue;
+  formMainInfoInObjectFormat[email] = getInputEmailValue;
   return formMainInfoInObjectFormat;
 }
 
 function getHouseInputInObjectFormat(formMainInfoInObjectFormat) {
+  const casa = 'Casa';
   const getSelectedHouse = document.querySelector('#house');
-  formMainInfoInObjectFormat['Casa'] = getSelectedHouse.value;
+  formMainInfoInObjectFormat[casa] = getSelectedHouse.value;
   return formMainInfoInObjectFormat;
 }
 
@@ -134,7 +136,6 @@ function submitButtonEventListener() {
     formMainInfoInObjectFormat = getInputInObjectFormat(formMainInfoInObjectFormat, 'subject');
     formMainInfoInObjectFormat = getInputInObjectFormat(formMainInfoInObjectFormat, 'avaliacao');
     formMainInfoInObjectFormat = getTextareaInObjectFormat(formMainInfoInObjectFormat);
-    console.log(formMainInfoInObjectFormat);
     replaceFormByObject(formMainInfoInObjectFormat);
   });
 }
