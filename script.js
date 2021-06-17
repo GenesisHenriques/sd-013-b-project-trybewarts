@@ -18,6 +18,13 @@ function toggleButton() {
   submitButton.disabled = !submitButton.disabled;
 }
 
+function updateCounter(event) {
+  const textarea = event.target;
+  const counter = document.querySelector('#counter');
+
+  counter.innerHTML = `${textarea.maxLength - textarea.value.length}`;
+}
+
 // Espera o carregamento da página
 window.onload = () => {
   document
@@ -25,4 +32,6 @@ window.onload = () => {
     .addEventListener('submit', submitLogin);
 
   document.getElementById('agreement').addEventListener('click', toggleButton);
+
+  document.querySelector('#textarea').addEventListener('keyup', updateCounter);
 };
