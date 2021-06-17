@@ -8,6 +8,7 @@ function login(event) {
     alert('Olá, Tryber!');
   }
 }
+
 function eventLogin() {
   const button = document.getElementById('button');
   button.addEventListener('click', login);

@@ -59,3 +59,8 @@ main {
 #to-learn span {
   width: 33%;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
