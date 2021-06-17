@@ -40,52 +40,26 @@ function countdownTextAreaMaxLength() {
   });
 }
 
-function getNameInObjectFormact(formMainInfoInObjectFormat) {
-  const getInputNameValue = document.querySelector('#input-name').value;
-  const getInputLastNameValue = document.querySelector('#input-lastname').value;
-  formMainInfoInObjectFormat.name = getInputNameValue.concat(' ', getInputLastNameValue);
-  return formMainInfoInObjectFormat;
-}
-
-getNameInObjectFormact();
-
-function getEmailInObjectFormact(formMainInfoInObjectFormat) {
-  const getInputEmailValue = document.querySelector('#input-email').value;
-  formMainInfoInObjectFormat.email = getInputEmailValue;
-  return formMainInfoInObjectFormat;
-}
-
-getEmailInObjectFormact();
-
-function getTextareaInObjectFormact(formMainInfoInObjectFormat) {
-  const getTextareaValue = document.querySelector('#textarea').value;
-  if (getTextareaValue === '') {
-    formMainInfoInObjectFormat.comment = '';
-  } else {
-    formMainInfoInObjectFormat.comment = getTextareaValue;
+function getKey(className) {
+  switch (className) {
+  case 'family':
+    return 'Família';
+  case 'Matérias':
+    return 'Matérias';
+  case 'rate':
+    return 'Avaliação';
+  default:
+    break;
   }
-  return formMainInfoInObjectFormat;
 }
 
-getTextareaInObjectFormact();
-
-// function submitButtonEventListener() {
-//   const getSubmitButton = document.getElementById('submit-btn');
-//   console.log(getSubmitButton);
-//   getSubmitButton.addEventListener('click', () => {
-//     event.preventDefault();
-//     const getMain = document.querySelector('.main');
-//     getMain.style.display = 'none';
-//   });
-// }
-
-// submitButtonEventListener();
 function getValueOfTheObject(inputClass, formMainInfoInObjectFormat) {
-  if (inputClass.name in formMainInfoInObjectFormat) {
-    formMainInfoInObjectFormat[inputClass.name]
+  const key = getKey(inputClass.name);
+  if (key in formMainInfoInObjectFormat) {
+    formMainInfoInObjectFormat[key]
     += ' '.concat(inputClass.value);
   } else {
-    formMainInfoInObjectFormat[inputClass.name] = inputClass.value;
+    formMainInfoInObjectFormat[key] = inputClass.value;
   }
 }
 
@@ -100,11 +74,44 @@ function getInputInObjectFormat(formMainInfoInObjectFormat, className) {
   return formMainInfoInObjectFormat;
 }
 
+function getTextareaInObjectFormat(formMainInfoInObjectFormat) {
+  const getTextareaValue = document.querySelector('#textarea').value;
+  if (getTextareaValue === '') {
+    formMainInfoInObjectFormat['Observações'] = '';
+  } else {
+    formMainInfoInObjectFormat['Observações'] = getTextareaValue;
+  }
+  return formMainInfoInObjectFormat;
+}
+
+function getNameInObjectFormat(formMainInfoInObjectFormat) {
+  const getInputNameValue = document.querySelector('#input-name').value;
+  const getInputLastNameValue = document.querySelector('#input-lastname').value;
+  formMainInfoInObjectFormat['Nome'] = getInputNameValue.concat(' ', getInputLastNameValue);
+  return formMainInfoInObjectFormat;
+}
+
+function getEmailInObjectFormat(formMainInfoInObjectFormat) {
+  const getInputEmailValue = document.querySelector('#input-email').value;
+  formMainInfoInObjectFormat['Email'] = getInputEmailValue;
+  return formMainInfoInObjectFormat;
+}
+
+function getHouseInputInObjectFormat(formMainInfoInObjectFormat) {
+  const getSelectedHouse = document.querySelector('#house');
+  formMainInfoInObjectFormat['Casa'] = getSelectedHouse.value;
+  return formMainInfoInObjectFormat;
+}
+
 function submitButtonEventListener() {
   const submitButton = document.getElementById('submit-btn');
   submitButton.addEventListener('click', (e) => {
     e.preventDefault();
     let formMainInfoInObjectFormat = {};
+    formMainInfoInObjectFormat = getNameInObjectFormat(formMainInfoInObjectFormat);
+    formMainInfoInObjectFormat = getEmailInObjectFormat(formMainInfoInObjectFormat);
+    formMainInfoInObjectFormat = getHouseInputInObjectFormat(formMainInfoInObjectFormat);
+    formMainInfoInObjectFormat = getTextareaInObjectFormat(formMainInfoInObjectFormat);
     formMainInfoInObjectFormat = getInputInObjectFormat(formMainInfoInObjectFormat, 'familia');
     formMainInfoInObjectFormat = getInputInObjectFormat(formMainInfoInObjectFormat, 'subject');
     formMainInfoInObjectFormat = getInputInObjectFormat(formMainInfoInObjectFormat, 'avaliacao');
