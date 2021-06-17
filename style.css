@@ -37,13 +37,26 @@
 }
 
 #evaluation-form:nth-child( 1 ) input {
-  min-width: 250px;
+  flex-grow: 1;
+  max-width: 100%;
+  min-width: 230px;
+}
+
+#input-email {
+  flex-grow: 1;
+  min-width: 50%;
+  max-width: 100%;
+}
+
+.house {
+  display: flex;
+  min-width: 50%;
+  max-width: 100%;
   flex-grow: 1;
 }
 
-#house {
-  min-width: 250px;
-  flex-grow: 1;
+.house select {
+  width: 100%;
 }
 
 #trybewarts-forms-logo {
