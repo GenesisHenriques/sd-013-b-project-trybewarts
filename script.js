@@ -40,11 +40,48 @@ function countdownTextAreaMaxLength() {
   });
 }
 
-function getInputValueInObjectFormact() {
-  const getInput = document.querySelectorAll('.object-key');
-  console.log(getInput);
+const formMainInfoInObjectFormat = {};
+
+function getNameInObjectFormact() {
+  const getInputNameValue = document.querySelector('#input-name').value;
+  const getInputLastNameValue = document.querySelector('#input-lastname').value;
+  formMainInfoInObjectFormat.name = getInputNameValue.concat(' ', getInputLastNameValue);
+  return formMainInfoInObjectFormat;
 }
-getInputValueInObjectFormact();
+
+getNameInObjectFormact();
+
+function getEmailInObjectFormact() {
+  const getInputEmailValue = document.querySelector('#input-email').value;
+  formMainInfoInObjectFormat.email = getInputEmailValue;
+  return formMainInfoInObjectFormat;
+}
+
+getEmailInObjectFormact();
+
+function getTextareaInObjectFormact() {
+  const getTextareaValue = document.querySelector('#textarea').value;
+  if (getTextareaValue === '') {
+    formMainInfoInObjectFormat.comment = '';
+  } else {
+    formMainInfoInObjectFormat.comment = getTextareaValue;
+  }
+  return formMainInfoInObjectFormat;
+}
+
+getTextareaInObjectFormact();
+
+// function submitButtonEventListener() {
+//   const getSubmitButton = document.getElementById('submit-btn');
+//   console.log(getSubmitButton);
+//   getSubmitButton.addEventListener('click', () => {
+//     event.preventDefault();
+//     const getMain = document.querySelector('.main');
+//     getMain.style.display = 'none';
+//   });
+// }
+
+// submitButtonEventListener();
 
 window.onload = function start() {
   disableButton();

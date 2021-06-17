@@ -9,7 +9,7 @@
   background-color: rgb(50, 167, 145);
   color: #feb236;
   display: flex;
-  font-family: 'Yusei Magic', monospace, sans-serif;
+  font-family: Yusei Magic, monospace, sans-serif;
   font-size: 35px;
   justify-content: space-between;
 }
