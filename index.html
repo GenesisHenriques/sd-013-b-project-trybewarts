@@ -29,36 +29,40 @@
 
       <div>
         <label for="input-email"><input id="input-email" type="email" placeholder="Email"></label>
-        <label for="house">Selecione sua casa: <select name="house" id="house">
+        <label for="house">Casa: <select name="house" id="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
             <option id="corvinode-house" value="Corvinode">Corvinode</option>
             <option id="pytherina-house" value="Pytherina">Pytherina</option>
           </select></label>
       </div>
-
+<hr>
       <div id="family">
+        <div class="family">
         <label for="label-family" id="label-family">Qual sua família?</label>
         <label for="radio-frontend"><input type="radio" name="family" value="Frontend"
             id="radio-frontend">Frontend</label>
         <label for="radio-backend"><input type="radio" name="family" value="Backend" id="radio-backend">Backend</label>
         <label for="radio-fullstack"><input type="radio" name="family" value="FullStack"
             id="radio-fullstack">FullStack</label>
-      </div>
+          </div>
+            <div id="conteudo">
+              <label for="label-content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label><br>
+              <label for="HoFs"><input type="checkbox" class="subject" name="content" id="HoFs" value="HoFs">HoFs</label>
+              <label for="Jest"><input type="checkbox" class="subject" name="content" id="Jest" value="Jest">Jest</label>
+              <label for="Promises"><input type="checkbox" class="subject" name="content" id="Promises"
+                  value="Promises">Promises</label>
+              <label for="React"><input type="checkbox" class="subject" name="content" id="React" value="React">React</label>
+              <label for="SQL"><input type="checkbox" class="subject" name="content" id="SQL" value="SQL">SQL</label>
+              <label for="Python"><input type="checkbox" class="subject" name="content" id="Python"
+                  value="Python">Python</label>
+            </div>
 
-      <div>
-        <label for="label-content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label><br>
-        <label for="HoFs"><input type="checkbox" class="subject" name="content" id="HoFs" value="HoFs">HoFs</label>
-        <label for="Jest"><input type="checkbox" class="subject" name="content" id="Jest" value="Jest">Jest</label>
-        <label for="Promises"><input type="checkbox" class="subject" name="content" id="Promises"
-            value="Promises">Promises</label>
-        <label for="React"><input type="checkbox" class="subject" name="content" id="React" value="React">React</label>
-        <label for="SQL"><input type="checkbox" class="subject" name="content" id="SQL" value="SQL">SQL</label>
-        <label for="Python"><input type="checkbox" class="subject" name="content" id="Python"
-            value="Python">Python</label>
-      </div>
+          </div>
 
-      <div>
+      <hr>
+
+      <div class="evaluation">
         <label id="label-rate"> Como você avalia a Trybewarts?</label>
         <label for="label-rate1"><input id="label-rate1" value="1" name="rate" type="radio">1</label>
         <label for="label-rate2"><input id="label-rate2" value="2" name="rate" type="radio">2</label>
