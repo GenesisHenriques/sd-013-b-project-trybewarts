@@ -43,38 +43,32 @@ main {
 }
 
 #evaluation-form {
-  display: flex;
-  height: 500px;
-  width: 675px;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
   flex-direction: column;
-  border: 2px solid blueviolet;
+  margin: 10px;
+  justify-content: space-between;
+  width: 675px;
+  /* border: 2px solid blueviolet; */
 }
 
 #first-step {
-  border: 5px solid green;
+  /* border: 5px solid green; */
   display: flex;
   flex-direction: column;
-  /* height: 100px; */
+  height: 100px;
+  margin: 10px;
   justify-content: space-around ;
-  /* justify-content: center; */
 }
 
 #first-step input {
   margin: 5px;
   width: 300px;
   height: 25px;
-  /* justify-content: center; */
 }
 
 #trybewarts-forms-logo {
   height: 500px;
-}
-
-#family-choice {
-  display: flex;
-  flex-direction: column;
 }
 
 hr {
@@ -82,20 +76,88 @@ hr {
   font-size: larger;
 }
 
-#family-choice {
-  border: 2px solid yellow;
+#second-step {
+  /* border: 2px solid black; */
   display: flex;
+  justify-content: space-around;
+  margin: 8px;
+  width: 100%;
+}
+
+#family-container {
+  /* border: 2px solid firebrick; */
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  width: 40%;
+}
+
+#family-choice {
+  /* border: 2px solid yellow; */
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#techs-container {
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  align-items: center;
 }
 
 #techs-options {
-  border: 2px solid green;
+  align-items: center;
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#third-step {
+  align-items: center;
+  /* border: 2px solid seagreen; */
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  margin: 5px;
 }
 
 #rate-options {
-  border: 2px solid deeppink;
+  /* border: 2px solid deeppink; */
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+#feedback {
+  /* border: 2px solid darkgoldenrod; */
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  width: 99%;
+}
+
+#agreement-container {
+  align-items: center;
+  /* border: 2px solid sienna; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 65px;
+  width: 100%;
+}
+
+#submit-btn {
+ width: 100%;
+ background-color: seagreen;
+ border-radius: 5px;
+ color: black;
+ height: 35px;
 }
 
 /* footer */
