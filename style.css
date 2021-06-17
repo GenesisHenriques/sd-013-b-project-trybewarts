@@ -180,6 +180,10 @@ main {
   align-items: flex-end;
 }
 
+#radio-buttons {
+  display: flex;
+}
+
 #values {
   display: flex;
   align-items: center;
@@ -212,6 +216,19 @@ main {
   font-size: 22px;
 }
 
+#agreement-div {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+#submit-btt {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -222,3 +239,4 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
