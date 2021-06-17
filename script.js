@@ -22,6 +22,7 @@ function createRadioButtons() {
   for (let index = 1; index < 11; index += 1) {
     const radioButton = document.createElement('input');
     const label = document.createElement('label');
+    radioButton.value = index;
     radioButton.type = 'radio';
     radioButton.name = 'rate';
     label.innerHTML = index;
