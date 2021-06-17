@@ -30,6 +30,3 @@ button.addEventListener('click', logging);
 //     for (let j = 0; j < 5; j += 1) {
 //       const pixel = document.createElement('div');
 //       pixel.className = 'pixel';
-
-const agreement = document.querySelector('#agreement');
-agreement.addEventListener('click', releasingSubmitButton);
