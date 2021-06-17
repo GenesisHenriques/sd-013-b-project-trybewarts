@@ -6,6 +6,9 @@ const password = document.getElementById('password');
 
 const btnLogin = document.getElementById('btn-login');
 
+const agreement = document.getElementById('agreement');
+const btnSubmit = document.getElementById('submit-btn');
+
 function validateLogin() {
   if ((login.value === defaultLogin) || (password.value === defaultPassword)) {
     alert('Olá, Tryber!');
@@ -15,3 +18,5 @@ function validateLogin() {
 }
 
 btnLogin.addEventListener('click', validateLogin);
+
+agreement.addEventListener('click', () => { btnSubmit.toggleAttribute('disabled'); });
