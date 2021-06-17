@@ -7,7 +7,6 @@ function logging() {
     window.alert('Login ou senha inválidos.');
   }
 }
-});
 
 function releasingSubmitButton() {
   const checkBox = document.getElementById('agreement');
