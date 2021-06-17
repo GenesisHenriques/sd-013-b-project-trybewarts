@@ -5,15 +5,7 @@ const agreeCheckbox = document.querySelector('#agreement'); // seleciona o check
 const agreeBtn = document.querySelector('#submit-btn'); // seleciona o botão de enviar no final do formulário
 const textArea = document.querySelector('#textarea'); // seleciona a text area
 const counter = document.querySelector('#counter'); // seleciona o counter de caracteres
-const name = document.querySelector('#input-name'); // seleciona o nome
-const lastName = document.querySelector('#input-lastname'); // seleciona o ultimo nome
-const email = document.querySelector('#input-email'); // seleciona o email
-const house = document.querySelector('#house'); // seleciona a casa escolhida
-const selected = document.querySelector('input[name = "family"]:checked'); // seleciona a familia marcada
-const checkBox = document.querySelectorAll('input[type = "checkbox"]:checked'); // seleciona a checkbox de conteudos
-const rate = document.querySelector('input[name = "rate"]:checked'); // seleciona a nota de avaliação
 const form = document.querySelector('#evaluation-form'); // seleciona o escopo main do body
-
 function verifyLogin() {
   if (loginInput.value !== 'tryber@teste.com') return false;
   if (passwordInput.value !== '123456') return false;
@@ -27,51 +19,49 @@ loginButton.addEventListener('click', (e) => {
     alert('Login ou senha inválidos.');
   }
 });
-
 agreeCheckbox.addEventListener('change', () => {
   agreeBtn.toggleAttribute('disabled');
   agreeBtn.classList.toggle('btn-disabled');
   agreeBtn.classList.toggle('btn-enabled');
 });
-
 textArea.addEventListener('input', () => {
   const cont = 500 - textArea.value.length;
   counter.innerHTML = cont;
 });
 
-function getData() {
-  const userData = [];
-  const materias = [];
-  userData.push(`Nome: ${name.value} ${lastName.value}`);
-  userData.push(`Email: ${email.value}`);
-  userData.push(`Casa: ${house.value}`);
-  userData.push(`Família: ${selected.value}`);
-  for (let i = 0; i < checkBox.length - 1; i += 1) {
-    materias.push(`${checkBox[i].value}`);
+function getCheckBoxValue(element) {
+  const checked = [];
+  for (let i = 0; i < element.length - 1; i += 1) {
+    checked.push(element[i].value);
   }
-  userData.push(materias);
-  userData.push(`Avaliações: ${rate.value}`);
-  userData.push(`Observações: ${textArea.value}`);
+  return checked.join(', ');
+}
+
+function getInputsValues() {
+  const inputs = document.querySelectorAll('.user-data');
+  const family = document.querySelector('input[name = "family"]:checked'); // seleciona a familia marcada
+  const contents = document.querySelectorAll('input[type = "checkbox"]:checked'); // seleciona a checkbox de conteudos
+  const rate = document.querySelector('input[name = "rate"]:checked'); // seleciona a nota de avaliação
+  const userData = [
+    `Nome: ${inputs[0].value} ${inputs[1].value}`,
+    `Email: ${inputs[2].value}`,
+    `Casa: ${inputs[3].value}`,
+    `Família: ${family.value}`,
+    `Matérias: ${getCheckBoxValue(contents)}`,
+    `Avaliação: ${rate.value}`,
+    `Observações: ${inputs[4].value}`,
+  ];
   return userData;
 }
 
-function generateData() {
-  const userData = getData();
+function generateData(e) {
+  e.preventDefault();
+  const userData = getInputsValues();
   form.innerHTML = '';
-  const div = document.createElement('div');
-  form.appendChild(div);
-  console.log(userData);
   for (let i = 0; i < userData.length; i += 1) {
     const p = document.createElement('p');
-    if (i === 4) {
-      p.innerHTML = `Matérias: ${userData[i]} `;
-      p.setAttribute('class', 'subject');
-      div.appendChild(p);
-    } else { 
-      p.innerHTML = userData[i];
-      div.appendChild(p);
-    }
+    p.innerHTML = userData[i];
+    form.appendChild(p);
   }
 }
-
 agreeBtn.addEventListener('click', generateData);

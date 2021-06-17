@@ -91,9 +91,7 @@ main {
   margin: 0 30px;
 }
 
-#family-div,
-#family-div span,
-#family-div label {
+#family-div , #family-div span , #family-div label {
   padding: 5px;
 }
 
@@ -123,9 +121,8 @@ main {
   display: flex;
 }
 
-#rate-div-content label,
-#rate-div-content input {
-  margin: 0 4px
+#rate-div-content label , #rate-div-content input {
+  margin: 0 4px;
 }
 
 #leave-a-coment {

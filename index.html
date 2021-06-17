@@ -23,13 +23,13 @@
         <form id="evaluation-form">
             <h2>Forms</h2>
             <div class="forms-div">
-                <input id="input-name" type="text" placeholder="Nome">
-                <input id="input-lastname" type="text" placeholder="Sobrenome">
+                <input class="user-data" id="input-name" type="text" placeholder="Nome">
+                <input class="user-data" id="input-lastname" type="text" placeholder="Sobrenome">
             </div>
             <div class="forms-div">
-                <input id="input-email" type="text" placeholder="Email">
+                <input class="user-data" id="input-email" type="text" placeholder="Email">
                 <label for="house">Casa:</label>
-                <select name="casa" id="house">
+                <select class="user-data" name="casa" id="house">
                 <option value="Gitnória" id="gitnoria-house">Gitnória</option>
                 <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
                 <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -81,7 +81,7 @@
             </div>
             <div id="leave-a-coment">
                 <label for="textarea" class="textarea">Deixe seu comentário:</label>
-                <textarea id="textarea" cols="50" rows="8" maxlength="500" placeholder="Max 500 caracteres"></textarea>
+                <textarea class="user-data" id="textarea" cols="50" rows="8" maxlength="500" placeholder="Max 500 caracteres"></textarea>
                 <p>Caracteres restantes: <span id="counter">500</span></p>
             </div>
             <label for="agree-infos" id="label-infos">Você concorda com o uso das informações acima? <input type="checkbox" name="agreement" id="agreement"></label>
