@@ -20,7 +20,7 @@
   </header>
 
   <main>
-    <form id="evaluation-form">forms
+    <form id="evaluation-form"><H2>Forms</H2>
 
       <div class="div1Forms">
         <input id="input-name" placeholder="Nome">
@@ -34,7 +34,7 @@
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
       </div>
-
+      <hr>
       <div class="div2Forms">
         <div class="div2Child1">
           <div id="label-family">Qual sua família?</div>
@@ -59,31 +59,92 @@
           <ul id="uldiv2-lista">
             <li class="liDiv2">
               <input class="subject" type="checkbox" id="HoFs" value="HoFs">
-              <label for="HoFs">HoFs</label></li><li class="liDiv2">
-                <input class="subject" type="checkbox" id="Jest" value="Jest">
-                <label for="Jest">Jest</label>
-              </li>
-              <li class="liDiv2">
-                <input class="subject" type="checkbox" id="Promises" value="Promises">
-                <label for="Promises">Promises</label>
-              </li>
-              <li class="liDiv2">
-                <input class="subject" type="checkbox" id="React" value="React">
-                <label for="React">React</label>
-              </li>
-              <li class="liDiv2">
-                <input class="subject" type="checkbox" id="SQL" value="SQL">
-                <label for="SQL">SQL</label>
-              </li>
-              <li class="liDiv2">
-                <input class="subject" type="checkbox" id="Python" value="Python">
-                <label for="Python">Python</label>
-              </li>
-            </ul>
-          </div>
+              <label for="HoFs">HoFs</label>
+            </li>
+            <li class="liDiv2">
+              <input class="subject" type="checkbox" id="Jest" value="Jest">
+              <label for="Jest">Jest</label>
+            </li>
+            <li class="liDiv2">
+              <input class="subject" type="checkbox" id="Promises" value="Promises">
+              <label for="Promises">Promises</label>
+            </li>
+            <li class="liDiv2">
+              <input class="subject" type="checkbox" id="React" value="React">
+              <label for="React">React</label>
+            </li>
+            <li class="liDiv2">
+              <input class="subject" type="checkbox" id="SQL" value="SQL">
+              <label for="SQL">SQL</label>
+            </li>
+            <li class="liDiv2">
+              <input class="subject" type="checkbox" id="Python" value="Python">
+              <label for="Python">Python</label>
+            </li>
+          </ul>
         </div>
-        
-      </form>
+      </div>
+      <hr>
+      <div class="div3Forms">
+        <div id="label-rate">Como você avalia a Trybewarts?</div>
+        <ul id="ul-lista-rate">
+          <li>
+            <input id="1" type="radio" value="1" name="rate">
+            <label for="1">1</label>
+          </li>
+          <li>
+            <input id="2" type="radio" value="2" name="rate">
+            <label for="2">2</label>
+          </li>
+          <li>
+            <input id="3" type="radio" value="3" name="rate">
+            <label for="3">3</label>
+          </li>
+          <li>
+            <input id="4" type="radio" value="4" name="rate">
+            <label for="4">4</label>
+          </li>
+          <li>
+            <input id="5" type="radio" value="5" name="rate">
+            <label for="5">5</label>
+          </li>
+          <li>
+            <input id="6" type="radio" value="6" name="rate">
+            <label for="6">6</label>
+          </li>
+          <li>
+            <input id="7" type="radio" value="7" name="rate">
+            <label for="7">7</label>
+          </li>
+          <li>
+            <input id="8" type="radio" value="8" name="rate">
+            <label for="8">8</label>
+          </li>
+          <li>
+            <input id="9" type="radio" value="9" name="rate">
+            <label for="9">9</label>
+          </li>
+          <li>
+            <input id="10" type="radio" value="10" name="rate">
+            <label for="10">10</label>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="div4Forms">
+        <div class="textarea">Deixe seu comentário:</div>
+        <textarea name="comment" id="text-comment" cols="20" rows="5" maxlength="500"></textarea>
+        <label for="text-comment"></label>
+      </div>
+
+
+      <div class="div5Forms">
+        <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+        <input id="agreement" type="checkbox" value="agreement" name="agreement">
+        <button type="submit" disabled id="submit-btn">Enviar</button>
+      </div>
+
+    </form>
       <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo"></main>
 
   <script src="script.js"></script>

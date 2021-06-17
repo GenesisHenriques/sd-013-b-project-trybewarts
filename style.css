@@ -7,8 +7,16 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 80px;
+}
+
+form hr {
+  width: 80%;
+  margin: 15px 0;
+  height: 2px;
+  border-radius: 5px;
+  background-color: rgb(59, 59, 59);
 }
 
 .trybewarts-header-logo {
@@ -21,13 +29,13 @@
   justify-content: space-between;
 }
 
-.trybewarts-login input{
+.trybewarts-login input {
   padding: 9px;
   border-radius: 9px;
   width: 33%;
 }
 
-.trybewarts-login button{
+.trybewarts-login button {
   border-radius: 9px;
   width: 20%;
   background-color: rgb(79, 0, 153);
@@ -36,7 +44,7 @@
 
 main {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   background-color: grey;
 }
 
@@ -56,7 +64,7 @@ main {
   display: flex;
   margin-top: 30px;
   flex-wrap: wrap;
-  width: 100%;
+  width: 80%;
   align-items: center;
   justify-content: space-between;
 }
@@ -72,8 +80,55 @@ main {
 .div2Forms {
   display: flex;
   justify-content: center;
+  align-items: baseline;
+  width: 80%;
+  height: 120px;
+}
+
+.div3Forms {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 80%;
+}
+
+.div4Forms {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: baseline;
   margin-top: 30px;
+  width: 80%;
+}
+
+.div5Forms {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+  width: 80%;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#agreement {
+  margin-left: 10px;
+}
+
+#submit-btn {
+  flex-basis: 100%;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#text-comment {
   width: 100%;
+  margin-top: 10px;
+}
+
+#label-rate {
+  font-size: large;
+  width: 50%;
 }
 
 #house , #input-email , #input-lastname , #input-name {
@@ -85,26 +140,41 @@ main {
 
 .div2Child1 {
   display: flex;
+  align-self: stretch;
+  justify-content: space-between;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
 }
 
 #ul-lista {
   font-size: large;
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.div2Child2 {
+#ul-lista-rate {
+  font-size: large;
   display: flex;
-  flex-flow: row wrap;
+  justify-content: space-between;
+  flex-direction: row;
   width: 50%;
 }
 
+#ul-lista-rate li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.div2Child2 {
+  display: flex;
+  align-self: stretch;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
 #uldiv2-lista {
-  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -124,9 +194,5 @@ main {
 }
 
 ul {
-  list-style: none;
-}
-
-li {
   list-style: none;
 }
