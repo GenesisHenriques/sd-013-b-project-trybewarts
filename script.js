@@ -27,4 +27,4 @@ checkbox.addEventListener('click', () => {
 
 submitBtn.addEventListener('click', () => {
   
-})
+});
