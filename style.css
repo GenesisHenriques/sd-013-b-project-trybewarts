@@ -66,7 +66,12 @@ footer p {
   display: flex;
 }
 
-#comentario {
+#comentario-e-check {
   display: flex;
   flex-direction: column;
+}
+
+#check {
+  display: flex;
+  align-items: center;
 }
