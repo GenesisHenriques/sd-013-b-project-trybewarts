@@ -1,5 +1,7 @@
 const trybeEmail = document.getElementById('trybe-email');
 const trybePassword = document.getElementById('trybe-password');
+const loginBtn = document.getElementById('login-btn');
+const checkAgreement = document.getElementById('agreement');
 const submitBtn = document.getElementById('submit-btn');
 
 function validateLogin() {
@@ -12,6 +14,14 @@ function validateLogin() {
   }
 }
 
+function validateAgreement() {
+  if (submitBtn.checked = true) {
+    submitBtn.disabled = false;
+  }
+}
+
 window.onload = function main() {
-  submitBtn.addEventListener('click', validateLogin);
+  loginBtn.addEventListener('click', validateLogin);
+  checkAgreement.addEventListener('click', validateAgreement);
 };
+
