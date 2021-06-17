@@ -74,6 +74,25 @@ function getFamiliaInObjectFormat(formMainInfoInObjectFormat, className) {
   return formMainInfoInObjectFormat;
 }
 
+function addInfos(formMainInfoInObjectFormat, key) {
+  const p = document.createElement('p');
+  p.innerText = key.concat(': ', '-', formMainInfoInObjectFormat[key], '-');
+  p.className = 'magic';
+  return p;
+}
+
+function replaceFormByObject(formMainInfoInObjectFormat) {
+  const form = document.getElementById('evaluation-form');
+  while (form.children.length) {
+    form.removeChild(form.firstElementChild);
+  }
+  for (const key in formMainInfoInObjectFormat) {
+    if (Object.hasOwnProperty.call(formMainInfoInObjectFormat, key)) {
+      form.appendChild(addInfos(formMainInfoInObjectFormat, key));
+    }
+  }
+}
+
 function submitButtonEventListener() {
   const submitButton = document.getElementById('submit-btn');
   submitButton.addEventListener('click', (e) => {
@@ -82,7 +101,8 @@ function submitButtonEventListener() {
     formMainInfoInObjectFormat = getFamiliaInObjectFormat(formMainInfoInObjectFormat, 'familia');
     formMainInfoInObjectFormat = getFamiliaInObjectFormat(formMainInfoInObjectFormat, 'subject');
     formMainInfoInObjectFormat = getFamiliaInObjectFormat(formMainInfoInObjectFormat, 'avaliacao');
-    console.log(formMainInfoInObjectFormat);
+    // console.log(formMainInfoInObjectFormat);
+    replaceFormByObject(formMainInfoInObjectFormat);
   });
 }
 
