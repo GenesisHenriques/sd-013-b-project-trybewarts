@@ -39,3 +39,13 @@ checkedBox.addEventListener('click', submitInfo);
 //   }
 // }
 // addInput();
+
+const countLabel = document.querySelector('#counter');
+
+const textArea = document.querySelector('textarea');
+
+textArea.addEventListener('input', () => {
+  const size = document.querySelector('textarea').maxLength;
+  const numberOfCharacters = document.querySelector('textarea').value.length;
+  countLabel.innerText = size - numberOfCharacters;
+});
