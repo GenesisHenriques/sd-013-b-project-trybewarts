@@ -14,7 +14,7 @@ entrar.addEventListener('click', () => {
   }
 });
 
-// script para criar os radio buttons dinaâmicamente do requisito 14
+// script para criar os radio buttons dinâmicamente do requisito 14
 
 const paiRadioButtons = document.getElementById('pai-radio-buttons');
 
