@@ -141,3 +141,12 @@ main {
     flex-direction: column;
     padding: 15px;
 }
+
+#leave-a-coment textarea {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#label-infos {
+    margin: 0 50px;
+}
