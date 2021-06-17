@@ -13,3 +13,13 @@ function validationLogin() {
 }
 
 button.addEventListener('click', validationLogin);
+
+function enableBtnSubmit(checkAccept) {
+  const submitBtn = document.getElementById('submit-btn');
+  if (checkAccept.checked === true) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+}
+enableBtnSubmit();
