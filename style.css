@@ -175,6 +175,12 @@ main {
 
 #trybe-rate {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#radio-buttons {
+  display: flex;
 }
 
 #values {
@@ -189,6 +195,12 @@ main {
   background-color: brown;
 }
 
+#agreement-div {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -199,3 +211,4 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
