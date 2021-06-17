@@ -1,29 +1,16 @@
-const login = document.getElementById('login');
-const password = document.getElementById('password');
-const loginButton = document.getElementById('login-button');
-const count = document.querySelector('textarea');
-const checkAgreement = document.getElementById('agreement');
-const submitBTN = document.getElementById('submit-btn');
-
-submitBTN.disabled = true;
-
-function submitLogin() {
-  if (login.value === 'tryber@teste.com' && password.value === '123456') {
-    alert('Olá, Tryber!');
-  } else {
+function loginValidation() {
+  const login = document.querySelector('#login').value;
+  const password = document.querySelector('#password').value;
+  const trueLogin = 'tryber@teste.com';
+  const passwordtrue = '123456';
+  if (login !== trueLogin || password !== passwordtrue) {
     alert('Login ou senha inválidos.');
-  }
-}
-
-function enableBtn() {
-  if (checkAgreement.checked === true) {
-    // console.log('enable');
-    submitBTN.disabled = false;
   } else {
-    // console.log('disbale');
-    submitBTN.disabled = true;
+    alert('Olá, Tryber!');
   }
 }
+const button = document.querySelector('#login-button');
+button.addEventListener('click', loginValidation);
 
 function counter() {
   const text = document.querySelector('textarea').value;
@@ -39,7 +26,12 @@ function counter() {
   }
 }
 
-loginButton.addEventListener('click', submitLogin);
-checkAgreement.addEventListener('click', enableBtn);
+const count = document.querySelector('textarea');
 count.addEventListener('input', counter);
-window.onload = checkAgreement;
+
+function ableIt() {
+  const button = document.querySelector('#submit-btn');
+  button.toggleAttribute('disabled');
+}
+const checkbox = document.querySelector('#agreement');
+checkbox.addEventListener('click', ableIt);
