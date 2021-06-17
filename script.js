@@ -24,7 +24,7 @@ agreement.addEventListener('change', () => {
 });
 
 function getSubjectList() {
-  const subjectArray = document.querySelectorAll('input[type="checkbox"]:checked');
+  const subjectArray = document.querySelectorAll('input[class="subject"]:checked');
   let subjectList = '';
   for (let index = 0; index < subjectArray.length; index += 1) {
     if (subjectList === '') {
