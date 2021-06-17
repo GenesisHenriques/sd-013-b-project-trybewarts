@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="http://code.jquery.com/jquery-1.5.js"></script>
   <title>Trybewarts Project</title>
 </head>
 
@@ -78,7 +79,11 @@
 
       <div>
         <label class="textarea" for="textarea">Deixe seu comentário:</label>
-        <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        <textarea name="textarea" id="textarea" cols="60" rows="3.9" maxlength="500"></textarea>
+        <div id="counter">
+          <span id="current">500</span>
+          <span id="minimum">/ 0</span>
+        </div>
       </div>
 
       <div>

@@ -4,7 +4,7 @@
 }
 
 hr {
-  width: 465px;
+  width: 500px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -78,6 +78,7 @@ main {
 }
 
 #input-email {
+  width: 210px;
   margin: 10px;
   padding: 10px;
   border-radius: 5%;
@@ -104,8 +105,7 @@ main {
 
 #house {
   text-align: center;
-  width: 227px;
-  margin: 10px;
+  width: 205px;
   padding: 10px;
   border-radius: 5%;
 }
@@ -172,8 +172,12 @@ main {
 }
 
 #submit-btn {
-  width: 71%;
-  background-color: purple;
+  width: 74%;
+  background-color: royalblue;
   height: 30px;
   border-radius: 1%;
+}
+
+#label-rate {
+  margin: 10px;
 }

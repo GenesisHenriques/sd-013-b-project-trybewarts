@@ -23,3 +23,14 @@ agreementCheck.addEventListener('click', () => {
     submitButton.disabled = false;
   }
 });
+
+// document.getElementById('textarea').addEventListener('keyup', () => {
+//   const characterCount = document(this).val().length;
+//   const current = document.getElementById('current');
+//   const maximum = document.getElementById('maximum');
+//   const TheCount = document.getElementById('counter');
+
+//   current.text(characterCount);
+//   current.text(maximum);
+//   current.text(TheCount);
+// });
