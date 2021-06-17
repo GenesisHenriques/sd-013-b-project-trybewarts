@@ -21,7 +21,7 @@
 
 .trybewarts-login {
   display: flex;
-  font-family: 'Almendra SC';
+  font-family: Almendra SC;
 }
 
 #button {
@@ -29,13 +29,13 @@
   color: white;
   border-radius: 5px;
   width: 100px;
-  font-family: 'Almendra SC';
+  font-family: Almendra SC;
 }
 
 .main-container {
   display: flex;
   justify-content: center;
-  font-family: 'Almendra SC';
+  font-family: Almendra SC;
   margin-bottom: 30px;
 }
 
@@ -51,7 +51,7 @@
   justify-content: center;
   background-color: rgb(80, 80, 80);
   color: white;
-  font-family: 'Almendra SC';
+  font-family: Almendra SC;
   height: 40px;
   position: relative;
 }
