@@ -14,3 +14,21 @@ function pattern() {
   });
 }
 pattern();
+
+// Criar 10 radios buttons de 1 a 10
+
+function createRadioButtons() {
+  const div = document.getElementById('label-div');
+  for (let index = 1; index < 11; index += 1) {
+    const radioButton = document.createElement('input');
+    const label = document.createElement('label');
+    radioButton.type = 'radio';
+    radioButton.name = 'rate';
+    label.innerHTML = index;
+    div.appendChild(radioButton);
+    div.appendChild(label);
+  }
+}
+createRadioButtons();
+
+// Falta terminar um dos requisitos do requisito 14
