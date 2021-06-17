@@ -20,12 +20,23 @@
 #evaluation-form {
   display: flex;
   width: 675px;
+  height: 500px;;
   flex-direction: column;
+}
+
+#input-name {
+  display: inline-block;
+  width: 300px;
+}
+
+#input-lastname {
+  display: inline-block;
+  width: 300px;
 }
 
 .trybewarts-forms-logo {
   height: 500px;
-}
+  }
 
 .trybewarts-login {
   display: flex;
