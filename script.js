@@ -40,20 +40,21 @@ function countdownTextAreaMaxLength() {
   });
 }
 
-function getValueOfTheObject(inputClassName, index, formMainInfoInObjectFormat) {
-  if (inputClassName[index].name in formMainInfoInObjectFormat) {
-    formMainInfoInObjectFormat[inputClassName[index].name]
-    += ' '.concat(inputClassName[index].value);
+function getValueOfTheObject(inputClass, formMainInfoInObjectFormat) {
+  if (inputClass.name in formMainInfoInObjectFormat) {
+    formMainInfoInObjectFormat[inputClass.name]
+    += ' '.concat(inputClass.value);
   } else {
-    formMainInfoInObjectFormat[inputClassName[index].name] = inputClassName[index].value;
+    formMainInfoInObjectFormat[inputClass.name] = inputClass.value;
   }
 }
 
 function getFamiliaInObjectFormat(formMainInfoInObjectFormat, className) {
   const inputClassName = document.getElementsByClassName(className);
   for (let index = 0; index < inputClassName.length; index += 1) {
-    if (inputClassName[index].checked) {
-      getValueOfTheObject(inputClassName, index, formMainInfoInObjectFormat);
+    const inputClass = inputClassName[index];
+    if (inputClass.checked) {
+      getValueOfTheObject(inputClass, formMainInfoInObjectFormat);
     }
   }
   return formMainInfoInObjectFormat;
