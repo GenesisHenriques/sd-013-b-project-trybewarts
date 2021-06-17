@@ -58,7 +58,7 @@ function rescueFamily() { // recupera o valor da familia selecionada
   }
 }
 
-function rescueSubjects() {
+function rescueSubjects() { // pega os subjects
   const selectedSubject = [];
   const subject = document.querySelectorAll('.subject');
   for (let i = 0; i < subject.length; i += 1) {
@@ -68,6 +68,7 @@ function rescueSubjects() {
   }
   return selectedSubject;
 }
+
 function rescueRate() {
   const rates = document.querySelectorAll('.rate-radio');
   for (let i = 0; i < rates.length; i += 1) {
