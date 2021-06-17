@@ -9,7 +9,10 @@
   background-color: rgb(50, 167, 145);
   color: white;
   padding: 8px;
-  font-family: Almendra SC;
+}
+
+#trybewarts-header-title {
+  font-size: 28px;
 }
 
 .trybewarts-header-logo {
@@ -21,21 +24,44 @@
 
 .trybewarts-login {
   display: flex;
-  font-family: Almendra SC;
+  align-items: center;
+}
+
+#Login {
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  width: 100px;
+  height: 20px;
+  padding: 5px;
+  font-size: 10px;
+}
+
+#Senha {
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  width: 100px;
+  height: 20px;
+  padding: 5px;
+  font-size: 10px;
 }
 
 #button {
-  background-color: rgb(117, 35, 155);
+  background-color: rgb(98, 20, 134);
   color: white;
+  border: none;
   border-radius: 5px;
-  width: 100px;
-  font-family: Almendra SC;
+  width: 110px;
+  font-size: 10px;
+  padding: 5px;
+  height: 28px;
+  margin-left: 5px;
 }
 
 .main-container {
   display: flex;
   justify-content: center;
-  font-family: Almendra SC;
   margin-bottom: 30px;
 }
 
@@ -51,7 +77,6 @@
   justify-content: center;
   background-color: rgb(80, 80, 80);
   color: white;
-  font-family: Almendra SC;
   height: 40px;
   position: relative;
 }
