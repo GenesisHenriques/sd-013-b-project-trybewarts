@@ -40,12 +40,11 @@ button {
 
 .lines {
   display: flex;
-  justify-content: center;
   padding: 2%;
   margin-left: 10%;
   align-items: center;
   justify-content: flex-start;
-}  
+}
 
 #trybewarts-forms-logo {
   height: 500px;
@@ -63,7 +62,7 @@ button {
   justify-content: flex-end;
 }
 
-#familia{
+#familia {
   margin-left: 30px;
 }
 
