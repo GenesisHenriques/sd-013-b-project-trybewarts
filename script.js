@@ -11,3 +11,5 @@ function validateEmail() {
 }
 
 loginButton.addEventListener('click', validateEmail);
+
+// Fim dos requisitos obrigatórios
