@@ -1,13 +1,3 @@
-import {
-  getName,
-  getEmail,
-  getSelectedHouse,
-  getSelectedFamily,
-  getSelectedContent,
-  getRating,
-  getComment,
-} from './utils/validation-helpers.js'; // eslint-disable-line
-
 const maxTextLength = 500;
 
 // validação de login
@@ -53,14 +43,14 @@ function addTextAreaEventListener() {
 // salvando dados do formulario
 function getFormData() {
   return {
-    name: getName('#input-name'),
-    lastName: getName('#input-lastname'),
-    email: getEmail(),
-    house: getSelectedHouse(),
-    family: getSelectedFamily(),
-    content: getSelectedContent(),
-    rating: getRating(),
-    comment: getComment(),
+    name: window.getName('#input-name'),
+    lastName: window.getName('#input-lastname'),
+    email: window.getEmail(),
+    house: window.getSelectedHouse(),
+    family: window.getSelectedFamily(),
+    content: window.getSelectedContent(),
+    rating: window.getRating(),
+    comment: window.getComment(),
   };
 }
 
