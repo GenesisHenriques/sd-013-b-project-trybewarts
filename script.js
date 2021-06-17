@@ -57,13 +57,13 @@ function getValueOfTheObject(inputClass, formMainInfoInObjectFormat) {
   const key = getKey(inputClass.name);
   if (key in formMainInfoInObjectFormat) {
     formMainInfoInObjectFormat[key]
-    += ' '.concat(inputClass.value);
+    += ', '.concat(inputClass.value);
   } else {
     formMainInfoInObjectFormat[key] = inputClass.value;
   }
 }
 
-function getFamiliaInObjectFormat(formMainInfoInObjectFormat, className) {
+function getInputInObjectFormat(formMainInfoInObjectFormat, className) {
   const inputClassName = document.getElementsByClassName(className);
   for (let index = 0; index < inputClassName.length; index += 1) {
     const inputClass = inputClassName[index];
@@ -76,7 +76,7 @@ function getFamiliaInObjectFormat(formMainInfoInObjectFormat, className) {
 
 function addInfos(formMainInfoInObjectFormat, key) {
   const p = document.createElement('p');
-  p.innerText = key.concat(': ', '-', formMainInfoInObjectFormat[key], '-');
+  p.innerText = key.concat(': ', formMainInfoInObjectFormat[key]);
   p.className = 'magic';
   return p;
 }
@@ -93,15 +93,48 @@ function replaceFormByObject(formMainInfoInObjectFormat) {
   }
 }
 
+function getTextareaInObjectFormat(formMainInfoInObjectFormat) {
+  const getTextareaValue = document.querySelector('#textarea').value;
+  if (getTextareaValue === '') {
+    formMainInfoInObjectFormat['Observações'] = '';
+  } else {
+    formMainInfoInObjectFormat['Observações'] = getTextareaValue;
+  }
+  return formMainInfoInObjectFormat;
+}
+
+function getNameInObjectFormat(formMainInfoInObjectFormat) {
+  const getInputNameValue = document.querySelector('#input-name').value;
+  const getInputLastNameValue = document.querySelector('#input-lastname').value;
+  formMainInfoInObjectFormat['Nome'] = getInputNameValue.concat(' ', getInputLastNameValue);
+  return formMainInfoInObjectFormat;
+}
+
+function getEmailInObjectFormat(formMainInfoInObjectFormat) {
+  const getInputEmailValue = document.querySelector('#input-email').value;
+  formMainInfoInObjectFormat['Email'] = getInputEmailValue;
+  return formMainInfoInObjectFormat;
+}
+
+function getHouseInputInObjectFormat(formMainInfoInObjectFormat) {
+  const getSelectedHouse = document.querySelector('#house');
+  formMainInfoInObjectFormat['Casa'] = getSelectedHouse.value;
+  return formMainInfoInObjectFormat;
+}
+
 function submitButtonEventListener() {
   const submitButton = document.getElementById('submit-btn');
   submitButton.addEventListener('click', (e) => {
     e.preventDefault();
     let formMainInfoInObjectFormat = {};
-    formMainInfoInObjectFormat = getFamiliaInObjectFormat(formMainInfoInObjectFormat, 'familia');
-    formMainInfoInObjectFormat = getFamiliaInObjectFormat(formMainInfoInObjectFormat, 'subject');
-    formMainInfoInObjectFormat = getFamiliaInObjectFormat(formMainInfoInObjectFormat, 'avaliacao');
-    // console.log(formMainInfoInObjectFormat);
+    formMainInfoInObjectFormat = getNameInObjectFormat(formMainInfoInObjectFormat);
+    formMainInfoInObjectFormat = getEmailInObjectFormat(formMainInfoInObjectFormat);
+    formMainInfoInObjectFormat = getHouseInputInObjectFormat(formMainInfoInObjectFormat);
+    formMainInfoInObjectFormat = getInputInObjectFormat(formMainInfoInObjectFormat, 'familia');
+    formMainInfoInObjectFormat = getInputInObjectFormat(formMainInfoInObjectFormat, 'subject');
+    formMainInfoInObjectFormat = getInputInObjectFormat(formMainInfoInObjectFormat, 'avaliacao');
+    formMainInfoInObjectFormat = getTextareaInObjectFormat(formMainInfoInObjectFormat);
+    console.log(formMainInfoInObjectFormat);
     replaceFormByObject(formMainInfoInObjectFormat);
   });
 }
