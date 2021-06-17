@@ -156,7 +156,6 @@
 
 #numbers-container {
   display: flex;
-  margin-left: 10px;
 }
 
 #numbers-container input {
