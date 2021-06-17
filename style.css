@@ -2,12 +2,13 @@
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: white;
 }
 
 .trybewarts-header-logo {
   height: 100px;
+  justify-items: left;
 }
 
 .trybewarts-login {
