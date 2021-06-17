@@ -20,3 +20,12 @@ function validade() {
 }
 const button = document.getElementById('checkButton');
 button.addEventListener('click', validade);
+
+function counter() {
+  const count = document.querySelector('#counter');
+  const textArea = document.querySelector('#textarea');
+
+  count.innerText = 500 - textArea.textLength;
+}
+
+document.querySelector('#textarea').addEventListener('keyup', counter);
