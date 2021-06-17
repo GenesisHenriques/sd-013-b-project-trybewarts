@@ -31,10 +31,10 @@ function checkLogin() {
 loginButton.addEventListener('click', checkLogin);
 
 function enableSendButton() {
-  if (agreementCheckBox.checked == true){
-  sendButton.disabled = false;
+  if (agreementCheckBox.checked) {
+    sendButton.disabled = false;
   } else {
-  sendButton.disabled = true;
+    sendButton.disabled = true;
   }
 }
 
