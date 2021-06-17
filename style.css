@@ -39,3 +39,23 @@ main {
   width: 500px;
 }
 
+#type-coder {
+  display: flex;
+  flex-direction: row;
+}
+
+.type-coder-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#to-learn {
+  display: flex ;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#to-learn span {
+  width: 33%;
+}
