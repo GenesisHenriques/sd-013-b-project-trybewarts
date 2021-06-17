@@ -1,3 +1,4 @@
+// Botão de login
 const loginButton = document.getElementById('login-button');
 
 function checkUser() {
@@ -15,3 +16,17 @@ function checkUser() {
 }
 
 loginButton.addEventListener('click', checkUser);
+
+// Adiciona condicional da Checkbox
+const checkbox = document.getElementById('agreement');
+const sendButton = document.getElementById('submit-btn');
+
+function enableButton() {
+  if (sendButton.disabled === true) {
+    sendButton.disabled = false;
+  } else {
+    sendButton.disabled = true;
+  }
+}
+
+checkbox.addEventListener('change', enableButton);

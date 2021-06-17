@@ -37,7 +37,27 @@ form {
   height: 500px;
 }
 
+#coments-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.agreements {
+  display: flex;
+}
+
+#submit-btn {
+  width: 60px;
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(92, 0, 92, 0.342);
+}
+
 .columnais {
   display: flex;
   flex-direction: column;
 }
+
