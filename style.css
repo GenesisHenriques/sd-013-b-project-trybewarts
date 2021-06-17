@@ -8,7 +8,7 @@
   background-color: rgb(50, 167, 145);
   color: white;
   height: 70px;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
 }
 
@@ -18,7 +18,7 @@
 
 .trybewarts-login {
   align-self: center;
-  display: flex; 
+  display: flex;
 }
 
 .trybewarts-login input {

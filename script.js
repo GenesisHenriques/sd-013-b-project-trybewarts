@@ -2,6 +2,7 @@ const btn = document.querySelector('#confirmar');
 const checkBox = document.querySelector('#agreement');
 const btnTermos = document.querySelector('#submit-btn');
 const submitButton = document.getElementById('submit-btn');
+const textArea = document.getElementById('textarea');
 
 function verifcaCheck() {
   if (checkBox.value === 'sim') {
@@ -87,4 +88,8 @@ function createInformation() {
   form.appendChild(informations.comment);
 }
 
+textArea.addEventListener('keyup', (element) => {
+  const counter = document.querySelector('#counter');
+  counter.innerHTML = 500 - element.target.value.length;
+});
 submitButton.addEventListener('click', createInformation);
