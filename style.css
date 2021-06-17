@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  background-color: rgb(240, 240, 240);
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -24,66 +28,87 @@
   display: flex;
 }
 
-.header .trybewarts-login input {
+.input {
   border: none;
   border-radius: 8px;
-  margin-right: 12px;
   outline: none;
-  padding: 8px 12px;
+  padding: 16px 8px;
+}
+
+.header .trybewarts-login .input {
+  margin-right: 12px;
   width: 150px;
 }
 
-.header .trybewarts-login button {
-  background-color: purple;
+.button {
+  background-color: darkslateblue;
   border: none;
   border-radius: 8px;
   color: white;
   font-weight: 700;
-  padding: 8px 32px;
+  padding: 16px 32px;
 }
 
-.header .trybewarts-login button:hover {
+.button:hover {
   filter: brightness(95%);
 }
 
-.header .trybewarts-login button:active {
+.button:active {
   filter: brightness(75%);
 }
 
 hr {
-  border: 1px solid gray;
+  border: 1px solid lightgray;
   border-radius: 8px;
   margin: 16px 0;
 }
 
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 0;
+}
+
 #evaluation-form {
+  font-size: 1.15em;
+  font-weight: 550;
   display: flex;
   width: 675px;
   flex-direction: column;
 }
 
-.form-container {
+.row {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+#evaluation-form .input {
+  flex-basis: 49%;
+}
+
+.select-label select {
+  border: none;
+  border-radius: 8px;
+  flex-grow: 1;
+  margin-left: 8px;
+  outline: none;
+  padding: 16px 8px;
+}
+
+#evaluation-form .select-label {
+  display: flex;
+  align-items: center;
+  flex-basis: 49%;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-.inputs {
-  display: flex;
-  width: 225px;
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-}
-
 .study-info {
-  font-size: 1.25em;
-  font-weight: 550;
   line-height: 32px;
   display: flex;
   justify-content: space-between;
@@ -112,4 +137,30 @@ hr {
 
 .study-info .content-selector label {
   margin: 8px 16px 8px 0;
+}
+
+.avaliation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+}
+
+.textarea textarea {
+  margin-top: 8px;
+  resize: vertical;
+}
+
+#label-infos {
+  align-self: flex-start;
+  margin-bottom: 16px;
+}
+
+#label-infos input {
+  margin-left: 8px;
 }
