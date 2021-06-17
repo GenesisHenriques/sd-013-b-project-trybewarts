@@ -11,7 +11,7 @@ function validacaoEmailSenha() {
 }
 document.querySelector('.login').addEventListener('click', validacaoEmailSenha);
 
-function hideApear() {
+function hideApea() {
   const checkboxEnviar = document.getElementById('agreement');
   const submit = document.getElementById('submit-btn');
   if (checkboxEnviar.checked !== true) {
@@ -20,4 +20,4 @@ function hideApear() {
     submit.removeAttribute('disabled');
   }
 }
-document.getElementById('agreement').addEventListener('click', hideApear);
+document.getElementById('agreement').addEventListener('click', hideApea);
