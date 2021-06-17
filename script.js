@@ -13,8 +13,9 @@ function submitLogin(event) {
   alert('Olá, Tryber!');
 }
 
-function enableButton() {
-  document.getElementById('submit-btn').disabled = false;
+function toggleButton() {
+  const submitButton = document.getElementById('submit-btn')
+  submitButton.disabled = !submitButton.disabled;
 }
 
 // Espera o carregamento da página
@@ -23,5 +24,5 @@ window.onload = () => {
     .querySelector('.trybewarts-login')
     .addEventListener('submit', submitLogin);
 
-  document.getElementById('agreement').addEventListener('click', enableButton);
+  document.getElementById('agreement').addEventListener('click', toggleButton);
 };
