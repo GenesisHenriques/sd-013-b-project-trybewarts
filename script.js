@@ -7,11 +7,11 @@ function logging() {
     window.alert('Login ou senha inválidos.');
   }
 }
+});
 
 function releasingSubmitButton() {
   const checkBox = document.getElementById('agreement');
   const submitButton = document.getElementById('submit-btn');
-
   if (checkBox.checked) {
     submitButton.disabled = false;
   } else {
@@ -32,7 +32,5 @@ button.addEventListener('click', logging);
 //       const pixel = document.createElement('div');
 //       pixel.className = 'pixel';
 
-//       pixelBoard.appendChild(pixel);
-//     }
-//   }
-// }
+const agreement = document.querySelector('#agreement');
+agreement.addEventListener('click', releasingSubmitButton);
