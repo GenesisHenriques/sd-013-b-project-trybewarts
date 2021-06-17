@@ -5,6 +5,7 @@ const button = document.querySelector('#submit-btn');
 const textArea = document.querySelector('#textarea');
 const counter = document.querySelector('#counter');
 
+// Checa se o login e a senha são validas.
 document.querySelector('#btn-login').addEventListener('click', () => {
   if (inputLogin.value === 'tryber@teste.com' && inputPassword.value === '123456') {
     alert('Olá, Tryber!');
@@ -13,6 +14,7 @@ document.querySelector('#btn-login').addEventListener('click', () => {
   }
 });
 
+// Quando o chceckbox sofrer uma alteração, o status do botão muda. 
 agreement.addEventListener('change', () => {
   if (button.disabled === true) {
     button.disabled = false;
@@ -69,18 +71,23 @@ button.onclick = function () {
   }
 };
 
+// Quando uma tecla é pressionada o contador é tem o valor 1 subtraido dele, enquanto o contador
+// for maior que 0. 
 textArea.addEventListener('keypress', () => {
   if (counter.innerText > 0) {
     counter.innerText = parseInt(counter.innerText, 10) - 1;
   }
 });
 
+// Quando a tecla delete ou Backspace é solta e o textArea não tiver conteudo,
+// o contador volta para 500.
 textArea.addEventListener('keyup', () => {
   if (textArea.value === '' && counter.innerText < 500) {
     counter.innerText = '500';
   }
 });
 
+// Toda vez que a tecla Backspace é apertado o contador ganha +1, enquanto for menor que 500.
 textArea.addEventListener('keydown', (e) => {
   if (e.key === 'Backspace' && counter.innerText < 500) {
     counter.innerText = parseInt(counter.innerText, 10) + 1;
