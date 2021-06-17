@@ -57,3 +57,7 @@ footer p {
   color: white;
   text-align: center;
 }
+
+#familia-e-conteudos {
+  display: flex;
+}
