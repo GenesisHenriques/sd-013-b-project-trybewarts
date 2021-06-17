@@ -19,7 +19,7 @@ body {
   font-size: 40px;
 }
 
-#login{
+#login {
   margin-right: 10px;
 }
 
@@ -40,4 +40,3 @@ main {
   width: 675px;
   flex-direction: column;
 }
-
