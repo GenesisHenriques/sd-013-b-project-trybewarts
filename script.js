@@ -1,38 +1,44 @@
 const maxTextLength = 500;
 
 // validação de login
-const loginButton = document.getElementById('logar');
+function addLoginButtonEventListener() {
+  const loginButton = document.getElementById('login-button');
 
-loginButton.addEventListener('click', (event) => {
-  event.preventDefault();
+  loginButton.addEventListener('click', (event) => {
+    event.preventDefault();
 
-  const login = document.querySelector('#login-input').value;
-  const senha = document.querySelector('#password-input').value;
+    const login = document.querySelector('#login-input').value;
+    const senha = document.querySelector('#password-input').value;
 
-  if (login !== 'tryber@teste.com' || senha !== '123456') {
-    alert('Login ou senha inválidos.');
-  } else {
-    alert('Olá, Tryber!');
-  }
-});
+    if (login !== 'tryber@teste.com' || senha !== '123456') {
+      alert('Login ou senha inválidos.');
+    } else {
+      alert('Olá, Tryber!');
+    }
+  });
+}
 
 // habilitando e desabilitando botão de submit
-const agreementCheckbox = document.querySelector('#agreement');
+function addAgreementCheckboxEventListener() {
+  const agreementCheckbox = document.querySelector('#agreement');
 
-agreementCheckbox.addEventListener('change', (event) => {
-  const submitButton = document.querySelector('#submit-btn');
+  agreementCheckbox.addEventListener('change', (event) => {
+    const submitButton = document.querySelector('#submit-btn');
 
-  submitButton.disabled = !event.target.checked;
-});
+    submitButton.disabled = !event.target.checked;
+  });
+}
 
 // contador de caracteres
-const textarea = document.querySelector('textarea');
+function addTextAreaEventListener() {
+  const textarea = document.querySelector('textarea');
 
-textarea.addEventListener('keyup', (event) => {
-  const counter = document.querySelector('#counter');
+  textarea.addEventListener('keyup', (event) => {
+    const counter = document.querySelector('#counter');
 
-  counter.innerText = maxTextLength - event.target.value.length;
-});
+    counter.innerText = maxTextLength - event.target.value.length;
+  });
+}
 
 // salvando informações do formulário
 function getName(inputId) {
@@ -131,29 +137,61 @@ function getComment() {
   return text;
 }
 
-function setFormInputs(formData) {
-  console.log(formData);
+function getFormData() {
+  return {
+    name: getName('#input-name'),
+    lastName: getName('#input-lastname'),
+    email: getEmail(),
+    house: getSelectedHouse(),
+    family: getSelectedFamily(),
+    content: getSelectedContent(),
+    rating: getRating(),
+    comment: getComment(),
+  };
 }
 
-const submitButton = document.querySelector('#submit-btn');
+function createUserDataElement(elementName, text) {
+  const element = document.createElement('p');
+  element.innerText = `${elementName}: ${text}`;
 
-submitButton.addEventListener('click', (event) => {
-  event.preventDefault();
+  return element;
+}
 
-  try {
-    const formData = {
-      name: getName('#input-name'),
-      lastName: getName('#input-lastname'),
-      email: getEmail(),
-      house: getSelectedHouse(),
-      family: getSelectedFamily(),
-      content: getSelectedContent(),
-      rating: getRating(),
-      comment: getComment(),
-    };
+function setResponse(formData) {
+  const form = document.querySelector('#evaluation-form');
+  form.innerHTML = '';
 
-    setFormInputs(formData);
-  } catch (error) {
-    alert(error.message);
-  }
-});
+  const fullName = `${formData.name} ${formData.lastName}`;
+  const content = formData.content.join(', ');
+
+  form.appendChild(createUserDataElement('Nome', fullName));
+  form.appendChild(createUserDataElement('Email', formData.email));
+  form.appendChild(createUserDataElement('Casa', formData.house));
+  form.appendChild(createUserDataElement('Família', formData.family));
+  form.appendChild(createUserDataElement('Matérias', content));
+  form.appendChild(createUserDataElement('Avaliação', formData.rating));
+  form.appendChild(createUserDataElement('Observações', formData.comment));
+}
+
+function addSubmitButtonEventListener() {
+  const submitButton = document.querySelector('#submit-btn');
+
+  submitButton.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    try {
+      const formData = getFormData();
+
+      setResponse(formData);
+    } catch (error) {
+      alert(error.message);
+    }
+  });
+}
+
+window.onload = () => {
+  addLoginButtonEventListener();
+  addAgreementCheckboxEventListener();
+  addTextAreaEventListener();
+  addSubmitButtonEventListener();
+};
