@@ -150,3 +150,13 @@ main {
 #label-infos {
     margin: 0 50px;
 }
+
+#submit-btn {
+    margin: 30px;
+    width: 400px;
+    height: 30px;
+    background-color: rgb(61, 2, 156);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

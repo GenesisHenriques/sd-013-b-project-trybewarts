@@ -41,7 +41,7 @@
                 <div id="family-div">
                     <label id="label-family">Qual sua família?</label>
                     <span>
-                     <input type="radio" id="frontend-family" name="family" value="Frontend">Família Frontend
+                     <input type="radio" id="frontend-family" name="family" value="Frontend" checked>Família Frontend
                 </span>
                     <span>
                     <input type="radio" id="backend-family" name="family" value="Backend">Família Backend
@@ -68,7 +68,7 @@
             </div>
             <div id="rate-div-content">
                 <label id="label-rate">Como você avalia a Trybewarts?</label>
-                <input type="radio" name="rate" id="rate-1" value="1">1
+                <input type="radio" name="rate" id="rate-1" value="1" checked>1
                 <input type="radio" name="rate" id="rate-2" value="2">2
                 <input type="radio" name="rate" id="rate-3" value="3">3
                 <input type="radio" name="rate" id="rate-4" value="4">4
@@ -81,9 +81,10 @@
             </div>
             <div id="leave-a-coment">
                 <label for="textarea" class="textarea">Deixe seu comentário:</label>
-                <textarea id="agreement" cols="60" rows="8" maxlength="500" placeholder="Max 500 caracteres"></textarea>
+                <textarea id="coment" cols="50" rows="8" maxlength="500" placeholder="Max 500 caracteres"></textarea>
             </div>
             <label for="agree-infos" id="label-infos">Você concorda com o uso das informações acima? <input type="checkbox" name="agreement" id="agreement"></label>
+            <button id="submit-btn" type="submit" disabled>Enviar</button>
 
         </form>
         <div id="wrapper">
