@@ -69,7 +69,7 @@ body {
 #main-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -79,7 +79,7 @@ main {
 
 span {
   font-family: KGHappy;
-  font-size: 28px;
+  font-size: 29px;
   text-align: center;
   letter-spacing: 5px;
 }
@@ -168,7 +168,6 @@ hr {
 }
 
 #techs-options {
-  align-items: center;
 
   /* border: 2px solid green; */
   display: flex;
@@ -176,6 +175,10 @@ hr {
   height: 50%;
   justify-content: space-around;
   width: 100%;
+}
+
+.label-techs {
+  margin-right: 21px;
 }
 
 #third-step {
