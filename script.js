@@ -1,11 +1,32 @@
-const login = document.getElementById('input-login').value;
-const senha = document.getElementById('input-senha').value;
+let email = document.getElementById('input-login');
+let password = document.getElementById('input-senha');
+const loginButton = document.getElementById('entrar');
 
-function trybelogin (){
-    if(login==true && senha==true){
-        alert('Olá, Tryber!');
+function checkEmail() {
+  for (letter of email.value) {
+    if (letter === '@'){
+      return true;
     }
-    else{
-        alert('Login ou senha inválidos');
-    }
+  }
+  return false;
 }
+
+function passwordCheck() {
+  if (password.value !== ''){
+    
+    return true;
+    
+  }
+  return false;
+}
+
+function checkLogin() {
+  if (passwordCheck() === true && checkEmail() === true ){
+    alert('Olá, Tryber!');
+  }
+  else {
+    alert('Login ou senha inválidos.');
+  }
+}
+
+loginButton.addEventListener('click', checkLogin);
