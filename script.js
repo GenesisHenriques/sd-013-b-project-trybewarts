@@ -22,37 +22,3 @@ function releasingSubmitButton() {
 
 const agreement = document.querySelector('#agreement');
 agreement.addEventListener('click', releasingSubmitButton);
-
-// const submitButton = document.getElementById('submit-btn');
-
-// submitButton.addEventListener('click', () => {
-//   const checkBox = document.getElementById('agreement');
-//   if (checkBox.checked) {
-//     document.getElementById('submit-btn').disabled = false;
-//   } else {
-//     document.getElementById('submit-btn').disabled = true;
-//   }
-// });
-
-// let checker = document.getElementById('agreement');
-// let sendbtn = document.getElementById('submit-btn');
-// checker.onchange = function () {
-//   if (sendbtn.disabled === true) {
-//     sendbtn.disabled = this.checked;
-//   } else {
-//     sendbtn.disabled = !!this.checked;
-//   }
-// };
-
-// function createInput() {
-//   const pixelBoard = document.querySelector('#pixel-board');
-
-//   for (let i = 0; i < 5; i += 1) {
-//     for (let j = 0; j < 5; j += 1) {
-//       const pixel = document.createElement('div');
-//       pixel.className = 'pixel';
-
-//       pixelBoard.appendChild(pixel);
-//     }
-//   }
-// }
