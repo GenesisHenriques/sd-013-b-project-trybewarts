@@ -121,3 +121,18 @@ main {
 hr {
   margin: 10px 0;
 }
+
+.label-agreement {
+  margin-top: 10px;
+}
+
+#submit-btn {
+  padding: 4px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+#rodape {
+  padding: 8px;
+  text-align: center;
+}
