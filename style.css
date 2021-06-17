@@ -56,8 +56,11 @@ footer {
   background-color: rgba(92, 0, 92, 0.342);
 }
 
-.columnais {
+#family-content {
   display: flex;
   flex-direction: column;
 }
 
+#content-content {
+  display: flex;
+}
