@@ -64,7 +64,7 @@ describe('Trybewarts', () => {
     cy.visit('./index.html');
   });
 
-
+/*
   describe('1 - Crie uma barra verde na parte superior da página', () => {
     it('Esta barra deve possuir a classe `header`', () => {
       cy.get(TOP_BAR_SELECTOR).should('exist');
@@ -329,7 +329,6 @@ describe('Trybewarts', () => {
       checkIsRightOf('#label-rate', 'input[value="1"]');
     });
   });
-
   describe("15 - Crie uma textarea com o id 'textarea' e uma label com a classe 'textarea' contendo o número máximo de caracteres igual à 500", () => {
     it('Uma label com a classe textarea e o texto "Deixe seu comentário:" deverá ser criado" ', () => {
       cy.get('.textarea').contains(LABEL_TEXTAREA);
@@ -342,7 +341,7 @@ describe('Trybewarts', () => {
       });
     });
   });
-
+*/
 
   describe("16 - Crie um campo de entrada do tipo 'checkbox' com o id 'agreement' para validar as informações", () => {
     it('Uma label com o id "label-infos" deve possuir o texto "Você concorda com o uso das informações acima?"', () => {
