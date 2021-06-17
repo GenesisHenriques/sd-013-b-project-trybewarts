@@ -8,9 +8,16 @@
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   height: 80px;
+  padding: 0 15%;
 }
 
-.trybewarts-login , #main {
+.main {
+  justify-content: center;
+  background-color: beige;
+  padding: 0 15%;
+}
+
+.trybewarts-login , .main {
   display: flex;
 }
 
@@ -20,6 +27,7 @@
 
 .trybewarts-login input , .bntSub {
   margin: 30px 10px;
+  width: 100px;
 }
 
 #trybewarts-forms-logo {
