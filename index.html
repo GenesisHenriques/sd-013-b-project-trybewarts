@@ -42,19 +42,35 @@
       </select>
     </div>
     
-    <label for="family" id="label-family">Qual sua família?</label>
-    <input  id="frontend" type="radio" name="family" value="Frontend">
-    <input type="radio" name="family" value="Backend">
-    <input type="radio" name="family" value="FullStack">
+    <div class="container">
 
-    <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+    <div>
+    <label for="" id="label-family">Qual sua família?</label> <br />
+          <input type="radio" name="family" value="Frontend" id="frontend" />
+          <label for="frontend">Frontend</label> <br />
+          <input type="radio" name="family" value="Backend" id="backend" />
+          <label for="backend">Backend</label> <br />
+          <input type="radio" name="family" value="FullStack" id="fullstack" />
+          <label for="fullstack">FullStack</label> <br />
+   </div>
+
+   <div>
+    <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label><br>
 
     <input class="subject" type="checkbox" value="HoFs">
+    <label for="hofs">Hofs</label>
     <input class="subject" type="checkbox" value="Jest">
+    <label for="jest">Jest</label>
     <input class="subject" type="checkbox" value="Promises">
+    <label for="Promises">Promises</label> <br>
     <input class="subject" type="checkbox" value="React">
+    <label for="react">React</label>
     <input class="subject" type="checkbox" value="SQL">
+    <label for="sql">SQL</label>
     <input class="subject" type="checkbox" value="Python">
+    <label for="Python">Python</label>
+  </div>
+</div>
     
     <div>
       <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label>

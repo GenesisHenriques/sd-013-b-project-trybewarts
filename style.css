@@ -40,3 +40,8 @@ main {
   width: 675px;
   flex-direction: column;
 }
+
+.container{
+  display: flex;
+  justify-content:space-between;
+}
