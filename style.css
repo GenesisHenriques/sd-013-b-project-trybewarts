@@ -23,3 +23,20 @@ main {
 #trybewarts-forms-logo {
   height: 50px;
 }
+
+.contentArea {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: aqua;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+#textarea {
+  flex-basis: 100%;
+}
+
+#counter {
+  position: absolute;
+  align-self: flex-end;
+}

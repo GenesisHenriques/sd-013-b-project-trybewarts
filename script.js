@@ -18,3 +18,14 @@ function enableBtnSubmit() {
   }
 }
 enableBtnSubmit();
+
+const textArea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
+const limite = textArea.maxLength;
+counter.innerText = limite;
+
+textArea.addEventListener('keyup', () => {
+  const qtdcaracteres = textArea.value.length;
+  const restantes = limite - qtdcaracteres;
+  counter.innerText = restantes;
+});
