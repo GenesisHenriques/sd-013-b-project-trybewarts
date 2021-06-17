@@ -17,7 +17,7 @@ function addSubmitButton() {
   submitButton.removeAttribute('disabled');
 }
 checkButton.addEventListener('click', addSubmitButton);
-const textArea = document.getElementById('textbox');
+const textArea = document.getElementById('textarea');
 function countCharacters() {
   const count = textArea.value.length;
   const available = 500 - count;
