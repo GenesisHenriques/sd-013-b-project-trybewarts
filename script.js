@@ -22,7 +22,7 @@ const textArea = document.getElementById('textarea');
 const counter = document.getElementById('counter');
 
 function counterCaracter() {
-  counter.innerText = `Caracteres Disponívei: ${500 - textArea.value.length}`;
+  counter.innerText = `Caracteres Disponíveis: ${500 - textArea.value.length}`;
 }
 
 textArea.addEventListener('input', counterCaracter);
@@ -42,7 +42,7 @@ function removeAddName() {
 }
 
 function removeAddEmail () {
-  const father = document.getElementsByClassName('body')[0];
+  const father = document.getElementsByClassName('email-and-house-div')[0];
   const email = document.getElementById('input-email');
 
   let text = document.createElement('p');
@@ -53,7 +53,7 @@ function removeAddEmail () {
 }
 
 function removeAddHouse() {
-  const father = document.getElementsByClassName('body')[0];
+  const father = document.getElementsByClassName('email-and-house-div')[0];
   const house = document.getElementById('house');
   const labelHouse = document.getElementById('labelHouse');
 
@@ -66,8 +66,10 @@ function removeAddHouse() {
 }
 
 function removeAddFamily() {
-  const father = document.getElementsByClassName('body')[0];
-  const child = document.getElementsByClassName('family-div')[0];
+  const father = document.getElementsByClassName('family-div')[0];
+  const children = document.querySelectorAll('.family-radio-btn');
+  const label = document.getElementById('label-family');
+  console.log(children)
   let family = '';
   
   if (document.getElementById('familyUm').checked === true) {
@@ -82,22 +84,35 @@ function removeAddFamily() {
   text.innerText = `Família: -${family.value}-`;
   father.appendChild(text);
   
-  father.removeChild(child);
+  for (const child of children) {
+    child.remove();
+  }
+  father.removeChild(label);
+  
 }
 
 function removeAddContent() {
   const subject = document.getElementsByClassName('subject');
+  const father = document.getElementsByClassName('content-div')[0];
   let itens = '';
   
   for (let index = 0; index < subject.length; index += 1) {
-    // if (subject[index].checked === true) {
-    //   itens += `${subject[index].value} `;
-    //   console.log(itens);
-    // } else {}
+    if (subject[index].checked === true) {
+      itens += `${subject[index].value} `;
+    } 
   }
+
+  let item = document.createElement('p');
+  item.innerText = `Matérias: -${itens}-`;
+  father.appendChild(item);
+
+  father.removeChild(document.getElementById('label-content'));
+  father.removeChild(document.getElementsByClassName('checkbox-div')[0]);
+
 }
 
 function genesis() {
+  
   removeAddName();
   removeAddEmail();
   removeAddHouse();
