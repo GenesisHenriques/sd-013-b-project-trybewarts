@@ -55,3 +55,9 @@ footer {
   text-align: center;
   background-color: rgba(92, 0, 92, 0.342);
 }
+
+.columnais {
+    display: flex;
+    flex-direction: column;
+}
+
