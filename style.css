@@ -65,3 +65,8 @@ footer p {
 #satisfacao {
   display: flex;
 }
+
+#comentario {
+  display: flex;
+  flex-direction: column;
+}
