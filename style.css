@@ -1,7 +1,27 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.trybewarts-login {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.trybewarts-header-logo {
+  width: 40px;
+  height: 40px;
 }
 
 #familia {
