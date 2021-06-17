@@ -81,11 +81,15 @@
   width: 50px;
 }
 
+.checkbox-content label {
+  margin-left: 5px;
+}
+
 #evaluation-form .name label , #evaluation-form .info label {
   margin-bottom: 5px;
 }
 
-#evaluation-form .form-element input , #evaluation-form .form-element select , #submit-btn {
+.form-element input , .form-element select , #submit-btn {
   border: 1.5px solid rgb(51, 51, 51);
   border-radius: 5px;
   padding: 8px;
@@ -140,10 +144,6 @@
   display: flex;
   justify-content: flex-start;
   width: 100px;
-}
-
-.checkbox-content label {
-  margin-left: 5px;
 }
 
 .label-content {
