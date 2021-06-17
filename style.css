@@ -12,39 +12,30 @@
 .trybewarts-login {
   display: flex;
 }
-    
+
 main {
   display: flex;
 }
-   
+
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
 }
-    
+
 #trybewarts-forms-logo {
   height: 500px;
 }
-<<<<<<< HEAD
-  
-#family-and-content {
-  display: flex;
-}
-     
-=======
 
 #family-and-content {
   display: flex;
 }
 
->>>>>>> 7efb7cc6428665b184f478e683372f934a122928
 #family {
   display: flex;
   flex-direction: column;
 }
 
-#checkboxs {
+#checkbox {
   display: flex;
 }
-
