@@ -69,3 +69,8 @@ main {
   display: flex;
   justify-content: space-between;
 }
+
+#text-area {
+  display: flex;
+  flex-direction: column;
+}
