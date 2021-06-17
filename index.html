@@ -77,13 +77,14 @@
   </div>
   <div class="textarea-div">
     <label class="textarea" for="textarea">Deixe seu comentário:</label>
-    <textarea name="" id="" cols="30" rows="10" maxlength="500"></textarea>
+    <p id="counter">Caracteres Disponívei: 500</p>
+    <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
   </div>
   <div class="agreement-div">
     <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
     <input type="checkbox" name="agreement" id="agreement">
   </div>
-  <button type="submit" id="submit-btn">Enviar</button>
+  <button type="submit" id="submit-btn" onclick="genesis()">Enviar</button>
 
   <footer class="footer">
     <p>

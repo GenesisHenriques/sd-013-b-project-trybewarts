@@ -17,6 +17,18 @@ function setPreventDefault(event) {
 
 document.getElementById('btnLogin').addEventListener('click', setPreventDefault);
 
+// -----Requisito 20-------
+const textArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+
+function counterCaracter() {
+  counter.innerText = `Caracteres Disponívei: ${500 - textArea.value.length}`;
+}
+
+textArea.addEventListener('input', counterCaracter);
+
+// -----Requisito 21-------
+
 // Fim de Trecho de Código do Genesis
 
 // Inicio de Trecho de código do Alan
