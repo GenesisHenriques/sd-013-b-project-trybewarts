@@ -5,12 +5,7 @@ function handleLogin() {
     return window.alert('Olá, Tryber!');
   }
   return window.alert('Login ou senha inválidos.');
-}
-
-// function handleSubmit(event) {
-//   const { target } = event;
-//   target.disabled = false;
-// }
+};
 
 const loginButton = document.querySelector('#login-button');
 loginButton.addEventListener('click', handleLogin);
@@ -21,8 +16,30 @@ submitButton.addEventListener('click', (event) => {
   const form = document.querySelector('#evaluation-form');
   const name = document.querySelector('#input-name');
   const lastname = document.querySelector('#input-lastname');
-  console.log(`${name.value} ${lastname.value}`);
-  form.Nome = `${name.value} ${lastname.value}`;
+  const email = document.querySelector('#input-email');
+  const house = document.querySelector('option[name="house"]:checked'); 
+  const family = document.querySelector('input[name="family"]:checked');
+  const materialList = document.querySelectorAll('input[class="subject"]:checked');
+  const rate = document.querySelector('input[name="rate"]:checked');
+  const obs = document.querySelector('#textarea');
+  let material = ''
+  materialList.forEach((element, index) => {
+    if (index === (materialList.length - 1)) {
+      material += `${element.value}`
+      return
+    }
+    material += `${element.value}, `
+  });;
+  form.innerHTML = `
+  <p>Nome: ${name.value} ${lastname.value}</p>
+  <p>Email: ${email.value}</p>
+  <p>Casa: ${house.innerText}</p>
+  <p>Família: ${family.value}</p>
+  <p>Matérias: ${material}</p>
+  <p>Avaliação: ${rate.value}</p>
+  <p>Observações: ${obs.value}</p>
+  `;
+  console.log('teste');
   event.preventDefault();
 });
 
@@ -34,7 +51,6 @@ agreement.addEventListener('click', (event) => {
     submitButton.disabled = true;
   }
 });
-//  submitButton.addEventListener('click', handleSubmit);
 
 const counter = document.querySelector('#counter');
 const textArea = document.querySelector('#textarea');

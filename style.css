@@ -45,8 +45,14 @@ main {
   display: flex;
 }
 
-#text-area {
-}
-#text-area p{
+#text-area-box {
   position: relative;
+  width: min-content;
+}
+#text-area-box p{
+  position: absolute;
+  pointer-events: none;
+  right: 10px;
+  bottom: 5px;
+  color: rgb(102, 102, 102);
 }
