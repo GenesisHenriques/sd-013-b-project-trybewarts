@@ -64,3 +64,8 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#satisfaction {
+  display: flex;
+  justify-content: space-between;
+}
