@@ -20,3 +20,11 @@ checkBox.addEventListener('click', () => {
     submit.disabled = true;
   }
 });
+
+const textArea = document.getElementById('textarea');
+textArea.addEventListener('input', () => {
+  const remainingCharsText = document.getElementById('counter');
+  const maxChars = 500;
+  const remaining = maxChars - textArea.value.length;
+  remainingCharsText.innerText = `${remaining}`;
+});
