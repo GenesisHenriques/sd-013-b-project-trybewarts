@@ -72,7 +72,6 @@ createLabelThree.innerText = `Casa: ${labelThreeText}`;
 
 const createLabelFour = document.createElement('label');
 const inputFamily = document.getElementsByName('family');
-
 for (let index = 0; index < inputFamily.length; index += 1) {
   inputFamily[index].addEventListener('click', () => {
     createLabelFour.innerText = `Família: ${inputFamily[index].defaultValue}`;
@@ -80,18 +79,27 @@ for (let index = 0; index < inputFamily.length; index += 1) {
 }
 
 const createLabelFive = document.createElement('label');
-buttonEnable.addEventListener('click', () => {
-  createLabelFive.innerText = 'coc';
-});
+const inputContent = document.getElementsByClassName('subject');
+createLabelFive.innerText = 'Matérias: ';
+for (let index = 0; index < inputContent.length; index += 1) {
+  inputContent[index].addEventListener('click', () => {
+    createLabelFive.innerText += `${inputContent[index].defaultValue} `;
+  });
+}
 
 const createLabelSix = document.createElement('label');
-buttonEnable.addEventListener('click', () => {
-  createLabelSix.innerText = 'coc';
-});
+const inputRate = document.getElementsByName('rate');
+for (let index = 0; index < inputRate.length; index += 1) {
+  inputRate[index].addEventListener('click', () => {
+    createLabelSix.innerText = `Avaliação: ${inputRate[index].defaultValue}`;
+  });
+}
 
 const createLabelSeven = document.createElement('label');
+createLabelSeven.innerText = 'Observações: ';
+const inputTextarea = document.getElementById('textarea');
 buttonEnable.addEventListener('click', () => {
-  createLabelSeven.innerText = 'coc';
+  createLabelSeven.innerText += inputTextarea.value;
 });
 
 buttonEnable.addEventListener('click', () => {
