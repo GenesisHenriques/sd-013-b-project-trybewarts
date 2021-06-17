@@ -78,7 +78,7 @@ main {
 }
 
 span {
-  font-family: KGHappy;
+  font-family: KGHappy, Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 29px;
   text-align: center;
   letter-spacing: 5px;
@@ -103,7 +103,7 @@ span {
   /* border: 5px solid green; */
   display: flex;
   flex-direction: column;
-  font-family: KGHappy;
+  font-family: KGHappy, Helvetica, Arial, Verdana, Tahoma, sans-serif;
   height: 100px;
   margin: 10px;
   justify-content: space-around;
@@ -132,7 +132,7 @@ hr {
 
   /* border: 2px solid black; */
   display: flex;
-  font-family: KGHappy;
+  font-family: KGHappy, Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
   justify-content: space-around;
   margin: 8px;
@@ -225,7 +225,7 @@ hr {
   /* border: 2px solid sienna; */
   display: flex;
   flex-direction: column;
-  font-family: KGHappy;
+  font-family: KGHappy, Helvetica, Arial, Verdana, Tahoma, sans-serif;
   margin: 10px;
   justify-content: space-between;
   height: 65px;
