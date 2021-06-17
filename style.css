@@ -81,10 +81,6 @@ footer {
   width: 100%;
 }
 
-<<<<<<< HEAD
-.name-container {
-  display: flex;
-=======
 .formZone2 {
   display: flex;
   flex-wrap: wrap;
@@ -112,5 +108,4 @@ footer {
 
 .contentsLabels {
   padding: 0 20px 0 2px;
->>>>>>> 798374a90e08b0029ecc1de2366f744bd5577ef9
 }
