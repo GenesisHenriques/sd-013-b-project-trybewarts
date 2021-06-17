@@ -17,15 +17,17 @@ loginButton.addEventListener('click', () => {
 });
 const getPermission = document.getElementById('agreement');
 
+const bntEnviar = document.getElementById('submit-btn');
+bntEnviar.disabled = true;
+
 function verify() {
-  console.log('test função');
-  const bntEnviar = document.getElementById('submit-btn');
-  if (getPermission.checked !== true) {
+  // console.log('test função');
+  if (getPermission.checked === true) {
     console.log('teste se');
-    bntEnviar.disable = 'true';
-  } else {
-    console.log('teste else');
-    bntEnviar.disable = 'false';
+    bntEnviar.disabled = false;
+  } else if (getPermission.checked === false) {
+    console.log('teste ou se');
+    bntEnviar.disabled = true;
   }
 }
 getPermission.addEventListener('click', verify);
