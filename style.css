@@ -38,3 +38,8 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.container-family {
+  display: flex;
+  flex-direction: column;
+}
