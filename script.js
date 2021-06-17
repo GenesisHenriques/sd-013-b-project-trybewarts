@@ -1,5 +1,5 @@
 // Login
-const loginButton = document.getElementById("login-button");
+const loginButton = document.getElementById('login-button');
 
 function interrompeForm(event) {
   event.preventDefault();
@@ -16,7 +16,6 @@ loginButton.addEventListener('click', () => {
   }
 });
 const getPermission = document.getElementById('agreement');
-getPermission.addEventListener('click', verify);
 
 function verify() {
   console.log('test função');
@@ -29,3 +28,4 @@ function verify() {
     bntEnviar.disable = 'false';
   }
 }
+getPermission.addEventListener('click', verify);
