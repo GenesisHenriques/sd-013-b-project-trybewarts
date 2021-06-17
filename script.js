@@ -35,7 +35,7 @@ textarea.addEventListener('keyup', (event) => {
 });
 
 // salvando informações do formulário
-function validateName(inputId) {
+function getName(inputId) {
   const nameInput = document.querySelector(inputId);
   const name = nameInput.value.trim();
 
@@ -46,7 +46,7 @@ function validateName(inputId) {
   return name;
 }
 
-function validateEmail() {
+function getEmail() {
   const emailInput = document.querySelector('#input-email');
   const email = emailInput.value.trim();
   const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -58,6 +58,83 @@ function validateEmail() {
   return email;
 }
 
+function getSelectedHouse() {
+  const houseSelect = document.querySelector('#house');
+
+  if (!houseSelect.selectedIndex) {
+    throw new Error('Erro! Selecione uma casa');
+  }
+
+  return houseSelect.options[houseSelect.selectedIndex].innerText;
+}
+
+function getSelectedRadioInput(inputs) {
+  let selectedInput = '';
+
+  inputs.forEach((input) => {
+    if (input.checked) {
+      selectedInput = input.value;
+      return null;
+    }
+  });
+
+  return selectedInput;
+}
+
+function getSelectedFamily() {
+  const familyInputs = document.querySelectorAll('input[name="family"]');
+  const selectedInput = getSelectedRadioInput(familyInputs);
+
+  if (selectedInput === '') {
+    throw new Error('Erro! Selecione uma família');
+  }
+
+  return selectedInput;
+}
+
+function getSelectedContent() {
+  const contentInputs = document.querySelectorAll('input[name="content"]');
+  const selectedInputs = [];
+
+  contentInputs.forEach((input) => {
+    if (input.checked) {
+      selectedInputs.push(input.value);
+    }
+  });
+
+  if (!selectedInputs.length) {
+    throw new Error('Erro! Selecione ao menos um conteúdo');
+  }
+
+  return selectedInputs;
+}
+
+function getRating() {
+  const ratingInputs = document.querySelectorAll('input[name="rate"]');
+  const selectedInput = getSelectedRadioInput(ratingInputs);
+
+  if (selectedInput === '') {
+    throw new Error('Erro! Dê uma nota de avaliação');
+  }
+
+  return selectedInput;
+}
+
+function getComment() {
+  const textArea = document.querySelector('textarea');
+  const text = textArea.value.trim();
+
+  if (!text.length) {
+    throw new Error('Erro! Escreva um comentário');
+  }
+
+  return text;
+}
+
+function setFormInputs(formData) {
+  console.log(formData);
+}
+
 const submitButton = document.querySelector('#submit-btn');
 
 submitButton.addEventListener('click', (event) => {
@@ -65,12 +142,17 @@ submitButton.addEventListener('click', (event) => {
 
   try {
     const formData = {
-      name: validateName('#input-name'),
-      lastName: validateName('#input-lastname'),
-      email: validateEmail(),
+      name: getName('#input-name'),
+      lastName: getName('#input-lastname'),
+      email: getEmail(),
+      house: getSelectedHouse(),
+      family: getSelectedFamily(),
+      content: getSelectedContent(),
+      rating: getRating(),
+      comment: getComment(),
     };
 
-    console.log(formData);
+    setFormInputs(formData);
   } catch (error) {
     alert(error.message);
   }
