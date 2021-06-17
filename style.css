@@ -9,8 +9,8 @@ body {
 @font-face {
   font-family: KGHappy;
   src: url('Fonts/kg_happy/KGHAPPY.ttf') format('truetype'), url('Fonts/kg_happy/KGHAPPYShadows.ttf') format('truetype'), url('Fonts/kg_happy/KGHAPPYSolid.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
+  font-style: 400;
 }
 
 /* header */
@@ -78,7 +78,7 @@ main {
 }
 
 span {
-  font-family: 'KGHappy';
+  font-family: KGHappy;
   font-size: 28px;
   text-align: center;
   letter-spacing: 5px;
@@ -103,7 +103,7 @@ span {
   /* border: 5px solid green; */
   display: flex;
   flex-direction: column;
-  font-family: 'KGHappy';
+  font-family: KGHappy;
   height: 100px;
   margin: 10px;
   justify-content: space-around;
@@ -119,6 +119,7 @@ span {
   height: 500px;
   width: 450px;
   margin: 0 20px;
+
   /* border: 2px solid springgreen; */
 }
 
@@ -131,7 +132,7 @@ hr {
 
   /* border: 2px solid black; */
   display: flex;
-  font-family: 'KGHappy';
+  font-family: KGHappy;
   font-size: 16px;
   justify-content: space-around;
   margin: 8px;
@@ -139,7 +140,6 @@ hr {
 }
 
 #family-container {
-
   align-self: start;
 
   /* border: 2px solid firebrick; */
@@ -190,7 +190,7 @@ hr {
 
 #label-rate {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 #rate-options {
@@ -210,7 +210,7 @@ hr {
   display: flex;
   flex-direction: column;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   margin: 10px 0;
   width: 99%;
   height: 80px;
@@ -222,7 +222,7 @@ hr {
   /* border: 2px solid sienna; */
   display: flex;
   flex-direction: column;
-  font-family: 'KGHappy';
+  font-family: KGHappy;
   margin: 10px;
   justify-content: space-between;
   height: 65px;
