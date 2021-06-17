@@ -40,14 +40,40 @@ function countdownTextAreaMaxLength() {
   });
 }
 
-function getInputValueInObjectFormact() {
-  const getInput = document.querySelectorAll('.object-key');
-  console.log(getInput);
+function getValueOfTheObject(inputClassName, index, formMainInfoInObjectFormat) {
+  if (inputClassName[index].name in formMainInfoInObjectFormat) {
+    formMainInfoInObjectFormat[inputClassName[index].name]
+    += ' '.concat(inputClassName[index].value);
+  } else {
+    formMainInfoInObjectFormat[inputClassName[index].name] = inputClassName[index].value;
+  }
 }
-getInputValueInObjectFormact();
+
+function getFamiliaInObjectFormat(formMainInfoInObjectFormat, className) {
+  const inputClassName = document.getElementsByClassName(className);
+  for (let index = 0; index < inputClassName.length; index += 1) {
+    if (inputClassName[index].checked) {
+      getValueOfTheObject(inputClassName, index, formMainInfoInObjectFormat);
+    }
+  }
+  return formMainInfoInObjectFormat;
+}
+
+function submitButtonEventListener() {
+  const submitButton = document.getElementById('submit-btn');
+  submitButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    let formMainInfoInObjectFormat = {};
+    formMainInfoInObjectFormat = getFamiliaInObjectFormat(formMainInfoInObjectFormat, 'familia');
+    formMainInfoInObjectFormat = getFamiliaInObjectFormat(formMainInfoInObjectFormat, 'subject');
+    formMainInfoInObjectFormat = getFamiliaInObjectFormat(formMainInfoInObjectFormat, 'avaliacao');
+    console.log(formMainInfoInObjectFormat);
+  });
+}
 
 window.onload = function start() {
   disableButton();
   loginButtonAddEventListner();
   countdownTextAreaMaxLength();
+  submitButtonEventListener();
 };
