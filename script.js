@@ -23,14 +23,6 @@ buttonLogin.addEventListener('click', (event) => {
   }
 });
 
-buttonLogin.addEventListener('click', (event) => {
-  event.preventDefault();
-  if (validLogin()) {
-    alert('Olá, Tryber!');
-  } else {
-    alert('Login ou senha inválidos.');
-  }
-});
 function checkedin() {
   const check = checkButton.checked;
   const btn = submit;
