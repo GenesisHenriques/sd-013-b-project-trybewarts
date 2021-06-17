@@ -14,3 +14,12 @@ function eventLogin() {
   button.addEventListener('click', login);
 }
 eventLogin();
+
+function selectCheck() {
+  const enviar = document.getElementById('submit-btn');
+  const check = document.getElementById('agreement');
+  enviar.disabled = !check.checked;
+}
+
+const check = document.getElementById('agreement');
+check.addEventListener('click', selectCheck);
