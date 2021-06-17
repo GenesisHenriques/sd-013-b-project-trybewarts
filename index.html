@@ -52,12 +52,12 @@
                 <div class="content">
                     <label id="label-content" for="">"Qual conteúdo você está com mais vontade de aprender?"</label>
                     <div id="inputCheckBoxContent">
-                        <input class="subject" type="checkbox" name="" value="HoFs" id="">HoFs
-                        <input class="subject" type="checkbox" name="" value="Jest" id="">Jest
-                        <input class="subject" type="checkbox" name="" value="Promises" id="">Promises
-                        <input class="subject" type="checkbox" name="" value="React" id="">React
-                        <input class="subject" type="checkbox" name="" value="SQL" id="">SQL
-                        <input class="subject" type="checkbox" name="" value="Python" id="">Python
+                        <input class="subject" type="checkbox" name="" value="HoFs">HoFs
+                        <input class="subject" type="checkbox" name="" value="Jest">Jest
+                        <input class="subject" type="checkbox" name="" value="Promises">Promises
+                        <input class="subject" type="checkbox" name="" value="React">React
+                        <input class="subject" type="checkbox" name="" value="SQL">SQL
+                        <input class="subject" type="checkbox" name="" value="Python">Python
                     </div>
                 </div>
             </div>
@@ -78,6 +78,11 @@
                 <label for="textarea" class="textarea">Deixe seu comentário:</label>
                 <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
             </div>
+            <div id="divAgreement">
+                <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+                <input type="checkbox" name="" id="agreement" required onclick="enable()">
+            </div>
+            <button type="submit" id="submit-btn">Enviar</button>
         </form>
         <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="">
     </main>

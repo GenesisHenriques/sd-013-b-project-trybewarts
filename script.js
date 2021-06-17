@@ -14,3 +14,18 @@ function validForm() {
 }
 
 validForm();
+
+// Faz com que o botão submit esteja desativado
+// e seja ativado se o input agrement estiver selecionado
+const buttonEnable = document.getElementById('submit-btn');
+
+function enable() {
+  const inputCheckAgreement = document.getElementById('agreement').checked;
+  if (inputCheckAgreement) {
+    buttonEnable.disabled = false;
+  } else {
+    buttonEnable.disabled = true;
+  }
+}
+
+enable();
