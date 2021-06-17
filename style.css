@@ -4,13 +4,8 @@
   box-sizing: border-box;
 }
 
-html , body {
-  width: 100%;
-  height: 100%;
-}
 
 /* HEADER DO SITE */
-
 .header {
   display: flex;
   align-items: center;
@@ -67,14 +62,13 @@ form button {
 /* MAIN SECTION */
 main {
   display: flex;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 #evaluation-form {
   width: 675px;
-  height: 200px;
 }
-
 
 
 #evaluation-form select {
@@ -85,14 +79,11 @@ main {
 
 #trybewarts-forms-logo {
   height: 800px;
-  width: 50%;
 }
 
 /* SECTION 2 */
-
 .forms-part-2 {
   display: flex;
-  flex-grow: 1;
 }
 
 .family {
@@ -100,13 +91,9 @@ main {
   text-align: start;
   align-content: flex-start;
   justify-content: center;
-  flex-grow: 1;
+  width: 40%;
 }
 
-.family-label {
-  align-self: flex-start;
-  flex-basis: 100%;
-}
 
 .family p {
   margin: 10px;
@@ -114,17 +101,18 @@ main {
 
 .conteudo {
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  background-color:rgb(50, 167, 145);
-  flex-grow: 2;
+  flex-wrap: wrap;
+  background-color: rgb(50, 167, 145);
+  width: 60%;
 }
 
-.conteudo input {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+.conteudo p {
+  margin: 0;
+  margin-left: 46px;
+  align-items: flex-start;
 }
+
 
 .rate {
   width: 675px;
@@ -133,9 +121,12 @@ main {
   align-items: flex-start;
 }
 
-#label-rate {
-  align-self: flex-start;
-  width: 100%;
+.assessment p {
+  margin-left: 10px;
+}
+
+.assessment {
+  display: flex;
 }
 
 .coments {
@@ -147,6 +138,7 @@ main {
   width: 100%;
 }
 
+
 footer {
   background-color: gray;
 }
@@ -154,8 +146,4 @@ footer {
 .form {
   display: flex;
   flex-direction: column;
-}
-
-.assessment {
-  display: flex;
 }
