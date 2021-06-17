@@ -40,6 +40,12 @@ function countdownTextAreaMaxLength() {
   });
 }
 
+function getInputValueInObjectFormact() {
+  const getInput = document.querySelectorAll('.object-key');
+  console.log(getInput);
+}
+getInputValueInObjectFormact();
+
 window.onload = function start() {
   disableButton();
   loginButtonAddEventListner();
