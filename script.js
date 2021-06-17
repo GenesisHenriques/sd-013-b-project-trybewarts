@@ -44,9 +44,6 @@ const inputName = document.getElementById('input-name');
 const inputLastName = document.getElementById('input-lastname');
 const divInput = document.querySelector('.box-container');
 const inputEmail = document.getElementById('input-email');
-const option = document.getElementsByTagName('option');
-const select = document.getElementById('house');
-const label = document.getElementById('houses');
 
 function updFormName() {
   const createP = document.createElement('p');
