@@ -30,8 +30,8 @@ const count = document.querySelector('textarea');
 count.addEventListener('input', counter);
 
 function ableIt() {
-  const button = document.querySelector('#submit-btn');
-  button.toggleAttribute('disabled');
+  const buttn = document.querySelector('#submit-btn');
+  buttn.toggleAttribute('disabled');
 }
 const checkbox = document.querySelector('#agreement');
 checkbox.addEventListener('click', ableIt);
