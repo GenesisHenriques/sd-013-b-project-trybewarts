@@ -19,8 +19,11 @@
   </header>
   <main>
     <form id="evaluation-form">
+      <fieldset>
         <input id="input-name" type="text" placeholder="Nome">
         <input id="input-lastname" type="text" placeholder="Sobrenome">
+      </fieldset>
+      <fieldset>
         <input id="input-email" type="email" placeholder="Email">
         <select id="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
@@ -28,6 +31,7 @@
             <option id="corvinode-house" value="Corvinode">Corvinode</option>
             <option id="pytherina-house" value="Pytherina">Pytherina</option>
         </select>
+      </fieldset>
         <div class="radioButtons">
             <label id="label-family">Qual sua família?</label>
             <label for="Frontend"><input id="Frontend" type="radio" value="Frontend" name="family">Frontend</label> 
@@ -63,7 +67,7 @@
             <label id="label-infos">Você concorda com o uso das informações acima?</label>
             <input id="agreement" type="checkbox">
         </div>
-        <button class="Enter" id="submit-btn" type="submit" disabled='true'>Enviar</button>
+        <button id="submit-btn" type="submit" disabled='true'>Enviar</button>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
   </main>
