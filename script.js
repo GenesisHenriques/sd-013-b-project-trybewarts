@@ -1,3 +1,8 @@
+const firstName = document.querySelector('#input-name');
+const lastName = document.querySelector('#input-lastname');
+const emailInput = document.getElementById('input-email');
+const house = document.querySelector('#house');
+
 function authenticateLogin() { // função para autentificar o login
   const inputEmail = document.querySelector('#login');
   const inputPassword = document.querySelector('#senha');
@@ -22,7 +27,7 @@ function authenticateCheckboxAgreement() { // função para a funcionalidade do 
   }
 }
 
-const input = document.getElementById('agreement');
+const input = document.querySelector('#agreement');
 input.addEventListener('click', authenticateCheckboxAgreement);
 
 const textArea = document.querySelector('#textarea');
@@ -36,3 +41,66 @@ function changeLetterCounter(event) {
 }
 
 textArea.addEventListener('keyup', changeLetterCounter);
+
+function createElementP(string, inputs) {
+  const elementP = document.createElement('p'); // cria um paragrafo
+  elementP.innerText = `${string}${inputs}`;
+  // string = 'Nome: ', 'Email: '... / inputs busca o value do input e concatena em uma string
+  return elementP;
+}
+
+function rescueFamily() { // recupera o valor da familia selecionada
+  const families = document.querySelectorAll('.radios');
+  for (let i = 0; i < families.length; i += 1) {
+    if (families[i].checked) {
+      return families[i].value;
+    }
+  }
+}
+
+function rescueSubjects() {
+  const selectedSubject = [];
+  const subject = document.querySelectorAll('.subject');
+  for (let i = 0; i < subject.length; i += 1) {
+    if (subject[i].checked) {
+      selectedSubject.push(` ${subject[i].value}`);
+    }
+  }
+  return selectedSubject;
+}
+function rescueRate() {
+  const rates = document.querySelectorAll('.rate-radio');
+  for (let i = 0; i < rates.length; i += 1) {
+    if (rates[i].checked) {
+      return rates[i].value;
+    }
+  }
+}
+
+const leaveComents = document.querySelector('#textarea');
+function submitForms() {
+  const form = document.querySelector('#evaluation-form');
+  const emailOutput = `${emailInput.value}`;
+  const fullName = `${firstName.value} ${lastName.value}`;
+  const houseChoosen = `${house.value}`;
+  const familyChoosen = rescueFamily();
+  const subjects = rescueSubjects();
+  const rate = rescueRate();
+  const comments = `${leaveComents.value}`;
+  form.innerHTML = ''; // apaga o form
+  form.appendChild(createElementP('Nome: ', fullName));
+  form.appendChild(createElementP('Email: ', emailOutput));
+  form.appendChild(createElementP('Casa: ', houseChoosen));
+  form.appendChild(createElementP('Família: ', familyChoosen));
+  form.appendChild(createElementP('Matérias: ', subjects));
+  form.appendChild(createElementP('Avaliação: ', rate));
+  form.appendChild(createElementP('Observações: ', comments));
+}
+
+const submitBtn = document.querySelector('#submit-btn');
+submitBtn.addEventListener('click', submitForms);
+
+window.onload = function audiovol() {
+  const audio = document.querySelector('#audio');
+  audio.volume = 0.005;
+};
