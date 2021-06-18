@@ -1,3 +1,4 @@
+// Header autorize button
 const userInput = document.getElementById('login-user');
 const passInput = document.getElementById('login-pass');
 const confirmButton = document.getElementById('login-button');
@@ -10,4 +11,12 @@ confirmButton.onclick = function pegarLogin() {
   } else {
     alert('Login ou senha inválidos.');
   }
+};
+
+// Forms- Enviar formulário principal
+const checkbox = document.getElementById('agreement');
+
+checkbox.onclick = function canSendForm() {
+  const sendButton = document.getElementById('submit-btn');
+  sendButton.toggleAttribute('disabled');
 };
