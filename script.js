@@ -24,5 +24,7 @@ function checkAgreement(checkbox) {
   }
 }
 
-bntLogin.addEventListener('click', validarLogin);
-checkAgreement(document.getElementById('agreement'));
+window.onload = () => {
+  checkAgreement(document.getElementById('agreement'));
+  bntLogin.addEventListener('click', validarLogin);
+}
