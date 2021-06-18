@@ -2,6 +2,20 @@
   margin: 0;
 }
 
+body {
+  background-color: rgb(250, 234, 162);
+}
+
+@font-face {
+  font-family: perryHotter;
+  src: url('./fonts/ParryHotter.ttf');
+}
+
+@font-face {
+  font-family: wizard;
+  src: url('./fonts/WizardWorldSimplified-Kxr7.ttf');
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -9,18 +23,66 @@
   align-items: center;
 }
 
+.trybewarts-header-logo {
+  display: flex;
+  align-self: flex-start;
+  width: 70px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-family: perryHotter, Arial, Verdana, Tahoma, sans-serif;
+  margin-top: 20px;
+}
+
+#login {
+  max-width: 150px;
+  margin-right: 10px;
+}
+
+#password {
+  max-width: 150px;
+  margin-right: 10px;
+}
+
+.nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
 .trybewarts-login {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: wizard, Arial, Verdana, Tahoma, sans-serif;
 }
 
 main {
   display: flex;
+  font-family: wizard, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 12px;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  padding-left: 16%;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#input-name {
+  margin-right: 10px;
+}
+
+#input-email {
+  margin-right: 10px;
 }
 
 #trybewarts-forms-logo {
@@ -29,11 +91,33 @@ main {
 
 #family-and-content {
   display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.marginTop {
+  margin-top: 15px;
 }
 
 #family {
   display: flex;
   flex-direction: column;
+  width: 40%;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+#checkboxs .form-check-label {
+  margin-right: 20px;
+}
+
+#checkboxs {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #checkbox {
@@ -44,7 +128,6 @@ footer {
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: dimgrey;
   height: 25px;
 }
