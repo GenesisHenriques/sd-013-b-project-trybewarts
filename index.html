@@ -22,13 +22,13 @@
 
   <main>
     <!-- <section class='forms'> -->
-    <form class="form" id="evaluation-form" action="" method="get">
+    <form class="form" id="evaluation-form" action="" method="">
       <div class="forms-part-1">
         <input id="input-name" type="text" placeholder="Nome">
         <input id="input-lastname" type="text" placeholder="Sobrenome">
         <input id="input-email" type="text" placeholder="Email">
         <div class="select">
-          <label for="house">CASA:</label>
+          <label for="house" id="houseSelect">CASA:</label>
           <select name="Casa" id="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
@@ -48,28 +48,28 @@
   
           <div class="conteudo">
             <label id="label-content" for="" class="family-label">Qual conteúdo você está com mais vontade de aprender?</label>
-            <p><input type="checkbox" value="HoFs"> HoFs</p>
-            <p><input type="checkbox" name="" value="Jest"> Jest</p>
-            <p><input type="checkbox" name="" value="Promises"> Promises</p>
-            <p><input type="checkbox" name="" value="React"> React </p>
-            <p><input type="checkbox" name="" value="SQL"> SQL</p>
-            <p><input type="checkbox" name="" value="Python"> Python</p>
+            <p class="subjectText"><input type="checkbox" class="subject" value="HoFs"> HoFs</p>
+            <p class="subjectText"><input type="checkbox" class="subject" name="" value="Jest"> Jest</p>
+            <p class="subjectText"><input type="checkbox" class="subject" name="" value="Promises"> Promises</p>
+            <p class="subjectText"><input type="checkbox" class="subject" name="" value="React"> React </p>
+            <p class="subjectText"><input type="checkbox" class="subject" name="" value="SQL"> SQL</p>
+            <p class="subjectText"><input type="checkbox" class="subject" name="" value="Python"> Python</p>
           </div><!--conteudo-->
         </div><!--forms part 2-->
   
         <section class="rate">
           <div class="assessment">
             <label id='label-rate'>Como você avalia a Trybewarts?</label>
-            <p><input type="radio" name="rate" value="1"/>1</p> 
-            <p><input type="radio" name="rate" value="2"/>2</p>
-            <p><input type="radio" name="rate" value="3"/>3</p>
-            <p><input type="radio" name="rate" value="4"/>4</p>
-            <p><input type="radio" name="rate" value="5"/>5</p>
-            <p><input type="radio" name="rate" value="6"/>6</p>
-            <p><input type="radio" name="rate" value="7"/>7</p>
-            <p><input type="radio" name="rate" value="8"/>8</p>
-            <p><input type="radio" name="rate" value="9"/>9</p>
-            <p><input type="radio" name="rate" value="10"/>10</p>
+            <p class="assessmentsText"><input class="assessments" type="radio" name="rate" value="1"/>1</p> 
+            <p class="assessmentsText"><input class="assessments" type="radio" name="rate" value="2"/>2</p>
+            <p class="assessmentsText"><input class="assessments" type="radio" name="rate" value="3"/>3</p>
+            <p class="assessmentsText"><input class="assessments" type="radio" name="rate" value="4"/>4</p>
+            <p class="assessmentsText"><input class="assessments" type="radio" name="rate" value="5"/>5</p>
+            <p class="assessmentsText"><input class="assessments" type="radio" name="rate" value="6"/>6</p>
+            <p class="assessmentsText"><input class="assessments" type="radio" name="rate" value="7"/>7</p>
+            <p class="assessmentsText"><input class="assessments" type="radio" name="rate" value="8"/>8</p>
+            <p class="assessmentsText"><input class="assessments" type="radio" name="rate" value="9"/>9</p>
+            <p class="assessmentsText"><input class="assessments" type="radio" name="rate" value="10"/>10</p>
           </div>
             
           <!-- </section>rate -->

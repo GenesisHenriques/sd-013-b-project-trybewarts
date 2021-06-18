@@ -79,6 +79,11 @@ main {
 
 #trybewarts-forms-logo {
   height: 800px;
+  order: 2;
+}
+
+.dados {
+  order: 1;
 }
 
 /* SECTION 2 */
