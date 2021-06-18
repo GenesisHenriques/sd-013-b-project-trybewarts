@@ -69,7 +69,6 @@ function removeAddFamily() {
   const father = document.getElementsByClassName('family-div')[0];
   const children = document.querySelectorAll('.family-radio-btn');
   const label = document.getElementById('label-family');
-  console.log(children)
   let family = '';
   
   if (document.getElementById('familyUm').checked === true) {
@@ -111,13 +110,50 @@ function removeAddContent() {
 
 }
 
-function genesis() {
+function removeAddNote() {
+  const grades = document.querySelectorAll('.note');
+  const noteLabel = document.querySelectorAll('.noteLabel');
+  const father = document.getElementsByClassName('rate-div')[0];
   
+  let item = document.createElement('p');
+  let text = '';
+
+  for (let index = 0; index < grades.length; index += 1) {
+    if (grades[index].checked) {
+      item.innerText = `Avaliação: -${grades[index].value}-`;
+      father.appendChild(item);
+    }
+  }
+  
+  document.getElementById('label-rate').remove();
+  for (let index = grades.length - 1; index >= 0; index -= 1) {
+    grades[index].remove();
+    noteLabel[index].remove();
+  }
+}
+
+function removeAddText() {
+  const text = document.getElementById('textarea');
+  const father = document.getElementsByClassName('textarea-div')[0];
+
+  let item = document.createElement('p');
+  item.innerText = `Observações: -${text.value}-`;
+  father.appendChild(item);
+
+  document.getElementsByClassName('textarea')[0].remove();
+  document.getElementById('counter').remove();
+  text.remove();
+
+}
+
+function validation() {
   removeAddName();
   removeAddEmail();
   removeAddHouse();
   removeAddFamily();
   removeAddContent();
+  removeAddNote();
+  removeAddText();
 }
 
 
@@ -138,8 +174,10 @@ function generateRateButtons() {
     radioBtn.setAttribute('name', 'rate');
     radioBtn.setAttribute('value', index);
     radioBtn.setAttribute('id', index);
+    radioBtn.setAttribute('class', 'note');
     radioBtnLabel.setAttribute('for', index);
     radioBtnLabel.innerText = index;
+    radioBtnLabel.classList = 'noteLabel';
     rateDiv[0].appendChild(radioBtn);
     rateDiv[0].appendChild(radioBtnLabel);
   }
