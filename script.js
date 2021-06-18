@@ -12,7 +12,6 @@ let contagem = 0;
 
 const textarea = document.querySelector('#textarea');
 
-
 /** FUNÇÕES */
 
 function getLogin() {
