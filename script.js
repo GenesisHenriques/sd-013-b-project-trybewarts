@@ -1,13 +1,9 @@
-window.onload = function () {
-
-};
-
 /** VARIÁVEIS */
 
 const botaoEnviar = document.getElementById('submit-btn');
 botaoEnviar.disabled = true;
 const checboxAgreement = document.querySelector('#agreement');
-let divComentario = document.querySelector('#comentario');
+const divComentario = document.querySelector('#comentario');
 const login = document.getElementById('login-btn');
 
 /** FUNÇÕES */
@@ -55,11 +51,13 @@ textarea.addEventListener('input', contarCaracteresTextarea);
 
 let contador = 5;
 const desc = document.querySelector('#textarea');
-desc.addEventListener('keypress', function (e) {
-  const maxChars = 5;
-  let inputLength;
+desc.addEventListener('keypress', contarCaracteres);
 
-  contador = contador - 1;
+function contarCaracteres (e) {
+  const maxChars = 5;
+  const inputLength;
+
+  contador -= 1;
   inputLength = desc.value.length;
 
   if (inputLength >= maxChars) {
@@ -67,4 +65,4 @@ desc.addEventListener('keypress', function (e) {
   }
 
   divComentario.append(contador);
-});
+}
