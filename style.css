@@ -4,20 +4,14 @@
   box-sizing: border-box;
 }
 
-body,
-input,
-textarea,
-select,
-button {
+body , input , textarea , select , button {
   letter-spacing: 1px;
   background-color: rgb(239, 239, 239);
   outline: none;
   border: none;
 }
 
-input,
-textarea,
-select {
+input , textarea , select {
   background-color: white;
   padding: 5px 10px;
   border-radius: 20px;
