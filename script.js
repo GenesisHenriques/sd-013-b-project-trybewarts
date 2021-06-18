@@ -27,4 +27,4 @@ function checkAgreement(checkbox) {
 window.onload = () => {
   checkAgreement(document.getElementById('agreement'));
   bntLogin.addEventListener('click', validarLogin);
-}
+};
