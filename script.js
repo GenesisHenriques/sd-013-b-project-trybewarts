@@ -16,4 +16,13 @@ function validarLogin() {
   }
 }
 
+function checkAgreement(checkbox) {
+  if (checkbox.checked) {
+    document.getElementById('submit-btn').disabled = false;
+  } else {
+    document.getElementById('submit-btn').disabled = true;
+  }
+}
+
 bntLogin.addEventListener('click', validarLogin);
+checkAgreement(document.getElementById('agreement'));
