@@ -88,8 +88,9 @@ function createInformation() {
   form.appendChild(informations.comment);
 }
 
-textArea.addEventListener('keyup', (element) => {
+textArea.addEventListener('input', (element) => {
   const counter = document.querySelector('#counter');
   counter.innerHTML = 500 - element.target.value.length;
 });
+
 submitButton.addEventListener('click', createInformation);
