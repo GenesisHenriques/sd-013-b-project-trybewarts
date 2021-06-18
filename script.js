@@ -15,7 +15,6 @@ confirmButton.onclick = function pegarLogin() {
 
 // Forms- Enviar formulário principal
 const checkbox = document.getElementById('agreement');
-
 checkbox.onclick = function canSendForm() {
   const sendButton = document.getElementById('submit-btn');
   sendButton.toggleAttribute('disabled');
