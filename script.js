@@ -3,7 +3,6 @@
 const botaoEnviar = document.getElementById('submit-btn');
 botaoEnviar.disabled = true;
 const checboxAgreement = document.querySelector('#agreement');
-const divComentario = document.querySelector('#comentario');
 const login = document.getElementById('login-btn');
 
 /** FUNÇÕES */
@@ -20,12 +19,6 @@ function getLogin() {
 
 login.addEventListener('click', getLogin);
 
-/* let textarea = document.querySelector('#textarea');
-let textoCompleto = document.querySelector('#textarea').value;
-let qtdMaxCaracteres = 500;
-let contadorResultado = document.createElement('label');
-let contador = 5; */
-
 function verificarCheckboxAgreement() {
   // se check = true (ou seja, se marcado)
   if (checboxAgreement.checked) {
@@ -37,32 +30,3 @@ function verificarCheckboxAgreement() {
   }
 }
 checboxAgreement.addEventListener('click', verificarCheckboxAgreement);
-divComentario.append('Caracteres restantes: ');
-
-/*
-function contarCaracteresTextarea() {
-  contador = contador - 1;
-  divComentario.append(contador + ' ');
-  console.log(textoCompleto);
-}
-
-textarea.addEventListener('input', contarCaracteresTextarea);
-*/
-
-let contador = 5;
-const desc = document.querySelector('#textarea');
-desc.addEventListener('keypress', contarCaracteres);
-
-function contarCaracteres (e) {
-  const maxChars = 5;
-  const inputLength;
-
-  contador -= 1;
-  inputLength = desc.value.length;
-
-  if (inputLength >= maxChars) {
-    e.preventDefault();
-  }
-
-  divComentario.append(contador);
-}
