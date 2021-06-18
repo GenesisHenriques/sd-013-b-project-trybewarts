@@ -162,3 +162,7 @@ header h1 {
 #textarea-box label {
   margin-top: 10px;
 }
+
+.disable {
+  display: none;
+}
