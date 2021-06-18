@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="header">
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="trybewarts-header-logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <div>
       <form action="" class="trybewarts-login">
@@ -46,12 +46,12 @@
       <br>
     <div class="contentDiv">
       <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label><br>
-      <input type="checkbox" name="HoFs" value="HoFs">HoFs
-      <input type="checkbox" name="Jest"value="Jest">Jest 
-      <input type="checkbox" name="Promises" value="Promises">Promises
-      <input type="checkbox" name="React" value="React">React
-      <input type="checkbox" name="SQL" value="SQL">SQL
-      <input type="checkbox" name="Python" value="Python">Python
+      <input type="checkbox" class="subject" name="content" value="HoFs">HoFs
+      <input type="checkbox" class="subject" name="content"value="Jest">Jest 
+      <input type="checkbox" class="subject" name="content" value="Promises">Promises
+      <input type="checkbox" class="subject" name="content" value="React">React
+      <input type="checkbox" class="subject" name="content" value="SQL">SQL
+      <input type="checkbox" class="subject" name="content" value="Python">Python
     </div>
 
     <div class="evaluation">
@@ -67,7 +67,7 @@
       <input type="radio" name="rate" value="9"> 9
       <input type="radio" name="rate" value="10"> 10
     </div>
-counter
+    
     <div>
       <label class="textarea" for="">Deixe seu comentário:</label>
       <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
@@ -75,6 +75,7 @@ counter
     </div>
 
     </form>
+
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo trybewarts">
   </main>
 
@@ -83,6 +84,7 @@ counter
   <input type="checkbox" name="check" id="agreement">
 
   <button type="submit" id="submit-btn" disabled>Enviar</button>
+
   <script src="script.js"></script>
   <footer>Direitos reservados à Trybewarts©</footer>
 </body>

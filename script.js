@@ -49,3 +49,38 @@ textArea.addEventListener('input', () => {
   const numberOfCharacters = document.querySelector('textarea').value.length;
   countLabel.innerText = size - numberOfCharacters;
 });
+
+function learningValuesCall() {
+  const contentValue = document.querySelectorAll('input[name="content"]:checked');
+  const learn = [];
+  for (let index = 0; index < contentValue.length; index += 1) {
+    learn.push(contentValue[index].value);
+  } return learn.join(', ');
+}
+
+function inputsValues(valueInput) {
+  const newLabel = document.createElement('div');
+  newLabel.innerText = valueInput;
+  return newLabel;
+}
+
+buttonSubmit.addEventListener('click', (event) => {
+  event.preventDefault();
+  const nameValue = document.getElementById('input-name').value;
+  const lastNameValue = document.getElementById('input-lastname').value;
+  const emailValue = document.getElementById('input-email').value;
+  const houseValue = document.getElementById('house').value;
+  const familyValue = document.querySelector('input[name="family"]:checked').value;
+  const learningValue = learningValuesCall();
+  const evaluationValue = document.querySelector('input[name="rate"]:checked').value;
+  const observationValue = document.getElementById('textarea').value;
+  const formId = document.getElementById('evaluation-form');
+  formId.innerHTML = '';
+  formId.appendChild(inputsValues(`Nome: ${nameValue} ${lastNameValue}`));
+  formId.appendChild(inputsValues(`Email: ${emailValue}`));
+  formId.appendChild(inputsValues(`Casa: ${houseValue}`));
+  formId.appendChild(inputsValues(`Família: ${familyValue}`));
+  formId.appendChild(inputsValues(`Matérias: ${learningValue}`));
+  formId.appendChild(inputsValues(`Avaliação: ${evaluationValue}`));
+  formId.appendChild(inputsValues(`Observações: ${observationValue}`));
+});
