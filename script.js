@@ -1,4 +1,3 @@
-
 const button = document.getElementById('button');
 const checkbox = document.getElementById('agreement');
 
