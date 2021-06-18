@@ -1,3 +1,4 @@
+// Rafael
 function checkLogin(event) {
   event.preventDefault();
   const inputLogin = document.getElementById('login').value;
