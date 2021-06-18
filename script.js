@@ -5,7 +5,19 @@ function handleLogin() {
     return window.alert('Olá, Tryber!');
   }
   return window.alert('Login ou senha inválidos.');
-};
+}
+
+function getCheckedMaterials() {
+  const materialList = document.querySelectorAll('input[class="subject"]:checked');
+  let material = '';
+  materialList.forEach((element, index) => {
+    if (index === (materialList.length - 1)) {
+      material += `${element.value}`;
+      return material;
+    } material += `${element.value}, `;
+  });
+  return material;
+}
 
 const loginButton = document.querySelector('#login-button');
 loginButton.addEventListener('click', handleLogin);
@@ -17,29 +29,17 @@ submitButton.addEventListener('click', (event) => {
   const name = document.querySelector('#input-name');
   const lastname = document.querySelector('#input-lastname');
   const email = document.querySelector('#input-email');
-  const house = document.querySelector('option[name="house"]:checked'); 
+  const house = document.querySelector('option[name="house"]:checked');
   const family = document.querySelector('input[name="family"]:checked');
-  const materialList = document.querySelectorAll('input[class="subject"]:checked');
   const rate = document.querySelector('input[name="rate"]:checked');
   const obs = document.querySelector('#textarea');
-  let material = ''
-  materialList.forEach((element, index) => {
-    if (index === (materialList.length - 1)) {
-      material += `${element.value}`
-      return
-    }
-    material += `${element.value}, `
-  });;
+  const material = getCheckedMaterials();
   form.innerHTML = `
-  <p>Nome: ${name.value} ${lastname.value}</p>
-  <p>Email: ${email.value}</p>
-  <p>Casa: ${house.innerText}</p>
-  <p>Família: ${family.value}</p>
-  <p>Matérias: ${material}</p>
-  <p>Avaliação: ${rate.value}</p>
+  <p>Nome: ${name.value} ${lastname.value}</p><p>Email: ${email.value}</p>
+  <p>Casa: ${house.innerText}</p><p>Família: ${family.value}</p>
+  <p>Matérias: ${material}</p><p>Avaliação: ${rate.value}</p>
   <p>Observações: ${obs.value}</p>
   `;
-  console.log('teste');
   event.preventDefault();
 });
 
