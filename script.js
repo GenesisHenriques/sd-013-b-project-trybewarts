@@ -28,12 +28,12 @@ checkbox.addEventListener('click', () => {
 const casa = document.querySelector('#house');
 
 const formFamily = () => {
-  const familyRadio = document.querySelectorAll('.familyRadio');
-  const familyText = document.querySelectorAll('.familyText');
+  const familyRadio = document.querySelectorAll('.family input');
+  const familyText = document.querySelectorAll('.family p');
   let familyChecked = '';
   for (let index = 0; index < familyRadio.length; index += 1) {
     if (familyRadio[index].checked === true) {
-      familyChecked = `Família: ${familyText[index]}<br>`;
+      familyChecked = `<p>Família: ${familyText[index].innerText}</p>`;
     }
   }
   return familyChecked;
@@ -45,10 +45,10 @@ const formSubject = () => {
   const subjectChecked = [];
   for (let index = 0; index < subject.length; index += 1) {
     if (subject[index].checked === true) {
-      subjectChecked.push(subjectText[index].innerText);
+      subjectChecked.push(` ${subjectText[index].innerText}`);
     }
   }
-  return `Matérias: ${subjectChecked.toString()}<br>`;
+  return `<p>Matérias: ${subjectChecked.toString(' ')}</p>`;
 };
 
 const formAssessments = () => {
@@ -57,7 +57,7 @@ const formAssessments = () => {
   let assessmentsChecked = '';
   for (let index = 0; index < assessments.length; index += 1) {
     if (assessments[index].checked === true) {
-      assessmentsChecked = `${assessmentsText[index].innerText}<br>`;
+      assessmentsChecked = `<p>Avaliação: ${assessmentsText[index].innerText}</p>`;
     }
   }
   return assessmentsChecked;
@@ -68,14 +68,14 @@ const profile = () => {
   const formProfile = {
     Nome: `${document.querySelector('#input-name').value} ${
       document.querySelector('#input-lastname').value} `,
-    'E-mail': document.querySelector('#input-email').value,
+    Email: document.querySelector('#input-email').value,
     Casa: casa.options[casa.selectedIndex].text,
   };
   for (let index = 0; index < Object.keys(formProfile).length; index += 1) {
     if (dados === '') {
-      dados = `${Object.keys(formProfile)[index]}: ${Object.values(formProfile)[index]}<br>`;
+      dados = `<p>${Object.keys(formProfile)[index]}: ${Object.values(formProfile)[index]}</p>`;
     } else {
-      dados += `${Object.keys(formProfile)[index]}: ${Object.values(formProfile)[index]}<br>`;
+      dados += `<p>${Object.keys(formProfile)[index]}: ${Object.values(formProfile)[index]}</p>`;
     }
   }
   return dados;
@@ -84,11 +84,7 @@ const profile = () => {
 const forms = document.querySelector('#evaluation-form');
 submitBtn.addEventListener('click', (event) => {
   const textarea = document.querySelector('textarea').value;
-  const newElement = document.createElement('p');
-  newElement.classList = 'dados';
-  newElement.innerHTML = `${
-    profile()} ${formFamily()} ${formSubject()} ${formAssessments()} ${textarea}`;
-  forms.innerHTML = '';
-  forms.appendChild(newElement);
+  forms.innerHTML = `${
+    profile()} ${formFamily()} ${formSubject()} ${formAssessments()} <p>Observações: ${textarea}<p>`;
   event.preventDefault();
 });
