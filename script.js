@@ -5,6 +5,14 @@ botaoEnviar.disabled = true;
 const checboxAgreement = document.querySelector('#agreement');
 const login = document.getElementById('login-btn');
 
+const campoContagem = document.querySelector('#counter');
+campoContagem.innerText = 500;
+let maxCaracteres = 500;
+let contagem = 0;
+
+const textarea = document.querySelector('#textarea');
+
+
 /** FUNÇÕES */
 
 function getLogin() {
@@ -30,3 +38,10 @@ function verificarCheckboxAgreement() {
   }
 }
 checboxAgreement.addEventListener('click', verificarCheckboxAgreement);
+
+function contarCaracteres() {
+  let texto = textarea.value;
+    contagem = maxCaracteres - texto.length;
+  campoContagem.innerText = contagem;
+}
+textarea.addEventListener('keyup', contarCaracteres);
