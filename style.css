@@ -23,7 +23,7 @@ hr {
   color: rgb(254, 178, 54);
   display: flex;
   font-size: 55px;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 
