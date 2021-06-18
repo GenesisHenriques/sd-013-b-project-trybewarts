@@ -140,7 +140,7 @@ main {
   width: 50%;
 }
 
-#house , #input-email , #input-lastname , #input-name {
+#house #input-email #input-lastname #input-name {
   padding: 12px;
   border-radius: 9px;
   margin: 5px;
