@@ -22,47 +22,47 @@
       </form>
     </header>
     <main>
-      <form id="evaluation-form">
+      <form id="evaluation-form" action="index.html" method="GET">    
         <div>
-          <input type="text" id="input-name" placeholder="Nome">
+          <input name="Nome: " type="text" id="input-name" placeholder="Nome">
           <input type="text" id="input-lastname" placeholder="Sobrenome">
         </div>
         <div>
-          <input type="text" id="input-email" placeholder="Email">
-          <select name="" id="house">
+          <input name="Email: " type="text" id="input-email" placeholder="Email">
+          <select name="Casa: " id="house">
             <option value="Gitnória" id="gitnoria-house"></option>
             <option value="Reactpuff" id="reactpuff-house"></option>
             <option value="Corvinode" id="corvinode-house"></option>
-            <option value="Pythenira" id="pytherina-house"></option>        
+            <option value="Pythenira" id="pytherina-house">oi</option>       
           </select>
         </div>
           <label id="label-family" for="">Qual sua família?</label>
-          <input type="radio" name="family" value="Frontend">
-          <input type="radio" name="family" value="Backend">
-          <input type="radio" name="family" value="FullStack">
+          <input class="Família: " type="radio" name="family" value="Frontend">
+          <input class="Família: " type="radio" name="family" value="Backend">
+          <input class="Família: " type="radio" name="family" value="FullStack">
           <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-          <input type="checkbox" value="HoFs" class="subject">
-          <input type="checkbox" value="Jest" class="subject">
-          <input type="checkbox" value="Promises" class="subject">
-          <input type="checkbox" value="React" class="subject">
-          <input type="checkbox" value="SQL" class="subject">
-          <input type="checkbox" value="Python" class="subject">
+          <input type="checkbox" value="HoFs" name="Matérias: " class="subject">
+          <input type="checkbox" value="Jest" name="Matérias: " class="subject">
+          <input type="checkbox" value="Promises" name="Matérias: " class="subject">
+          <input type="checkbox" value="React" name="Matérias: " class="subject">
+          <input type="checkbox" value="SQL" name="Matérias: " class="subject">
+          <input type="checkbox" value="Python" name="Matérias: " class="subject">
         <div>
           <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
-          <input type="radio" value="1" name="rate">
-          <input type="radio" value="2" name="rate">
-          <input type="radio" value="3" name="rate">
-          <input type="radio" value="4" name="rate">
-          <input type="radio" value="5" name="rate">
-          <input type="radio" value="6" name="rate">
-          <input type="radio" value="7" name="rate">
-          <input type="radio" value="8" name="rate">
-          <input type="radio" value="9" name="rate">
-          <input type="radio" value="10" name="rate">
+          <input class="Avaliação: " type="radio" value="1" name="rate">
+          <input class="Avaliação: " type="radio" value="2" name="rate">
+          <input class="Avaliação: " type="radio" value="3" name="rate">
+          <input class="Avaliação: " type="radio" value="4" name="rate">
+          <input class="Avaliação: " type="radio" value="5" name="rate">
+          <input class="Avaliação: " type="radio" value="6" name="rate">
+          <input class="Avaliação: " type="radio" value="7" name="rate">
+          <input class="Avaliação: " type="radio" value="8" name="rate">
+          <input class="Avaliação: " type="radio" value="9" name="rate">
+          <input class="Avaliação: " type="radio" value="10" name="rate">
         </div>
         <label class="textarea" for="textarea">Deixe seu comentário:</label> <div class="insertCount"></div>
         <div class="contentArea">
-            <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+            <textarea name="Observações: " id="textarea" cols="30" rows="10" maxlength="500"></textarea>
             <span id='counter'></span>
         </div>    
         <div>
