@@ -32,4 +32,18 @@ function createRadioButtons() {
 }
 createRadioButtons();
 
-// Falta terminar um dos requisitos do requisito 14
+// Verificar se o check das infos foi selecionado
+
+function verifyCheck() {
+  const checkbox = document.getElementById('agreement');
+  const submit = document.getElementById('submit-btn');
+  checkbox.addEventListener('change', () => {
+    if (checkbox.checked === true) {
+      submit.disabled = false;
+    }
+    if (checkbox.checked !== true) {
+      submit.disabled = true;
+    }
+  });
+}
+verifyCheck();
