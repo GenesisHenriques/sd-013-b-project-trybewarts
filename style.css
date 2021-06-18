@@ -10,11 +10,11 @@ hr {
 }
 
 .container {
-  align-items: center;  
+  align-items: center;
   display: flex;
   flex-flow: column nowrap;
   font-family: Yusei Magic, monospace, sans-serif;
-  margin: 0;  
+  margin: auto;
 }
 
 .header {
@@ -28,7 +28,13 @@ hr {
 }
 
 .header img {
-  height: 150px;
+  height: 100px;
+  margin: 10px 0;
+}
+
+.header h1 {
+  margin: 0 20px;
+  padding-bottom: 10px;
 }
 
 .trybewarts-login {
@@ -49,7 +55,7 @@ hr {
   align-items: center;
   background-color: rgb(231, 233, 235);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-bottom: 10px;
   width: 100%;
 }
@@ -68,14 +74,19 @@ hr {
 .row {
   display: flex;
   justify-content: center;
+  width: 600px;
 }
 
-.row .input {
+.input {
   margin: 10px;
 }
 
 .row .select {
   margin: 10px;
+}
+
+#input-email {
+  margin-left: 30px;
 }
 
 .trybewarts-forms-logo img {
@@ -98,16 +109,37 @@ hr {
 
 .feedback {
   display: flex;
+  align-items: center;
+  width: 600px;
 }
 
-.magic {
-  width: 675px;
-  padding: 10px 0;
-  text-align: center;
+.feedback p {
+  margin-left: 30px;
+}
+
+.feedback label {
+  margin: 0 5px 0 10px;
 }
 
 .hidden {
   display: none;
+}
+
+.textarea-container {
+  margin-left: 30px;
+  width: 600px;
+}
+
+.textarea {
+  margin-top: 10px;
+}
+
+#counter {
+  font-size: 14px;
+  left: 565px;
+  opacity: 0.6;
+  position: relative;
+  top: -25px;
 }
 
 .footer {
