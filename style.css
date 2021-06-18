@@ -24,11 +24,39 @@
   margin: 100px;
 }
 
+form input {
+  width: 35%;
+  height: 35px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 16px;
+}
+
+form button {
+  width: 20%;
+  height: 35px;
+  border-radius: 5px;
+}
+
 header .trybewarts-login {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-wrap: wrap;
+  margin-right: 40px;
+}
+
+.trybewarts-login input {
+  width: 120px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.trybewarts-login button {
+  margin: 5px auto;
+  width: 60px;
+  height: 30px;
 }
 
 .forms-part-1 {
@@ -37,7 +65,8 @@ header .trybewarts-login {
 }
 
 #input-name , #input-lastname , #input-email , .select {
-  flex-basis: 50%;
+  flex-basis: 30%;
+  margin: 30px;
 }
 
 .select {
@@ -46,20 +75,6 @@ header .trybewarts-login {
   justify-content: center;
 }
 
-/* form input {
-  width: 35%;
-  height: 35px;
-  border-radius: 5px;
-  margin: 8px;
-} */
-
-form button {
-  width: 20%;
-  height: 35px;
-  border-radius: 5px;
-}
-
-/* MAIN SECTION */
 main {
   display: flex;
   margin: 0 auto;
@@ -89,19 +104,31 @@ main {
 /* SECTION 2 */
 .forms-part-2 {
   display: flex;
+  height: 250px;
 }
 
 .family {
-  background-color: greenyellow;
-  text-align: start;
-  align-content: flex-start;
-  justify-content: center;
-  width: 40%;
+  background-color: rgb(50, 167, 145);
+  text-align: center;
+  width: 50%;
 }
 
+.family .family-label {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
 
 .family p {
-  margin: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.family p input {
+  position: relative;
+  left: 70px;
 }
 
 .conteudo {
@@ -111,11 +138,22 @@ main {
   width: 60%;
 }
 
+.conteudo .family-label {
+  font-size: 22px;
+  text-align: center;
+}
+
 
 .conteudo p {
-  margin: 0;
   margin-left: 46px;
   align-items: flex-start;
+}
+
+.conteudo .subjectText {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 20px;
 }
 
 
@@ -126,12 +164,26 @@ main {
   align-items: flex-start;
 }
 
+.assessment {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+
+#label-rate {
+  text-align: center;
+  font-size: 22px;
+
+}
+
 .assessment p {
   margin-left: 10px;
 }
 
-.assessment {
-  display: flex;
+.assessment input {
+  display: inline-block;
 }
 
 .coments {
