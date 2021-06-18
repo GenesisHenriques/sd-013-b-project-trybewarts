@@ -153,8 +153,6 @@ Exemplo: `git checkout joaozinho-trybewarts-project`
 - **Não se preocupe em preencher mais nada por enquanto!**
 - Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-013-b-project-trybewarts/pulls) e confira que o seu _Pull Request_ está criado
 
----
-
 ### Durante o desenvolvimento
 
 - Faça `commits` das alterações que você fizer no código regularmente;
