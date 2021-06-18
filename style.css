@@ -27,6 +27,8 @@
 
 main {
   display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
 }
 
 #evaluation-form {
@@ -36,13 +38,23 @@ main {
 }
 
 #trybewarts-forms-logo {
-  height: 500px;  
+  height: 500px;
 }
 
 .container-row1 {
-  display: flex
+  display: flex;
 }
 
 .container-row2 {
   display: flex;
+}
+
+.container-family-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
