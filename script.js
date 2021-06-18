@@ -44,9 +44,41 @@ const inputName = document.getElementById('input-name');
 const inputLastName = document.getElementById('input-lastname');
 const divInput = document.querySelector('.box-container');
 const inputEmail = document.getElementById('input-email');
+const label = document.querySelector('label');
+const select = document.getElementById('house');
+const option = document.querySelectorAll('#option');
+
+function updHouse() {
+  let pHouse = document.createElement('div');
+  for (index = 0; index < option.length; index += 1) {
+    if (option[index].id === 'gitnoria-house') {
+      pHouse.innerText = 'Casa: Gitnória';
+      divInput.appendChild(pHouse);
+      divInput.removeChild(label);
+      divInput.removeChild(select); 
+    } else if (option[index].id === 'reactpuff-house') {
+      pHouse.innerText = 'Casa: Reactpuff';
+      divInput.removeChild(label);
+      divInput.removeChild(select);
+      divInput.appendChild(pHouse);
+    } else if (option[index].id === 'corvinode-house') {
+      pHouse.innerText = 'Casa: Corvinode';
+      divInput.appendChild(pHouse);
+      divInput.removeChild(label);
+      divInput.removeChild(select);
+    } else if (option.id === 'pytherina-house') {
+      pHouse.innerText = 'Casa: Pytherina';
+      divInput.appendChild(pHouse);
+      divInput.removeChild(label);
+      divInput.removeChild(select);
+    } else {
+      pHouse.innerText = 'Casa: Sem casa';
+    }
+  }
+}
 
 function updFormName() {
-  const createP = document.createElement('p');
+  const createP = document.createElement('div');
   createP.innerText = `Nome: ${inputName.value} ${inputLastName.value}`;
   divInput.appendChild(createP);
   divInput.removeChild(inputName);
@@ -54,15 +86,17 @@ function updFormName() {
 }
 
 function updFormEmail() {
-  const pEmail = document.createElement('p');
+  const pEmail = document.createElement('div');
   pEmail.innerText = `Email: ${inputEmail.value}`;
   divInput.appendChild(pEmail);
   divInput.removeChild(inputEmail);
 }
 
 function updtForm() {
+  divInput.style.flexDirection = 'column';
   updFormName();
   updFormEmail();
+  updHouse();
 }
 
 submitBtn.addEventListener('click', stopDefAction, false);
