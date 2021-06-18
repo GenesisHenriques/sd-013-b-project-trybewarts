@@ -30,3 +30,13 @@ function enableButton() {
 }
 
 checkbox.addEventListener('change', enableButton);
+
+// Adiciona counter
+const container = document.getElementById('textarea');
+let counter = 500;
+
+function updateCounter (event) {
+  counter = (500 - container.value.length);
+  document.getElementById('counter').innerHTML = counter;
+}
+container.addEventListener('keyup', updateCounter);
