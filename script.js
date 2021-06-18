@@ -27,25 +27,25 @@ function counterCaracter() {
 
 textArea.addEventListener('input', counterCaracter);
 
-//-----Requisito 21-------
+// -----Requisito 21-------
 function removeAddName() {
   const father = document.getElementsByClassName('personal-info-div')[0];
   const name = document.getElementById('input-name');
   const lastName = document.getElementById('input-lastname');
-   
-  let text = document.createElement('p');
+
+  const text = document.createElement('p');
   text.innerText = `Nome: ${name.value} ${lastName.value}`;
   father.appendChild(text);
-  
+
   father.removeChild(name);
   father.removeChild(lastName);
 }
 
-function removeAddEmail () {
+function removeAddEmail() {
   const father = document.getElementsByClassName('email-and-house-div')[0];
   const email = document.getElementById('input-email');
 
-  let text = document.createElement('p');
+  const text = document.createElement('p');
   text.innerText = `Email: ${email.value}`;
   father.appendChild(text);
 
@@ -57,7 +57,7 @@ function removeAddHouse() {
   const house = document.getElementById('house');
   const labelHouse = document.getElementById('labelHouse');
 
-  let text = document.createElement('p');
+  const text = document.createElement('p');
   text.innerText = `Casa: ${house.value}`;
   father.appendChild(text);
 
@@ -70,53 +70,47 @@ function removeAddFamily() {
   const children = document.querySelectorAll('.family-radio-btn');
   const label = document.getElementById('label-family');
   let family = '';
-  
   if (document.getElementById('familyUm').checked === true) {
     family = document.getElementById('familyUm');
   } else if (document.getElementById('familyDois').checked === true) {
     family = document.getElementById('familyDois');
   } else if (document.getElementById('familyTres').checked === true) {
     family = document.getElementById('familyTres');
-  } else {}
-  
-  let text = document.createElement('p');
+  }
+  const text = document.createElement('p');
   text.innerText = `Família: ${family.value}`;
   father.appendChild(text);
-  
-  for (const child of children) {
-    child.remove();
+  for (let index = children.length - 1; index >= 0; index -= 1) {
+    children[index].remove();
   }
   father.removeChild(label);
-  
 }
 
 function removeAddContent() {
   const subject = document.getElementsByClassName('subject');
   const father = document.getElementsByClassName('content-div')[0];
   let itens = '';
-  
+
   for (let index = 0; index < subject.length; index += 1) {
     if (subject[index].checked === true) {
       itens += `${subject[index].value}, `;
-    } 
+    }
   }
 
-  let item = document.createElement('p');
+  const item = document.createElement('p');
   item.innerText = `Matérias: ${itens}`;
   father.appendChild(item);
 
   father.removeChild(document.getElementById('label-content'));
   father.removeChild(document.getElementsByClassName('checkbox-div')[0]);
-
 }
 
 function removeAddNote() {
   const grades = document.querySelectorAll('.note');
   const noteLabel = document.querySelectorAll('.noteLabel');
   const father = document.getElementsByClassName('rate-div')[0];
-  
-  let item = document.createElement('p');
-  let text = '';
+
+  const item = document.createElement('p');
 
   for (let index = 0; index < grades.length; index += 1) {
     if (grades[index].checked) {
@@ -124,7 +118,7 @@ function removeAddNote() {
       father.appendChild(item);
     }
   }
-  
+
   document.getElementById('label-rate').remove();
   for (let index = grades.length - 1; index >= 0; index -= 1) {
     grades[index].remove();
@@ -136,14 +130,13 @@ function removeAddText() {
   const text = document.getElementById('textarea');
   const father = document.getElementsByClassName('textarea-div')[0];
 
-  let item = document.createElement('p');
+  const item = document.createElement('p');
   item.innerText = `Observações: ${text.value}`;
   father.appendChild(item);
 
   document.getElementsByClassName('textarea')[0].remove();
   document.getElementById('counter').remove();
   text.remove();
-
 }
 
 function validation() {
@@ -156,12 +149,7 @@ function validation() {
   removeAddText();
 }
 
-
-
-
-
-
-
+document.getElementById('submit-btn').addEventListener('click', validation);
 // Fim de Trecho de Código do Genesis
 
 // Inicio de Trecho de código do Alan
