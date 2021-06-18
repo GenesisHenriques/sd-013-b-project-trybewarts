@@ -19,7 +19,7 @@ header h1 {
   width: 80px;
 }
 
-div.container1 {
+.container1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -41,7 +41,7 @@ div.container1 {
   width: 675px;
 }
 
-#login, #password {
+#login , #password {
   border-radius: 5px;
   margin-right: 5px;
   padding: 10px;
@@ -60,23 +60,28 @@ div.container1 {
   flex-flow: column wrap;
 }
 
-form.container3 .form-intput-layout{
+.container3 .form-intput-layout {
   margin-left: 5px;
   padding: 10px;
   width: 300px;
   margin-bottom: 5px;
 }
 
-form.container3 #label-family {
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
+.container3 #label-family {
   width: 150px;
   margin-bottom: 5px;
 }
 
-form.container3 label {
+.container3 label {
   margin-left: 5px;
 }
 
-form.container3 label select {
+.container3 label select {
   margin: 5px auto;
   padding: 10px;
   width: 290px;
@@ -89,9 +94,4 @@ hr {
 
 #main-forms {
   display: flex;
-}
-
-#label-family {
-  display: flex;
-  flex-direction: column;
 }
