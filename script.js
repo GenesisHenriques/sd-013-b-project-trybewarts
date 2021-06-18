@@ -34,7 +34,7 @@ function removeAddName() {
   const lastName = document.getElementById('input-lastname');
    
   let text = document.createElement('p');
-  text.innerText = `Nome: -${name.value}- -${lastName.value}-`;
+  text.innerText = `Nome: ${name.value} ${lastName.value}`;
   father.appendChild(text);
   
   father.removeChild(name);
@@ -46,7 +46,7 @@ function removeAddEmail () {
   const email = document.getElementById('input-email');
 
   let text = document.createElement('p');
-  text.innerText = `Email: -${email.value}-`;
+  text.innerText = `Email: ${email.value}`;
   father.appendChild(text);
 
   father.removeChild(email);
@@ -58,7 +58,7 @@ function removeAddHouse() {
   const labelHouse = document.getElementById('labelHouse');
 
   let text = document.createElement('p');
-  text.innerText = `Casa: -${house.value}-`;
+  text.innerText = `Casa: ${house.value}`;
   father.appendChild(text);
 
   father.removeChild(house);
@@ -80,7 +80,7 @@ function removeAddFamily() {
   } else {}
   
   let text = document.createElement('p');
-  text.innerText = `Família: -${family.value}-`;
+  text.innerText = `Família: ${family.value}`;
   father.appendChild(text);
   
   for (const child of children) {
@@ -97,12 +97,12 @@ function removeAddContent() {
   
   for (let index = 0; index < subject.length; index += 1) {
     if (subject[index].checked === true) {
-      itens += `${subject[index].value} `;
+      itens += `${subject[index].value}, `;
     } 
   }
 
   let item = document.createElement('p');
-  item.innerText = `Matérias: -${itens}-`;
+  item.innerText = `Matérias: ${itens}`;
   father.appendChild(item);
 
   father.removeChild(document.getElementById('label-content'));
@@ -120,7 +120,7 @@ function removeAddNote() {
 
   for (let index = 0; index < grades.length; index += 1) {
     if (grades[index].checked) {
-      item.innerText = `Avaliação: -${grades[index].value}-`;
+      item.innerText = `Avaliação: ${grades[index].value}`;
       father.appendChild(item);
     }
   }
@@ -137,7 +137,7 @@ function removeAddText() {
   const father = document.getElementsByClassName('textarea-div')[0];
 
   let item = document.createElement('p');
-  item.innerText = `Observações: -${text.value}-`;
+  item.innerText = `Observações: ${text.value}`;
   father.appendChild(item);
 
   document.getElementsByClassName('textarea')[0].remove();
