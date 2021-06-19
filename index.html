@@ -12,47 +12,69 @@
     <img src="images/trybewarts-header-logo.svg" alt="logo"class="trybewarts-header-logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form action="" method="GET" class="trybewarts-login">
-      <input type="email" placeholder="Login" id="login">
-      <input type="password" placeholder="Senha" id="senha">
-      <button id="botao">Entrar</button>
+      <input type="email" placeholder="Login" id="login" class="login-header-input">
+      <input type="password" placeholder="Senha" id="senha" class="password-header-input">
+      <button id="botao" class="send-header-button">Entrar</button>
     </form>
   </header>
   <main class="main-content">
-    <form action="" method="GET" id="evaluation-form">
+    <form action="" method="GET" id="evaluation-form" class="evaluation-form">
       <div class="name-container">
-        <input type="text" name="Nome" id="input-name" placeholder="Nome">
-        <input type="text" name="Sobrenome" id="input-lastname" placeholder="Sobrenome">
+        <input type="text" name="Nome" id="input-name" placeholder="Nome" class="input-form">
+        <input type="text" name="Sobrenome" id="input-lastname" placeholder="Sobrenome" class="input-form">
       </div>
       <div class="name-container">
-        <input type="email" name="Email" id="input-email" placeholder="Email">
+        <input type="email" name="Email" id="input-email" placeholder="Email" class="input-form">
+        <div class="house-container">
         <label for="house">Casa:</label>
-        <select name="casa" id="house" autofocus>
+        <select name="casa" id="house" class="house-select-container">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
+        </div>
       </div>
-      <div>
-        <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-        <input type="checkbox" id="label-content" name="" value="HoFs">HoFs
-        <input type="checkbox" id="label-content" name="" value="Jest">Jest
-        <input type="checkbox" id="label-content" name="" value="Promises">Promises
-        <input type="checkbox" id="label-content" name="" value="React">React
-        <input type="checkbox" id="label-content" name="" value="SQL">SQL
-        <input type="checkbox" id="label-content" name="" value="Python">Python
-      </div>
-      <label for="" id="label-family"> Qual sua família? </label>
-      <div class = "radio-container">
+      <div class = "checks-container">
         <div class ="inputs-container">
-          <label for ="frontend"> Front-End:
-            <input type ="radio" name ="family" id = "frontend" value ="Frontend">
+          <label for="" id="label-family"> Qual sua família? </label>
+          <div class="label-family">
+            <label for ="frontend"> Front-End:
+              <input type="radio" name="family" id="frontend" value="Frontend">
+            </label>
+            <label for ="backend"> Back-end:
+              <input type= "radio" name="family" id="backend" value="Backend">
+            </label>
+            <label for = "fullstack"> Full-Stack:
+              <input type="radio" name="family" id="fullstack" value="FullStack">
+            </label>
+          </div>
+        </div>
+        <div class="materia-content">
+          <label id="label-content">
+            Qual conteúdo você está com mais vontade de aprender?
           </label>
-          <label for ="backend"> Back-end:
-            <input type = "radio" name ="family" id = "backend" value = "Backend">
-          </label>
-          <label for = "fullstack"> Full-Stack:
-            <input type ="radio" name ="family" id = "fullstack" value ="FullStack">
+          <div class="three-content">
+            <label for="hofs"> Hofs:
+              <input type="checkbox" id="hofs" name="materia" value="HoFs" class="subject">
+            </label>
+            <label for="jest"> Jest:
+              <input type="checkbox" id="jest" name="materia" value="Jest" class="subject">
+            </label>
+            <label for="promises"> Promises:
+              <input type="checkbox" id="promises" name="materia" value="Promises" class="subject">
+            </label>
+          </div>
+          <div class="three-content">
+            <label for="react"> React:
+              <input type="checkbox" id="react" name="materia" value="React" class="subject">
+            </label>
+            <label for="python"> Python:
+              <input type="checkbox" id="python" name="materia" value="Python" class="subject">
+            </label>
+            <label for="sql"> SQL:
+              <input type="checkbox" id="sql" name="materia" value="SQL" class="subject">
+          </div>
           </label>
         </div>
       </div>
@@ -99,18 +121,24 @@
           10
         </label>
       </div>
-      <label for="comentario" class="textarea">Deixe seu comentário:</label>
-      <span id="counter">500</span>
-      <textarea name="comentario" id="textarea" rows="5" maxlength="500" length="500"></textarea>
-      <div id="informacoes">
-        <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
-        <input type="checkbox" name="" id="agreement">
+      <div class="comment-container">
+        <label for="comentario" class="textarea">Deixe seu comentário:</label>
+        <div class="text-area">
+          <textarea name="comentario" class="comment" id="textarea" rows="5" maxlength="500" length="500"></textarea>
+          <span id="counter" class="counter">Limite de caracteres: 500</span>
+        </div>
       </div>
-      <button type="submit" id="submit-btn" disabled>Enviar</button>
+      <div id="info" class="info">
+        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" name="info" id="agreement" class="checkbox">
+      </div>
+      <button type="submit" id="submit-btn" class="submit-btn" disabled>Enviar</button>
     </form>
-    <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
+    <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo" class="trybewarts-forms-logo">
   </main>
-  <footer>Direitos reservados à Trybewarts©</footer>
+  <footer class="footer">
+    Direitos reservados à Trybewarts©
+  </footer>
 <script src="script.js"></script>
 </body>
 </html>

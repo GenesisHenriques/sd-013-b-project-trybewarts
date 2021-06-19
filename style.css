@@ -10,6 +10,7 @@
   color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .trybewarts-login {
@@ -17,11 +18,34 @@
   justify-content: space-between;
 }
 
-.main-content {
-  display: flex;
+.login-header-input {
+  padding: 5px;
 }
 
-#evaluation-form {
+.password-header-input {
+  padding: 5px;
+  margin: 0 10px;
+}
+
+.send-header-button {
+  padding: 5px;
+  border-style: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.trybewarts-header-logo {
+  max-width: 50px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
@@ -29,26 +53,57 @@
 
 .name-container {
   display: flex;
-  margin: 10px;
-}
-
-#input-name {
-  width: 300px;
-  padding: 5px;
-}
-
-#input-lastname {
-  width: 300px;
-  padding: 5px;
+  align-items: center;
   margin-left: 10px;
+  margin-top: 10px;
 }
 
-#trybewarts-forms-logo {
+.input-form {
+  width: 300px;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.house-container {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.house-select-container {
+  padding: 10px;
+  border-style: none;
+  width: 81.8%;
+  color: gray;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.materia-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.trybewarts-forms-logo {
   height: 500px;
 }
 
-.radio-container {
+.checks-container {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+
+.three-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 300px;
+  padding: 5px;
 }
 
 .inputs-container {
@@ -56,7 +111,67 @@
   flex-direction: column;
 }
 
-#label-content {
+.label-family {
   display: flex;
   flex-direction: column;
+  padding: 5px;
+}
+
+.avaliar {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.comment-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  padding: 5px;
+}
+
+.comment {
+  width: 100%;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.counter {
+  align-self: flex-end;
+  color: rgb(0, 147, 0);
+}
+
+.submit-btn {
+  padding: 5px;
+  margin: 10px;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(20, 25, 27);
+  font-weight: 600;
+  cursor: auto;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox {
+  margin-left: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: rgb(20, 25, 27);
+  align-items: center;
+  padding: 10px;
+  font-weight: 600;
 }
