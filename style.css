@@ -71,3 +71,9 @@ main {
 .container-rate {
   padding: 5px;
 }
+
+.container-textarea {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
