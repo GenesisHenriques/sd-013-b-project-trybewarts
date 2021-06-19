@@ -39,36 +39,56 @@
             </label>
           </div>
           <hr>
-          <div class="trybewarts-login" >
-            <label id="label-family" style="width: 200px;">Qual sua família?<br>
-              <input type="radio" name="family" id="front-end" value="Frontend">
-              <label for="front-end">Família Frontend</label><br>
-              <input type="radio" name="family" id="back-end" value = "Backend">
-              <label for="back-end">Família Backend</label><br>
-              <input type="radio" name="family" id="full-stack" value="FullStack">                        
-              <label for="full-stack">Família FullStack</label>
-            </label>
-            <div id="label-content">
-              <p>Qual conteúdo você está com mais vontade de aprender?</p>
-              <div>
-                <input type="checkbox" name="" value="HoFs">
-                <label for="">HoFs</label>
-                <input type="checkbox" name="" value="Jest">
-                <label for="">Jest</label>
-                <input type="checkbox" name="" value="Promises">
-                <label for="">Promises</label>
-                <input type="checkbox" name="" value="React">
-                <label for="">React</label>
-                <input type="checkbox" name="" value="SQL">
-                <label for="">SQL</label>
-                <input type="checkbox" name="" value="Python">
-                <label for="">Python</label>                
+          <div class="container4">
+            <div>
+              <label id="label-family">Qual sua família?</label>
+              <div class="container5">
+                <label for="front-end">
+                  <input type="radio" name="family" id="front-end" value="Frontend">Frontend
+                </label>
+                <label for="back-end">
+                  <input type="radio" name="family" id="back-end" value="Backend">Backend
+                </label>
+                  <label for="full-stack">
+                    <input type="radio" name="family" id="full-stack" value="FullStack">FullStack
+                  </label>
+              </div>
+            </div>
+            <div id="label-contente">
+              <label id="label-content" style="width: 290px;">Qual conteúdo você está com mais vontade de aprender?</label>
+              <div class="container6">
+                <label for="HoFs">
+                  <input type="checkbox" name="HoFs" value="HoFs" id="HoFs">
+                  HoFs
+                </label>
+                <label for="Jest">
+                  <input type="checkbox" name="Jest" value="Jest" id="Jest">
+                  Jest
+                </label>
+                <label for="Promises">
+                  <input type="checkbox" name="Promises" value="Promises" id="Promises">
+                  Promises
+                </label>
+                <label for="React">
+                  <input type="checkbox" name="React" value="React" id="React">
+                  React
+                </label>
+                <label for="SQL">
+                  <input type="checkbox" name="SQL" value="SQL" id="SQL">
+                  SQL
+                </label>
+                <label for="Python">
+                  <input type="checkbox" name="Python" value="Python" id="Python">
+                  Python
+                </label>
               </div>
             </div>
           </div>
+    
           <hr>
-          <div>
-            <label id="label-rate">Como você avalia a Trybewarts?
+          <div style="display: flex;">
+            <label id="label-rate">Como você avalia a Trybewarts?</label>
+            <div>
               <input type="radio" name="rate" id="rate1" value="1">
               <label for="rate1">1</label>
               <input type="radio" name="rate" id="rate2" value="2">
@@ -89,8 +109,11 @@
               <label for="rate9">9</label>
               <input type="radio" name="rate" id="rate10" value="10">
               <label for="rate10">10</label>
-            </label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="container7">
+            <label class="textarea">Deixe seu comentário:</label>
+            <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
           </div>
         </form>
       </main>

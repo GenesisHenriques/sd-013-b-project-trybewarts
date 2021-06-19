@@ -36,7 +36,7 @@ header h1 {
 
 .container2 {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   align-items: center;
   width: 675px;
 }
@@ -58,6 +58,7 @@ header h1 {
 #evaluation-form {
   display: flex;
   flex-flow: column wrap;
+  width: 675px;
 }
 
 .container3 .form-intput-layout {
@@ -94,6 +95,30 @@ hr {
   display: flex;
 }
 
-.test1 {
-  height: 80px;
+.container4 {
+  display: flex;
+}
+
+.container5 {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 120px;
+}
+
+#label-contente {
+  margin-left: 50px;
+}
+
+#label-contente label {
+  width: 150px;
+}
+
+.container6 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container7 {
+  display: flex;
+  flex-direction: column;
 }
