@@ -1,7 +1,73 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background-color: rgb(239, 239, 239);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+hr {
+  width: 100%;
+}
+
+h1 {
+  font-size: xx-large;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  margin: 0 5px;
+  padding: 15px 5px;
+  border-radius: 8px;
+  font-weight: 900;
+  border: 0;
+}
+
+select {
+  margin: 0 5px;
+  padding: 15px 5px;
+  border-radius: 8px;
+  font-weight: 900;
+  border: 0;
+  background-color: white;
+}
+
+textarea {
+  width: 100%;
+  height: 90px;
+  resize: none;
+}
+
+button {
+  background-color: rgb(78, 44, 131);
+  color: azure;
+  padding: 10px 40px;
+  border-radius: 8px;
+  font-weight: 900;
+  border: 0;
+}
+
+button:disabled {
+  background-color: rgb(255, 221, 87);
+  color: rgb(42, 127, 255);
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
+  height: 6rem;
+  color: white;
+  font-size: large;
+  padding: 0 10rem;
 }
 
 .header h1 {
@@ -14,22 +80,31 @@
   align-self: center;
 }
 
-main {
-  display: flex;
-}
-
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  line-height: 40px;
 }
 
 #trybewarts-forms-logo {
-  height: 500px;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  margin-top: 0;
+}
+
+#label-rate {
+  margin-right: 16px;
+}
+
+.rate input {
+  margin: 0 1px;
 }
 
 #top-form input {
-  width: 45%;
+  width: 46%;
+  margin-bottom: 1em;
 }
 
 #house {
@@ -38,6 +113,8 @@ main {
 
 #middle-form {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: stretch;
 }
 
 #left-middle {
@@ -46,4 +123,22 @@ main {
 
 #right-middle {
   width: 60%;
+}
+
+#bottom-form label:nth-child( n + 3 ) {
+  font-size: 16px;
+  padding: 0;
+}
+
+.footer {
+  background-color: rgb(60, 64, 74);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: large;
+  font-weight: 900;
+}
+
+#submit-btn {
+  width: 100%;
 }
