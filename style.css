@@ -9,7 +9,7 @@ body {
   padding: 10px 50px;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 3%;
 }
 
 .trybewarts-header-logo {
@@ -40,6 +40,7 @@ button {
 
 .main-conteiner {
   display: flex;
+  margin-left: 9%;
 }
 
 .lines {

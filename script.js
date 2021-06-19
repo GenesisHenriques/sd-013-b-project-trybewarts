@@ -16,8 +16,6 @@ loginButton.addEventListener('click', authenticateLogin);
 function checkUserAgreement() {
   if (agreementBox.checked === true) {
     submitBtn.disabled = false;
-  } else {
-    submitBtn.disabled = true;
   }
 }
-submitBtn.addEventListener('click', checkUserAgreement);
+agreementBox.addEventListener('click', checkUserAgreement);
