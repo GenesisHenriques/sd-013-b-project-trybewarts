@@ -7,10 +7,10 @@ function assignLoginAlert() {
     alert('Olá, Tryber!');
   }
 }
-function sendButton() {
-  const button = document.getElementById('button');
-  button.addEventListener('click', assignLoginAlert);
+function sendButtonLogin() {
+  const buttonLogin = document.getElementById('button');
+  buttonLogin.addEventListener('click', assignLoginAlert);
 }
 window.onload = () => {
-  sendButton();
+  sendButtonLogin();
 };
