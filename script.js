@@ -14,3 +14,17 @@ function sendButtonLogin() {
 window.onload = () => {
   sendButtonLogin();
 };
+
+function handleButtonState() {
+  const agreementCheckbox = document.getElementById('agreement');
+  const submitButton = document.getElementById('submit-btn');
+  submitButton.disabled = true;
+  agreementCheckbox.addEventListener('click', (event) => {
+    if (event.target.checked) {
+      submitButton.disabled = false;
+    } else {
+      submitButton.disabled = true;
+    }
+  });
+}
+handleButtonState();
