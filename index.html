@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Project TrybeWarts</title>
 </head>
+
 <body>
     <header class="header">
-        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
+        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" width="150px">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <form class="trybewarts-login">
             <input id="input-login" placeholder="Login">
@@ -20,12 +23,12 @@
 
     <main>
         <form id="evaluation-form"> 
-            <div class="input-row">
+            <div class="input-row  mb-3">
                 <input id="input-name" placeholder="Nome">
                 <input id="input-lastname" placeholder="Sobrenome">
             </div> 
             
-            <div class="input-row">
+            <div class="input-row mb-3">
                 <input id="input-email" placeholder="Email"> 
                 <select id="house">
                 <option id="gitnoria-house" value="Gitnória">Gitnória</option>
@@ -35,23 +38,23 @@
                 </select>
             </div>
 
-            <div id="label-container">
+            <div id="label-container" class="form-check mb-3">
                 <label id="label-family" for="label-family">Qual sua família?</label>
                   <div>
-                    <input type="radio" id="Frontend" name="family" value="Frontend">
+                    <input class="form-check-input" type="radio" id="Frontend" name="family" value="Frontend">
                     <label for="Frontend">Família Frontend</label>
                   </div>
                   <div>
-                    <input type="radio" id="Backend" name="family" value="Backend">
+                    <input class="form-check-input" type="radio" id="Backend" name="family" value="Backend">
                     <label for="Backend">Família Backend</label>
                   </div>
                   <div>
-                    <input type="radio" id="FullStack" name="family" value="FullStack">
+                    <input class="form-check-input" type="radio" id="FullStack" name="family" value="FullStack">
                     <label for="FullStack">Família FullStack</label> 
                   </div>          
             </div>  
             
-            <div id="label-container-2">
+            <div id="label-container-2" class="form-check">
                 <label id="label-content" for="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
                 <div>
                     <input type="checkbox" class="subject" value="HoFs">
@@ -73,7 +76,7 @@
                 <!-- R-14 criei os radios buttons e labels pelo js 
                 por conter numero muito grande -->
             </div>
-            
+
             <label class="textarea" for="text-coment">Deixe seu comentário:</label>
             <textarea id="text-coment" maxlength="500"></textarea>
         </form>
@@ -84,5 +87,7 @@
     <footer>Direitos reservados à Trybewarts©</footer>
 
     <script src="script.js"></script> 
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

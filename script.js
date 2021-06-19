@@ -22,6 +22,7 @@ function criarRadioButtonsRate() {
     radioButtonRate.type = 'radio';
     radioButtonRate.value = index;
     radioButtonRate.id = index;
+    radioButtonRate.className = 'form-check-input radios-rate';
     radioButtonRate.name = 'rate';
     const labelDoRadio = document.createElement('label');
     labelDoRadio.for = index;
