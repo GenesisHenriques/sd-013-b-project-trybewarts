@@ -13,6 +13,7 @@
 
 main {
   display: flex;
+  justify-content: space-around;
 }
 
 #evaluation-form {
@@ -20,8 +21,8 @@ main {
   flex-direction: column;
   width: 675px;
   justify-content: space-around;
-  margin: 10px 10px;
-  padding: 20px 20px;
+  margin: 10px;
+  padding: 20px;
   border-radius: 10%;
   background-color: rgba(83, 170, 154, 0.301);
 }
@@ -45,11 +46,6 @@ footer {
   text-align: center;
 }
 
-main {
-  display: flex;
-  justify-content: space-around;
-}
-
 .radios-rate {
-  margin: 0px 3px;
+  margin: 1px 3px;
 }
