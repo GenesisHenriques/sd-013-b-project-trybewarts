@@ -1,5 +1,3 @@
-const button = document.querySelector('.button-login');
-
 function Logar() {
   const email = document.querySelector('.input-email').value;
   const senha = document.querySelector('.input-senha').value;
@@ -10,4 +8,19 @@ function Logar() {
   }
 }
 
-button.addEventListener('click', Logar);
+const buttonLogin = document.querySelector('.button-login');
+buttonLogin.addEventListener('click', Logar);
+
+const checkBox = document.querySelector('#agreement');
+const buttonEnviar = document.querySelector('#submit-btn');
+buttonEnviar.disabled = true;
+
+function Enviar() {
+  if (checkBox.checked === true) {
+    buttonEnviar.disabled = false;
+  } else {
+    buttonEnviar.disabled = true;
+  }
+}
+
+checkBox.addEventListener('click', Enviar);
