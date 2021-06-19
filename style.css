@@ -21,7 +21,7 @@ header h1 {
 
 .container1 {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: flex-start;
 }
@@ -67,10 +67,8 @@ header h1 {
   margin-bottom: 5px;
 }
 
-#label-family {
-  display: flex;
-  flex-direction: column;
-}
+/* #label-family {
+} */
 
 .container3 #label-family {
   width: 150px;
@@ -94,4 +92,8 @@ hr {
 
 #main-forms {
   display: flex;
+}
+
+.test1 {
+  height: 80px;
 }
