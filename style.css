@@ -43,3 +43,9 @@
 .avaliar-form {
   display: flex;
 }
+
+.comentario-form {
+  display: flex;
+  flex-direction: column;
+}
+
