@@ -30,4 +30,4 @@ function criarRadioButtonsRate() {
     containerRate.appendChild(labelDoRadio);
   }
 }
-criarRadioButtonsRate();
+criarRadioButtonsRate(); 
