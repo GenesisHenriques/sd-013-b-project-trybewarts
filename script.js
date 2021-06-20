@@ -11,3 +11,16 @@ function alerta() {
   });
 }
 alerta();
+
+const buttonCheck = () => {
+  const button = document.querySelector('#submit-btn');
+  const check = document.querySelector('#agreement');
+  check.addEventListener('click', () => {
+    if (check.checked !== true) {
+      button.disabled = true;
+    } else {
+      button.disabled = false;
+    }
+  });
+ }
+buttonCheck();
