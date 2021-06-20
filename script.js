@@ -1,3 +1,5 @@
+// Selectors Decalaration
+
 const mainForm = document.querySelector('#evaluation-form');
 const firstName = document.querySelector('#input-name');
 const lastName = document.querySelector('#input-lastname');
