@@ -1,0 +1,163 @@
+body {
+  background-color: rgb(46, 124, 109);
+  color: rgb(0, 0, 0);
+  font-family: Mountains of Christmas, serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* ______________________HEADER______________________ */
+header {
+  align-items: center;
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.344);
+  height: 70px;
+  justify-content: space-around;
+}
+
+header img {
+  display: flex;
+  height: 80%;
+}
+
+header h1{
+  color: white;
+}
+
+header form {
+  align-items: center;
+  display: flex;
+  height: 30px;
+  width: 30%;
+}
+
+header input {
+  margin-right: 10px;
+}
+
+/* ______________________MAIN______________________ */
+main {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 80px 0 150px;
+  width: 100%;
+}
+
+main form {
+  background-color: rgb(255, 244, 227);
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px inset rgb(201, 176, 123), 0px 20px 30px rgba(0, 0, 0, 0.275);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 675px;
+}
+
+main img {
+  height: 500px;
+}
+
+h2 {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+input[type=text], input[type=password], select, button {
+  border: none;
+  border-radius: 5px;
+  font-family: Mountains of Christmas, serif;
+  font-size: 18px;
+  height: 30px;
+}
+
+header button {
+  height: 32.3px;
+  width: fit-content;
+}
+
+main form input[type=text], select {
+  background-color: rgb(240, 223, 185);
+  box-shadow: 0px 0px 10px inset rgb(201, 176, 123);
+  margin: 10px 5px;
+  width: 40%;
+}
+
+main form input[type=radius] {
+  margin: 50px 0;
+  background-color: hotpink;
+}
+
+#middle-section {
+  border-bottom: 2px solid rgb(232, 203, 141);
+  border-top: 1px solid rgb(232, 203, 141);
+  flex-direction: row;
+  margin: 15px 0;
+  padding: 20px 0;
+}
+
+#middle-section div {
+  display: flex;
+}
+
+label {
+  margin: 5px 0;
+}
+
+label input{
+  margin: 15px 0;
+}
+
+input[type=checkbox], input[type=radio]{
+  margin-left: 15px;
+}
+
+textarea {
+  background-color: rgb(240, 223, 185);
+  border: none;
+  box-shadow: 0px 0px 50px inset rgb(201, 176, 123);
+  margin-top: 10px;
+  width: 90%;
+}
+
+strong {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+main button {
+  align-self: center;
+  background-color: transparent;
+  border: 1px solid rgb(232, 203, 141);
+  border-radius: 100%;
+  font-size: 22px;
+  height: 100px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100px;
+  box-shadow: 0px 0px 20px inset rgb(232, 203, 141);
+  transition: 0.3s;
+}
+
+main button:hover {
+  color: white;
+  border: 3px solid rgb(255, 244, 227);
+  box-shadow: 0px 0px 50px inset rgb(255, 0, 0), 0px 0px 50px rgb(255, 0, 0);
+  font-size: 25px;
+}
+
+main button:focus {
+  outline: none;
+  box-shadow: 0px 0px 50px inset rgb(255, 0, 0), 0px 0px 70px rgb(255, 0, 0);
+}
+
+footer {
+  background-color: rgb(38, 102, 89);
+  box-shadow: 0px 30px 40px inset rgba(0, 0, 0, 0.172);
+  color: rgb(203, 203, 203);
+  text-align: center;
+  font-family: serif;
+  font-size: 16px;
+  padding: 80px;
+}
