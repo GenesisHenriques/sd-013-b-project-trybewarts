@@ -75,7 +75,10 @@ main {
   width: 80%;
   align-items: center;
   justify-content: space-between;
+  height: 120px;
 }
+
+
 
 #label-family {
   display: flex;
@@ -130,7 +133,7 @@ main {
   border-radius: 5px;
 }
 
-#text-comment {
+#textarea {
   width: 100%;
   margin-top: 10px;
 }
@@ -140,11 +143,27 @@ main {
   width: 50%;
 }
 
-#house , #input-email , #input-lastname , #input-name {
-  padding: 12px;
+#input-email , #input-lastname , #input-name {
+  padding: 3%;
   border-radius: 9px;
-  margin: 5px;
   width: 35%;
+}
+
+.input-casas {
+  display: flex;
+  width: 221.38px;
+}
+
+.input-casas label {
+  width: 30%;
+  align-self: center;
+  text-align: start;
+}
+
+#house {
+  border-radius: 9px;
+  width: 70%;
+  padding: 8%;
 }
 
 .div2Child1 {

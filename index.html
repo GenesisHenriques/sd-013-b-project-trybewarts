@@ -26,13 +26,15 @@
         <input id="input-name" placeholder="Nome">
         <input id="input-lastname" placeholder="Sobrenome">
         <input id="input-email" placeholder="Email">
-        <label for="house">Casa:</label>
-        <select id="house">
-          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-          <option value="Corvinode" id="corvinode-house">Corvinode</option>
-          <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
+        <div class="input-casas">
+          <label for="house">Casa:</label>
+          <select id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </div>
       </div>
       <hr>
       <div class="div2Forms">
@@ -133,9 +135,10 @@
       
       <div class="div4Forms">
         <div class="textarea">Deixe seu comentário:</div>
-        <textarea name="comment" id="text-comment" cols="20" rows="5" maxlength="500"></textarea>
-        <label for="text-comment"></label>
+        <textarea name="comment" id="textarea" cols="20" rows="5" maxlength="500"></textarea>
+        <label for="textarea"></label>
       </div>
+      <h5 id="counter">500</h5>
 
 
       <div class="div5Forms">
