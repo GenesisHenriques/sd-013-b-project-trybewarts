@@ -1,3 +1,8 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -18,38 +23,94 @@
 
 .trybewarts-login input {
   height: 30px;
+  border-radius: 3px;
 }
 
-main {
+#form-container {
   display: flex;
+  justify-content: center;
 }
 
-form {
-  width: 675px;
-}
-
-#evaluation-form {
+#form-container #evaluation-form {
   display: flex;
   flex-direction: column;
+  width: 500px;
+  font-weight: 500;
+  margin-top: 35px;
 }
 
-#trybewarts-forms-logo {
-  height: 500px;
+#main-info {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#main-info input {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 45%;
+  height: 25px
+}
+
+#main-info select {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 80px;
+  height: 25px;
+  font-size:0.9em;
+}
+
+#main-info #fullName  {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#main-info #infos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#second-info {
+  display: flex;
+  flex-direction: row;
 }
 
 
-#family-content {
+#second-info #family {
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: space-around;
+  justify-content: center;
+  ;
+}
+
+#second-info #family #family-options {
+    margin-bottom: 10px;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: center;
+}
+
+#learn-interessing {
+  margin-left: 80px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
-#content-content {
+#learn-interessing #learn-options {
+  max-height: 80px;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  align-items: flex-start ;
 }
 
-#mainDiv {
-  display: flex;
+#rate {
+  display: column;
+  justify-content: flex-start;
 }
 
 #coments-container {
@@ -69,6 +130,14 @@ form {
 
 #submit-btn {
   width: 60px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#trybewarts-forms-logo:hover {
+  opacity: 0.9;
 }
 
 footer {
