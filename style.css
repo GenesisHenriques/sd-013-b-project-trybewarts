@@ -1,17 +1,30 @@
+/* all */
 * {
-    margin: 0;
+  margin: 0;
 }
 
-header, form {
-    background-color: rgb(50, 167, 145);
-    display: flex;
-    justify-content: space-between;
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-main, #evaluation-form {
-    display: flex;
+.trybewarts-header-logo {
+  height: 100px;
+}
+
+header , form {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* main */
+main , #evaluation-form {
+  display: flex;
 }
 
 #evaluation-form {
-    width: 675px;
+  width: 675px;
 }
