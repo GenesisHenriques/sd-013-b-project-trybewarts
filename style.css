@@ -37,8 +37,18 @@ main , #evaluation-form {
   height: 500px;
 }
 
+/* Requisito 12 */
 #choose-family {
   display: flex;
   flex-direction: column;
 }
 
+/* Requisito 14 */
+#rating {
+  display: flex;
+}
+
+#family-and-rating {
+  display: flex;
+  flex-direction: column;
+}
