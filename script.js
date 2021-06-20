@@ -21,12 +21,10 @@ checkbox.onclick = function canSendForm() {
   sendButton.toggleAttribute('disabled');
 };
 
-
 // Textarea words count
-
 const textArea = document.getElementById('textarea');
 
-textArea.onkeyup = function countLetters () {
-  let counter = document.getElementById('counter');
+textArea.onkeyup = function countLetters() {
+  const counter = document.getElementById('counter');
   counter.innerText = 500 - textArea.value.length;
-}
+};
