@@ -54,6 +54,7 @@ main {
   display: flex;
   justify-content: center;
   background-color: grey;
+  flex-wrap: wrap;
 }
 
 #evaluation-form {
@@ -68,7 +69,7 @@ main {
   height: 500px;
 }
 
-.div1Forms {
+#div1Forms {
   display: flex;
   margin-top: 30px;
   flex-wrap: wrap;
@@ -86,7 +87,7 @@ main {
   font-size: 20px;
 }
 
-.div2Forms {
+#div2Forms {
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -94,14 +95,14 @@ main {
   height: 120px;
 }
 
-.div3Forms {
+#div3Forms {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   width: 80%;
 }
 
-.div4Forms {
+#div4Forms {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -110,7 +111,7 @@ main {
   width: 80%;
 }
 
-.div5Forms {
+#div5Forms {
   display: flex;
   justify-content: flex-start;
   margin-top: 30px;
