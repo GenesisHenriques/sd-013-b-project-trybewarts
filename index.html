@@ -16,8 +16,8 @@
 
     <h1 id="trybewarts-header-title">Trybewarts</h1>
 
-    <form class="trybewarts-login" action=""> 
-            
+    <form class="trybewarts-login" action="">
+
       <div>
         <div id="dados">
           <input type="text" placeholder="Login" id="login">
@@ -25,26 +25,46 @@
           <button id="button" type="submit">Entrar</button>
         </div>
       </div>
-            
+
     </form>
-                           
+
   </header>
 
   <main>
-    
+
     <form action="" id="evaluation-form">
       <input id="input-name" type="text" placeholder="Nome">
       <input id="input-lastname" type="text" placeholder="Sobrenome">
-      <input id="input-email" type="text" placeholder="Email">  
+      <input id="input-email" type="text" placeholder="Email">
+
+
+      <div id="box-family">
+          <label id="label-family" for="">Qual sua família?</label>
+
+        <div id="choose-family">
+          <label for="frontend"> Frontend
+          <input type="radio" id="frontend" name="family" value="Frontend">
+          </label>
+
+          <label for="backend"> Backend
+          <input type="radio" id="backend" name="family" value="Backend">
+          </label>
+
+          <label for="fullstack"> FullStack
+          <input type="radio" id="fullstack" name="family" value="FullStack">
+          </label>
+        </div>
+      </div>
+
     </form>
-        
+
     <section>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da Trybewarts Colorido">
     </section>
 
-  </main> 
+  </main>
 
-  
+
 
   <script src="script.js"></script>
 </body>
