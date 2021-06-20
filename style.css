@@ -14,13 +14,16 @@
   height: 100px;
 }
 
-header , form {
+.header , form {
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-between;
 }
 
-/* main */
+main {
+  display: flex;
+}
+
 main , #evaluation-form {
   display: flex;
 }
@@ -28,3 +31,9 @@ main , #evaluation-form {
 #evaluation-form {
   width: 675px;
 }
+
+/* Logo Colorida */
+#trybewarts-forms-logo {
+  height: 500px;
+} 
+
