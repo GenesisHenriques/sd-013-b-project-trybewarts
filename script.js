@@ -99,3 +99,15 @@ textArea.addEventListener('keydown', (e) => {
     counter.innerText = parseInt(counter.innerText, 10) + 1;
   }
 });
+
+/*Quando o "link" icon é clicado o menu de login aparece após a div header. */
+document.querySelector('.icon').addEventListener('click', () => {
+  const menu = document.querySelector('.trybewarts-login');
+  const save = document.querySelector('.responsive-menu');
+  if (menu.style.display === 'flex') {
+    menu.style.display = 'none';
+  } else {
+    menu.style.display = 'flex';
+    save.appendChild(menu);
+  }
+});

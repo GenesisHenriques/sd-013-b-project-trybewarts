@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trybe warts</title>
+
+  <!-- Icone do 'menu hambúrguer' -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,12 +17,24 @@
     <img src="images/trybewarts-header-logo.svg" alt="Logo" class="trybewarts-header-logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
 
-    <form action="" class="trybewarts-login">
-      <input type="text" placeholder="Login" id="login">
-      <input type="password" placeholder="Senha" id="password">
-      <button id="btn-login">Logar</button>
-    </form>
+    <div class="login-container">
+      <form action="" class="trybewarts-login">
+        <input type="text" placeholder="Login" id="login">
+        <input type="password" placeholder="Senha" id="password">
+        <button id="btn-login">Logar</button>
+      </form>
+
+      <!-- 'menu hambúrguer' -->
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
+      <!-- Aprendi como cria o 'menu hambúrguer', neste link:
+      https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+    </div>
+    
   </header>
+  
+  <nav class="responsive-menu"></nav>
 
   <main id="main-content">
 
