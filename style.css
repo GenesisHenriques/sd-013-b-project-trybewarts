@@ -55,3 +55,8 @@ main {
   background-color: rgb(50, 167, 145);
   width: 675px;
 }
+
+#contents {
+    display: flex;
+    flex-direction: column;
+}
