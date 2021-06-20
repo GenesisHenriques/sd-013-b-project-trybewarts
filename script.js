@@ -11,9 +11,9 @@ function login() {
   const password = document.getElementsByName('password')[0].value;
 
   if (user !== userDefault || password !== passwordDefault) {
-      alert('Login ou senha inválidos.');
+    alert('Login ou senha inválidos.');
   } else {
-      alert('Olá, Tryber!');
+    alert('Olá, Tryber!');
   }
 }
 
@@ -29,4 +29,3 @@ function count() {
 }
 
 textarea.addEventListener('input', count);
-

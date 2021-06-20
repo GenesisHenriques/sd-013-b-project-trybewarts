@@ -140,17 +140,17 @@ label {
   width: 11px;
 }
 
+.checkbox {
+  border-radius: 5px;
+  height: 14px;
+  width: 14px;
+}
+
 .radio:checked , .checkbox:checked {
   background-color: rgba(255, 153, 0, 0.39);
   box-shadow: 0 0 15px inset red, 0 -5px 10px  red;
   height: 1.2em;
   width: 1.2em;
-}
-
-.checkbox {
-  border-radius: 5px;
-  height: 14px;
-  width: 14px;
 }
 
 #agreement {
