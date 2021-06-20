@@ -122,3 +122,10 @@ hr {
   display: flex;
   flex-direction: column;
 }
+
+footer {
+  background-color: rgba(82, 82, 82, 0.884);
+  padding: 12px;
+  color: white;
+  text-align: center;
+}
