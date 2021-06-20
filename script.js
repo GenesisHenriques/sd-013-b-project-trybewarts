@@ -18,3 +18,9 @@ document.getElementById('agreement').addEventListener('click', () => {
     check.value = 'false';
   }
 });
+
+document.getElementById('textarea').addEventListener('input', () => {
+  const counter = document.getElementById('counter');
+  const textArea = document.getElementById('textarea').value.length;
+  counter.textContent = 500 - textArea;
+});
