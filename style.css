@@ -93,6 +93,6 @@ hr {
   display: flex;
 }
 
-.container3 #label-family {
+#label-family {
   flex-direction: column;
 }
