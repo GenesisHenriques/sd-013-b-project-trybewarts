@@ -1,3 +1,4 @@
+// a
 const buttonLogin = document.getElementById('btnLogin');
 
 //  Confirms if the login and password is confirmed;
