@@ -31,7 +31,7 @@ function ativaBtn() {
   if (condição.checked) {
     button.removeAttribute('disabled');
   }
-};
+}
 
 function addEvento() {
   condição.addEventListener('click', ativaBtn);
