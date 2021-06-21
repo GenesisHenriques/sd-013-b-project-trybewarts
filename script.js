@@ -78,14 +78,14 @@ function getSubject(input) {
       itens.push(input[index].value);
     }
   }
-  getSubjectAux(itens)
+  getSubjectAux(itens);
 
   return text;
 }
 
 function getRate(input) {
   for (let index = 0; index < input.length; index += 1) {
-    if(input[index].checked){
+    if (input[index].checked) {
       text = `Avaliação: ${input[index].value}`;
       return text;
     }
