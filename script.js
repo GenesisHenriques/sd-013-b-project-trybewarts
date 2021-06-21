@@ -104,7 +104,7 @@ const inputLastname = document.getElementById('input-lastname');
 const inputEmail = document.getElementById('input-email');
 const inputHouse = document.getElementById('house');
 const inputFamily = document.getElementsByName('family');
-const inputSubject = document.getElementsByName('subject');
+const inputSubject = document.getElementsByClassName('subject');
 const inputRate = document.getElementsByName('rate');
 const inputComments = document.getElementById('textarea');
 
