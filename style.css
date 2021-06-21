@@ -23,6 +23,7 @@
   width: 675px;
   height: 500px;
   flex-direction: column;
+  order: 1;
 }
 
 #input-name {
@@ -37,6 +38,7 @@
 
 #trybewarts-forms-logo {
   height: 500px;
+  order: 2;
 }
 
 .trybewarts-login {

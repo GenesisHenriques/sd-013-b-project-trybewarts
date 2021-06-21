@@ -13,6 +13,24 @@ let contagem = 0;
 const textarea = document.querySelector('#textarea');
 const respostas = document.querySelector('#respostas');
 
+let radiosFamilia = document.getElementsByName('family');
+let familiaEscolhida = '';
+let conteudo = document.querySelectorAll('.subject');
+let conteudoEscolhido = [];
+let radiosAvaliacao = document.getElementsByName('rate');
+let notaAvaliacao = '';
+let main = document.querySelector('.main');
+let formulario1 = document.querySelector('#evaluation-form');
+let novoFormulario = document.createElement('form');
+
+let item1 = document.createElement('p');
+let item2 = document.createElement('p');
+let item4 = document.createElement('p');
+let item5 = document.createElement('p');
+let item6 = document.createElement('p');
+let item7 = document.createElement('p');
+let item8 = document.createElement('p');
+
 /** FUNÇÕES */
 
 function getLogin() {
@@ -45,17 +63,13 @@ function contarCaracteres() {
 }
 textarea.addEventListener('keyup', contarCaracteres);
 
-function salvarRespostas() {
-  const nome = document.querySelector('#input-name').value;
-  const sobrenome = document.querySelector('#input-lastname').value;
-  const email = document.querySelector('#input-email').value;
-  const casa = document.querySelector('#house').value;
-  let radiosFamilia = document.getElementsByName('family');
-  let familiaEscolhida = '';
-  let conteudo = document.querySelectorAll('.subject');
-  let conteudoEscolhido = [];
-  let radiosAvaliacao = document.getElementsByName('rate');
-  let notaAvaliacao = '';
+function salvarRespostas(event) {
+  /* cancela o evento, sem parar a sua execução, ou seja, faz com a página não seja recarregada, porem implementa o resto da função */
+  event.preventDefault();
+  let nome = document.querySelector('#input-name').value;
+  let sobrenome = document.querySelector('#input-lastname').value;
+  let email = document.querySelector('#input-email').value;
+  let casa = document.querySelector('#house').value;
   comentario = textarea.value;
 
   for (let i = 0; i < radiosFamilia.length; i += 1) {
@@ -66,7 +80,7 @@ function salvarRespostas() {
 
   for (let i = 0; i < conteudo.length; i += 1) {
     if (conteudo[i].checked) {
-      conteudoEscolhido.push(conteudo[i].value);
+      conteudoEscolhido.push(' ' + conteudo[i].value);
     }
   }
 
@@ -75,59 +89,33 @@ function salvarRespostas() {
       notaAvaliacao = radiosAvaliacao[i].value;
     }
   }
+  
+  formulario1.remove();
+  novoFormulario.id = 'evaluation-form';
+  main.append(novoFormulario);
 
-  localStorage.setItem('nome', nome);
-  localStorage.setItem('sobrenome', sobrenome);
-  localStorage.setItem('email', email);
-  localStorage.setItem('casa', casa);
-  localStorage.setItem('familia', familiaEscolhida);
-  localStorage.setItem('conteudo', conteudoEscolhido);
-  localStorage.setItem('avaliacao', notaAvaliacao);
-  localStorage.setItem('observacao', comentario);
+  item1.innerText = `Nome: ${nome} ${sobrenome}`;
+  novoFormulario.appendChild(item1);
 
+  item2.innerText = `Email: ${email}`;
+  novoFormulario.appendChild(item2);
+
+  item4.innerText = `Casa: ${casa}`;
+  novoFormulario.appendChild(item4);
+
+  item5.innerText = `Família: ${familiaEscolhida}`;
+  novoFormulario.appendChild(item5);
+
+  item6.innerText = `Matérias: ${conteudoEscolhido}`;
+  novoFormulario.appendChild(item6);
+
+  item7.innerText = `Avaliação: ${notaAvaliacao}`;
+  novoFormulario.appendChild(item7);
+
+  item8.innerText = `Observações: ${comentario}`;
+  novoFormulario.appendChild(item8);
 }
 botaoEnviar.addEventListener('click', salvarRespostas);
 
-window.onload = function () {
-
-  if (localStorage.length != 0) {
-    let formulario1 = document.querySelector('#evaluation-form');
-    formulario1.remove();
-
-    let main = document.querySelector('.main');
-    let novoFormulario = document.createElement('form');
-
-    novoFormulario.id = 'evaluation-form';
-    main.append(novoFormulario);
-
-    let item1 = document.createElement('p');
-    let item2 = document.createElement('p');
-    let item4 = document.createElement('p');
-    let item5 = document.createElement('p');
-    let item6 = document.createElement('p');
-    let item7 = document.createElement('p');
-    let item8 = document.createElement('p');
-
-    item1.innerText = `Nome: ${localStorage.getItem('nome')} ${localStorage.getItem('sobrenome')}`;
-    novoFormulario.append(item1);
-
-    item2.innerText = `Email: ${localStorage.getItem('email')}`;
-    novoFormulario.append(item2);
-
-    item4.innerText = `Casa: ${localStorage.getItem('casa')}`;
-    novoFormulario.append(item4);
-
-    item5.innerText = `Família: ${localStorage.getItem('familia')}`;
-    novoFormulario.append(item5);
-
-    item6.innerText = `Matérias: ${localStorage.getItem('conteudo')}`;
-    novoFormulario.append(item6);
-
-    item7.innerText = `Avaliação: ${localStorage.getItem('avaliacao')}`;
-    novoFormulario.append(item7);
-
-    item8.innerText = `Observações: ${localStorage.getItem('observacao')}`;
-    novoFormulario.append(item8);
-
-  }
-}
+/* Opção salvando tudo no localStorage presente no gitHub, porem não passava no requisito, pois os teste exige que as informações sejam adicionadas
+no momento do clique, ou seja, junto com o evento */
