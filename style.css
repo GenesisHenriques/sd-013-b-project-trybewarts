@@ -204,6 +204,15 @@ main {
   margin: 10px;
 }
 
+#caixa-texto label {
+  margin: 10px;
+}
+
+#contador {
+  margin: 10px;
+  font-size: 20px;
+}
+
 #textarea {
   resize: none;
   height: 75px;
@@ -227,6 +236,13 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#submit-btn {
+  width: 30%;
+  background-color: rgb(43, 134, 43);
+  border-radius: 5px;
+  color: white;
 }
 
 footer {
