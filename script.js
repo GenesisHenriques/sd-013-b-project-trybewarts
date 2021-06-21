@@ -32,10 +32,12 @@ criaCasas('Pytherina', 'pytherina-house');
 //     event.preventDefault(button);
 // }
 // };
+
 // function addEvento() {
 //   condição.addEventListener('checked', ativaBtn);
 // }
 // addEvento();
+
 // CONTADOR
 const myTextArea = document.getElementById('textarea');
 const charsTest = document.getElementById('counter');
