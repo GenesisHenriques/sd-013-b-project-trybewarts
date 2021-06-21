@@ -25,12 +25,7 @@ function countChar() {
   document.getElementById('counter').innerText = available;
 }
 textArea.addEventListener('keyup', countChar);
-
 const button = document.getElementById('submit-btn');
-function getFullName() {
-    const name = document.getElementById('input-name');
-  const lastName = document.getElementById('input-lastname');
-}
 function getInformation(event) {
   event.preventDefault();
   const formMain = document.getElementById('evaluation-form');
