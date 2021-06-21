@@ -35,7 +35,7 @@ let text;
 
 function getFullName(input1, input2) {
   const fullName = document.createElement('p');
-  fullName.innerText = `Nome: ${input1.value} ${input2.value}`
+  fullName.innerText = `Nome: ${input1.value} ${input2.value}`;
   return fullName;
 }
 
@@ -53,22 +53,14 @@ function getHouse(input) {
 
 function getFamily(input) {
   for (let index = 0; index < input.length; index += 1) {
-    if(input[index].checked){
+    if (input[index].checked) {
       text = `Família: ${input[index].value}`;
       return text;
     }
   }
 }
 
-function getSubject(input) {
-  let itens = [];
-  text = 'Matérias: '
-  
-  for (let index = 0; index < input.length; index += 1) {
-    if(input[index].checked){
-      itens.push(input[index].value);
-    }
-  }
+function getSubjectAux(itens) {
   for (let index = 0; index < itens.length; index += 1) {
     if (itens[index + 1]) {
       text += `${itens[index]}, `;
@@ -76,8 +68,18 @@ function getSubject(input) {
       text += itens[index];
     }
   }
+}
 
-  console.log(text);
+function getSubject(input) {
+  const itens = [];
+  text = 'Matérias: ';
+  for (let index = 0; index < input.length; index += 1) {
+    if (input[index].checked) {
+      itens.push(input[index].value);
+    }
+  }
+  getSubjectAux(itens)
+
   return text;
 }
 
@@ -97,17 +99,16 @@ function getComments(input) {
 }
 
 const form = document.getElementById('evaluation-form');
+const inputName = document.getElementById('input-name');
+const inputLastname = document.getElementById('input-lastname');
+const inputEmail = document.getElementById('input-email');
+const inputHouse = document.getElementById('house');
+const inputFamily = document.getElementsByName('family');
+const inputSubject = document.getElementsByClassName('subject');
+const inputRate = document.getElementsByName('rate');
+const inputComments = document.getElementById('textarea');
 
 function showForm() {
-  const inputName = document.getElementById('input-name');
-  const inputLastname = document.getElementById('input-lastname');
-  const inputEmail = document.getElementById('input-email');
-  const inputHouse = document.getElementById('house');
-  const inputFamily = document.getElementsByName('family');
-  const inputSubject = document.getElementsByClassName('subject');
-  const inputRate = document.getElementsByName('rate');
-  const inputComments = document.getElementById('textarea');
-
   const rate = document.createElement('p');
   const family = document.createElement('p');
   const subject = document.createElement('p');
@@ -119,7 +120,6 @@ function showForm() {
   while (form.children.length > 0) {
     form.removeChild(form.firstChild);
   }
-
   form.appendChild(getFullName(inputName, inputLastname));
   form.appendChild(getEmail(inputEmail));
   form.appendChild(family);
