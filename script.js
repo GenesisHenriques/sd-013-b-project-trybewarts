@@ -21,6 +21,7 @@ submitBtn.disabled = true;
 function checked() {
   if (agreement.checked === true) {
     submitBtn.disabled = false;
+    enterButton.disabled = false;
   }
 }
 

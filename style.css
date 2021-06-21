@@ -20,6 +20,12 @@ body {
   font-style: 400;
 }
 
+@font-face {
+  font-family: NewAthletic;
+  src: url('Fonts/new_athletic_m54/New\ Athletic\ M54.ttf') format('truetype');
+  font-weight: 400;
+  font-style: 300;
+}
 /* header */
 .header {
   background-color: rgb(50, 167, 145);
@@ -38,7 +44,8 @@ body {
 .header h1 {
   color: white;
   order: 1;
-  margin: 0 15px;
+  font-size: 40px;
+  margin: 0px 15px;
 }
 
 /* login-header */
@@ -56,7 +63,7 @@ body {
   margin: 5px;
   background-color: whitesmoke;
   width: 220px;
-  border: none;
+  border: 2.23px solid black;
   border-radius: 5px;
 }
 
@@ -64,11 +71,14 @@ body {
   background-color: rgb(112, 0, 177);
   color: white;
   align-self: center;
+  font-family: NewAthletic;
+  font-size: 15px;
   font-weight: 700;
+  letter-spacing: 1.5px;
   border-radius: 5px;
   height: 30px;
   margin: 5px;
-  border: none;
+  /* border: none; */
   width: 70px;
 }
 
@@ -185,7 +195,7 @@ hr {
 }
 
 .label-techs {
-  margin-right: 21px;
+  margin-right: 23px;
 }
 
 #third-step {
@@ -250,6 +260,8 @@ hr {
 /* footer */
 #footer {
   background-color: gray;
+
+  /* border: 2px solid deeppink; */
   display: flex;
   justify-content: center;
   padding: 20px;
