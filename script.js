@@ -44,36 +44,25 @@ const inputName = document.getElementById('input-name');
 const inputLastName = document.getElementById('input-lastname');
 const divInput = document.querySelector('.box-container');
 const inputEmail = document.getElementById('input-email');
-const label = document.querySelector('label');
+const label = document.getElementById('label');
 const select = document.getElementById('house');
-const option = document.querySelectorAll('#option');
+const option = document.querySelectorAll('option');
 
 function updHouse() {
-  let pHouse = document.createElement('div');
-  for (index = 0; index < option.length; index += 1) {
-    if (option[index].id === 'gitnoria-house') {
-      pHouse.innerText = 'Casa: Gitnória';
-      divInput.appendChild(pHouse);
-      divInput.removeChild(label);
-      divInput.removeChild(select); 
-    } else if (option[index].id === 'reactpuff-house') {
-      pHouse.innerText = 'Casa: Reactpuff';
-      divInput.removeChild(label);
-      divInput.removeChild(select);
-      divInput.appendChild(pHouse);
-    } else if (option[index].id === 'corvinode-house') {
-      pHouse.innerText = 'Casa: Corvinode';
-      divInput.appendChild(pHouse);
-      divInput.removeChild(label);
-      divInput.removeChild(select);
-    } else if (option.id === 'pytherina-house') {
-      pHouse.innerText = 'Casa: Pytherina';
-      divInput.appendChild(pHouse);
-      divInput.removeChild(label);
-      divInput.removeChild(select);
-    } else {
-      pHouse.innerText = 'Casa: Sem casa';
-    }
+  const pHouse = document.createElement('div');
+  divInput.appendChild(pHouse);
+  divInput.removeChild(label);
+  divInput.removeChild(select);
+  if (option[0].value === 'gitnoria') {
+    pHouse.innerText = 'eita';
+  } else if (option[1].value === 'reactpuff') {
+    pHouse.innerText = 'Casa: Reactpuff';
+  } else if (option[2].value === 'corvinode') {
+    pHouse.innerText = 'Casa: Corvinode';
+  } else if (option[3].value === 'pytherina') {
+    pHouse.innerText = 'Casa: Pytherina';
+  } else {
+    pHouse.innerText = 'Casa: Sem casa';
   }
 }
 
