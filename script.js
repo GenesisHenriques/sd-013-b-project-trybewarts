@@ -48,7 +48,7 @@ const label = document.querySelector('#label-houses');
 const pHouse = document.createElement('div');
 
 function updHouse() {
-  const select = document.getElementById('house');
+  const select = document.querySelector('#house');
   const text = select.options[select.selectedIndex].text;
   pHouse.innerText = `Casa: ${text}`;
   divInput.appendChild(pHouse);
