@@ -49,8 +49,7 @@ const pHouse = document.createElement('div');
 
 function updHouse() {
   const select = document.querySelector('#house');
-  // eslint-disable-next-line prefer-destructuring
-  const text = select.options[select.selectedIndex].text;
+  const {text} = select.options[select.selectedIndex];
   pHouse.innerText = `Casa: ${text}`;
   divInput.appendChild(pHouse);
   divInput.removeChild(select);
@@ -72,11 +71,30 @@ function updFormEmail() {
   divInput.removeChild(inputEmail);
 }
 
+const frontEnd = document.getElementById('frontEnd');
+const backEnd = document.getElementById('backEnd');
+const fullStack = document.getElementById('fullStack');
+const family = document.querySelector('.family');
+const preferences = document.querySelector('#preferences');
+function updFamily() {
+  preferences.removeChild(family);
+  const pfamily = document.createElement('div');
+  preferences.appendChild(pfamily);
+  if (frontEnd.checked === true) {
+    pfamily.innerHTML = 'Família: FrontEnd';
+  } else if (backEnd.checked === true) {
+    pfamily.innerHTML = 'Família: BackEnd';
+  } else if (fullStack.checked === true) {
+    pfamily.innerHTML = 'Família: FullStack';
+  }
+}
+
 function updtForm() {
   divInput.style.flexDirection = 'column';
   updFormName();
   updFormEmail();
   updHouse();
+  updFamily();
 }
 
 submitBtn.addEventListener('click', stopDefAction, false);
