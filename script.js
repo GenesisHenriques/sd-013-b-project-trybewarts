@@ -45,9 +45,7 @@ const inputLastName = document.getElementById('input-lastname');
 const divInput = document.querySelector('.box-container');
 const inputEmail = document.getElementById('input-email');
 const label = document.querySelector('#label-houses');
-const select = document.getElementById('house');
 const pHouse = document.createElement('div');
-const option = document.getElementsByTagName('option');
 
 function updHouse() {
   const select = document.getElementById('house');
