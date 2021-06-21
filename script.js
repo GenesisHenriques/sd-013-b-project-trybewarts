@@ -85,6 +85,6 @@ const forms = document.querySelector('#evaluation-form');
 submitBtn.addEventListener('click', (event) => {
   const textarea = document.querySelector('textarea').value;
   forms.innerHTML = `${
-    profile()} ${formFamily()} ${formSubject()} ${formAssessments()} <p>Observações: ${textarea}<p>`;
+    profile()} ${formFamily()} ${formSubject()} ${formAssessments()} <p>Obs: ${textarea}<p>`;
   event.preventDefault();
 });

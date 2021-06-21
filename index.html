@@ -24,18 +24,18 @@
     <!-- <section class='forms'> -->
     <form class="form" id="evaluation-form" action="" method="">
       <div class="forms-part-1">
-        <input id="input-name" type="text" placeholder="Nome">
-        <input id="input-lastname" type="text" placeholder="Sobrenome">
-        <input id="input-email" type="text" placeholder="Email">
-        <div class="select">
+        <div class="personalform">
+          <input id="input-name" type="text" placeholder="Nome">
+          <input id="input-lastname" type="text" placeholder="Sobrenome">
+          <input id="input-email" type="text" placeholder="Email">
           <label for="house" id="houseSelect">CASA:</label>
           <select name="Casa" id="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
             <option id="corvinode-house" value="Corvinode">Corvinode</option>
             <option id="pytherina-house" value="Pytherina">Pytherina</option>
-          </select>
-        </div>
+            </select>
+        </div><!--personalform-->
         
         <div class="forms-part-2">
           <div class="family">
@@ -79,10 +79,10 @@
           <div class="agree">
             <label id="label-infos">Você concorda com o uso das informações acima?</label>
             <input type="checkbox" id="agreement"/>
+            <button type="submit" id="submit-btn">Enviar</button>
           </div>
         </section><!--coments-->
       </div>
-      <button type="submit" id="submit-btn">Enviar</button>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="trybewarts">
   </main>
@@ -92,6 +92,5 @@
   </footer>
 
   <script src="script.js"></script>
-
   </body>
 </html>
