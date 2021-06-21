@@ -140,7 +140,7 @@ main form input , select , textarea , #submit-btn {
 }
 
 header .input-text:focus {
-  box-shadow:  0 0 10px white;
+  box-shadow: 0 0 10px white;
 }
 
 header .input-text::selection {
@@ -212,11 +212,11 @@ footer {
 }
 
 header button:hover {
-  box-shadow:  0 0 10px white;
+  box-shadow: 0 0 10px white;
   font-size: 20px;
 }
 
 header button:focus {
-  box-shadow:  0 0 20px white;
+  box-shadow: 0 0 20px white;
   font-size: 19px;
 }
