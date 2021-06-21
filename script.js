@@ -19,29 +19,6 @@ function alertaInvalido() {
 
 submit.addEventListener('click', alertaInvalido);
 
-/* const checkbox = document.getElementById('agreement');
-let result = '';
-
-function checar(aleatory){
-  if(checkbox. checked){
-    result = 'checado';
-  }
-}
-
-checkbox.addEventListener('click', checar);
-
-const button = document.getElementById('submit-btn');
-
-function previne(event){
-  if(result === 'checado'){
-    console.log('enviado');
-  } else {
-    event.preventDefault();
-  }
-}
-
-button.addEventListener('click', previne); */
-
 const button = document.getElementById('submit-btn');
 
 function checkButton() {
@@ -56,6 +33,8 @@ const checkbox = document.getElementById('agreement');
 function checar() {
   if (checkbox.checked) {
     button.disabled = false;
+  } else {
+    button.disabled = true;
   }
 }
 
