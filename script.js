@@ -44,26 +44,17 @@ const inputName = document.getElementById('input-name');
 const inputLastName = document.getElementById('input-lastname');
 const divInput = document.querySelector('.box-container');
 const inputEmail = document.getElementById('input-email');
-const label = document.getElementById('label');
-const select = document.getElementById('house');
-const option = document.querySelectorAll('option');
+const label = document.querySelector('#label-houses');
+const pHouse = document.createElement('div');
 
 function updHouse() {
-  const pHouse = document.createElement('div');
+  const select = document.querySelector('#house');
+  // eslint-disable-next-line prefer-destructuring
+  const text = select.options[select.selectedIndex].text;
+  pHouse.innerText = `Casa: ${text}`;
   divInput.appendChild(pHouse);
-  divInput.removeChild(label);
   divInput.removeChild(select);
-  if (option[0].value === 'gitnoria') {
-    pHouse.innerText = 'eita';
-  } else if (option[1].value === 'reactpuff') {
-    pHouse.innerText = 'Casa: Reactpuff';
-  } else if (option[2].value === 'corvinode') {
-    pHouse.innerText = 'Casa: Corvinode';
-  } else if (option[3].value === 'pytherina') {
-    pHouse.innerText = 'Casa: Pytherina';
-  } else {
-    pHouse.innerText = 'Casa: Sem casa';
-  }
+  divInput.removeChild(label);
 }
 
 function updFormName() {
