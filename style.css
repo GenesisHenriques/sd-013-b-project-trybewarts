@@ -1,7 +1,17 @@
 * {
+  font-family: Mountains of Christmas, serif;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(46, 124, 109);
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .header {
@@ -23,6 +33,7 @@
 
 #trybewarts-header-title {
   color: white;
+  font-size: 2em;
 }
 
 .container-main {
@@ -38,6 +49,9 @@ main {
 }
 
 #evaluation-form {
+  background-color: rgb(255, 244, 227);
+  border-radius: 10px;
+  box-shadow: 0 0 50px inset rgb(201, 176, 123), 0 20px 30px rgba(0, 0, 0, 0.275);
   display: flex;
   width: 675px;
   flex-direction: column;
