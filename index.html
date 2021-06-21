@@ -51,36 +51,43 @@
         <div class="container-family-content">
           <div class="container">
             <label for="family" id="label-family" class="bold">Qual sua família?</label>
-            <div>
-              <input type="radio" name="family" value="Frontend" class="check">Frontend
-            </div>
-            <div>
-              <input type="radio" name="family" value="Backend" class="check">Backend
-            </div>
-            <div>
-              <input type="radio" name="family" value="FullStack" class="check">FullStack
-            </div>
+
+            <label for="front">
+              <input type="radio" name="family" value="Frontend" class="check" id="front"> Frontend
+            </label>
+
+            <label for="back">
+              <input type="radio" name="family" value="Backend" class="check" id="back"> Backend
+            </label>
+
+            <label for="full">
+              <input type="radio" name="family" value="FullStack" class="check" id="full"> FullStack
+            </label>
+
           </div>
           <div class="container">
             <label for="" id="label-content" class="bold">Qual conteúdo você está com mais vontade de aprender?</label>
-            <div>
-              <input type="checkbox" class="subject check" value="HoFs"> HoFs
-            </div>
-            <div>
-              <input type="checkbox" class="subject check" value="Jest"> Jest
-            </div>
-            <div>
-              <input type="checkbox" class="subject check" value="Promises"> Promises
-            </div>
-            <div>
-              <input type="checkbox" class="subject check" value="React"> React
-            </div>
-            <div>
-              <input type="checkbox" class="subject check" value="SQL"> SQL
-            </div>
-            <div>
-              <input type="checkbox" class="subject check" value="Python"> Python
-            </div>
+            <label for="hofs">
+              <input type="checkbox" class="subject check" value="HoFs" id="hofs"> HoFs
+            </label>
+            
+            <label for="jest">
+              <input type="checkbox" class="subject check" value="Jest" id="jest"> Jest
+            </label>
+
+            <label for="promisses">
+              <input type="checkbox" class="subject check" value="Promises" id="promisses"> Promises
+            </label>
+
+            <label for="react">
+              <input type="checkbox" class="subject check" value="React" id="react"> React
+            </label>
+            <label for="sql">
+              <input type="checkbox" class="subject check" value="SQL" id="sql"> SQL
+            </label>
+            <label for="python">
+              <input type="checkbox" class="subject check" value="Python" id="python"> Python
+            </label>
           </div>
         </div>
 
@@ -88,16 +95,25 @@
 
         <div class="container-rate">
           <label for="" id="label-rate" class="bold">Como você avalia a Trybewarts?</label>
-          <input type="radio" name="rate" value="1" class="check"> 1
-          <input type="radio" name="rate" value="2" class="check"> 2
-          <input type="radio" name="rate" value="3" class="check"> 3
-          <input type="radio" name="rate" value="4" class="check"> 4
-          <input type="radio" name="rate" value="5" class="check"> 5
-          <input type="radio" name="rate" value="6" class="check"> 6
-          <input type="radio" name="rate" value="7" class="check"> 7
-          <input type="radio" name="rate" value="8" class="check"> 8
-          <input type="radio" name="rate" value="9" class="check"> 9
-          <input type="radio" name="rate" value="10" class="check"> 10
+          <label for="1"><input type="radio" name="rate" value="1" id="1" class="check"> 1</label>
+          
+          <label for="2"><input type="radio" name="rate" value="2" id="2" class="check"> 2</label>
+          
+          <label for="3"><input type="radio" name="rate" value="3" id="3" class="check"> 3</label>
+          
+          <label for="4"><input type="radio" name="rate" value="4" id="4" class="check"> 4</label>
+          
+          <label for="5"><input type="radio" name="rate" value="5" id="5" class="check"> 5</label>
+          
+          <label for="6"><input type="radio" name="rate" value="6" id="6" class="check"> 6</label>
+          
+          <label for="7"><input type="radio" name="rate" value="7" id="7" class="check"> 7</label>
+          
+          <label for="8"><input type="radio" name="rate" value="8" id="8" class="check"> 8</label>
+          
+          <label for="9"><input type="radio" name="rate" value="9" id="9" class="check"> 9</label>
+          
+          <label for="10"><input type="radio" name="rate" value="10" id="10" class="check"> 10</label>
         </div>
 
         <div class="container-textarea">
@@ -106,7 +122,7 @@
           <span id="counter"></span>
         </div>
 
-        <div>
+        <div class="container-agreement">
           <label for="agreement" id="label-infos" class="bold">Você concorda com o uso das informações acima?</label>
           <input type="checkbox" name="uso-informacao" id="agreement" class="check">
         </div>

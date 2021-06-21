@@ -1,9 +1,10 @@
 * {
+  cursor: url('images/frosted.cur'), default;
+  box-sizing: border-box;
   font-family: Mountains of Christmas, serif;
   font-size: 18px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 
@@ -108,6 +109,7 @@ input, button, select, textarea {
   border: none;
   border-radius: 5px;
   font-family: Mountains of Christmas, serif;
+  outline: none;
   transition: 0.3s;
 }
 
@@ -139,7 +141,7 @@ main form input, select, textarea, #submit-btn{
 .check {
   height: 15px;
   width: 15px;
-  margin: 12px 0 0px 6px;
+  margin: 12px 0 0px 5px;
 }
 
 button {
@@ -152,4 +154,30 @@ button {
   height: 60px;
   margin-top: 40px;
   width: 200px;
+}
+
+main form .input-text:focus , textarea:focus {
+  box-shadow: 0 0 10px inset rgb(255, 30, 0), 0 -5px 20px  rgba(255, 72, 0, 0.685);
+}
+
+main form .input-text::selection , textarea::selection {
+  text-shadow: 0 1px 2px red;
+}
+
+.check:checked {
+  background-color: rgba(255, 153, 0, 0.39);
+  box-shadow: 0 0 15px inset red, 0 -5px 10px  red;
+  height: 1.2em;
+  width: 1.2em;
+}
+
+#agreement {
+  height: 30px;
+  width: 30px;
+  margin: 0 0 0 15px;
+}
+
+.container-agreement {
+  display: flex;
+  align-items: center;
 }
