@@ -31,10 +31,6 @@ header h1 {
   align-items: flex-start;
 }
 
-.trybewarts-login {
-  display: flex;
-}
-
 #trybewarts-forms-logo {
   width: 600px;
 }
@@ -97,6 +93,6 @@ hr {
   display: flex;
 }
 
-#label-family {
+.container3 #label-family {
   flex-direction: column;
 }
