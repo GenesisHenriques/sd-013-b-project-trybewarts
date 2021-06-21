@@ -1,3 +1,4 @@
+/* __________________LOGIN__________________ */
 function assignLoginAlert() {
   const login = document.getElementById('login').value;
   const password = document.getElementById('password').value;
@@ -8,6 +9,7 @@ function assignLoginAlert() {
   }
 }
 
+/* __________________ACEITAR TERMOS__________________ */
 const submitButton = document.getElementById('submit-btn');
 function handleButtonState(event) {
   if (event.target.checked) {
@@ -17,6 +19,15 @@ function handleButtonState(event) {
   }
 }
 
+/* __________________CONTADOR DE CARACTERES__________________ */
+function count() {
+  const characters = textarea.value.length;
+  const maxlenght = textarea.maxLength;
+  const remaining = maxlenght - characters;
+  counter.innerText = remaining;
+}
+
+/* __________________ONLOAD__________________ */
 function addListeners() {
   const loginButton = document.getElementById('button');
   loginButton.addEventListener('click', assignLoginAlert);
@@ -24,7 +35,15 @@ function addListeners() {
   const agreementCheckbox = document.getElementById('agreement');
   agreementCheckbox.addEventListener('click', handleButtonState);
 
+  const textarea = document.getElementById('textarea');
+  textarea.addEventListener('input', count);
+
+  const counter = document.getElementById('counter');
+  counter.innerText = textarea.maxLength;
+
   submitButton.disabled = true;
 }
 
 window.onload = addListeners;
+
+
