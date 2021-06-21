@@ -16,4 +16,6 @@ function login () {
   validateLogin(inputLogin.value, inputPassword.value);
 }
 
-btnLogar.addEventListener('click', login);
+window.onload = function() {
+  btnLogar.addEventListener('click', login);
+};
