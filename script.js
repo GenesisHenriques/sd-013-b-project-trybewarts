@@ -44,37 +44,18 @@ const inputName = document.getElementById('input-name');
 const inputLastName = document.getElementById('input-lastname');
 const divInput = document.querySelector('.box-container');
 const inputEmail = document.getElementById('input-email');
-const label = document.querySelector('label');
+const label = document.querySelector('#label-houses');
 const select = document.getElementById('house');
-const option = document.querySelectorAll('#option');
+const pHouse = document.createElement('div');
+const option = document.getElementsByTagName('option');
 
 function updHouse() {
-  let pHouse = document.createElement('div');
-  for (index = 0; index < option.length; index += 1) {
-    if (option[index].id === 'gitnoria-house') {
-      pHouse.innerText = 'Casa: Gitnória';
-      divInput.appendChild(pHouse);
-      divInput.removeChild(label);
-      divInput.removeChild(select); 
-    } else if (option[index].id === 'reactpuff-house') {
-      pHouse.innerText = 'Casa: Reactpuff';
-      divInput.removeChild(label);
-      divInput.removeChild(select);
-      divInput.appendChild(pHouse);
-    } else if (option[index].id === 'corvinode-house') {
-      pHouse.innerText = 'Casa: Corvinode';
-      divInput.appendChild(pHouse);
-      divInput.removeChild(label);
-      divInput.removeChild(select);
-    } else if (option.id === 'pytherina-house') {
-      pHouse.innerText = 'Casa: Pytherina';
-      divInput.appendChild(pHouse);
-      divInput.removeChild(label);
-      divInput.removeChild(select);
-    } else {
-      pHouse.innerText = 'Casa: Sem casa';
-    }
-  }
+  const select = document.getElementById('house');
+  const text = select.options[select.selectedIndex].text;
+  pHouse.innerText = `Casa: ${text}`;
+  divInput.appendChild(pHouse);
+  divInput.removeChild(select);
+  divInput.removeChild(label);
 }
 
 function updFormName() {
