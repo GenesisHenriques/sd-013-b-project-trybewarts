@@ -50,6 +50,7 @@ const pHouse = document.createElement('div');
 function updHouse() {
   const select = document.querySelector('#house');
   const text = select.options[select.selectedIndex].text;
+  const [gitnoria, reactpuff, corvinode, pytherina] = text;
   pHouse.innerText = `Casa: ${text}`;
   divInput.appendChild(pHouse);
   divInput.removeChild(select);
