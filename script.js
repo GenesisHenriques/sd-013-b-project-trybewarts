@@ -49,7 +49,6 @@ const pHouse = document.createElement('div');
 
 function updHouse() {
   const select = document.querySelector('#house');
-  // eslint-disable-next-line prefer-destructuring
   const text = select.options[select.selectedIndex].text;
   pHouse.innerText = `Casa: ${text}`;
   divInput.appendChild(pHouse);
