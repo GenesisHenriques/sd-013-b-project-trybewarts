@@ -33,7 +33,6 @@
   display: flex;
   flex-direction: column;
   width: 675px;
-  background-color: aquamarine;
 }
 
 #trybewarts-forms-logo {
@@ -42,12 +41,37 @@
 
 .form-line {
   display: flex;
-  background-color: bisque;
 }
 
-.form-line > *  {
-  flex-basis: 50%;
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.col  {
   flex-grow: 1;
   margin: 5px 2px;
   padding: 5px;
+  width: 100%;
+}
+
+.col-1 {
+  flex-basis: 100%;
+}
+
+.col-2 {
+  flex-basis: 50%;
+}
+
+.col-3 {
+  flex-basis: 33%;
+}
+
+#house {
+  margin: 5px 2px;
+  padding: 5px;
+}
+
+hr {
+  margin: 10px 0;
 }
