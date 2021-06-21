@@ -39,3 +39,14 @@ function checar() {
 }
 
 checkbox.addEventListener('click', checar);
+
+/* Req 20 */
+
+const contador = document.getElementById('counter');
+const textarea = document.getElementById('textarea');
+textarea.addEventListener('keyup', () => {
+  const max = 500;
+  const cont = textarea.value.length;
+  const resta = max - cont;
+  contador.innerText = resta;
+});
