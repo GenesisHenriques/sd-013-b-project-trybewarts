@@ -49,7 +49,7 @@ const pHouse = document.createElement('div');
 
 function updHouse() {
   const select = document.querySelector('#house');
-  const {text} = select.options[select.selectedIndex];
+  const { text } = select.options[select.selectedIndex];
   pHouse.innerText = `Casa: ${text}`;
   divInput.appendChild(pHouse);
   divInput.removeChild(select);
