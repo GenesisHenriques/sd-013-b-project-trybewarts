@@ -20,6 +20,9 @@ function handleButtonState(event) {
 }
 
 /* __________________CONTADOR DE CARACTERES__________________ */
+const textarea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+
 function count() {
   const characters = textarea.value.length;
   const maxlenght = textarea.maxLength;
@@ -127,9 +130,6 @@ function showForm() {
 }
 
 /* __________________ONLOAD__________________ */
-const textarea = document.getElementById('textarea');
-const counter = document.getElementById('counter');
-
 function addListeners() {
   const loginButton = document.getElementById('button');
   loginButton.addEventListener('click', assignLoginAlert);

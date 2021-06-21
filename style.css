@@ -1,88 +1,87 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .header {
-    display: flex;
-    background-color: rgb(50, 167, 145);
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .trybewarts-header-logo {
-    width: 60px;
-  }
-  
-  .trybewarts-login {
-    display: flex;
-    width: 450px;
-    justify-content: space-around;
-  }
-  
-  #trybewarts-header-title {
-    color: white;
-  }
-  
-  .container-main {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 15px;
-    width: 100%;
-  }
-  
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #evaluation-form {
-    display: flex;
-    width: 675px;
-    flex-direction: column;
-  }
-  
-  #trybewarts-forms-logo {
-    height: 500px;
-  }
-  
-  .container-row1 {
-    display: flex;
-    padding: 5px;
-  }
-  
-  .container-row2 {
-    display: flex;
-    padding: 5px;
-  }
-  
-  .container-family-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .container-rate {
-    padding: 5px;
-  }
-  
-  .container-textarea {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-  }
-  
-  .container-agreement {
-    padding: 5px;
-  }
-  
-  .container-btn {
-    padding: 5px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trybewarts-header-logo {
+  width: 60px;
+}
+
+.trybewarts-login {
+  display: flex;
+  width: 450px;
+  justify-content: space-around;
+}
+
+#trybewarts-header-title {
+  color: white;
+}
+
+.container-main {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.container-row1 {
+  display: flex;
+  padding: 5px;
+}
+
+.container-row2 {
+  display: flex;
+  padding: 5px;
+}
+
+.container-family-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-rate {
+  padding: 5px;
+}
+
+.container-textarea {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.container-agreement {
+  padding: 5px;
+}
+
+.container-btn {
+  padding: 5px;
+}
