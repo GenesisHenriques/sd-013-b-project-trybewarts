@@ -3,7 +3,7 @@ const password = document.getElementById('input-senha');
 const loginButton = document.getElementById('entrar');
 const agreementCheckBox = document.getElementById('agreement');
 const sendButton = document.getElementById('submit-btn');
-let textarea = document.getElementById('textarea');
+const textarea = document.getElementById('textarea');
 
 function checkEmail() {
   for (let letter = 0; letter < email.value.length; letter += 1) {
@@ -46,4 +46,61 @@ function counter(texto) {
 textarea.addEventListener('keyup', counter);
 agreementCheckBox.addEventListener('click', enableSendButton);
 
+function getName() {
+  const name = document.getElementById('input-name').value;
+  const lastName = document.getElementById('input-lastname').value;
+  return (`${name} ${lastName}`);
+}
 
+function getFamily() {
+  const familys = document.getElementsByName('family');
+  for (let value = 0; value < familys.length; value += 1) {
+    if (familys[value].checked) {
+      return (familys[value].value);
+    }
+  }
+}
+
+function getMaterias() {
+  const options = document.querySelectorAll('.checkbox-div .checkbox-item input');
+  const materias = [];
+  for (let items = 0; items < options.length; items += 1) {
+    if (options[items].checked) {
+      materias.push(options[items].value);
+    }
+  }
+  return (materias.join(', '));
+}
+
+function getAvaliacao() {
+  const notas = document.getElementsByName('rate');
+  for (let nota = 0; nota < notas.length; nota += 1) {
+    if (notas[nota].checked) {
+      return (notas[nota].value);
+    }
+  }
+}
+
+function filledInfo() {
+  const emailInput = document.getElementById('input-email').value;
+  const house = document.getElementById('house').value;
+  const obs = document.getElementById('textarea').value;
+  return (`Nome: ${getName()}
+  Email: ${emailInput}
+  Casa: ${house}
+  Família: ${getFamily()}
+  Matérias: ${getMaterias()}
+  Avaliação: ${getAvaliacao()}
+  Observações: ${obs}
+`);
+}
+
+function replaceForm() {
+  const text = document.createElement('p');
+  text.innerText = filledInfo();
+  const form = document.getElementById('evaluation-form');
+  form.innerHTML = '';
+  form.appendChild(text);
+}
+
+sendButton.addEventListener('click', replaceForm);
