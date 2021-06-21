@@ -20,48 +20,48 @@
   <main>
     <form id="evaluation-form">
       <fieldset>
-        <input id="input-name" type="text" placeholder="Nome">
-        <input id="input-lastname" type="text" placeholder="Sobrenome">
+        <input id="input-name" type="text" placeholder="Nome" name="name">
+        <input id="input-lastname" type="text" placeholder="Sobrenome" name="lastname">
       </fieldset>
       <fieldset>
-        <input id="input-email" type="email" placeholder="Email">
+        <input id="input-email" type="email" placeholder="Email" name="email">
         <select id="house">
-            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-            <option id="corvinode-house" value="Corvinode">Corvinode</option>
-            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+            <option id="gitnoria-house" value="Gitnória" name="house">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff" name="house">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode" name="house">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina" name="house">Pytherina</option>
         </select>
       </fieldset>
         <div class="radioButtons">
             <label id="label-family">Qual sua família?</label>
-            <label for="Frontend"><input id="Frontend" type="radio" value="Frontend" name="family">Frontend</label> 
-            <label for="Backend"><input id="Backend" type="radio" value="Backend" name="family">Backend</label>
-            <label for="FullStack"><input id="FullStack" type="radio" value="FullStack" name="family">FullStack</label>
+            <label for="Frontend"><input id="Frontend" class="family" type="radio" value="Frontend" name="family">Frontend</label> 
+            <label for="Backend"><input id="Backend" class="family" type="radio" value="Backend" name="family">Backend</label>
+            <label for="FullStack"><input id="FullStack" class="family" type="radio" value="FullStack" name="family">FullStack</label>
         </div>
         <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
         <div class="checkBoxButtons">
-            <input class="subject" type="checkbox" value="HoFs">HoFs
-            <input class="subject" type="checkbox" value="Jest">Jest
-            <input class="subject" type="checkbox" value="Promises">Promises
-            <input class="subject" type="checkbox" value="React">React
-            <input class="subject" type="checkbox" value="SQL">SQL
-            <input class="subject" type="checkbox" value="Python">Python
+            <input class="subject" type="checkbox" value="HoFs" name="conteudo">HoFs
+            <input class="subject" type="checkbox" value="Jest" name="conteudo">Jest
+            <input class="subject" type="checkbox" value="Promises" name="conteudo">Promises
+            <input class="subject" type="checkbox" value="React" name="conteudo">React
+            <input class="subject" type="checkbox" value="SQL" name="conteudo">SQL
+            <input class="subject" type="checkbox" value="Python" name="conteudo">Python
         </div>
         <div class="rateButttons">
             <label id="label-rate">Como você avalia a Trybewarts?</label>
-            <label for="1"><input id="1" type="radio" value="1" name="rate">1</label> 
-            <label for="2"><input id="2" type="radio" value="2" name="rate">2</label>
-            <label for="3"><input id="3" type="radio" value="3" name="rate">3</label>
-            <label for="4"><input id="4" type="radio" value="4" name="rate">4</label> 
-            <label for="5"><input id="5" type="radio" value="5" name="rate">5</label>
-            <label for="6"><input id="6" type="radio" value="6" name="rate">6</label>
-            <label for="7"><input id="7" type="radio" value="7" name="rate">7</label> 
-            <label for="8"><input id="8" type="radio" value="8" name="rate">8</label>
-            <label for="9"><input id="9" type="radio" value="9" name="rate">9</label>
-            <label for="10"><input id="10" type="radio" value="10" name="rate">10</label>
+            <label for="1"><input class="rate" id="1" type="radio" value="1" name="rate">1</label> 
+            <label for="2"><input class="rate" id="2" type="radio" value="2" name="rate">2</label>
+            <label for="3"><input class="rate" id="3" type="radio" value="3" name="rate">3</label>
+            <label for="4"><input class="rate" id="4" type="radio" value="4" name="rate">4</label> 
+            <label for="5"><input class="rate" id="5" type="radio" value="5" name="rate">5</label>
+            <label for="6"><input class="rate" id="6" type="radio" value="6" name="rate">6</label>
+            <label for="7"><input class="rate" id="7" type="radio" value="7" name="rate">7</label> 
+            <label for="8"><input class="rate" id="8" type="radio" value="8" name="rate">8</label>
+            <label for="9"><input class="rate" id="9" type="radio" value="9" name="rate">9</label>
+            <label for="10"><input class="rate" id="10" type="radio" value="10" name="rate">10</label>
         </div>
         <label class="textarea">Deixe seu comentário:</label>
-        <textarea id="textarea" maxlength="500" minlength="0" rows="5" cols="50"></textarea>
+        <textarea id="textarea" maxlength="500" minlength="0" rows="5" cols="50" name="comment"></textarea>
         <span id="counter">500</span>
         <div>
             <label id="label-infos">Você concorda com o uso das informações acima?</label>
