@@ -127,6 +127,9 @@ function showForm() {
 }
 
 /* __________________ONLOAD__________________ */
+const textarea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+
 function addListeners() {
   const loginButton = document.getElementById('button');
   loginButton.addEventListener('click', assignLoginAlert);
@@ -134,13 +137,11 @@ function addListeners() {
   const agreementCheckbox = document.getElementById('agreement');
   agreementCheckbox.addEventListener('click', handleButtonState);
 
-  const textarea = document.getElementById('textarea');
   textarea.addEventListener('input', count);
 
-  const sendBtn = document.getElementById('submit-btn');
-  sendBtn.addEventListener('click', showForm);
+  const sendButton = document.getElementById('submit-btn');
+  sendButton.addEventListener('click', showForm);
 
-  const counter = document.getElementById('counter');
   counter.innerText = textarea.maxLength;
 
   submitButton.disabled = true;
