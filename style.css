@@ -72,6 +72,7 @@ header h1 {
 .container3 #label-family {
   width: 150px;
   margin-bottom: 5px;
+  flex-direction: column;
 }
 
 .container3 label {
@@ -92,4 +93,3 @@ hr {
 #main-forms {
   display: flex;
 }
-
