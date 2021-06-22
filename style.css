@@ -23,7 +23,6 @@ header h1 {
   max-height: 50px;
 }
 
-
 .trybewarts-login {
   display: flex;
   padding-right: 5px;
@@ -38,4 +37,8 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+}
+
+#fullName {
+  display: flex;
 }
