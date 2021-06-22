@@ -25,18 +25,18 @@ criaCasas('Corvinode', 'corvinode-house');
 criaCasas('Pytherina', 'pytherina-house');
 
 // ATIVA BOTÃO DE ENVIAR //
-// const condição = document.querySelector('#agreement');
-// const button = document.querySelector('#submit-btn');
-// function ativaBtn(event) {
-//   if (condição.checked) {
-//     event.preventDefault(button);
-// }
-// };
+const condição = document.getElementById('agreement');
+const button = document.querySelector('#submit-btn');
+function ativaBtn() {
+  if (condição.checked) {
+    button.removeAttribute('disabled');
+  }
+}
 
-// function addEvento() {
-//   condição.addEventListener('checked', ativaBtn);
-// }
-// addEvento();
+function addEvento() {
+  condição.addEventListener('click', ativaBtn);
+}
+addEvento();
 
 // CONTADOR
 const myTextArea = document.getElementById('textarea');
