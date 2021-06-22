@@ -107,8 +107,6 @@ function obterDadosFormulario() {
   item5.innerText = `Matérias: ${conteudoEscolhido}`;
   item6.innerText = `Avaliação: ${notaAvaliacao}`;
   item7.innerText = `Observações: ${comentario}`;
-
-  //return item1, item2, item3, item4, item5, item6, item7;
 }
 
 function imprimirFormularioPreenchido() {
