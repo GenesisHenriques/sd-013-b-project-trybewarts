@@ -18,7 +18,7 @@
             <button type="button" id='login-button'>Entrar</button>
         </form>
     </header>
-    <div id="form-container">
+    <main id="form-container">
         <form action=""method="GET" id="evaluation-form">
             <div id="main-info">
                 <div id="fullName">
@@ -39,23 +39,18 @@
             </div>
             <div id="second-info">
                 <div id="family">
-                    <h4 id="label-family">Qual sua família?</h4>
+                    <label for="family" id="label-family">Qual sua família?</label>
                     <div id="family-options">
-                            <input type="radio" name="family" id="Frontend" value="Frontend">
-                            <label for="Frontend">Frontend</label>
-                        <label for="Backend">Backend
-                            <input type="radio" name="family" id="Backend" value="Backend"> 
-                        </label>
-                        <label for="FullStack">FullStack
-                            <input type="radio" name="family" id="FullStack" value="FullStack"> 
-                        </label>
+                            <input type="radio" name="family" id="Frontend" value="Frontend">Frontend
+                            <input type="radio" name="family" id="Backend" value="Backend">Backend
+                            <input type="radio" name="family" id="FullStack" value="FullStack">FullStack
                     </div>
                 </div>
                 <div id="learn-interessing">
                     <h4 id="label-content">Qual conteúdo você está com mais vontade de aprender?</h4>
                     <div id="learn-options">
                         <label for="conteudo">HoFs
-                             <input type="checkbox" name="conteudo" class="subject" value="HoFs">
+                                <input type="checkbox" name="conteudo" class="subject" value="HoFs">
                         </label>
                         <label for="conteudo">Jest
                             <input type="checkbox" name="conteudo" class="subject" value="Jest">
@@ -123,7 +118,8 @@
             <button type="submit" id="submit-btn" disabled>Enviar</button>
         </form>
         <img src='images/trybewarts-colored.svg' alt="Trybewarts-Logo" id="trybewarts-forms-logo">
-    </div>
+    </main>
+
     <footer>
         <h6>Direitos reservados à Trybewarts©</h6>
     </footer>

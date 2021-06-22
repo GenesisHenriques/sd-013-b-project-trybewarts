@@ -1,6 +1,6 @@
-*{
+* {
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: Josefin Sans, sans-serif;
 }
 
 .header {
@@ -34,7 +34,7 @@
 #form-container #evaluation-form {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 675px;
   font-weight: 500;
   margin-top: 35px;
 }
@@ -48,7 +48,7 @@
   border: 1px solid black;
   border-radius: 5px;
   width: 45%;
-  height: 25px
+  height: 25px;
 }
 
 #main-info select {
@@ -56,10 +56,10 @@
   border-radius: 5px;
   width: 80px;
   height: 25px;
-  font-size:0.9em;
+  font-size: 0.9em;
 }
 
-#main-info #fullName  {
+#main-info #fullName {
   margin-bottom: 10px;
   width: 100%;
   display: flex;
@@ -79,18 +79,18 @@
 
 
 #second-info #family {
-  width: 50%;
+  width: 70%;
   display: flex;
-  flex-flow: row wrap;
-  align-items: space-around;
+  flex-flow: column wrap;
+  align-items: center;
   justify-content: center;
-  ;
 }
 
 #second-info #family #family-options {
-    margin-bottom: 10px;
-  display: flex;
-  flex-flow: row-reverse wrap;
+  margin: 5px;
+  width: 30%;
+  display: inline-block;
+  flex-flow: column wrap;
   justify-content: center;
 }
 
@@ -105,12 +105,13 @@
   max-height: 80px;
   display: flex;
   flex-flow: column wrap;
-  align-items: flex-start ;
+  align-items: flex-start;
 }
 
 #rate {
-  display: column;
-  justify-content: flex-start;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #coments-container {
@@ -121,7 +122,7 @@
 
 #counter {
   color: grey;
-  text-align:end
+  text-align: end;
 }
 
 .agreements {

@@ -40,3 +40,83 @@ function updateCounter() {
   document.getElementById('counter').innerHTML = counter;
 }
 container.addEventListener('keyup', updateCounter);
+
+// Adiciona ação ao botão Enviar
+
+function getFullName() {
+  const name = document.getElementById('input-name').value;
+  const lastName = document.getElementById('input-lastname').value;
+  const fullname = document.createElement('div');
+  fullname.innerText = `Nome: ${name} ${lastName}`;
+  return fullname;
+}
+
+function getEmail() {
+  const email = document.getElementById('input-email').value;
+  const emailBox = document.createElement('div');
+  emailBox.innerText = `Email: ${email}`;
+  return emailBox;
+}
+
+function getHouse() {
+  const houses = document.getElementById('house');
+  const option = document.createElement('div');
+  for (let index = 0; index < houses.length; index += 1) {
+    if (houses[index].selected === true) {
+      option.innerText = `Casa: ${houses[index].innerText}`;
+      return option;
+    }
+  }
+}
+
+function getFamily() {
+  const family = document.createElement('div');
+  family.innerText = `Família: ${document.querySelector('input[name = family]:checked').value}`;
+  return family;
+}
+
+function getSubjects() {
+  const markedCheckbox = document.querySelectorAll('input[name = "conteudo"]:checked');
+  const subjectsContainer = document.createElement('div');
+  const chosenSubjects = [];
+  for (let index = 0; index < markedCheckbox.length; index += 1) {
+    const actualSubject = markedCheckbox[index].value;
+    chosenSubjects.push(` ${actualSubject}`);
+  }
+  subjectsContainer.innerText = `Matérias:${chosenSubjects}`;
+  return subjectsContainer;
+}
+
+function getRate() {
+  const rate = document.createElement('div');
+  rate.innerText = `Avaliação: ${document.querySelector('input[name = rate]:checked').value}`;
+  return rate;
+}
+
+function getComments() {
+  const comments = document.createElement('div');
+  comments.innerText = `Observações: ${document.getElementById('textarea').value}`;
+  return comments;
+}
+
+console.log(getFullName());
+console.log(getEmail());
+console.log(getHouse());
+console.log(getSubjects());
+
+function createForm() {
+  const completedForm = document.createElement('div');
+  completedForm.id = 'evaluation-form';
+  completedForm.appendChild(getFullName());
+  completedForm.appendChild(getEmail());
+  completedForm.appendChild(getHouse());
+  completedForm.appendChild(getFamily());
+  completedForm.appendChild(getSubjects());
+  completedForm.appendChild(getRate());
+  completedForm.appendChild(getComments());
+  const siteContainer = document.getElementById('form-container');
+  siteContainer.removeChild(siteContainer.children[0]);
+  siteContainer.appendChild(completedForm);
+}
+
+document.getElementById('submit-btn').addEventListener('click', createForm);
