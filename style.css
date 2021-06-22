@@ -80,3 +80,9 @@ hr {
   display: flex;
   flex-direction: column;
 }
+
+.form-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
