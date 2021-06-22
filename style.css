@@ -26,6 +26,7 @@ body {
   font-weight: 400;
   font-style: 300;
 }
+
 /* header */
 .header {
   background-color: rgb(50, 167, 145);
@@ -45,7 +46,7 @@ body {
   color: white;
   order: 1;
   font-size: 40px;
-  margin: 0px 15px;
+  margin: 0 15px;
 }
 
 /* login-header */
@@ -71,13 +72,14 @@ body {
   background-color: rgb(112, 0, 177);
   color: white;
   align-self: center;
-  font-family: NewAthletic;
+  font-family: NewAthletic, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 1.5px;
   border-radius: 5px;
   height: 30px;
   margin: 5px;
+
   /* border: none; */
   width: 70px;
 }
