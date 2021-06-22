@@ -63,6 +63,33 @@ function contarCaracteres() {
 }
 textarea.addEventListener('keyup', contarCaracteres);
 
+function obterRadioFamilia() {
+  for (let i = 0; i < radiosFamilia.length; i += 1) {
+    if (radiosFamilia[i].checked) {
+      familiaEscolhida = radiosFamilia[i].value;
+    }
+  }
+  return familiaEscolhida;
+}
+
+function obterMateriaEscolhida() {
+  for (let i = 0; i < conteudo.length; i += 1) {
+    if (conteudo[i].checked) {
+      conteudoEscolhido.push(` ${conteudo[i].value}`);
+    }
+  }
+  return conteudoEscolhido;
+}
+
+function obterAvaliacao() {
+  for (let i = 0; i < radiosAvaliacao.length; i += 1) {
+    if (radiosAvaliacao[i].checked) {
+      notaAvaliacao = radiosAvaliacao[i].value;
+    }
+  }
+  return notaAvaliacao;
+}
+
 function obterDadosFormulario() {
   const nome = document.querySelector('#input-name').value;
   const sobrenome = document.querySelector('#input-lastname').value;
@@ -70,30 +97,19 @@ function obterDadosFormulario() {
   const casa = document.querySelector('#house').value;
   const comentario = textarea.value;
 
-  for (let i = 0; i < radiosFamilia.length; i += 1) {
-    if (radiosFamilia[i].checked) {
-      familiaEscolhida = radiosFamilia[i].value;
-    }
-  }
-  for (let i = 0; i < conteudo.length; i += 1) {
-    if (conteudo[i].checked) {
-      conteudoEscolhido.push(` ${conteudo[i].value}`);
-    }
-  }
-  for (let i = 0; i < radiosAvaliacao.length; i += 1) {
-    if (radiosAvaliacao[i].checked) {
-      notaAvaliacao = radiosAvaliacao[i].value;
-    }
-  }
+  obterRadioFamilia();
+  obterMateriaEscolhida();
+  obterAvaliacao();
+
   item1.innerText = `Nome: ${nome} ${sobrenome}`;
   item2.innerText = `Email: ${email}`;
   item3.innerText = `Casa: ${casa}`;
-  item4.innerText = `Família: ${familiaEscolhida}`,
+  item4.innerText = `Família: ${familiaEscolhida}`;
   item5.innerText = `Matérias: ${conteudoEscolhido}`;
   item6.innerText = `Avaliação: ${notaAvaliacao}`;
   item7.innerText = `Observações: ${comentario}`;
-  
-  return item1, item2, item3, item4, item5, item6, item7
+
+  return item1, item2, item3, item4, item5, item6, item7;
 }
 
 function imprimirFormularioPreenchido() {
@@ -110,19 +126,10 @@ function imprimirFormularioPreenchido() {
   novoFormulario.appendChild(item5);
   novoFormulario.appendChild(item6);
   novoFormulario.appendChild(item7);
-
-  // return  novoFormulario.appendChild(item1), novoFormulario.appendChild(item2), novoFormulario.appendChild(item3), novoFormulario.appendChild(item4), novoFormulario.appendChild(item5), novoFormulario.appendChild(item6), novoFormulario.appendChild(item7)
 }
-
-// function criarNovoFormulario() {
-//   formulario1.remove();
-//   novoFormulario.id = 'evaluation-form';
-//   main.append(novoFormulario);
-// }
 
 function interagirComFormulario(event) {
   event.preventDefault();/* cancela o evento, sem parar a sua execução, ou seja, faz com a página não seja recarregada, porem implementa o resto da função */
   imprimirFormularioPreenchido();
-  // criarNovoFormulario();
 }
 botaoEnviar.addEventListener('click', interagirComFormulario);
