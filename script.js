@@ -10,15 +10,15 @@ button.addEventListener('click', () => {
   }
 });
 
-// function createInput() {
-//   const pixelBoard = document.querySelector('#pixel-board');
+function releasingSubmitButton() {
+  const checkBox = document.getElementById('agreement');
+  const submitButton = document.getElementById('submit-btn');
+  if (checkBox.checked) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+}
 
-//   for (let i = 0; i < 5; i += 1) {
-//     for (let j = 0; j < 5; j += 1) {
-//       const pixel = document.createElement('div');
-//       pixel.className = 'pixel';
-
-//       pixelBoard.appendChild(pixel);
-//     }
-//   }
-// }
+const agreement = document.querySelector('#agreement');
+agreement.addEventListener('click', releasingSubmitButton);
