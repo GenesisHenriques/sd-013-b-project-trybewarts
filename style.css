@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
 .header {
@@ -39,6 +41,8 @@ main {
   flex-direction: column;
 }
 
-#fullName {
+#full-name {
   display: flex;
+  flex: 1;
+  width: 100%;
 }

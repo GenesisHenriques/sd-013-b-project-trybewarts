@@ -1,16 +1,14 @@
-const loginButton = document.querySelector('#button-login');
+const handleSubmit = (event) => {
+  event.preventDefault();
 
-function loginSituation() {
-  const email = document.querySelector('#email-login');
-  const senha = document.querySelector('#senha-login');
+  const email = document.getElementById("email-login").value;
+  const senha = document.getElementById("senha-login").value;
 
-  if (email.innerText === 'tryber@teste.com' && senha.innerText === '123456') {
-    alert('Olá Tryber!');
+  if (email === "tryber@teste.com" && senha === "123456") {
+    alert("Olá, Tryber!");
   } else {
-    alert('Login ou senha inválidos');
+    alert("Login ou senha inválidos.");
   }
-}
+};
 
-loginButton.addEventListener('click', loginSituation);
-
-window.onload = loginSituation;
+document.getElementById("form-login").addEventListener("submit", handleSubmit);
