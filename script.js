@@ -26,46 +26,75 @@ function countChar() {
 }
 textArea.addEventListener('keyup', countChar);
 const button = document.getElementById('submit-btn');
-function getInformation(event) {
-  event.preventDefault();
-  const formMain = document.getElementById('evaluation-form');
+
+const formMain = document.getElementById('evaluation-form');
+function getFullName() {
   const name = document.getElementById('input-name');
   const lastName = document.getElementById('input-lastname');
+  return `Nome: ${name.value} ${lastName.value}`;
+}
+
+function getEmail() {
   const email = document.getElementById('input-email');
+  return `Email: ${email.value}`;
+}
+
+function getHouse() {
   const casa = document.getElementById('house');
-  const familia = document.getElementsByClassName('family');
+  return `Casa: ${casa.value}`;
+}
+
+function getFamily() {
+  const familia = document.querySelectorAll('.family');
   let checkedValue = null;
-  for (const key in familia) {
-    if (familia[key].checked) {
-      checkedValue = familia[key].value;
+  familia.forEach((fam) => {
+    if (fam.checked) {
+      checkedValue = fam.value;
     }
-  }
-  const subject = document.getElementsByClassName('subject');
-  let subjectChecked = '';
-  // subject.addEventListener('click',selectSubjects);
+  });
+  return `Família: ${checkedValue}`;
+}
+function getSubjects() {
+  const subjects = document.querySelectorAll('.subject');
+  let subjectsChecked = '';
   function selectSubjects() {
-    for (const key in subject) {
-      if (subject[key].checked) {
-        subjectChecked += `${subject[key].value}, `;
+    subjects.forEach((subject) => {
+      if (subject.checked) {
+        subjectsChecked += `${subject.value}, `;
       }
-    }
+    });
   }
   selectSubjects();
-  const rate = document.getElementsByClassName('rate');
+  return `Matérias: ${subjectsChecked}`;
+}
+
+function getRate() {
+  const rate = document.querySelectorAll('.rate');
   let rateChecked = null;
-  for (const key in rate) {
-    if (rate[key].checked) {
-      rateChecked = rate[key].value;
+  rate.forEach((rateCheck) => {
+    if (rateCheck.checked) {
+      rateChecked = rateCheck.value;
     }
-  }
+  });
+  return `Avaliação: ${rateChecked}`;
+}
+function getInformation(event) {
+  event.preventDefault();
+  const fullName = getFullName();
+  const email = getEmail();
+  const house = getHouse();
+  const family = getFamily();
+  const subjects = getSubjects();
+  const rate = getRate();
   formMain.innerHTML = '';
   const information = document.createElement('p');
-  information.innerText = `Nome: ${name.value} ${lastName.value}
-  Email: ${email.value}
-  Casa: ${casa.value}
-  Família: ${checkedValue}
-  Matérias: ${subjectChecked}
-  Avaliação: ${rateChecked}
+  information.id = 'information';
+  information.innerText = `${fullName}
+  ${email}
+  ${house}
+  ${family}
+  ${subjects}
+  ${rate}
   Observações: ${textArea.value}`;
   formMain.appendChild(information);
 }
