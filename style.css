@@ -90,3 +90,7 @@ hr {
 .rate label {
   padding: 2px 5px;
 }
+
+#comentario {
+  height: 80px;
+}
