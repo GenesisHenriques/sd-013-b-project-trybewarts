@@ -176,4 +176,5 @@ header h1 {
 #counter {
   display: flex;
   justify-content: flex-end;
+  flex-direction: row;
 }
