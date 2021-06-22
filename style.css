@@ -85,3 +85,7 @@ main {
 .container-btn {
   padding: 5px;
 }
+
+#counter {
+  text-align: right;
+}
