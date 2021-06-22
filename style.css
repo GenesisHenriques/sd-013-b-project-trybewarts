@@ -7,8 +7,6 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 768px;
-  width: 1366px;
   background-color: rgb(53, 53, 119);
 }
 
@@ -227,10 +225,16 @@ ul {
 footer {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100%;
+  align-items: flex-end;
 }
 
 footer h3 {
   font-size: x-large;
+}
+
+.new-forms {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
+  margin: 1% 15%;
+  align-self: flex-start;
 }

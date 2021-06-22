@@ -35,6 +35,7 @@ function remakeName() {
   const name = document.getElementById('input-name');
   const lastName = document.getElementById('input-lastname');
   const nomeText = document.createElement('p');
+  nomeText.classList = 'new-forms';
   nomeText.innerText = `Nome: ${name.value} ${lastName.value}`;
   forms.appendChild(nomeText);
 }
@@ -42,6 +43,7 @@ function remakeName() {
 function remakeEmail() {
   const email = document.getElementById('input-email');
   const emailText = document.createElement('p');
+  emailText.classList = 'new-forms';
   emailText.innerText = `Email: ${email.value}`;
   forms.appendChild(emailText);
 }
@@ -49,6 +51,7 @@ function remakeEmail() {
 function remakeHouse() {
   const house = document.getElementById('house');
   const houseText = document.createElement('p');
+  houseText.classList = 'new-forms';
   houseText.innerText = `Casa: ${house.value}`;
   forms.appendChild(houseText);
 }
@@ -62,6 +65,7 @@ function remakeFamily() {
   }
   displayRadioValue();
   const familyText = document.createElement('p');
+  familyText.classList = 'new-forms';
   familyText.innerText = `Família: ${family}`;
   forms.appendChild(familyText);
 }
@@ -78,6 +82,7 @@ function remakeMaterias() {
   }
   displayCheckboxValues();
   const materiasText = document.createElement('p');
+  materiasText.classList = 'new-forms';
   materiasText.innerText = `Matérias: ${materiasList}`;
   forms.appendChild(materiasText);
 }
@@ -92,6 +97,7 @@ function remakeRate() {
   displayRateValue();
   const rateText = document.createElement('p');
   rateText.innerText = `Avaliação: ${rate}`;
+  rateText.classList = 'new-forms';
   forms.appendChild(rateText);
 }
 
@@ -99,8 +105,16 @@ function remakeTextArea() {
   const textArea2 = document.getElementById('textarea');
   textArea2.innerText = textArea2.value;
   const textAreaText = document.createElement('p');
+  textAreaText.classList = 'new-forms';
   textAreaText.innerText = `Observações: ${textArea2.value}`;
   forms.appendChild(textAreaText);
+}
+
+function removeOldForms() {
+  const deleteAll = document.querySelectorAll('.can-delete-after');
+  for (let index = 0; index < deleteAll.length; index += 1) {
+    deleteAll[index].remove();
+  }
 }
 
 sendButton.onclick = function fillForms() {
@@ -111,14 +125,5 @@ sendButton.onclick = function fillForms() {
   remakeMaterias();
   remakeRate();
   remakeTextArea();
-  const div1Forms = document.getElementById('div1Forms');
-  div1Forms.remove();
-  const div2Forms = document.getElementById('div2Forms');
-  div2Forms.remove();
-  const div3Forms = document.getElementById('div3Forms');
-  div3Forms.remove();
-  const div4Forms = document.getElementById('div4Forms');
-  div4Forms.remove();
-  const div5Forms = document.getElementById('div5Forms');
-  div5Forms.remove();
+  removeOldForms();
 };
