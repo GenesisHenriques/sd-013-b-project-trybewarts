@@ -13,6 +13,9 @@ footer {
   color: white;
   justify-content: center;
   height: 50px;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
 }
 
 .header {
@@ -20,10 +23,16 @@ footer {
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   height: 80px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
 }
 
 .main {
   background-color: beige;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .trybewarts-login , .main , footer {
