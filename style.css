@@ -36,8 +36,9 @@ header h1 {
 
 .container2 {
   display: flex;
-  flex-flow: column nowrap;
   align-items: center;
+  flex-flow: column nowrap;
+  margin-top: 25px;
   width: 675px;
 }
 
@@ -125,4 +126,8 @@ footer {
   padding: 12px;
   color: white;
   text-align: center;
+}
+
+#counter {
+  text-align: end;
 }

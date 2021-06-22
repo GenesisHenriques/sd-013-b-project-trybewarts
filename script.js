@@ -25,3 +25,9 @@ agreementCheck.addEventListener('click', () => {
 textArea.addEventListener('keyup', () => {
   characterCounter.innerHTML = 500 - textArea.value.length;
 });
+
+submitBtn.addEventListener('click', () => {
+  const name = document.querySelector('#input-name').value;
+
+  document.querySelector('#input-name').innerHTML = name;
+});
