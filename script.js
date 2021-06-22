@@ -22,3 +22,4 @@ function checkUserAgreement() {
 
 loginBtn.addEventListener('click', performLogin);
 agreementCheckBox.addEventListener('change', checkUserAgreement);
+// comentario final antes do ultimo push
