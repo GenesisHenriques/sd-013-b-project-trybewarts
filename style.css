@@ -1,5 +1,4 @@
 * {
-  cursor: url('images/frosted.cur'), default;
   box-sizing: border-box;
   font-family: Mountains of Christmas, serif;
   font-size: 18px;
@@ -55,9 +54,8 @@ main {
 }
 
 #evaluation-form {
-  background-color: rgb(255, 244, 227);
+  background-color: white;
   border-radius: 10px;
-  box-shadow: 0 0 50px inset rgb(201, 176, 123), 0 20px 30px rgba(0, 0, 0, 0.275);
   display: flex;
   flex-direction: column;
   padding: 6%;
@@ -114,9 +112,7 @@ h2 {
 }
 
 main form input , select , textarea , #submit-btn {
-  appearance: none;
-  background-color: rgb(255, 244, 227);
-  box-shadow: 0 0 10px inset rgb(232, 203, 141), 0 0 20px  rgb(232, 203, 141);
+  border: 1px solid black;
 }
 
 .input-text {
@@ -136,29 +132,6 @@ main form input , select , textarea , #submit-btn {
   height: 15px;
   width: 15px;
   margin: 12px 0 0 5px;
-}
-
-header .input-text:focus {
-  box-shadow: 0 0 10px white;
-}
-
-header .input-text::selection {
-  text-shadow: 0 1px 2px red;
-}
-
-main form .input-text:focus , textarea:focus {
-  box-shadow: 0 0 10px inset rgb(255, 30, 0), 0 -5px 20px  rgba(255, 72, 0, 0.685);
-}
-
-main form .input-text::selection , textarea::selection {
-  text-shadow: 0 1px 2px red;
-}
-
-.check:checked {
-  background-color: rgba(255, 153, 0, 0.39);
-  box-shadow: 0 0 15px inset red, 0 -5px 10px  red;
-  height: 1.2em;
-  width: 1.2em;
 }
 
 #agreement {
@@ -183,20 +156,6 @@ button {
   height: 60px;
   margin-top: 40px;
   width: 200px;
-}
-
-#submit-btn:enabled {
-  color: white;
-  background-color: rgba(255, 153, 0, 0.508);
-  border: 3px solid rgb(255, 244, 227);
-  box-shadow: 0 0 50px inset red, 0 -5px 50px rgb(255, 47, 0);
-  font-size: 25px;
-}
-
-#submit-btn:focus {
-  background-color: rgba(255, 196, 0, 0.501);
-  border: 4px solid rgb(255, 244, 227);
-  box-shadow: 20px 0 40px inset rgb(223, 0, 0), -10px 20px 60px rgb(220, 33, 0);
 }
 
 footer {
