@@ -48,7 +48,7 @@ header h1 {
 
 #evaluation-form {
   display: flex;
-  width: 674px;
+  width: 675px;
   flex-flow: column nowrap;
   font-size: 20px;
 }
