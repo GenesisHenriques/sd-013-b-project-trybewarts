@@ -7,7 +7,7 @@
 }
 
 hr {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .bold {
@@ -40,11 +40,11 @@ hr {
 }
 
 .container-main {
-  background-color: rgb(46, 124, 109);
+  background-color: white;
   display: flex;
   justify-content: space-around;
   padding-bottom: 150px;
-  padding-top: 80px;
+  padding-top: 20px;
   width: 100%;
 }
 
@@ -55,7 +55,6 @@ main {
 
 #evaluation-form {
   background-color: white;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   padding: 6%;
@@ -108,7 +107,7 @@ input , button , select , textarea {
 h2 {
   text-align: center;
   font-size: 1.5em;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 main form input , select , textarea , #submit-btn {
@@ -129,15 +128,15 @@ main form input , select , textarea , #submit-btn {
 }
 
 .check {
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   margin: 12px 0 0 5px;
 }
 
 #agreement {
-  height: 30px;
-  width: 30px;
-  margin: 0 0 0 15px;
+  height: 20px;
+  width: 20px;
+  margin: 0 0 0 10px;
 }
 
 .container-agreement {
@@ -152,16 +151,15 @@ button {
 
 #submit-btn {
   align-self: center;
-  background-color: rgb(235, 218, 184);
-  height: 60px;
-  margin-top: 40px;
-  width: 200px;
+  background-color: darkblue;
+  color: white;
+  height: 40px;
+  width: 100%;
 }
 
 footer {
-  background-color: rgb(38, 102, 89);
-  box-shadow: 0 30px 40px inset rgba(0, 0, 0, 0.172);
-  color: rgb(203, 203, 203);
+  background-color: rgb(50, 167, 145);
+  color: white;
   text-align: center;
   font-family: serif;
   font-size: 16px;
@@ -169,16 +167,11 @@ footer {
   width: 100%;
 }
 
-header button:hover {
-  box-shadow: 0 0 10px white;
-  font-size: 20px;
-}
-
-header button:focus {
-  box-shadow: 0 0 20px white;
-  font-size: 19px;
-}
-
 #counter {
   text-align: right;
+}
+
+#button {
+  color: white;
+  background-color: darkblue;
 }
