@@ -10,13 +10,13 @@ const textarea = document.getElementById('textarea');
 
 const validateLogin = (login, password) => {
   if (login === defaultLogin && password === defaultPassword) {
-    alert(`Olá, Tryber!`);
+    alert('Olá, Tryber!');
   } else {
-    alert(`Login ou senha inválidos.`);
+    alert('Login ou senha inválidos.');
   }
 };
 
-const login = ()  => validateLogin(inputLogin.value, inputPassword.value);
+const login = () => validateLogin(inputLogin.value, inputPassword.value);
 
 const iAgree = () => {
   if (agreement.checked === true) {
@@ -30,8 +30,6 @@ const getCounter = () => {
   counter.innerText = 500 - (textarea.value.length);
 };
 
-window.onload = function() {
-  btnLogar.addEventListener('click', login);
-  agreement.addEventListener('click', iAgree);
-  textarea.addEventListener('keyup', getCounter);
-};
+btnLogar.addEventListener('click', login);
+agreement.addEventListener('click', iAgree);
+textarea.addEventListener('keyup', getCounter);
