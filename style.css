@@ -41,8 +41,12 @@ main {
   flex-direction: column;
 }
 
-#full-name {
+#personal-info {
   display: flex;
-  flex: 1;
-  width: 100%;
+  flex-direction: column;
 }
+
+#learn-and-family {
+  display: flex;
+}
+
