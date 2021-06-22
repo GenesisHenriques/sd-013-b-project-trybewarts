@@ -127,9 +127,11 @@ span {
 }
 
 #first-step input {
-  margin: 5px;
+  border-radius: 5px;
+  border-color: rgb(238, 238, 238);
+  height: 34px;
   width: 300px;
-  height: 28px;
+  margin: 5px;
 }
 
 #trybewarts-forms-logo {
