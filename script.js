@@ -1,3 +1,6 @@
+const wordCounter = document.getElementById('counter');
+wordCounter.innerText = 500;
+
 const handleSubmit = (event) => {
   event.preventDefault();
 
@@ -16,6 +19,15 @@ const checkAgreement = (event) => {
   btnSubmit.disabled = !event.target.checked;
 };
 
+const changeWordCount = (event) => {
+  const textarea = event.target;
+
+  console.log(textarea.value.length);
+  wordCounter.innerText = 500 - textarea.value.length;
+};
+
 document.getElementById('form-login').addEventListener('submit', handleSubmit);
 
 document.getElementById('agreement').addEventListener('change', checkAgreement);
+
+document.getElementById('textarea').addEventListener('input', changeWordCount);

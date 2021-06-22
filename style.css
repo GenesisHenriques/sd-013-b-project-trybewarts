@@ -78,3 +78,16 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
+.textarea {
+  width: 100%;
+}
+
+#comment-counter {
+  position: relative;
+}
+#comment-counter #counter {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}

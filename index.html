@@ -50,9 +50,14 @@
               id="input-lastname"
             />
           </div>
-  
+
           <div>
-            <input type="text" name="nome" placeholder="Email" id="input-email" />
+            <input
+              type="text"
+              name="nome"
+              placeholder="Email"
+              id="input-email"
+            />
             <label for="house">Casa:</label>
             <select id="house">
               <option value="Gitnória" id="gitnoria-house">Gitnória</option>
@@ -170,22 +175,20 @@
         <div class="leave-comment">
           <label class="textarea">Deixe seu comentário:</label>
 
-          <div>
-            <textarea class="textarea" name="comentario" cols="30" rows="5" maxlength="500">
-            </textarea>
+          <div id="comment-counter">
+            <textarea class="textarea" id="textarea" name="comentario" maxlength="500"></textarea>
             <span id="counter"></span>
           </div>
         </div>
 
         <div>
-          <label for="agreement" id="label-infos"
-            >Você concorda com o uso das informações acima?</label
-          >
-          <input type="checkbox" name="" id="agreement"/>
+          <label for="agreement" id="label-infos">
+            Você concorda com o uso das informações acima?
+          </label>
+          <input type="checkbox" name="" id="agreement" />
         </div>
 
         <button type="submit" id="submit-btn" disabled>Enviar</button>
-
       </form>
       <img
         id="trybewarts-forms-logo"
