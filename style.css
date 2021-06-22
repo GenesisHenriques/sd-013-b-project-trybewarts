@@ -36,7 +36,6 @@ body {
   width: 600px;
   padding: 10px;
   margin-left: 25px;
-  background-color: chocolate;
 }
 
 #section2 {
@@ -45,7 +44,6 @@ body {
   width: 600px;
   padding: 10px;
   margin-left: 25px;
-  background-color: brown;
 }
 
 #familias {
@@ -54,7 +52,6 @@ body {
   width: 120px;
   padding: 10px;
   margin-left: 25px;
-  background-color: aqua;
 }
 
 #checkboxes {
@@ -62,14 +59,12 @@ body {
   flex-wrap: wrap;
   width: 400px;
   padding: 10px;
-  background-color: blue;
 }
 
 #rates {
   display: flex;
   padding: 10px;
   margin-left: 25px;
-  background-color: crimson;
 }
 
 #comentario {
