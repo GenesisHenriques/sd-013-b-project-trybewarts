@@ -64,7 +64,17 @@ footer {
   color: white;
 }
 
+#submit-btn:disabled {
+  background-color: rgb(70, 58, 70);
+  color: white;
+}
+
 #radio-checkbox {
   display: flex;
   align-content: space-between;
+}
+
+.leave-comment {
+  display: flex;
+  flex-direction: column;
 }

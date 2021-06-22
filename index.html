@@ -167,17 +167,24 @@
           <input type="radio" name="rate" value="10" />10
         </div>
 
-        <label for="">Deixe seu comentário</label>
-        <textarea class="textarea" name="comentario" cols="30" rows="5"></textarea>
+        <div class="leave-comment">
+          <label class="textarea">Deixe seu comentário:</label>
+
+          <div>
+            <textarea class="textarea" name="comentario" cols="30" rows="5" maxlength="500">
+            </textarea>
+            <span id="counter"></span>
+          </div>
+        </div>
 
         <div>
           <label for="agreement" id="label-infos"
             >Você concorda com o uso das informações acima?</label
           >
-          <input type="checkbox" name="" id="agreement" required />
+          <input type="checkbox" name="" id="agreement"/>
         </div>
 
-        <button type="submit" id="submit-btn">Enviar</button>
+        <button type="submit" id="submit-btn" disabled>Enviar</button>
 
       </form>
       <img
