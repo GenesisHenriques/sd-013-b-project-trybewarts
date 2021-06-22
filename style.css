@@ -50,3 +50,21 @@ main {
   display: flex;
 }
 
+footer {
+  background-color: darkslategrey;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: auto;
+  height: 60px;
+}
+
+#submit-btn {
+  background-color: rgb(56, 11, 56);
+  color: white;
+}
+
+#radio-checkbox {
+  display: flex;
+  align-content: space-between;
+}
