@@ -96,7 +96,6 @@ function obterDadosFormulario() {
   const email = document.querySelector('#input-email').value;
   const casa = document.querySelector('#house').value;
   const comentario = textarea.value;
-
   obterRadioFamilia();
   obterMateriaEscolhida();
   obterAvaliacao();
