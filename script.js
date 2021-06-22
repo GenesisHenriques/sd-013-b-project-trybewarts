@@ -31,3 +31,7 @@ document.getElementById('form-login').addEventListener('submit', handleSubmit);
 document.getElementById('agreement').addEventListener('change', checkAgreement);
 
 document.getElementById('textarea').addEventListener('input', changeWordCount);
+
+document.getElementById('evaluation-form').addEventListener('submit', (event) => {
+  event.preventDefault();
+});
