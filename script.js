@@ -11,25 +11,25 @@ const maxCaracteres = 500;
 let contagem = 0;
 
 const textarea = document.querySelector('#textarea');
-const respostas = document.querySelector('#respostas');
+// const respostas = document.querySelector('#respostas');
 
-let radiosFamilia = document.getElementsByName('family');
+const radiosFamilia = document.getElementsByName('family');
 let familiaEscolhida = '';
-let conteudo = document.querySelectorAll('.subject');
-let conteudoEscolhido = [];
-let radiosAvaliacao = document.getElementsByName('rate');
+const conteudo = document.querySelectorAll('.subject');
+const conteudoEscolhido = [];
+const radiosAvaliacao = document.getElementsByName('rate');
 let notaAvaliacao = '';
-let main = document.querySelector('.main');
-let formulario1 = document.querySelector('#evaluation-form');
-let novoFormulario = document.createElement('form');
+const main = document.querySelector('.main');
+const formulario1 = document.querySelector('#evaluation-form');
+const novoFormulario = document.createElement('form');
 
-let item1 = document.createElement('p');
-let item2 = document.createElement('p');
-let item3 = document.createElement('p');
-let item4 = document.createElement('p');
-let item5 = document.createElement('p');
-let item6 = document.createElement('p');
-let item7 = document.createElement('p');
+const item1 = document.createElement('p');
+const item2 = document.createElement('p');
+const item3 = document.createElement('p');
+const item4 = document.createElement('p');
+const item5 = document.createElement('p');
+const item6 = document.createElement('p');
+const item7 = document.createElement('p');
 
 /** FUNÇÕES */
 
@@ -63,7 +63,7 @@ function contarCaracteres() {
 }
 textarea.addEventListener('keyup', contarCaracteres);
 
-function salvarRespostas(event) {  
+function salvarRespostas(event) {
   event.preventDefault();/* cancela o evento, sem parar a sua execução, ou seja, faz com a página não seja recarregada, porem implementa o resto da função */
   for (let i = 0; i < radiosFamilia.length; i += 1) {
     if (radiosFamilia[i].checked) {
@@ -72,14 +72,14 @@ function salvarRespostas(event) {
   }
   for (let i = 0; i < conteudo.length; i += 1) {
     if (conteudo[i].checked) {
-      conteudoEscolhido.push(' ' + conteudo[i].value);
+      conteudoEscolhido.push(` ${conteudo[i].value}`);
     }
   }
   for (let i = 0; i < radiosAvaliacao.length; i += 1) {
     if (radiosAvaliacao[i].checked) {
       notaAvaliacao = radiosAvaliacao[i].value;
     }
-  }  
+  }
   imprimirFormularioPreenchido();
   criarNovoFormulario();
 }
@@ -92,29 +92,19 @@ function criarNovoFormulario() {
 }
 
 function imprimirFormularioPreenchido() {
-  let nome = document.querySelector('#input-name').value;
-  let sobrenome = document.querySelector('#input-lastname').value;
-  let email = document.querySelector('#input-email').value;
-  let casa = document.querySelector('#house').value;
-  comentario = textarea.value;
+  const nome = document.querySelector('#input-name').value;
+  const sobrenome = document.querySelector('#input-lastname').value;
+  const email = document.querySelector('#input-email').value;
+  const casa = document.querySelector('#house').value;
+  const comentario = textarea.value;
 
-  item1.innerText = `Nome: ${nome} ${sobrenome}`;  
-  item2.innerText = `Email: ${email}`;  
-  item3.innerText = `Casa: ${casa}`;  
+  item1.innerText = `Nome: ${nome} ${sobrenome}`;
+  item2.innerText = `Email: ${email}`;
+  item3.innerText = `Casa: ${casa}`;
   item4.innerText = `Família: ${familiaEscolhida}`;
   item5.innerText = `Matérias: ${conteudoEscolhido}`;
   item6.innerText = `Avaliação: ${notaAvaliacao}`;
   item7.innerText = `Observações: ${comentario}`;
-  
-  return  novoFormulario.appendChild(item1),
-          novoFormulario.appendChild(item2),
-          novoFormulario.appendChild(item3),
-          novoFormulario.appendChild(item4),
-          novoFormulario.appendChild(item5),
-          novoFormulario.appendChild(item6),
-          novoFormulario.appendChild(item7);
 
+  return  novoFormulario.appendChild(item1), novoFormulario.appendChild(item2), novoFormulario.appendChild(item3), novoFormulario.appendChild(item4), novoFormulario.appendChild(item5), novoFormulario.appendChild(item6), novoFormulario.appendChild(item7);
 }
-
-/* Opção salvando tudo no localStorage presente no gitHub, porem não passava no requisito, pois os teste exige que as informações sejam adicionadas
-no momento do clique, ou seja, junto com o evento */
