@@ -91,6 +91,11 @@ hr {
   padding: 2px 5px;
 }
 
-#comentario {
+#textarea {
   height: 80px;
+}
+
+#counter {
+  margin: -17px 5px 8px auto;
+  position: relative;
 }

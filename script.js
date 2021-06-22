@@ -5,6 +5,8 @@ const inputLogin = document.getElementById('input-login');
 const inputPassword = document.getElementById('input-password');
 const agreement = document.getElementById('agreement');
 const btnSubmit = document.getElementById('submit-btn');
+const counter = document.getElementById('counter');
+const textarea = document.getElementById('textarea');
 
 const validateLogin = (login, password) => {
   if (login === defaultLogin && password === defaultPassword) {
@@ -24,7 +26,12 @@ const iAgree = () => {
   }
 };
 
+const getCounter = () => {
+  counter.innerText = 500 - (textarea.value.length);
+};
+
 window.onload = function() {
   btnLogar.addEventListener('click', login);
   agreement.addEventListener('click', iAgree);
+  textarea.addEventListener('keyup', getCounter);
 };
