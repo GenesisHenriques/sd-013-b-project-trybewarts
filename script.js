@@ -21,8 +21,8 @@ const radiosAvaliacao = document.getElementsByName('rate');
 let notaAvaliacao = '';
 const main = document.querySelector('.main');
 const formulario1 = document.querySelector('#evaluation-form');
-const novoFormulario = document.createElement('form');
 
+const novoFormulario = document.createElement('form');
 const item1 = document.createElement('p');
 const item2 = document.createElement('p');
 const item3 = document.createElement('p');
@@ -63,7 +63,6 @@ function contarCaracteres() {
 }
 textarea.addEventListener('keyup', contarCaracteres);
 
-
 function obterDadosFormulario() {
   const nome = document.querySelector('#input-name').value;
   const sobrenome = document.querySelector('#input-lastname').value;
@@ -86,31 +85,44 @@ function obterDadosFormulario() {
       notaAvaliacao = radiosAvaliacao[i].value;
     }
   }
-
-  return item1.innerText = `Nome: ${nome} ${sobrenome}`, 
-  item2.innerText = `Email: ${email}`,
-  item3.innerText = `Casa: ${casa}`,
+  item1.innerText = `Nome: ${nome} ${sobrenome}`;
+  item2.innerText = `Email: ${email}`;
+  item3.innerText = `Casa: ${casa}`;
   item4.innerText = `Família: ${familiaEscolhida}`,
-  item5.innerText = `Matérias: ${conteudoEscolhido}`,
-  item6.innerText = `Avaliação: ${notaAvaliacao}`,
+  item5.innerText = `Matérias: ${conteudoEscolhido}`;
+  item6.innerText = `Avaliação: ${notaAvaliacao}`;
   item7.innerText = `Observações: ${comentario}`;
+  
+  return item1, item2, item3, item4, item5, item6, item7
 }
 
 function imprimirFormularioPreenchido() {
   obterDadosFormulario();
 
-  return  novoFormulario.appendChild(item1), novoFormulario.appendChild(item2), novoFormulario.appendChild(item3), novoFormulario.appendChild(item4), novoFormulario.appendChild(item5), novoFormulario.appendChild(item6), novoFormulario.appendChild(item7);
-}
-
-function criarNovoFormulario() {
   formulario1.remove();
   novoFormulario.id = 'evaluation-form';
   main.append(novoFormulario);
+
+  novoFormulario.appendChild(item1);
+  novoFormulario.appendChild(item2);
+  novoFormulario.appendChild(item3);
+  novoFormulario.appendChild(item4);
+  novoFormulario.appendChild(item5);
+  novoFormulario.appendChild(item6);
+  novoFormulario.appendChild(item7);
+
+  // return  novoFormulario.appendChild(item1), novoFormulario.appendChild(item2), novoFormulario.appendChild(item3), novoFormulario.appendChild(item4), novoFormulario.appendChild(item5), novoFormulario.appendChild(item6), novoFormulario.appendChild(item7)
 }
+
+// function criarNovoFormulario() {
+//   formulario1.remove();
+//   novoFormulario.id = 'evaluation-form';
+//   main.append(novoFormulario);
+// }
 
 function interagirComFormulario(event) {
   event.preventDefault();/* cancela o evento, sem parar a sua execução, ou seja, faz com a página não seja recarregada, porem implementa o resto da função */
   imprimirFormularioPreenchido();
-  criarNovoFormulario();
+  // criarNovoFormulario();
 }
 botaoEnviar.addEventListener('click', interagirComFormulario);
