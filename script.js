@@ -7,6 +7,7 @@ const inputLastName = document.getElementById('input-lastname');
 const inputEmail = document.getElementById('input-email');
 const inputHouse = document.getElementById('house');
 const inputObservation = document.getElementById('textarea');
+const counter = document.getElementById('counter');
 
 function canLogin(event) {
   const inputLogin = document.getElementById('input-login');
@@ -61,5 +62,12 @@ function submitForms(event) {
   formField.append(fullName, fullEmail, fullHouse, fullFamily, learnMatters, evaluation, obsField);
 }
 
+function getCounter(event) {
+  const countString = event.target.value.length;
+  console.log(countString);
+  counter.innerText = 500 - countString;
+}
+
+inputObservation.addEventListener('keyup', getCounter);
 submitBtn.addEventListener('click', submitForms);
 loginBtn.addEventListener('click', canLogin);

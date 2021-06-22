@@ -172,3 +172,8 @@ header h1 {
   background-color: gray;
   text-align: center;
 }
+
+#counter {
+  display: flex;
+  justify-content: flex-end;
+}
