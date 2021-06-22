@@ -1,7 +1,19 @@
 * {
+  cursor: url('images/frosted.cur'), default;
+  box-sizing: border-box;
+  font-family: Mountains of Christmas, serif;
+  font-size: 18px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.bold {
+  font-weight: 600;
+  margin: 10px 0;
 }
 
 .header {
@@ -16,19 +28,24 @@
 }
 
 .trybewarts-login {
+  align-items: center;
   display: flex;
-  width: 450px;
   justify-content: space-around;
+  margin-right: 20px;
+  width: 450px;
 }
 
 #trybewarts-header-title {
   color: white;
+  font-size: 2em;
 }
 
 .container-main {
+  background-color: rgb(46, 124, 109);
   display: flex;
   justify-content: space-around;
-  padding-top: 15px;
+  padding-bottom: 150px;
+  padding-top: 80px;
   width: 100%;
 }
 
@@ -38,9 +55,13 @@ main {
 }
 
 #evaluation-form {
+  background-color: rgb(255, 244, 227);
+  border-radius: 10px;
+  box-shadow: 0 0 50px inset rgb(201, 176, 123), 0 20px 30px rgba(0, 0, 0, 0.275);
   display: flex;
-  width: 675px;
   flex-direction: column;
+  padding: 6%;
+  width: 675px;
 }
 
 #trybewarts-forms-logo {
@@ -78,12 +99,125 @@ main {
   padding: 5px;
 }
 
+input , button , select , textarea {
+  border: none;
+  border-radius: 5px;
+  font-family: Mountains of Christmas, serif;
+  outline: none;
+  transition: 0.3s;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+main form input , select , textarea , #submit-btn {
+  appearance: none;
+  background-color: rgb(255, 244, 227);
+  box-shadow: 0 0 10px inset rgb(232, 203, 141), 0 0 20px  rgb(232, 203, 141);
+}
+
+.input-text {
+  margin: 10px;
+  height: 30px;
+  padding-left: 15px;
+  width: 40%;
+}
+
+#textarea {
+  margin: 10px;
+  padding: 20px;
+  resize: none;
+}
+
+.check {
+  height: 15px;
+  width: 15px;
+  margin: 12px 0 0 5px;
+}
+
+header .input-text:focus {
+  box-shadow: 0 0 10px white;
+}
+
+header .input-text::selection {
+  text-shadow: 0 1px 2px red;
+}
+
+main form .input-text:focus , textarea:focus {
+  box-shadow: 0 0 10px inset rgb(255, 30, 0), 0 -5px 20px  rgba(255, 72, 0, 0.685);
+}
+
+main form .input-text::selection , textarea::selection {
+  text-shadow: 0 1px 2px red;
+}
+
+.check:checked {
+  background-color: rgba(255, 153, 0, 0.39);
+  box-shadow: 0 0 15px inset red, 0 -5px 10px  red;
+  height: 1.2em;
+  width: 1.2em;
+}
+
+#agreement {
+  height: 30px;
+  width: 30px;
+  margin: 0 0 0 15px;
+}
+
 .container-agreement {
+  align-items: center;
+  display: flex;
   padding: 5px;
 }
 
-.container-btn {
-  padding: 5px;
+button {
+  padding: 2px 10px;
+}
+
+#submit-btn {
+  align-self: center;
+  background-color: rgb(235, 218, 184);
+  height: 60px;
+  margin-top: 40px;
+  width: 200px;
+}
+
+#submit-btn:enabled {
+  color: white;
+  background-color: rgba(255, 153, 0, 0.508);
+  border: 3px solid rgb(255, 244, 227);
+  box-shadow: 0 0 50px inset red, 0 -5px 50px rgb(255, 47, 0);
+  font-size: 25px;
+}
+
+#submit-btn:focus {
+  background-color: rgba(255, 196, 0, 0.501);
+  border: 4px solid rgb(255, 244, 227);
+  box-shadow: 20px 0 40px inset rgb(223, 0, 0), -10px 20px 60px rgb(220, 33, 0);
+}
+
+footer {
+  background-color: rgb(38, 102, 89);
+  box-shadow: 0 30px 40px inset rgba(0, 0, 0, 0.172);
+  color: rgb(203, 203, 203);
+  text-align: center;
+  font-family: serif;
+  font-size: 16px;
+  padding: 5% 0;
+  width: 100%;
+}
+
+header button:hover {
+  box-shadow: 0 0 10px white;
+  font-size: 20px;
+}
+
+header button:focus {
+  box-shadow: 0 0 20px white;
+  font-size: 19px;
 }
 
 #counter {
