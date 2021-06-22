@@ -63,28 +63,6 @@ function contarCaracteres() {
 }
 textarea.addEventListener('keyup', contarCaracteres);
 
-function salvarRespostas(event) {
-  event.preventDefault();/* cancela o evento, sem parar a sua execução, ou seja, faz com a página não seja recarregada, porem implementa o resto da função */
-  for (let i = 0; i < radiosFamilia.length; i += 1) {
-    if (radiosFamilia[i].checked) {
-      familiaEscolhida = radiosFamilia[i].value;
-    }
-  }
-  for (let i = 0; i < conteudo.length; i += 1) {
-    if (conteudo[i].checked) {
-      conteudoEscolhido.push(` ${conteudo[i].value}`);
-    }
-  }
-  for (let i = 0; i < radiosAvaliacao.length; i += 1) {
-    if (radiosAvaliacao[i].checked) {
-      notaAvaliacao = radiosAvaliacao[i].value;
-    }
-  }
-  imprimirFormularioPreenchido();
-  criarNovoFormulario();
-}
-botaoEnviar.addEventListener('click', salvarRespostas);
-
 function criarNovoFormulario() {
   formulario1.remove();
   novoFormulario.id = 'evaluation-form';
@@ -108,3 +86,25 @@ function imprimirFormularioPreenchido() {
 
   return  novoFormulario.appendChild(item1), novoFormulario.appendChild(item2), novoFormulario.appendChild(item3), novoFormulario.appendChild(item4), novoFormulario.appendChild(item5), novoFormulario.appendChild(item6), novoFormulario.appendChild(item7);
 }
+
+function salvarRespostas(event) {
+  event.preventDefault();/* cancela o evento, sem parar a sua execução, ou seja, faz com a página não seja recarregada, porem implementa o resto da função */
+  for (let i = 0; i < radiosFamilia.length; i += 1) {
+    if (radiosFamilia[i].checked) {
+      familiaEscolhida = radiosFamilia[i].value;
+    }
+  }
+  for (let i = 0; i < conteudo.length; i += 1) {
+    if (conteudo[i].checked) {
+      conteudoEscolhido.push(` ${conteudo[i].value}`);
+    }
+  }
+  for (let i = 0; i < radiosAvaliacao.length; i += 1) {
+    if (radiosAvaliacao[i].checked) {
+      notaAvaliacao = radiosAvaliacao[i].value;
+    }
+  }
+  imprimirFormularioPreenchido();
+  criarNovoFormulario();
+}
+botaoEnviar.addEventListener('click', salvarRespostas);
