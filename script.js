@@ -32,7 +32,7 @@ const confirmBtn = document.getElementById('agreement');
 confirmBtn.addEventListener('click', changeDisabled);
 
 // créditos: http://www.codigoti.com.br/2018/04/javascript-contando-caracteres-dentro.html
-
+// falta consertar, o certo é decrementando.
 const counterText = document.getElementById('counter');
 function counterBox(event) {
   const { target } = event;

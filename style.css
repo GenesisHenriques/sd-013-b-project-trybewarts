@@ -68,3 +68,7 @@ main {
 .trybewarts-rating {
   justify-content: flex-end;
 }
+
+footer {
+  text-decoration: solid;
+}
