@@ -69,13 +69,13 @@ footer {
   margin: 10px;
 }
 
-.formZone1 input, .house {
+.formZone1 input , .house {
   flex-grow: 1;
   min-width: 250px;
   margin: 5px 2px;
 }
 
-.formZone1 input, #house {
+.formZone1 input , #house {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid gray;
@@ -139,5 +139,5 @@ footer {
 }
 
 #agreement {
-  margin: 20px
-}
+  margin: 20px;
+};
