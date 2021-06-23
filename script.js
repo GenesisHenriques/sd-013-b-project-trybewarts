@@ -55,5 +55,5 @@ const form = document.getElementById('evaluation-form');
 
 button.addEventListener('click', (event) => {
   form.style.display = 'none';
-  event.preventDefault();    
+  event.preventDefault();
 });
