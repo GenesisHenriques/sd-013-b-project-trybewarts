@@ -22,7 +22,6 @@ const buttonCheck = () => {
       button.disabled = false;
     }
   });
+
  }
 buttonCheck();
-
-//ÚLTIMO COMMIT
