@@ -88,3 +88,12 @@ submitBtn.addEventListener('click', (event) => {
   forms.innerHTML += (`<p>Observações: ${textarea}<p>`);
   event.preventDefault();
 });
+
+const textarea = document.querySelector('#textarea');
+textarea.addEventListener('keypress', (event) => {
+  const maxChars = 500;
+  const inputLength = textarea.value.length;
+  if (inputLength >= maxChars) {
+    event.preventDefault();
+  }
+});
