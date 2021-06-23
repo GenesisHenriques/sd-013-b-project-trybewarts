@@ -11,7 +11,7 @@ function alerta() {
   });
 }
 alerta();
-
+// Último botão
 const buttonCheck = () => {
   const button = document.querySelector('#submit-btn');
   const check = document.querySelector('#agreement');
