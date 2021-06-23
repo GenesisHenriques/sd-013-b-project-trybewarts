@@ -52,8 +52,6 @@ textarea.addEventListener('keyup', () => {
 });
 
 const form = document.getElementById('evaluation-form');
-let observation = document.getElementById('textarea').value;
-let 
 
 button.addEventListener('click', (event) => {
   form.style.display = 'none';
