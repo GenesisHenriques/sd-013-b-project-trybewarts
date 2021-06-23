@@ -22,6 +22,5 @@ const buttonCheck = () => {
       button.disabled = false;
     }
   });
-
- }
+};
 buttonCheck();
