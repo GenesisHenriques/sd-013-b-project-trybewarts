@@ -58,14 +58,14 @@ main {
 }
 
 #contents {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #nes {
   display: flex;
 }
 
-#email-plus-house{
+#email-plus-house {
   display: flex;
 }
