@@ -50,3 +50,12 @@ textarea.addEventListener('keyup', () => {
   const resta = max - cont;
   contador.innerText = resta;
 });
+
+const form = document.getElementById('evaluation-form');
+let observation = document.getElementById('textarea').value;
+let 
+
+button.addEventListener('click', (event) => {
+  form.style.display = 'none';
+  event.preventDefault();    
+});
