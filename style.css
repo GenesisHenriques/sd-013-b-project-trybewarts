@@ -44,3 +44,13 @@
   display: flex;
   flex-direction: column;
 }
+
+.textarea-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.counter {
+  font-size: 12px;
+  align-self: flex-end;
+}

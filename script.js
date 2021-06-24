@@ -5,6 +5,9 @@ const yourRate = document.querySelector('.your-rate');
 const submitBtn = document.querySelector('#submit-btn');
 submitBtn.disabled = true;
 const agreementChk = document.querySelector('#agreement');
+const textarea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
+console.log(counter.innerText);
 
 function verifyLogin() {
   const loginCorrect = 'tryber@teste.com';
@@ -44,3 +47,7 @@ function isAgreementCheck(event) {
 btnLogin.addEventListener('click', verifyLogin);
 generateRadiosBtn();
 agreementChk.addEventListener('click', isAgreementCheck);
+textarea.addEventListener('keyup', (event) => {
+  counter.innerText = (500 - event.target.textLength);
+  console.log(event.target.textLength);
+});
