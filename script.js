@@ -73,9 +73,9 @@ function getCasa() {
 function getFamilia() {
   const family = document.querySelectorAll('.family');
   let familyText = '';
-  for (let key of family) {
-    if (key.checked) {
-      familyText = `Família: ${key.value}`;
+  for (let index = 0; index < family.length; index += 1) {
+    if (family[index].checked) {
+      familyText = `Família: ${family[index].value}`;
     }
   }
   return familyText;
@@ -84,9 +84,9 @@ function getFamilia() {
 function getMaterias() {
   const techs = document.querySelectorAll('.subject');
   let techsText = 'Matérias: ';
-  for (let key of techs) {
-    if (key.checked) {
-      techsText += `${key.value}, `;
+  for (let index = 0; index < techs.length; index += 1) {
+    if (techs[index].checked) {
+      techsText += `${techs[index].value}, `;
     }
   }
   techsText = techsText.slice(0, -2);
@@ -97,9 +97,9 @@ function getMaterias() {
 function getAvaliacao() {
   const labelRate = document.querySelectorAll('.rate');
   let labelRateText = '';
-  for (let key of labelRate) {
-    if (key.checked) {
-      labelRateText = `Avaliação: ${key.value}`;
+  for (let index = 0; index < labelRate.length; index += 1) {
+    if (labelRate[index].checked) {
+      labelRateText = `Avaliação: ${labelRate[index].value}`;
     }
   }
   return labelRateText;
@@ -123,6 +123,6 @@ function groupDatas() {
   `;
 }
 
-submitBtn.addEventListener('click', (event) => {
+submitBtn.addEventListener('click', () => {
   groupDatas();
 });
