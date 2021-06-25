@@ -47,12 +47,6 @@ function isAgreementCheck(event) {
   }
 }
 
-function setLocalStorage() {
-  // localStorage.setItem('datas', JSON.stringify(arrayItens));
-  console.log('a');
-  localStorage.setItem('datas', 'oi');
-}
-
 btnLogin.addEventListener('click', verifyLogin);
 generateRadiosBtn();
 agreementChk.addEventListener('click', isAgreementCheck);
@@ -60,17 +54,23 @@ textarea.addEventListener('keyup', (event) => {
   counter.innerText = (500 - event.target.textLength);
 });
 
-function groupDatas() {
+function getNome() {
   const inputName = document.querySelector('#input-name');
   const inputLastname = document.querySelector('#input-lastname');
-  const fullNameText = `Nome: ${inputName.value} ${inputLastname.value}`;
-  
+  return `Nome: ${inputName.value} ${inputLastname.value}`;
+}
+
+function getEmail() {
   const inputEmail = document.querySelector('#input-email');
-  const inputEmailText = `Email: ${inputEmail.value}`;
+  return `Email: ${inputEmail.value}`;
+}
 
+function getCasa() {
   const house = document.querySelector('#house');
-  const houseText = `Casa: ${house.value}`;
+  return `Casa: ${house.value}`;
+}
 
+function getFamilia() {
   const family = document.querySelectorAll('.family');
   let familyText = '';
   for (let key of family) {
@@ -78,7 +78,10 @@ function groupDatas() {
       familyText = `Família: ${key.value}`;
     }
   }
+  return familyText;
+}
 
+function getMaterias() {
   const techs = document.querySelectorAll('.subject');
   let techsText = 'Matérias: ';
   for (let key of techs) {
@@ -88,7 +91,10 @@ function groupDatas() {
   }
   techsText = techsText.slice(0, -2);
   techsText += '.';
+  return techsText;
+}
 
+function getAvaliacao() {
   const labelRate = document.querySelectorAll('.rate');
   let labelRateText = '';
   for (let key of labelRate) {
@@ -96,19 +102,24 @@ function groupDatas() {
       labelRateText = `Avaliação: ${key.value}`;
     }
   }
+  return labelRateText;
+}
 
+function getObservacoes() {
   // const textarea = document.querySelector('#textarea');
-  const textareaText = `Observações: ${textarea.value}`;
+  return `Observações: ${textarea.value}`;
+}
 
+function groupDatas() {
   const evaluationForm = document.querySelector('#evaluation-form');
   evaluationForm.innerHTML = `
-  ${fullNameText}<br>
-  ${inputEmailText}<br>
-  ${houseText}<br>
-  ${familyText}<br>
-  ${techsText}<br>
-  ${labelRateText}<br>
-  ${textareaText}<br>
+  ${getNome()}<br>
+  ${getEmail()}<br>
+  ${getCasa()}<br>
+  ${getFamilia()}<br>
+  ${getMaterias()}<br>
+  ${getAvaliacao()}<br>
+  ${getObservacoes()}<br>
   `;
 }
 
