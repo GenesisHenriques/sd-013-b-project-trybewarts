@@ -17,6 +17,7 @@ validForm();
 
 // Faz com que o botão submit esteja desativado
 // e seja ativado se o input agrement estiver selecionado
+
 const buttonEnable = document.getElementById('submit-btn');
 
 function enable() {
@@ -29,3 +30,103 @@ function enable() {
 }
 
 enable();
+
+// Cria um contador para o textera
+// Pesquisando:
+// Neste consegui ajuda para o css:
+// source: http://jsfiddle.net/oyhf3812/
+// source: https://www.w3schools.com/jsref/event_onkeyup.asp
+// source: https://stackoverflow.com/questions/14086398/count-textarea-characters
+// A resposta estava aqui:
+// source: https://stackoverflow.com/questions/24875414/addeventlistener-change-and-option-selection
+
+const counter = document.querySelector('#counter');
+
+const textarea = document.querySelector('#textarea');
+
+// O addEventListener input aciona toda vez que o elemento recebe um input
+textarea.addEventListener('input', () => {
+  counter.innerText = `${500 - textarea.value.length}/500`;
+});
+
+const form = document.querySelector('#evaluation-form');
+
+function getValue(id) {
+  return document.getElementById(id).value;
+}
+
+const createLabelOne = document.createElement('label');
+buttonEnable.addEventListener('click', () => {
+  createLabelOne.innerText = `Nome: ${getValue('input-name')} ${getValue('input-lastname')}`;
+});
+
+const createLabelTwo = document.createElement('label');
+buttonEnable.addEventListener('click', () => {
+  createLabelTwo.innerText = `Email: ${getValue('input-email')}`;
+});
+
+const getSelect = document.getElementById('house');
+const createLabelThree = document.createElement('label');
+buttonEnable.addEventListener('click', () => {
+  createLabelTwo.innerText = `Email: ${getValue('input-email')}`;
+  const labelThreeText = getSelect.selectedOptions[0].innerText;
+  createLabelThree.innerText = `Casa: ${labelThreeText}`;
+});
+
+const createLabelFour = document.createElement('label');
+const inputFamily = document.getElementsByName('family');
+for (let index = 0; index < inputFamily.length; index += 1) {
+  inputFamily[index].addEventListener('click', () => {
+    createLabelFour.innerText = `Família: ${inputFamily[index].defaultValue}`;
+  });
+}
+
+const createLabelFive = document.createElement('label');
+const inputContent = document.getElementsByClassName('subject');
+createLabelFive.className = 'labelFive';
+createLabelFive.innerText = 'Matérias: ';
+for (let index = 0; index < inputContent.length; index += 1) {
+  inputContent[index].addEventListener('click', () => {
+    if (inputContent[index].classList.contains('selected')) {
+      inputContent[index].classList.remove('selected');
+    } else {
+      inputContent[index].classList.add('selected');
+    }
+    // createLabelFive.innerText += `${inputContent[index].defaultValue}, `;
+  });
+}
+
+const checkSelected = document.getElementsByClassName('selected');
+buttonEnable.addEventListener('click', () => {
+  for (let index = 0; index < checkSelected.length; index += 1) {
+    createLabelFive.innerText += `${checkSelected[index].defaultValue}, `;
+  }
+  const fur = createLabelFive.innerText.slice(0, -2);
+  createLabelFive.innerText = fur;
+});
+
+const createLabelSix = document.createElement('label');
+const inputRate = document.getElementsByName('rate');
+for (let index = 0; index < inputRate.length; index += 1) {
+  inputRate[index].addEventListener('click', () => {
+    createLabelSix.innerText = `Avaliação: ${inputRate[index].defaultValue}`;
+  });
+}
+
+const createLabelSeven = document.createElement('label');
+createLabelSeven.innerText = 'Observações: ';
+const inputTextarea = document.getElementById('textarea');
+buttonEnable.addEventListener('click', () => {
+  createLabelSeven.innerText += inputTextarea.value;
+});
+
+buttonEnable.addEventListener('click', () => {
+  form.innerHTML = ' ';
+  form.appendChild(createLabelOne);
+  form.appendChild(createLabelTwo);
+  form.appendChild(createLabelThree);
+  form.appendChild(createLabelFour);
+  form.appendChild(createLabelFive);
+  form.appendChild(createLabelSix);
+  form.appendChild(createLabelSeven);
+});

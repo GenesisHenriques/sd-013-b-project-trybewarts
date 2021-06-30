@@ -90,3 +90,26 @@
   display: flex;
   align-items: center;
 }
+
+/* porque o elemento divTextarea tem position o elemento counter fica dentro dele */
+
+/* Se não o elemento counter ficaria voando pela página, */
+
+/* pode testar removendo o relative do divTextarea */
+
+/* source: https://www.w3schools.com/css/css_positioning.asp */
+#divTextarea {
+  width: 500px;
+  position: relative;
+}
+
+#counter {
+  position: absolute;
+  bottom: 5px;
+  right: 8px;
+}
+
+#divTextareaAndLabel {
+  display: flex;
+  flex-direction: column;
+}
