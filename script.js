@@ -65,7 +65,7 @@ function eraseAndInsert() {
 
 /* Assim que o botão de envio é clicado, o formulário é esvaziado, e seu espaço é preenchido
 por uma ul com lis contendo as informações preenchidas. */
-button.onclick = function () {
+button.onclick = () => {
   const subjectListString = getSubjectList();
   const dataArray = getDataArray(subjectListString);
   eraseAndInsert();
