@@ -7,6 +7,26 @@
   color: white;
 }
 
+.body {
+  background: linear-gradient(45deg, #000000, #530303,#f32323, #530303, #000000);
+  background-size: 200%, 200%;
+  animation: colors 15s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
 .trybewarts-login {
   display: flex;
   flex-basis: 30%;
