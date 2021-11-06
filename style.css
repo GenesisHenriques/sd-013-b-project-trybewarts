@@ -1,42 +1,165 @@
-/* Ínicio de Trecho de Código do Genesis */
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: rgb(50, 167, 145);
+  justify-content: center;
   color: white;
 }
 
-.body {
-  background: linear-gradient(45deg, #000000, #530303,#f32323, #530303, #000000);
+.trybewarts-header-logo {
+  width: 60px;
+  margin: 10px;
+}
+
+.header, .footer {
+  background: linear-gradient(100deg, #000000, #530303,#ff0000, #530303, #000000);
   background-size: 200%, 200%;
   animation: colors 15s ease infinite;
 }
 
 @keyframes colors {
-    0% {
-      background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
 
-    50% {
-      background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100% {
-      background-position: 0% 50%;
-    }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.section-login {
+  display: flex;
+  background-color: #10141B;
+}
+
+.area-login {
+  width: 50%;
+  height: 40em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: HarryP;
+  src: local(HarryP), url(./HARRYP__.TTF) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.login {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  font-family: HarryP;
+  color: white;
+  font-size: 3em;
 }
 
 .trybewarts-login {
+  height: 80%;
   display: flex;
-  flex-basis: 30%;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.trybewarts-login input , button {
-  margin: 5px;
+.trybewarts-login input {
+  width: 20em;
+  height: 3em;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
 }
 
+.trybewarts-login ::placeholder {
+  text-align: center;
+}
+
+.trybewarts-login button {
+  width: 20em;
+  height: 3em;
+  border-radius: 10px;
+  border: none;
+  background-color: #EEBA30;
+}
+
+.trybewarts-login button:hover {
+  background-color: #D3A625;
+}
+
+.area-doll {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doll-img {
+  width: 300px;
+ animation: animacao 3s;
+}
+
+.doll-img {
+ animation: animacao 20s ease infinite;
+}
+
+@keyframes animacao {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  10% {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  20% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  30% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  40% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  50% {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  60% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  70% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  90% {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+}
+
+
+/* ------------------------------------------------------------ */
 .main-content {
   display: flex;
   justify-content: space-evenly;
@@ -53,14 +176,6 @@
 #counter {
   margin-top: 10px;
   margin-bottom: 3px;
-}
-
-/* Fim de Trecho de Código do Genesis */
-
-/* Inicio de Trecho de código do Alan */
-* {
-  padding: 0;
-  margin: 0;
 }
 
 #evaluation-form h2 {
