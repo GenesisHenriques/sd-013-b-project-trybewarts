@@ -1,0 +1,117 @@
+.main-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 675px;
+}
+
+#counter {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+#evaluation-form h2 {
+  margin: 10px auto;
+}
+
+.family-div , .content-div , .textarea-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box {
+  display: flex;
+}
+
+.header img {
+  height: 100px;
+}
+
+.personal-info-div {
+  display: flex;
+  justify-content: stretch;
+  margin: 10px;
+}
+
+.personal-info-div input {
+  width: 50%;
+  margin-right: 10px;
+  height: 30px;
+}
+
+.email-and-house-div {
+  display: flex;
+  justify-content: stretch;
+  margin: 10px;
+  align-items: center;
+}
+
+
+.email-and-house-div input , select {
+  width: 40%;
+  margin: 5px 5px 5px 0;
+  height: 30px;
+}
+
+.email-and-house-div select {
+  margin-left: 15px;
+}
+
+.family-and-content-div {
+  display: flex;
+  justify-content: stretch;
+  margin: 10px;
+}
+
+.family-radio-btn {
+  margin: 5px;
+}
+
+.family-div , .content-div {
+  width: 35%;
+}
+
+.checkbox-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.checkbox-div input {
+  margin: 10px;
+}
+
+.rate-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.textarea-div {
+  display: flex;
+  margin: 10px;
+}
+
+.agreement-div {
+  margin: 10px;
+}
+
+#submit-btn {
+  margin: 5px;
+  height: 30px;
+}
+
+.footer {
+  text-align: center;
+  font-weight: 800;
+  color: white;
+  background-color: grey;
+  height: 2em;
+  padding: 10px;
+}

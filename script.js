@@ -5,6 +5,7 @@ function validatingLogin() {
 
   if (login.value === 'tryber@teste.com' && password.value === '123456') {
     alert('Olá, Tryber!');
+    window.location.href = "./cadastro.html";
   } else {
     alert('Login ou senha inválidos.');
   }

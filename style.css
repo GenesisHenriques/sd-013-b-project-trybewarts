@@ -8,11 +8,11 @@
   align-items: center;
   justify-content: center;
   color: white;
+  height: 4em;
 }
 
 .trybewarts-header-logo {
-  width: 60px;
-  margin: 10px;
+  width: 3em;
 }
 
 .header, .footer {
@@ -42,7 +42,7 @@
 
 .area-login {
   width: 50%;
-  height: 40em;
+  height: 35em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +68,7 @@
 }
 
 .trybewarts-login {
-  height: 80%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -108,11 +108,8 @@
 
 .doll-img {
   width: 300px;
- animation: animacao 3s;
-}
-
-.doll-img {
  animation: animacao 20s ease infinite;
+ transition: linear;
 }
 
 @keyframes animacao {
@@ -121,160 +118,39 @@
     transform: translateY(0);
   }
   10% {
-    -webkit-transform: translateX(20px);
+    -webkit-transform: translateX(40px);
     transform: translateX(20px);
   }
   20% {
-    -webkit-transform: translateY(20px);
+    -webkit-transform: translateY(40px);
     transform: translateY(20px);
   }
   30% {
-    -webkit-transform: translateX(-20px);
+    -webkit-transform: translateX(-40px);
     transform: translateX(-20px);
   }
   40% {
-    -webkit-transform: translateY(20px);
+    -webkit-transform: translateY(40px);
     transform: translateY(20px);
   }
   50% {
-    -webkit-transform: translateX(20px);
+    -webkit-transform: translateX(40px);
     transform: translateX(20px);
   }
   60% {
-    -webkit-transform: translateY(20px);
+    -webkit-transform: translateY(40px);
     transform: translateY(20px);
   }
   70% {
-    -webkit-transform: translateX(-20px);
+    -webkit-transform: translateX(-40px);
     transform: translateX(-20px);
   }
   80% {
-    -webkit-transform: translateY(20px);
+    -webkit-transform: translateY(40px);
     transform: translateY(20px);
   }
   90% {
-    -webkit-transform: translateX(20px);
+    -webkit-transform: translateX(40px);
     transform: translateX(20px);
   }
 }
-
-
-/* ------------------------------------------------------------ */
-.main-content {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 20px;
-}
-
-#evaluation-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 675px;
-}
-
-#counter {
-  margin-top: 10px;
-  margin-bottom: 3px;
-}
-
-#evaluation-form h2 {
-  margin: 10px auto;
-}
-
-.family-div , .content-div , .textarea-div {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-box {
-  display: flex;
-}
-
-.header img {
-  height: 100px;
-}
-
-.personal-info-div {
-  display: flex;
-  justify-content: stretch;
-  margin: 10px;
-}
-
-.personal-info-div input {
-  width: 50%;
-  margin-right: 10px;
-  height: 30px;
-}
-
-.email-and-house-div {
-  display: flex;
-  justify-content: stretch;
-  margin: 10px;
-  align-items: center;
-}
-
-
-.email-and-house-div input , select {
-  width: 40%;
-  margin: 5px 5px 5px 0;
-  height: 30px;
-}
-
-.email-and-house-div select {
-  margin-left: 15px;
-}
-
-.family-and-content-div {
-  display: flex;
-  justify-content: stretch;
-  margin: 10px;
-}
-
-.family-radio-btn {
-  margin: 5px;
-}
-
-.family-div , .content-div {
-  width: 35%;
-}
-
-.checkbox-div {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.checkbox-div input {
-  margin: 10px;
-}
-
-.rate-div {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-
-.textarea-div {
-  display: flex;
-  margin: 10px;
-}
-
-.agreement-div {
-  margin: 10px;
-}
-
-#submit-btn {
-  margin: 5px;
-  height: 30px;
-}
-
-.footer {
-  text-align: center;
-  font-weight: 800;
-  color: white;
-  background-color: grey;
-  margin-top: 20px;
-}
-
-/* Fim de Trecho de Código do Alan -*/
