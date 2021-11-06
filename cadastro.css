@@ -1,7 +1,38 @@
+body {
+  background-color: #10141B;
+  color: white;
+}
+
+.div-wand {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-wand img {
+  width: 20em;
+  height: 0.5em;
+}
+
+@font-face {
+  font-family: HarryP;
+  src: local(HarryP), url(./Fontes/HARRYP__.TTF) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title {
+  font-family: HarryP;
+  font-size: 4em;
+}
+
 .main-content {
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
+  background-image: url(./images/logoTransparente.png);
+  background-size: 35em;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 #evaluation-form {
@@ -9,6 +40,21 @@
   flex-direction: column;
   justify-content: center;
   width: 675px;
+}
+
+#input-name, #input-lastname, #input-email, #house {
+  width: 20em;
+  height: 3em;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  margin: 0.5em;
+}
+
+.div_btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
 }
 
 #counter {
@@ -35,14 +81,8 @@
 
 .personal-info-div {
   display: flex;
-  justify-content: stretch;
+  justify-content: space-around;
   margin: 10px;
-}
-
-.personal-info-div input {
-  width: 50%;
-  margin-right: 10px;
-  height: 30px;
 }
 
 .email-and-house-div {
@@ -65,7 +105,7 @@
 
 .family-and-content-div {
   display: flex;
-  justify-content: stretch;
+  justify-content: space-around;
   margin: 10px;
 }
 
@@ -95,7 +135,27 @@
 
 .textarea-div {
   display: flex;
+  align-items: center;
   margin: 10px;
+  height: 19em;
+  background-image: url(./images/pergaminho.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+#textarea {
+  margin-top: 2.5em;
+  width: 60%;
+  height: 55%;
+  border: none;
+  margin-bottom: 1em;
+}
+
+#textarea:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
 }
 
 .agreement-div {
@@ -103,8 +163,11 @@
 }
 
 #submit-btn {
-  margin: 5px;
-  height: 30px;
+  width: 20em;
+  height: 3em;
+  border-radius: 10px;
+  border: none;
+  background-color: #EEBA30;
 }
 
 .footer {
