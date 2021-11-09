@@ -21,6 +21,13 @@
   animation: colors 15s ease infinite;
 }
 
+.footer {
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
 @keyframes colors {
   0% {
     background-position: 0% 50%;
@@ -153,4 +160,26 @@
     -webkit-transform: translateX(40px);
     transform: translateX(20px);
   }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: lightblue;
+    color: blue;
+  }
+
+  .area-doll {
+    display: none;
+  }
+
+  .area-login {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .doll-img {
+    width: 12em;
+  }
+
 }
