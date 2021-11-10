@@ -1,6 +1,14 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
 body {
   background-color: #10141B;
   color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .div-wand {
@@ -11,6 +19,46 @@ body {
 .div-wand img {
   width: 20em;
   height: 0.5em;
+}
+
+.header, .footer {
+  background: linear-gradient(100deg, #000000, #530303,#ff0000, #530303, #000000);
+  background-size: 200%, 200%;
+  animation: colors 15s ease infinite;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 4em;
+}
+
+.trybewarts-header-logo {
+  width: 3em;
+}
+
+.footer {
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @font-face {
@@ -30,16 +78,17 @@ body {
   justify-content: space-evenly;
   margin-top: 20px;
   background-image: url(./images/logoTransparente.png);
-  background-size: 35em;
+  background-size: 50%;
   background-repeat: no-repeat;
   background-position: center center;
+  flex-grow: 1;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 675px;
+  max-width: 100%;
 }
 
 #input-name, #input-lastname, #input-email, #house {
@@ -174,7 +223,78 @@ body {
   text-align: center;
   font-weight: 800;
   color: white;
-  background-color: grey;
   height: 2em;
   padding: 10px;
+ }
+
+ @media only screen and (max-width: 480px) {
+  .title {
+    font-size: 2.5em;;
+  }
+
+  .personal-info-div, .email-and-house-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-wand {
+    display: flex;
+    justify-content: center
+  }
+
+  .wand-r {
+    display: none;
+  }
+
+  .family-and-content-div, .family-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .family-div:after {
+    content:"";
+    height:2em;
+  }
+
+  .content-div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .checkbox-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 0.8em;
+  }
+
+  .rate-div {
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .div-label-rate {
+    width: 100%;
+    text-align: center;
+  }
+
+  .textarea-div {
+    background-position: center center;
+    height: 15em;
+  }
+
+  #textarea {
+    height: 44%;
+  }
+
+  .paragraph {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
 }

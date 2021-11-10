@@ -14,6 +14,7 @@ function removeAddName() {
 
   const text = document.createElement('p');
   text.innerText = `Nome: ${name.value} ${lastName.value}`;
+  text.classList.add('paragraph');
   father.appendChild(text);
 
   father.removeChild(name);
@@ -25,6 +26,7 @@ function removeAddEmail() {
   const email = document.getElementById('input-email');
 
   const text = document.createElement('p');
+  text.classList.add('paragraph');
   text.innerText = `Email: ${email.value}`;
   father.appendChild(text);
 
@@ -37,6 +39,7 @@ function removeAddHouse() {
   const labelHouse = document.getElementById('labelHouse');
 
   const text = document.createElement('p');
+  text.classList.add('paragraph');
   text.innerText = `Casa: ${house.value}`;
   father.appendChild(text);
 
@@ -57,6 +60,7 @@ function removeAddFamily() {
     family = document.getElementById('familyTres');
   }
   const text = document.createElement('p');
+  text.classList.add('paragraph');
   text.innerText = `Família: ${family.value}`;
   father.appendChild(text);
   for (let index = children.length - 1; index >= 0; index -= 1) {
@@ -77,6 +81,7 @@ function removeAddContent() {
   }
 
   const item = document.createElement('p');
+  item.classList.add('paragraph');
   item.innerText = `Matérias: ${itens}`;
   father.appendChild(item);
 
@@ -90,6 +95,7 @@ function removeAddNote() {
   const father = document.getElementsByClassName('rate-div')[0];
 
   const item = document.createElement('p');
+  item.classList.add('paragraph');
 
   for (let index = 0; index < grades.length; index += 1) {
     if (grades[index].checked) {
@@ -110,6 +116,7 @@ function removeAddText() {
   const father = document.getElementsByClassName('textarea-div')[0];
 
   const item = document.createElement('p');
+  item.classList.add('paragraph');
   item.innerText = `Observações: ${text.value}`;
   father.appendChild(item);
 
@@ -130,6 +137,7 @@ function validation() {
   removeAddContent();
   removeAddNote();
   removeAddText();
+  // document.getElementsByClassName('rate-div')[0].remove();
 }
 
 document.getElementById('submit-btn').addEventListener('click', validation);

@@ -9,6 +9,7 @@
   justify-content: center;
   color: white;
   height: 4em;
+  width: 100%;
 }
 
 .trybewarts-header-logo {
@@ -26,6 +27,7 @@
   padding: 1em;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 @keyframes colors {
@@ -113,61 +115,60 @@
   align-items: center;
 }
 
-.doll-img {
-  width: 300px;
- animation: animacao 20s ease infinite;
- transition: linear;
+.doll {
+  width: 15em;
+  height: 20em;
+  background-image: url('./images/BruxaProgramadoraAmarela.png');
+  background-size: 15em;
+  background-repeat: no-repeat;
+  animation: float 3s ease-in-out infinite, fire-animation 8s ease-in-out infinite alternate;
 }
 
-@keyframes animacao {
+.shadow {
+  content: '';
+  position: absolute;
+  bottom: 2%;
+  width: 10em;
+  height: 10em;
+  background: radial-gradient(#0007, #0000 50%);
+  transform: rotate3d(0.5, 0, 0, 70deg);
+  animation: float-shadow 3s ease-in-out alternate infinite;
+}
+
+.area-doll {
+  position: relative;
+}
+
+@keyframes fire-animation {
   0%, 100% {
-    -webkit-transform: translateY(0);
+    background-image: url('./images/BruxaProgramadoraAmarela.png');
+  }
+
+  50% {
+    background-image: url('./images/BruxaProgramadoraVermelha.png');
+  }
+}
+
+@keyframes float {
+  0%, 100% {
     transform: translateY(0);
   }
-  10% {
-    -webkit-transform: translateX(40px);
-    transform: translateX(20px);
-  }
-  20% {
-    -webkit-transform: translateY(40px);
-    transform: translateY(20px);
-  }
-  30% {
-    -webkit-transform: translateX(-40px);
-    transform: translateX(-20px);
-  }
-  40% {
-    -webkit-transform: translateY(40px);
-    transform: translateY(20px);
-  }
   50% {
-    -webkit-transform: translateX(40px);
-    transform: translateX(20px);
-  }
-  60% {
-    -webkit-transform: translateY(40px);
-    transform: translateY(20px);
-  }
-  70% {
-    -webkit-transform: translateX(-40px);
-    transform: translateX(-20px);
-  }
-  80% {
-    -webkit-transform: translateY(40px);
-    transform: translateY(20px);
-  }
-  90% {
-    -webkit-transform: translateX(40px);
-    transform: translateX(20px);
+    transform: translateY(-10px);
   }
 }
 
-@media only screen and (max-width: 480px) {
-  body {
-    background-color: lightblue;
-    color: blue;
+@keyframes float-shadow {
+  0%, 100% {
+    transform: rotate3d(0.5, 0, 0, 70deg) scale(1);
   }
+  50% {
+    transform: rotate3d(0.5, 0, 0, 70deg) scale(2);
+  }
+}
 
+
+@media only screen and (max-width: 480px) {
   .area-doll {
     display: none;
   }
@@ -178,8 +179,10 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .doll-img {
-    width: 12em;
+  .doll {
+    width: 13em;
+    height: 18em;
+    background-size: 13em;
   }
 
 }
